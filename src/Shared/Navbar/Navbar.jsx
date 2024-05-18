@@ -1,0 +1,404 @@
+/* eslint-disable no-unused-vars */
+import { Link, NavLink } from "react-router-dom";
+import {
+  FaBars,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPhone,
+  FaPinterestP,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { BiChevronDown } from "react-icons/bi";
+import Logo from "/public/images/logo.png";
+import { useState, useEffect } from "react";
+import { IoMdClose } from "react-icons/io";
+import { BsEnvelope } from "react-icons/bs";
+import { IoLocationOutline, IoSearch } from "react-icons/io5";
+
+const Navbar = () => {
+  //sticky
+
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+
+  const isSticky = (e) => {
+    const header = document.querySelector(".header-section");
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
+
+  // modal openar
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav
+      className={`w-full transition-all duration-300 bg-transparent absolute z-[99999]`}
+    >
+      {/* top Navbar */}
+      <header className="bg-transparent overflow-hidden md:block">
+        <div className="Container flex items-center justify-between h-16">
+          <div className="flex items-center gap-10">
+            <p className="font-Poppins text-[15px] text-white md:flex items-center gap-1 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
+              <IoLocationOutline className="text-xl relative bottom-[2px]" />
+              102/B New Market, Sandigo-USA
+            </p>
+            <Link
+              to={"/"}
+              className="font-Poppins text-[15px] text-white sm:flex items-center gap-2 hidden"
+            >
+              <BsEnvelope size={"18"} />
+              example@gmail.com
+            </Link>
+          </div>
+          <div className="flex items-center gap-6">
+            <div className="lg:flex items-center gap-2 hidden">
+              <span className="flex items-center gap-2 text-sm text-PrimaryColor-0">
+                <FaPhone />
+              </span>
+              <Link
+                to={"/"}
+                className="font-Poppins font-medium text-sm text-white"
+              >
+                +980 234 4567
+              </Link>
+            </div>
+            <ul className="flex items-center">
+              <li>
+                <Link
+                  to={"/"}
+                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#1773ea] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                >
+                  <FaFacebookF />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/"}
+                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#2ca5da] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                >
+                  <FaXTwitter />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/"}
+                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#0073b1] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                >
+                  <FaLinkedinIn />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/"}
+                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#e11a21] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                >
+                  <FaPinterestP />
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      {/* top Navbar */}
+      <header
+        className="header-section bg-transparent border-t border-b border-BorderColor-0"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <div className="Container">
+          {/* main Navbar */}
+          <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[100px] ">
+            {/* website Logo */}
+            <div className=" w-48 lg:w-52">
+              <Link to="/">
+                <img
+                  draggable="false"
+                  src={Logo}
+                  className="hidden lg:block"
+                  alt="website_logo"
+                />
+              </Link>
+            </div>
+            {/* small screen size */}
+            <div className="px-3 w-full lg:hidden flex justify-between bg-khaki h-[70px] items-center p-3">
+              <div className="w-28">
+                <Link to="/">
+                  <img
+                    draggable="false"
+                    src={Logo}
+                    className="block lg:hidden "
+                    alt="constre_website_logo"
+                  />
+                </Link>
+              </div>
+              {/* toggle bar mode. */}
+              <button
+                className="lg:hidden block focus:outline-none "
+                onClick={toggleNavbar}
+              >
+                {/* modal open and close */}
+                {isOpen ? (
+                  <IoMdClose className="w-6 h-6 text-white" />
+                ) : (
+                  <FaBars className="w-5 h-5 text-white" />
+                )}
+              </button>
+            </div>
+            {/* All navLink are hear with active */}
+            <div className="flex gap-6 items-center">
+              <ul
+                className={`${
+                  isOpen ? "block" : "hidden"
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0  flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Poppins font-medium sm:text-base text-white transition-all duration-500
+                `}
+              >
+                <NavLink
+                  to="/"
+                  className={`${({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "active"
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative`}
+                >
+                  <span className="flex items-center">
+                    Home
+                    <BiChevronDown className="ml-1" />
+                  </span>
+                  <div
+                    className="absolute pt-5 lg:pt-8 z-[1]"
+                    data-aos="zoom-in-left"
+                    data-aos-duration="1000"
+                  >
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/" className="py-2 block">
+                            Home One
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/Home2" className="py-2 block">
+                            Home Two
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/Home3" className="py-2 block">
+                            Home Three
+                          </Link>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </NavLink>
+                <NavLink
+                  className={`${({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "active"
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative `}
+                  to="/about"
+                >
+                  <span>About</span>
+                </NavLink>
+                <NavLink
+                  className={`${({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "active"
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative `}
+                  to="#"
+                >
+                  <span className="flex items-center">
+                    Service
+                    <BiChevronDown className="ml-1" />
+                  </span>
+                  <div className="absolute pt-5 lg:pt-8 z-20">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/service" className="py-2 block">
+                            Service
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/serviceDetails" className="py-2 block">
+                            Service Details
+                          </Link>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </NavLink>
+
+                <NavLink
+                  className={`${({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "active"
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative `}
+                  to="#"
+                >
+                  <span className="flex items-center">
+                    Pages
+                    <BiChevronDown className="ml-1" />
+                  </span>
+                  <div className="absolute pt-5 lg:pt-8 z-20">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/about" className="py-2 block">
+                            About Us
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/service" className="py-2 block">
+                            Service
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/serviceDetails" className="py-2 block">
+                            Service Details
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/teamInner" className="py-2 block">
+                            Team Member
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/project" className="py-2 block">
+                            Project
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/projectDetails" className="py-2 block">
+                            Project Details
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/pricing" className="py-2 block">
+                            Pricing Plan
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/testimonial" className="py-2 block">
+                            Testimonial
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/appointment" className="py-2 block">
+                            Appointment
+                          </Link>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </NavLink>
+                {/* blog sub menu link */}
+                <NavLink
+                  className={`${({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "active"
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative `}
+                  to="#"
+                >
+                  <span className="flex items-center">
+                    Blog
+                    <BiChevronDown className="ml-1" />
+                  </span>
+                  <div className="absolute pt-5 lg:pt-8 z-20">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HoverColor-0 ">
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/blogGrid" className="py-2 block">
+                            Blog Grid
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/blogList" className="py-2 block">
+                            Blog List
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/blogDetails" className="py-2 block">
+                            Blog Details
+                          </Link>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </NavLink>
+                <NavLink
+                  className={`${({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "active"
+                      : ""} text-white text-left lg:border-b-0 px-3 w-full block transition-all duration-300`}
+                  to="/contact"
+                >
+                  Contact
+                </NavLink>
+              </ul>
+              <div className="hidden lg:flex items-center">
+                <Link to={"/"}>
+                  <IoSearch className="text-2xl ml-2 mr-10 text-PrimaryColor-0" />
+                </Link>
+                <Link to={"/appointment"} className="header-btn">
+                  Get A Quote
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </nav>
+  );
+};
+
+export default Navbar;
