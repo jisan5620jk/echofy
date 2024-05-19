@@ -111,16 +111,16 @@ const ServiceInner = () => {
         <div className="Container">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div>
-              <h5 className="font-Inter font-medium text-SecondaryColor-0">
+              <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
                 OUR SERVICES
               </h5>
-              <h1 className="font-Inter font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
+              <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
                 Professional echofy Services <br />
                 What we Provide
               </h1>
             </div>
             <div>
-              <p className="font-Poppins font-light text-TextColor-0">
+              <p className="font-AlbertSans font-light text-TextColor-0">
                 Competently repurpose go forward benefits without goal-orien
                 conveniently target e-business opportunities whereas parallel
                 multimedia based web services

@@ -22,13 +22,13 @@ const Breadcamp = ({
           src={breadCampShape}
           className="absolute -bottom-24 left-0 animate-dance2 hidden md:block"
         />
-        <h1 className="font-Inter font-bold text-4xl sm:text-[46px] text-white capitalize">
+        <h1 className="font-AlbertSans font-bold text-4xl sm:text-[46px] text-white capitalize">
           {breadCampTitle}
         </h1>
         <ul className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center justify-center mt-8 sm:mt-5">
           <li>
             <Link to={"/"}>
-              <button className="font-Inter text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
+              <button className="font-AlbertSans text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                 <IoHome className="text-PrimaryColor-0" /> echofy
               </button>
             </Link>
@@ -38,7 +38,7 @@ const Breadcamp = ({
           </li>
           <li>
             <Link to={url}>
-              <button className="font-Inter capitalize flex gap-2 text-white">
+              <button className="font-AlbertSans capitalize flex gap-2 text-white">
                 {breadCampLink}
               </button>
             </Link>
@@ -48,7 +48,7 @@ const Breadcamp = ({
           </li>
           <li>
             <Link to={url}>
-              <button className="font-Inter capitalize flex gap-2 text-white opacity-70">
+              <button className="font-AlbertSans capitalize flex gap-2 text-white opacity-70">
                 {breadCampContent}
               </button>
             </Link>

@@ -54,7 +54,7 @@ const Navbar = () => {
       <header className="bg-[#021233] overflow-hidden md:block relative z-10">
         <div className="Container flex items-center justify-between">
           <div className="flex items-center gap-10">
-            <p className="font-Poppins text-[15px] text-white sm:flex items-center gap-2 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
+            <p className="font-AlbertSans text-[15px] text-white sm:flex items-center gap-2 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
               <FaHandsClapping className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
               Welcome to echofy Cleaing Service
             </p>
@@ -95,13 +95,13 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="lg:flex items-center gap-2 hidden">
-              <h6 className="flex items-center gap-2 text-sm text-white font-Poppins font-light">
+              <h6 className="flex items-center gap-2 text-sm text-white font-AlbertSans font-light">
                 <IoMdCall className="w-[14px] h-[14px] rounded-sm bg-white text-xs text-SecondaryColor-0" />
                 Call :
               </h6>
               <Link
                 to={"/"}
-                className="font-Poppins font-medium text-sm text-white"
+                className="font-AlbertSans font-medium text-sm text-white"
               >
                 {" "}
                 +980 234 4567
@@ -128,19 +128,19 @@ const Navbar = () => {
               <div className="flex items-center lg:gap-[18px] xl:gap-[60px]">
                 <Link
                   to={"/"}
-                  className="font-Poppins text-lg text-HeadingColor-0 sm:flex items-center gap-2"
+                  className="font-AlbertSans text-lg text-HeadingColor-0 sm:flex items-center gap-2"
                 >
                   <FaPhone size={"20"} className="text-SecondaryColor-0" />
                   +123 (4567) 890
                 </Link>
                 <Link
                   to={"/"}
-                  className="font-Poppins text-lg text-HeadingColor-0 sm:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0"
+                  className="font-AlbertSans text-lg text-HeadingColor-0 sm:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0"
                 >
                   <BsEnvelope size={"20"} className="text-SecondaryColor-0" />
                   example@gmail.com
                 </Link>
-                <p className="font-Poppins text-lg text-HeadingColor-0 md:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0">
+                <p className="font-AlbertSans text-lg text-HeadingColor-0 md:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0">
                   <FaRegClock size={"20"} className="text-SecondaryColor-0" />
                   Mon - Fri 9am to 5pm
                 </p>
@@ -195,7 +195,7 @@ const Navbar = () => {
                   <ul
                     className={`${
                       isOpen ? "block" : "hidden"
-                    } text-right lg:w-fit ease-in-out flex-1 lg:flex flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Poppins font-medium sm:text-base text-white transition-all duration-500
+                    } text-right lg:w-fit ease-in-out flex-1 lg:flex flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-white transition-all duration-500
                 `}
                   >
                     <NavLink
@@ -205,7 +205,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative`}
+                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative`}
                     >
                       <span className="flex items-center">
                         Home
@@ -247,7 +247,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-Poppins font-medium text-[15px]hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-AlbertSans font-medium text-[15px]hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"/about"}
                     >
                       <span>about</span>
@@ -258,7 +258,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""}text-white text-left font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""}text-white text-left font-AlbertSans font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -293,7 +293,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -381,7 +381,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -420,7 +420,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-Poppins font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300`}
+                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300`}
                       to={"/contact"}
                     >
                       Contact
@@ -432,7 +432,7 @@ const Navbar = () => {
                     <IoSearch className="text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0" />
                   </Link>
                   <Link to={"/apiontment"}>
-                    <button className="font-Inter font-medium text-white relative before:absolute before:top-[2px] before:-left-[30px] before:w-[2px] before:h-5 before:bg-white flex items-center gap-2">
+                    <button className="font-AlbertSans font-medium text-white relative before:absolute before:top-[2px] before:-left-[30px] before:w-[2px] before:h-5 before:bg-white flex items-center gap-2">
                       Free Appoinment <FaArrowRightLong />
                     </button>
                   </Link>

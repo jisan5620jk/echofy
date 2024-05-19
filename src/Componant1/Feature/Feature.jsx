@@ -12,10 +12,10 @@ const Feature = () => {
               <img src={boxImg} />
             </div>
             <div className="flex-1">
-              <h5 className="font-Inter font-semibold text-[22px] text-HeadingColor-0">
+              <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0">
                 House echofy
               </h5>
-              <p className="font-Poppins text-TextColor-0 text-[15px]">
+              <p className="font-AlbertSans text-TextColor-0 text-[15px]">
                 Competently repurpose clean conveniently target
               </p>
             </div>
@@ -25,10 +25,10 @@ const Feature = () => {
               <img src={boxImg2} />
             </div>
             <div className="flex-1">
-              <h5 className="font-Inter font-semibold text-[22px] text-HeadingColor-0">
+              <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0">
                 Windwo echofy
               </h5>
-              <p className="font-Poppins text-TextColor-0 text-[15px]">
+              <p className="font-AlbertSans text-TextColor-0 text-[15px]">
                 Competently repurpose clean conveniently target
               </p>
             </div>
@@ -38,10 +38,10 @@ const Feature = () => {
               <img src={boxImg3} />
             </div>
             <div className="flex-1">
-              <h5 className="font-Inter font-semibold text-[22px] text-HeadingColor-0">
+              <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0">
                 instrument
               </h5>
-              <p className="font-Poppins text-TextColor-0 text-[15px]">
+              <p className="font-AlbertSans text-TextColor-0 text-[15px]">
                 Competently repurpose clean conveniently target
               </p>
             </div>

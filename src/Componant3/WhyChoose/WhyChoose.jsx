@@ -15,7 +15,7 @@ const WhyChoose = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 2xl:gap-[142px]">
           <div className="bg-SecondaryColor-0 rounded-t-md pt-10 pb-[60px]">
             <div className="text-center">
-              <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
+              <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
                 Get Appoinment
               </h1>
             </div>
@@ -58,17 +58,17 @@ const WhyChoose = () => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-PrimaryColor-0 font-medium font-Inter transition-all duration-500 hover:text-white text-TextColor-0 border-white outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
+                className="w-full bg-PrimaryColor-0 font-medium font-AlbertSans transition-all duration-500 hover:text-white text-TextColor-0 border-white outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
               >
                 Book Appionment <FaArrowRightLong />
               </button>
             </form>
           </div>
           <div className="mb-28">
-            <h5 className="font-Inter font-medium text-PrimaryColor-0">
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">
               WHY CHOOSE US?
             </h5>
-            <h1 className="font-Inter font-bold text-[20px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-3">
+            <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-3">
               Dramatically negotiate high <br /> payoff services cleaning
             </h1>
             <div className="flex flex-col sm:flex-row gap-7 mt-12">
@@ -76,10 +76,10 @@ const WhyChoose = () => {
                 <img src={boxImg} />
               </div>
               <div className="flex-1">
-                <h5 className="font-Inter font-semibold text-[22px] text-white">
+                <h5 className="font-AlbertSans font-semibold text-[22px] text-white">
                   House echofy
                 </h5>
-                <p className="font-Poppins text-white opacity-70 text-[15px] mt-3">
+                <p className="font-AlbertSans text-white opacity-70 text-[15px] mt-3">
                   Competently repurpose go forward benefits
                   <br className="hidden sm:block 2xl:block" /> conveniently
                   target e-business
@@ -91,10 +91,10 @@ const WhyChoose = () => {
                 <img src={boxImg3} />
               </div>
               <div className="flex-1">
-                <h5 className="font-Inter font-semibold text-[22px] text-white">
+                <h5 className="font-AlbertSans font-semibold text-[22px] text-white">
                   instrument
                 </h5>
-                <p className="font-Poppins text-white opacity-70 text-[15px] mt-3">
+                <p className="font-AlbertSans text-white opacity-70 text-[15px] mt-3">
                   Competently repurpose go forward benefits
                   <br className="hidden sm:block 2xl:block" /> conveniently
                   target e-business

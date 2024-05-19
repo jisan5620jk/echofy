@@ -25,15 +25,15 @@ const ServiceCard = ({
             className="absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
            duration-500 group-hover:opacity-100"
           />
-          <h5 className="font-Inter font-semibold text-HeadingColor-0 xl:text-lg 2xl:text-2xl transition-all duration-500 group-hover:text-white pt-4">
+          <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 xl:text-lg 2xl:text-2xl transition-all duration-500 group-hover:text-white pt-4">
             {serviceTitle}
           </h5>
           <ul className="-mt-[90px] transition-all duration-500 opacity-0 group-hover:mt-0 group-hover:border-white group-hover:opacity-100">
-            <li className="flex items-center gap-2 text-[#B8B9D5] font-Poppins mt-5 mb-3 transition-all duration-500 group-hover:text-white">
+            <li className="flex items-center gap-2 text-[#B8B9D5] font-AlbertSans mt-5 mb-3 transition-all duration-500 group-hover:text-white">
               <div className="text-PrimaryColor-0">{serviceListIcon}</div>
               {serviceListContent}
             </li>
-            <li className="flex items-center gap-2 text-[#B8B9D5] font-Poppins mb-2 transition-all duration-500 group-hover:text-white">
+            <li className="flex items-center gap-2 text-[#B8B9D5] font-AlbertSans mb-2 transition-all duration-500 group-hover:text-white">
               <div className="text-PrimaryColor-0">{serviceListIcon}</div>
               {serviceListContent2}
             </li>
@@ -41,7 +41,7 @@ const ServiceCard = ({
         </div>
         <div className="flex justify-between items-center px-8">
           <Link to={serviceUrl}>
-            <button className="text-white font-medium font-Inter flex items-center gap-2">
+            <button className="text-white font-medium font-AlbertSans flex items-center gap-2">
               {buttonContent}
               {buttonIcon}
             </button>

@@ -12,7 +12,7 @@ const ServiceAccordion = ({ children, title, id, active = false }) => {
     <div className="mb-5 rounded-md overflow-hidden shadow-shade">
       <h2>
         <button
-          className={`flex items-center justify-between pl-4 pr-2 md:pl-10 md:pr-8 lg:pl-6 lg:pr-4 xl:pl-10 xl:pr-8 py-6 w-full text-left font-semibold font-Inter hover:text-SecondaryColor-0 group bg-[#f3f4f8] border border-BorderColor-0 rounded-md transition-all duration-500 ${
+          className={`flex items-center justify-between pl-4 pr-2 md:pl-10 md:pr-8 lg:pl-6 lg:pr-4 xl:pl-10 xl:pr-8 py-6 w-full text-left font-semibold font-AlbertSans hover:text-SecondaryColor-0 group bg-[#f3f4f8] border border-BorderColor-0 rounded-md transition-all duration-500 ${
             accordionOpen && "bg-white border-transparent"
           }`}
           onClick={(e) => {
@@ -62,7 +62,7 @@ const ServiceAccordion = ({ children, title, id, active = false }) => {
         id={`accordion-text-${id}`}
         role="region"
         aria-labelledby={`accordion-title-${id}`}
-        className={`grid font-Poppins font-light leading-[26px] text-TextColor-0 bg-white px-4 md:px-10 lg:px-6 xl:px-10 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack ${
+        className={`grid font-AlbertSans font-light leading-[26px] text-TextColor-0 bg-white px-4 md:px-10 lg:px-6 xl:px-10 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"
@@ -74,6 +74,6 @@ const ServiceAccordion = ({ children, title, id, active = false }) => {
       </div>
     </div>
   );
-}
+};
 
 export default ServiceAccordion;

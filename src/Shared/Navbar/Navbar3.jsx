@@ -54,7 +54,7 @@ const Navbar = () => {
       <header className="bg-SecondaryColor-0 overflow-hidden md:block relative z-10">
         <div className="Container flex items-center justify-between">
           <div className="flex items-center gap-10">
-            <p className="font-Poppins text-[15px] text-white sm:flex items-center gap-2 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
+            <p className="font-AlbertSans text-[15px] text-white sm:flex items-center gap-2 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
               <TfiLocationPin className="text-xl relative bottom-[2px]" />
               59 Street, B4 Appartment, Australia
             </p>
@@ -96,13 +96,13 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="lg:flex items-center gap-2 hidden">
-            <h6 className="flex items-center gap-2 text-sm text-white font-Poppins font-light">
+            <h6 className="flex items-center gap-2 text-sm text-white font-AlbertSans font-light">
               <IoMdCall className="w-[14px] h-[14px] rounded-sm bg-white text-xs text-SecondaryColor-0" />
               Call :
             </h6>
             <Link
               to={"/"}
-              className="font-Poppins font-medium text-sm text-white"
+              className="font-AlbertSans font-medium text-sm text-white"
             >
               {" "}
               +980 234 4567
@@ -158,7 +158,7 @@ const Navbar = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0  flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Poppins font-medium sm:text-base text-white transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0  flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-white transition-all duration-500
                 `}
               >
                 <NavLink

@@ -19,14 +19,14 @@ const About = () => {
             </div>
           </div>
           <div>
-            <h5 className="font-Inter text-lg text-SecondaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
+            <h5 className="font-AlbertSans text-lg text-SecondaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
               ABOUT echofy
             </h5>
-            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[46px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[46px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
               Your Trusted <span className="text-PrimaryColor-0">Cleaning</span>{" "}
               <br /> Service Partner
             </h1>
-            <p className="font-Poppins text-TextColor-0 font-light">
+            <p className="font-AlbertSans text-TextColor-0 font-light">
               Need Clean of your home or office Just Feel Free contact us based
               web services we try to Help you as soon as possible your home or
               office Just Feel Free contact us based web develop.
@@ -36,10 +36,10 @@ const About = () => {
                 <img src={aboutIcon} />
               </div>
               <div className="flex-1">
-                <h6 className="font-Inter font-semibold text-xl text-HeadingColor-0">
+                <h6 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0">
                   Customer Focused Reviews
                 </h6>
-                <p className="font-Poppins text-TextColor-0 font-light mt-3">
+                <p className="font-AlbertSans text-TextColor-0 font-light mt-3">
                   Need Clean of your home or Feel Free contact us based web
                   services we to you as soon as possible trusted.
                 </p>
@@ -50,10 +50,10 @@ const About = () => {
                 <img src={aboutIcon2} />
               </div>
               <div className="flex-1">
-                <h6 className="font-Inter font-semibold text-xl text-HeadingColor-0">
+                <h6 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0">
                   Regular & Monthly cleaning
                 </h6>
-                <p className="font-Poppins text-TextColor-0 font-light mt-3">
+                <p className="font-AlbertSans text-TextColor-0 font-light mt-3">
                   Need Clean of your home or Feel Free contact us based web
                   services we to you as soon as possible trusted.
                 </p>

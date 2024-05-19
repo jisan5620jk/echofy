@@ -49,37 +49,37 @@ const Navbar = () => {
     >
       {/* top Navbar */}
       <header className="bg-transparent overflow-hidden md:block">
-        <div className="Container flex items-center justify-between h-16">
+        <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
-            <p className="font-Poppins text-[15px] text-white md:flex items-center gap-1 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
+            <p className="font-AlbertSans text-[15px] text-white md:flex items-center gap-1 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
               <IoLocationOutline className="text-xl relative bottom-[2px]" />
               102/B New Market, Sandigo-USA
             </p>
             <Link
               to={"/"}
-              className="font-Poppins text-[15px] text-white sm:flex items-center gap-2 hidden"
+              className="font-AlbertSans text-[15px] text-white sm:flex items-center gap-2 hidden"
             >
-              <BsEnvelope size={"18"} />
+              <BsEnvelope size={"16"} className="text-PrimaryColor-0" />
               example@gmail.com
             </Link>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-16">
             <div className="lg:flex items-center gap-2 hidden">
               <span className="flex items-center gap-2 text-sm text-PrimaryColor-0">
                 <FaPhone />
               </span>
               <Link
                 to={"/"}
-                className="font-Poppins font-medium text-sm text-white"
+                className="font-AlbertSans font-medium text-sm text-white"
               >
-                +980 234 4567
+                +123 (4567) 890
               </Link>
             </div>
-            <ul className="flex items-center">
+            <ul className="flex gap-3 items-center">
               <li>
                 <Link
                   to={"/"}
-                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#1773ea] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
                 >
                   <FaFacebookF />
                 </Link>
@@ -87,7 +87,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#2ca5da] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
                 >
                   <FaXTwitter />
                 </Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#0073b1] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
                 >
                   <FaLinkedinIn />
                 </Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#e11a21] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
                 >
                   <FaPinterestP />
                 </Link>
@@ -162,7 +162,7 @@ const Navbar = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0  flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Poppins font-medium sm:text-base text-white transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0  flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-white transition-all duration-500
                 `}
               >
                 <NavLink

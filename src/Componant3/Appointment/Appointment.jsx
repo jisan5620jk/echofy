@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { IoPlayOutline } from "react-icons/io5";
-import appointmentThumb from "/public/images/appointment-thumb.jpg"
+import appointmentThumb from "/public/images/appointment-thumb.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Appointment = () => {
@@ -31,7 +31,7 @@ const Appointment = () => {
             </div>
           </div>
           <div className="mr-2">
-            <h2 className="font-Inter font-bold text-3xl md:text-[40px] mb-11">
+            <h2 className="font-AlbertSans font-bold text-3xl md:text-[40px] mb-11">
               Request A Quote
             </h2>
             <form action="#" method="post" className="flex flex-col gap-7">

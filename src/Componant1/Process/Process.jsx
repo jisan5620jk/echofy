@@ -48,13 +48,13 @@ const Process = () => {
       <div className="Container">
         <div className="text-center">
           <div>
-            <h5 className="font-Inter font-medium text-SecondaryColor-0">
+            <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
               WORKING PROCESS
             </h5>
-            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
               Easy Steps to Works
             </h1>
-            <p className="font-Poppins text-TextColor-0 font-light lg:w-3/5 2xl:w-3/4 mx-auto">
+            <p className="font-AlbertSans text-TextColor-0 font-light lg:w-3/5 2xl:w-3/4 mx-auto">
               Competently repurpose go forward benefits without goal-oriented
               ROI <br className="hidden lg:block" /> conveniently target
               e-business opportunities whereas

@@ -20,10 +20,10 @@ const Banner = () => {
           <section className="bg-[url('/public/images/slider-bg.png')] bg-cover bg-center bg-no-repeat h-[800px] flex items-center">
             <div className="Container">
               <div className="relative">
-                <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium">
+                <h5 className="font-AlbertSans text-lg text-PrimaryColor-0 font-medium">
                   BEST echofy AGENCY
                 </h5>
-                <h1 className="font-Inter font-bold text-white text-[26px] leading-[44px] sm:text-5xl sm:leading-[68px] lg:text-[58px] 2xl:text-[60px] 2xl:leading-[70px] mt-6 mb-12">
+                <h1 className="font-AlbertSans font-bold text-white text-[26px] leading-[44px] sm:text-5xl sm:leading-[68px] lg:text-[58px] 2xl:text-[60px] 2xl:leading-[70px] mt-6 mb-12">
                   Enjoy The Quality Full
                   <br />
                   Cleaning Services
@@ -52,10 +52,10 @@ const Banner = () => {
           <section className="bg-[url('/public/images/slider-bg2.png')] bg-cover bg-center bg-no-repeat h-[800px] flex items-center">
             <div className="Container">
               <div className="relative">
-                <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium">
+                <h5 className="font-AlbertSans text-lg text-PrimaryColor-0 font-medium">
                   BEST echofy AGENCY
                 </h5>
-                <h1 className="font-Inter font-bold text-white text-[34px] leading-[44px] sm:text-6xl sm:leading-[70px] lg:text-[58px] 2xl:text-[60px] 2xl:leading-[70px] mt-6 mb-12">
+                <h1 className="font-AlbertSans font-bold text-white text-[34px] leading-[44px] sm:text-6xl sm:leading-[70px] lg:text-[58px] 2xl:text-[60px] 2xl:leading-[70px] mt-6 mb-12">
                   Enjoy The Quality Full
                   <br />
                   Cleaning Services

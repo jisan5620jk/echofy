@@ -24,7 +24,7 @@ const TestimonialCard = ({
           <li>{testiRatingIcon}</li>
         </ul>
       </div>
-      <p className="font-Poppins text-white font-light transition-all duration-500 group-hover:text-white mt-5">
+      <p className="font-AlbertSans text-white font-light transition-all duration-500 group-hover:text-white mt-5">
         {testiDesc}
       </p>
       <div className="flex flex-col lg:flex-row lg:items-center gap-5 pt-6">
@@ -32,10 +32,10 @@ const TestimonialCard = ({
           <img src={testiImg} />
         </div>
         <div>
-          <h5 className="font-Inter font-medium text-white text-xl lg:text-lg xl:text-xl">
+          <h5 className="font-AlbertSans font-medium text-white text-xl lg:text-lg xl:text-xl">
             {testiName}
           </h5>
-          <p className="font-Poppins text-white font-light transition-all duration-500 text-[15px] relative z-10 pl-4 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-PrimaryColor-0">
+          <p className="font-AlbertSans text-white font-light transition-all duration-500 text-[15px] relative z-10 pl-4 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-PrimaryColor-0">
             {testiDesignation}
           </p>
         </div>

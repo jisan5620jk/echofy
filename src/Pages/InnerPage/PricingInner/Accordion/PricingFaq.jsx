@@ -1,5 +1,5 @@
 import PricingAccordion from "./PricingAccordion";
-import pricingFaqImg from "/public/images/faq-thumb.png"
+import pricingFaqImg from "/public/images/faq-thumb.png";
 
 const PricingFaq = () => {
   //  All Faqs and  answers.
@@ -30,10 +30,10 @@ const PricingFaq = () => {
           </div>
           <div className="w-full mx-auto">
             <div className="mb-11">
-              <h5 className="font-Inter font-medium text-SecondaryColor-0">
+              <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
                 FAQ
               </h5>
-              <h1 className="font-Inter font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
+              <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
                 Ask Questions
               </h1>
             </div>
@@ -57,4 +57,3 @@ const PricingFaq = () => {
 };
 
 export default PricingFaq;
-

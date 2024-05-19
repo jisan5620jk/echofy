@@ -14,10 +14,10 @@ const Appointment = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 2xl:gap-[142px]">
           <div className="mt-28">
-            <h5 className="font-Inter font-medium text-SecondaryColor-0">
+            <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
               ABOUT US
             </h5>
-            <h1 className="font-Inter font-bold text-[20px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-3">
+            <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-3">
               Dramatically negotiate high <br /> For Looks As a New
             </h1>
             <div className="flex flex-col sm:flex-row gap-7 mt-12">
@@ -25,10 +25,10 @@ const Appointment = () => {
                 <img src={boxImg} />
               </div>
               <div className="flex-1">
-                <h5 className="font-Inter font-semibold text-[22px] text-HeadingColor-0">
+                <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0">
                   House echofy
                 </h5>
-                <p className="font-Poppins text-TextColor-0 opacity-70 mt-3">
+                <p className="font-AlbertSans text-TextColor-0 opacity-70 mt-3">
                   Competently repurpose go forward benefits
                   <br className="hidden sm:block lg:hidden xl:block" />
                   conveniently target e-business
@@ -40,10 +40,10 @@ const Appointment = () => {
                 <img src={boxImg3} />
               </div>
               <div className="flex-1">
-                <h5 className="font-Inter font-semibold text-[22px] text-HeadingColor-0">
+                <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0">
                   instrument
                 </h5>
-                <p className="font-Poppins text-TextColor-0 opacity-70 mt-3">
+                <p className="font-AlbertSans text-TextColor-0 opacity-70 mt-3">
                   Competently repurpose go forward benefits
                   <br className="hidden sm:block lg:hidden xl:block" />
                   conveniently target e-business
@@ -60,7 +60,7 @@ const Appointment = () => {
           <div className="flex lg:justify-end -mt-8">
             <div className="bg-SecondaryColor-0 w-full lg:max-w-[430px] rounded-md pt-10 pb-[60px]">
               <div className="text-center">
-                <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
+                <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
                   Get Appoinment
                 </h1>
               </div>
@@ -111,7 +111,7 @@ const Appointment = () => {
                 ></textarea>
                 <button
                   type="submit"
-                  className="w-full bg-PrimaryColor-0 border border-transparent font-medium font-Inter transition-all duration-500 hover:text-white text-TextColor-0 hover:border-white outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
+                  className="w-full bg-PrimaryColor-0 border border-transparent font-medium font-AlbertSans transition-all duration-500 hover:text-white text-TextColor-0 hover:border-white outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
                 >
                   Book Appionment <FaArrowRightLong />
                 </button>

@@ -56,10 +56,10 @@ const Service = () => {
     <section className="pt-28 relative z-10 before:absolute before:w-full before:h-[80%] before:-z-10 before:top-0 before:left-0 before:bg-[url('/public/images/service-bg2.png')] before:bg-cover before:bg-center before:bg-no-repeat">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Inter font-medium text-PrimaryColor-0">
+          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">
             OUR SERVICES
           </h5>
-          <h1 className="font-Inter font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
+          <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
             Professional echofy Services <br />
             What we Provide
           </h1>

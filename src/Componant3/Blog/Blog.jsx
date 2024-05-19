@@ -46,13 +46,13 @@ const Blog = () => {
     <section className="py-28">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Inter inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2 after:absolute after:top-1/2 after:right-0 after:w-6 after:h-3 after:bg-[url(/public/images/cleaning-shapes2.png)] after:bg-no-repeat after:bg-[inherit] after:-translate-y-1/2">
+          <h5 className="font-AlbertSans inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2 after:absolute after:top-1/2 after:right-0 after:w-6 after:h-3 after:bg-[url(/public/images/cleaning-shapes2.png)] after:bg-no-repeat after:bg-[inherit] after:-translate-y-1/2">
             LATEST NEWS
           </h5>
-          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
+          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
             Latest News & Blog
           </h1>
-          <p className="font-Poppins text-TextColor-0 font-light">
+          <p className="font-AlbertSans text-TextColor-0 font-light">
             Services we partners you as soon as possible your home or office
             <br />
             Just member Feel Free contact us based web develop expert.

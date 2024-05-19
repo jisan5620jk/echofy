@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Inter: ["Inter", "sans-serif"],
-        Poppins: ["Poppins", "sans-serif"],
+        AlbertSans: ["Albert Sans", "sans-serif"],
       },
       colors: {
         PrimaryColor: ["#79b900"],

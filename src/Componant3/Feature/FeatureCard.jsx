@@ -7,10 +7,10 @@ const FeatureCard = ({ featureIcon, featureTitle, featureDesc }) => {
         <img src={featureIcon} />
       </div>
       <div className="px-10 sm:px-0 lg:px-10 xl:px-0 sm:pl-[72px] md:pl-16 xl:pl-16 2xl:pl-[72px]">
-        <h5 className="font-Inter font-semibold text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+        <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
           {featureTitle}
         </h5>
-        <p className="font-Poppins text-TextColor-0 transition-all duration-500 group-hover:text-white mt-2">
+        <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white mt-2">
           {featureDesc}
         </p>
       </div>

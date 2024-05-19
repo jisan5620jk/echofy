@@ -1,6 +1,6 @@
 import { MdPhone } from "react-icons/md";
 import { Link } from "react-router-dom";
-import supportShape from "/public/images/address-thumb.png"
+import supportShape from "/public/images/address-thumb.png";
 
 const Support = () => {
   return (
@@ -12,7 +12,7 @@ const Support = () => {
             className="absolute bottom-0 w-[inherit] h-[inherit] left-1/2 hidden lg:block"
           />
           <div>
-            <h1 className="font-Inter font-bold text-xl leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
+            <h1 className="font-AlbertSans font-bold text-xl leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
               Please Call Us to Take the <br /> Extraordinary Service!
             </h1>
           </div>

@@ -137,10 +137,10 @@ const BlogGrid = () => {
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:items-center">
             <div>
               <div>
-                <h5 className="font-Inter font-medium text-SecondaryColor-0">
+                <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
                   LATEST BLOG
                 </h5>
-                <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
+                <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
                   Learn about our Latest <br /> News from Blog
                 </h1>
               </div>
@@ -189,16 +189,22 @@ const BlogGrid = () => {
       <div>
         <ul className="flex items-center gap-2 justify-center pb-[120px] pt-[80px]">
           <li>
-            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">01</button>
+            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              01
+            </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">02</button>
+            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              02
+            </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">03</button>
+            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              03
+            </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
               <FaAngleRight />
             </button>
           </li>

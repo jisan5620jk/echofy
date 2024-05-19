@@ -4,7 +4,7 @@ const Appoinment = () => {
   return (
     <div className="Container">
       <div className="text-center">
-        <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
+        <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
           Get A Free Appoinment
         </h1>
       </div>
@@ -41,7 +41,7 @@ const Appoinment = () => {
         </select>
         <button
           type="submit"
-          className="w-full bg-PrimaryColor-0 font-medium font-Inter transition-all duration-500 hover:text-white text-TextColor-0 border-none outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
+          className="w-full bg-PrimaryColor-0 font-medium font-AlbertSans transition-all duration-500 hover:text-white text-TextColor-0 border-none outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
         >
           Book Appionment <FaArrowRightLong />
         </button>

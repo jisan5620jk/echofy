@@ -23,13 +23,13 @@ const About = () => {
             />
           </div>
           <div>
-            <h5 className="font-Inter font-medium text-SecondaryColor-0">
+            <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
               ABOUT US
             </h5>
-            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
               Making Your House Clean <br /> For Looks As a New
             </h1>
-            <p className="font-Poppins text-TextColor-0 font-light">
+            <p className="font-AlbertSans text-TextColor-0 font-light">
               Competently repurpose go forward benefits without goal-oriented
               ROI conveniently target e-business opportunities whereas parallel
               task multimedia based web services
@@ -37,15 +37,15 @@ const About = () => {
             <div className="flex flex-col md:flex-row gap-8 justify-between mt-7">
               <div>
                 <ul>
-                  <li className="flex items-center gap-2 font-Inter text-HeadingColor-0 mb-[14px]">
+                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
                     <FaCircleCheck className="text-lg text-SecondaryColor-0" />
                     echofy Your Home or Office
                   </li>
-                  <li className="flex items-center gap-2 font-Inter text-HeadingColor-0 mb-[14px]">
+                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
                     <FaCircleCheck className="text-lg text-SecondaryColor-0" />
                     24/7 Emmergency Quality Services
                   </li>
-                  <li className="flex items-center gap-2 font-Inter text-HeadingColor-0 mb-[14px]">
+                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
                     <FaCircleCheck className="text-lg text-SecondaryColor-0" />
                     Online Booking System available
                   </li>
@@ -63,9 +63,9 @@ const About = () => {
                   start={-11}
                   end={12}
                   suffix="+"
-                  className="text-[36px] font-Inter font-bold text-HeadingColor-0"
+                  className="text-[36px] font-AlbertSans font-bold text-HeadingColor-0"
                 />
-                <p className="font-Poppins text-TextColor-0 font-light">
+                <p className="font-AlbertSans text-TextColor-0 font-light">
                   Years Experience
                 </p>
               </div>

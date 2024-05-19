@@ -22,18 +22,18 @@ const TestimonialCard = ({
             <li>{testiRatingIcon}</li>
             <li>{testiRatingIcon}</li>
           </ul>
-          <h5 className="font-Inter font-medium text-HeadingColor-0 text-xl mt-3 mb-2 transition-all duration-500 group-hover:text-white">
+          <h5 className="font-AlbertSans font-medium text-HeadingColor-0 text-xl mt-3 mb-2 transition-all duration-500 group-hover:text-white">
             {testiName}
           </h5>
-          <p className="font-Poppins text-[#788AC6] transition-all duration-500 group-hover:text-white text-[15px]">
+          <p className="font-AlbertSans text-[#788AC6] transition-all duration-500 group-hover:text-white text-[15px]">
             {testiDesignation}
           </p>
         </div>
       </div>
-      <h6 className="font-Inter font-medium text-SecondaryColor-0 text-lg mt-7 mb-5 transition-all duration-500 group-hover:text-white">
+      <h6 className="font-AlbertSans font-medium text-SecondaryColor-0 text-lg mt-7 mb-5 transition-all duration-500 group-hover:text-white">
         {testiTilte}
       </h6>
-      <p className="font-Poppins text-TextColor-0 font-light pb-12 transition-all duration-500 group-hover:text-white">
+      <p className="font-AlbertSans text-TextColor-0 font-light pb-12 transition-all duration-500 group-hover:text-white">
         {testiDesc}
       </p>
       <div className="absolute top-[60px] right-10 transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]">

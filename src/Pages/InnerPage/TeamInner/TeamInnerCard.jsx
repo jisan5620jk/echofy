@@ -10,10 +10,10 @@ const TeamInnerCard = ({ teamInnerThumb, teamInnerTitle, teamInnerDesig }) => {
           <img src={teamInnerThumb} className="w-full" />
         </div>
         <div className="w-10/12 -mt-[45px] bg-[#f4f4f8] rounded-e-md text-center pb-8 transition-all duration-500 relative z-10 before:absolute before:right-0 before:w-0 before:h-full before:rounded-e-md before:bg-white before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:-mt-[107px]">
-          <h5 className="font-Inter font-semibold text-HeadingColor-0 text-[22px] transition-all duration-500 pt-7">
+          <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[22px] transition-all duration-500 pt-7">
             {teamInnerTitle}
           </h5>
-          <p className="font-Poppins font-light text-TextColor-0 pt-[6px]">
+          <p className="font-AlbertSans font-light text-TextColor-0 pt-[6px]">
             {teamInnerDesig}
           </p>
           <ul className="-mt-[40px] transition-all duration-500 opacity-0 group-hover:mt-[22px] group-hover:border-white group-hover:opacity-100 flex justify-center items-center gap-2">
