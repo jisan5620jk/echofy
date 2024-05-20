@@ -80,6 +80,7 @@ export default {
           from: { transform: "rotate(0deg)" },
           to: { transform: "rotate(360deg)" },
         },
+        
       },
       animation: {
         movebtn: "movebtn 3s ease-in-out infinite",

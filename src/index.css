@@ -21,11 +21,11 @@ body {
 }
 
 .header-btn {
-  @apply inline-block overflow-hidden bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-[30px] py-[15px] relative rounded-full text-[15px] text-white font-medium font-AlbertSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
+  @apply inline-block overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-[30px] py-[12px] relative rounded-full text-base text-white font-AlbertSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
 }
 
 .primary-btn {
-  @apply flex items-center gap-2 overflow-hidden bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-[30px] py-[15px] relative rounded-full text-[15px] text-white font-medium font-AlbertSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
+  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[14px] relative rounded-full text-[17px] text-white font-medium font-AlbertSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
 }
 
 .is-sticky {

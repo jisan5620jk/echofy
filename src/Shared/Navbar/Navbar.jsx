@@ -12,8 +12,9 @@ import { BiChevronDown } from "react-icons/bi";
 import Logo from "/public/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
-import { BsEnvelope } from "react-icons/bs";
-import { IoLocationOutline, IoSearch } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { CiLocationOn } from "react-icons/ci";
 
 const Navbar = () => {
   //sticky
@@ -51,15 +52,15 @@ const Navbar = () => {
       <header className="bg-transparent overflow-hidden md:block">
         <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
-            <p className="font-AlbertSans text-[15px] text-white md:flex items-center gap-1 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
-              <IoLocationOutline className="text-xl relative bottom-[2px]" />
+            <p className="font-AlbertSans text-[15px] text-white md:flex items-center gap-1">
+              <CiLocationOn className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
               102/B New Market, Sandigo-USA
             </p>
             <Link
               to={"/"}
               className="font-AlbertSans text-[15px] text-white sm:flex items-center gap-2 hidden"
             >
-              <BsEnvelope size={"16"} className="text-PrimaryColor-0" />
+              <HiOutlineMailOpen size={"16"} className="text-PrimaryColor-0" />
               example@gmail.com
             </Link>
           </div>
