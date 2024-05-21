@@ -1,88 +1,48 @@
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
-import { FaArrowRightLong, FaCircleCheck } from "react-icons/fa6";
-import aboutThumb from "/public/images/about-thumb.png";
-import aboutShape from "/public/images/about-shape2.png";
-import icon from "/public/images/counter-icon.png";
+import aboutThumb from "/public/images/about.png";
+import aboutAward from "/public/images/about-award.png";
+import aboutIcon from "/public/images/about-icon.png";
+import aboutIcon2 from "/public/images/about-icon2.png";
+import buttonShape from "/public/images/button-shape-1.png";
 import { Link } from "react-router-dom";
-import CountUp from "react-countup";
-import { CiPlay1 } from "react-icons/ci";
 
 const About = () => {
-  const [toggler, setToggler] = useState(false);
   return (
     <section className="py-[120px]">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-24 items-center">
           <div className="relative">
             <img src={aboutThumb} />
-            <div className="absolute top-[4.5rem] right-[3rem]">
-              <button
-                className="h-[90px] w-[90px] rounded-full bg-SecondaryColor-0 border-4 border-white text-white flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-SecondaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping"
-                onClick={() => setToggler(!toggler)}
-              >
-                <CiPlay1 size={"30"} />
-              </button>
-              <FsLightbox
-                toggler={toggler}
-                sources={[
-                  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-                ]}
-              />
-            </div>
+            <img
+              src={aboutAward}
+              className="absolute -bottom-6 left-0 animate-movebtn"
+            />
           </div>
           <div className="relative">
-            <img
-              src={aboutShape}
-              className="absolute -top-6 right-0 animate-rotational"
-            />
-            <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
-              ABOUT US
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">
+              ABOUT ECHOFY
             </h5>
             <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
-              Making Your House Clean For Looks As a New
+              Environmental Sustainable <br />
+              Forever Green Future
             </h1>
-            <p className="font-AlbertSans text-TextColor-0 font-light">
-              Competently repurpose go forward benefits without goal-oriented
-              ROI conveniently target e-business opportunities whereas parallel
-              task multimedia based web services
-            </p>
-            <div className="flex flex-col md:flex-row gap-8 justify-between mt-7">
+            <div className="flex gap-6">
               <div>
-                <ul>
-                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    echofy Your Home or Office
-                  </li>
-                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    24/7 Emmergency Quality Services
-                  </li>
-                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    Online Booking System available
-                  </li>
-                </ul>
-                <Link to={"/about"}>
-                  <button className="primary-btn2 mt-9">
-                    More About Us
-                    <FaArrowRightLong size={"20"} />
-                  </button>
-                </Link>
+                <img src={aboutIcon} />
               </div>
-              <div className="bg-PrimaryColor-0 rounded-lg w-[192px] h-[192px] flex justify-center items-center flex-col">
-                <img src={icon} />
-                <CountUp
-                  start={-11}
-                  end={12}
-                  suffix="+"
-                  className="text-[36px] font-AlbertSans font-bold text-HeadingColor-0"
-                />
-                <p className="font-AlbertSans text-TextColor-0 font-light">
-                  Years Experience
+              <div className="flex-1">
+                <h5 className="font-AlbertSans font-semibold text-2xl text-HeadingColor-0">Economic Benifits</h5>
+                <p className="font-AlbertSans text-TextColor-0">
+                  Alternative innovation after ethical to network environmental
+                  whiteboard transparent growth natural done.
                 </p>
               </div>
             </div>
+            <Link to={"/about"}>
+              <button className="primary-btn">
+                {`More About`}
+                <img src={buttonShape} />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

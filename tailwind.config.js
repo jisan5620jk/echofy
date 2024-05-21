@@ -28,9 +28,8 @@ export default {
       },
       keyframes: {
         movebtn: {
-          "0%,50%, 100%": { transform: "translateY(0px)" },
-          "25%": { transform: "translateY(10px)" },
-          "75%": { transform: "translateY(-10px)" },
+          "0%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(10px)" },
         },
         dance7: {
           "0%": { transform: "translateX(0px)" },
@@ -83,7 +82,7 @@ export default {
         
       },
       animation: {
-        movebtn: "movebtn 3s ease-in-out infinite",
+        movebtn: "movebtn 3s linear infinite",
         wiggle: "wiggle 5s ease-in-out infinite",
         rotational: "rotational 10s linear infinite",
         zoomInOut: "zoomInOut 2s alternate infinite",
