@@ -13,7 +13,7 @@ export default {
         TextColor: ["#868681"],
         BodyBg: ["#f3f4f8"],
         BorderColor: ["#243f38"],
-        BorderColor2: ["#223FA2"],
+        BorderColor2: ["#dee4da"],
         BorderColor3: ["#83A8FF"],
       },
       screens: {
@@ -79,7 +79,6 @@ export default {
           from: { transform: "rotate(0deg)" },
           to: { transform: "rotate(360deg)" },
         },
-        
       },
       animation: {
         movebtn: "movebtn 3s linear infinite",

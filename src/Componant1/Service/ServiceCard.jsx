@@ -2,54 +2,36 @@
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({
-  serviceThumb,
+  serviceImg,
   serviceIcon,
-  serviceShape,
+  serviceButton,
   serviceTitle,
-  serviceListIcon,
-  serviceListContent,
-  serviceListContent2,
-  serviceUrl,
-  buttonContent,
-  buttonIcon,
+  serviceDesc,
+  serviceShape,
 }) => {
   return (
-    <div className="group">
-      <div>
-        <img src={serviceThumb} className="w-full" />
+    <div className="p-6 rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:h-full hover:before:top-0">
+      <div className="overflow-hidden relative z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:before:opacity-0">
+        <img src={serviceImg} />
       </div>
-      <div className="w-11/12 bg-HoverColor-0 rounded-ee-md rounded-r-md rounded-b-md px-8 pb-6 -mt-8 relative z-10 before:absolute before:right-0 before:w-0 before:h-full before:rounded-ee-md before:rounded-r-md before:rounded-b-md before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0">
-        <img
-          src={serviceShape}
-          className="absolute bottom-10 right-10 animate-dance2 -z-10 opacity-0 transition-all
-           duration-500 group-hover:opacity-100"
-        />
-        <div className="w-[80px] h-[80px] rounded-full bg-white transition-all duration-500 flex justify-center items-center group-hover:bg-PrimaryColor-0 group-hover:rotate-[360deg] relative -top-10">
+      <div className="flex justify-between items-center mt-8 mb-6">
+        <div>
           <img src={serviceIcon} />
         </div>
-        <h5 className="font-AlbertSans font-semibold text-white xl:text-xl 2xl:text-2xl transition-all duration-500 group-hover:text-PrimaryColor-0 -mt-3 mb-5">
-          {serviceTitle}
-        </h5>
-        <ul className="border-b border-BorderColor2-0 mb-6 transition-all duration-500 group-hover:border-white">
-          <li className="flex items-center gap-2 text-[#B8B9D5] font-AlbertSans mb-3 transition-all duration-500 group-hover:text-white">
-            <div className="text-PrimaryColor-0">{serviceListIcon}</div>
-            {serviceListContent}
-          </li>
-          <li className="flex items-center gap-2 text-[#B8B9D5] font-AlbertSans mb-6 transition-all duration-500 group-hover:text-white">
-            <div className="text-PrimaryColor-0">{serviceListIcon}</div>
-            {serviceListContent2}
-          </li>
-        </ul>
-        <Link to={serviceUrl}>
-          <button
-            className="text-white font-medium font-AlbertSans flex items-center
-           gap-2"
-          >
-            {buttonContent}
-            {buttonIcon}
+        <Link to={"/"}>
+          <button className="w-[50px] h-[50px] rounded-full bg-white text-PrimaryColor-0 text-2xl flex justify-center items-center transition-all duration-500 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 group-hover:text-white group-hover:before:scale-100">
+            {serviceButton}
           </button>
         </Link>
       </div>
+      <Link to={"/"}>
+        <button className="font-AlbertSans font-semibold text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white relative before:absolute before:bottom-0 before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">{serviceTitle}</button>
+      </Link>
+      <p className="font-AlbertSans text-TextColor-0 pt-6 pb-[10px]">{serviceDesc}</p>
+      <img
+        src={serviceShape}
+        className="absolute -z-10 rotate-90 -bottom-28 -right-28 transition-all duration-500 group-hover:-bottom-[14px] group-hover:-right-2"
+      />
     </div>
   );
 };
