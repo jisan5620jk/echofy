@@ -13,6 +13,8 @@ import buttonShape from "/public/images/button-shape-1.png";
 import bannerImg from "/public/images/banner-img.png";
 import { LiaPlayCircleSolid } from "react-icons/lia";
 import "./banner.css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
@@ -25,9 +27,15 @@ const Banner = () => {
     },
     duration: 3000,
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
     <div className="relative">
-      <Swiper {...settings}>
+      <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
         <SwiperSlide>
           <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[960px] flex items-center">
             <div className="Container">

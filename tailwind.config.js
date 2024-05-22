@@ -29,7 +29,7 @@ export default {
       keyframes: {
         movebtn: {
           "0%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(10px)" },
+          "50%": { transform: "translateY(20px)" },
         },
         dance7: {
           "0%": { transform: "translateX(0px)" },

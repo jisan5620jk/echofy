@@ -41,51 +41,44 @@ body {
 span.swiper-pagination-bullet {
   background: #316fff !important;
   opacity: 1 !important;
-  height: 10px !important;
-  width: 10px !important;
+  height: 30px !important;
+  width: 30px !important;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #ffc702 !important;
 }
 
-.portfolio2 span.swiper-pagination-bullet {
+span.swiper-pagination-bullet {
   height: 12px !important;
   width: 12px !important;
   background: #d4e2fd !important;
 }
 
-.portfolio2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #316fff !important;
 }
 
-.portfolio .swiper-pagination {
-  bottom: 0 !important;
+/* Progress Bar */
+
+.progress-bar-rect-wrap-container {
+  position: relative;
+  z-index: 999;
 }
 
-.portfolio span.swiper-pagination-bullet {
-  background: #ccd9f9 !important;
-  height: 8px !important;
-  width: 40px !important;
-  border-radius: 5px;
+.rect-progress-bar-percent {
+  @apply !m-0 leading-[10px] absolute !text-[#1b3434] font-AlbertSans font-medium left-[88%] -top-[28px];
 }
 
-.portfolio span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #316fff !important;
+.skill2 .rect-progress-bar-percent {
+  @apply !m-0 leading-[10px] absolute !text-[#1b3434] font-AlbertSans font-medium left-[78%] -top-[28px];
 }
 
-.swiper-slide:hover .portfolio-content,
-.swiper-slide.swiper-slide-active .portfolio-content {
-  bottom: 0;
+.rect-progress-bar-percent {
+  margin: 0 !important;
+  line-height: 10px;
 }
 
-.swiper-slide:hover .portfolio-content2,
-.swiper-slide.swiper-slide-active .portfolio-content2 {
-  bottom: -40px;
-}
-
-.swiper-slide:hover .portfolio-thumb-title,
-.swiper-slide.swiper-slide-active .portfolio-thumb-title {
-  left: 25px;
-  opacity: 1;
+.react-tabs__tab--selected::before {
+  width: 20px !important;
 }
