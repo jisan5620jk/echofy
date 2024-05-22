@@ -85,7 +85,7 @@ export default {
         wiggle: "wiggle 5s ease-in-out infinite",
         rotational: "rotational 10s linear infinite",
         zoomInOut: "zoomInOut 2s alternate infinite",
-        dance2: "dance2 2s alternate infinite",
+        dance2: "dance2 3s alternate infinite",
         dance3: "dance3 2s alternate infinite",
         dance7: "dance7 4s alternate infinite",
         swing: "swing 1s ease-in-out 1s forwards infinite alternate",

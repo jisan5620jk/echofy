@@ -1,6 +1,7 @@
 import subTitleShape from "/public/images/sub-title-shape.png";
 import skillThumb from "/public/images/skill-thumb.png";
 import skillShape from "/public/images/skill-shape.png";
+import skillShape2 from "/public/images/skill-shape2.png";
 import { GiCheckMark } from "react-icons/gi";
 import ProgressBar from "react-animated-progress-bar";
 
@@ -95,9 +96,10 @@ const Skill = () => {
               />
             </div>
           </div>
-          <div className="relative">
+          <div className="relative z-10">
             <img src={skillThumb} className="ml-16"/>
             <img src={skillShape} className="absolute top-0 left-10 animate-movebtn"/>
+            <img src={skillShape2} className="absolute -z-10 bottom-0 right-0 animate-dance2"/>
           </div>
         </div>
       </div>
