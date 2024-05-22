@@ -32,32 +32,6 @@ body {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-black backdrop-blur-md animate-headerSlideDown;
 }
 
-/* Pagination */
-
-.swiper-pagination {
-  bottom: 0 !important;
-}
-
-span.swiper-pagination-bullet {
-  background: #316fff !important;
-  opacity: 1 !important;
-  height: 30px !important;
-  width: 30px !important;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #ffc702 !important;
-}
-
-span.swiper-pagination-bullet {
-  height: 12px !important;
-  width: 12px !important;
-  background: #d4e2fd !important;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #316fff !important;
-}
 
 /* Progress Bar */
 
@@ -81,4 +55,18 @@ span.swiper-pagination-bullet {
 
 .react-tabs__tab--selected::before {
   width: 20px !important;
+}
+
+
+/* Portfolio */
+
+.swiper-slide:hover .project-content,
+.swiper-slide.swiper-slide-active .project-content {
+  bottom: -40px;
+}
+
+.swiper-slide:hover .project-thumb-title,
+.swiper-slide.swiper-slide-active .project-thumb-title {
+  left: 25px;
+  opacity: 1;
 }

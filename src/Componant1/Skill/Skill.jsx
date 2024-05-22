@@ -1,5 +1,6 @@
 import subTitleShape from "/public/images/sub-title-shape.png";
 import skillThumb from "/public/images/skill-thumb.png";
+import skillMainShape from "/public/images/skill-main-shape.png";
 import skillShape from "/public/images/skill-shape.png";
 import skillShape2 from "/public/images/skill-shape2.png";
 import { GiCheckMark } from "react-icons/gi";
@@ -7,12 +8,17 @@ import ProgressBar from "react-animated-progress-bar";
 
 const Skill = () => {
   return (
-    <section className="py-[120px] bg-[#f5f8ed]">
+    <section className="py-[120px] bg-[#f5f8ed] relative overflow-hidden">
+      <img
+        src={skillMainShape}
+        draggable="false"
+        className="absolute -z-10 top-0 left-0 animate-dance2 hidden xl:block"
+      />
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
           <div>
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
-              <img src={subTitleShape} />
+              <img src={subTitleShape} draggable="false" />
               OUR SKILLS
             </h5>
             <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
@@ -97,9 +103,15 @@ const Skill = () => {
             </div>
           </div>
           <div className="relative z-10">
-            <img src={skillThumb} className="ml-16"/>
-            <img src={skillShape} className="absolute top-0 left-10 animate-movebtn"/>
-            <img src={skillShape2} className="absolute -z-10 bottom-0 right-0 animate-dance2"/>
+            <img src={skillThumb} draggable="false" className="ml-16" />
+            <img
+              src={skillShape} draggable="false"
+              className="absolute top-0 left-10 animate-movebtn"
+            />
+            <img
+              src={skillShape2} draggable="false"
+              className="absolute -z-10 bottom-0 right-0 animate-dance2"
+            />
           </div>
         </div>
       </div>
