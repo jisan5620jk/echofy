@@ -68,7 +68,7 @@ export default {
           "100%": { transform: "scale(1.2)" },
         },
         swing: {
-          "0%": { transform: "rotate(25deg)" },
+          "0%": { transform: "rotate(-25deg)" },
           "100%": { transform: "rotate(0deg)" },
         },
         wiggle: {
@@ -79,11 +79,16 @@ export default {
           from: { transform: "rotate(0deg)" },
           to: { transform: "rotate(360deg)" },
         },
+        rotate: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         movebtn: "movebtn 3s linear infinite",
         wiggle: "wiggle 5s ease-in-out infinite",
         rotational: "rotational 10s linear infinite",
+        rotate: "rotate 20s linear infinite",
         zoomInOut: "zoomInOut 2s alternate infinite",
         dance2: "dance2 3s alternate infinite",
         dance3: "dance3 2s alternate infinite",

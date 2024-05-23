@@ -2,7 +2,7 @@
 const ProcessCard = ({ processIcon, processTitle, boxShape, processDesc }) => {
   return (
     <div className="text-center group relative">
-      <div className="inline-block m-auto relative z-10 before:absolute before:top-4 before:-left-[10px] before:w-[200px] before:h-[200px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotational">
+      <div className="inline-block m-auto relative z-10 before:absolute before:top-4 before:-left-[10px] before:w-[200px] before:h-[200px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotate">
         <img src={processIcon} draggable="false" />
         <img
           src={boxShape}

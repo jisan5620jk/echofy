@@ -70,3 +70,13 @@ body {
   left: 25px;
   opacity: 1;
 }
+
+/* Pagination */
+
+.testimonial .swiper-pagination {
+    bottom: 6px !important;
+    top: inherit !important;
+    left: 50% !important;
+    flex-direction: row !important;
+    justify-content: center;
+}

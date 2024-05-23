@@ -18,7 +18,7 @@ const ProjectCard = ({
         <img
           src={projectShape}
           draggable="false"
-          className="absolute -top-80 -right-80 animate-rotational transition-all
+          className="absolute -top-80 -right-80 animate-rotate transition-all
            duration-500 group-hover:-top-[180px] group-hover:-right-[190px]"
         />
       </div>

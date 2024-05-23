@@ -4,38 +4,46 @@ const TestimonialCard = ({
   testiRatingIcon,
   testiName,
   testiDesignation,
-  testiTilte,
   testiDesc,
-  testiIcon,
+  testiShape,
 }) => {
   return (
-    <div className="px-5 sm:px-10 relative bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-      <div className="flex flex-col lg:flex-row lg:items-center gap-5 pt-14">
+    <div className="px-5 sm:px-10 pt-12 bg-white relative bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
+      <div className="flex flex-col lg:flex-row gap-8">
         <div>
           <img src={testiImg} />
         </div>
-        <div>
-          <ul className="flex gap-1 items-center text-xl text-PrimaryColor-0">
-            <li>{testiRatingIcon}</li>
-            <li>{testiRatingIcon}</li>
-            <li>{testiRatingIcon}</li>
-            <li>{testiRatingIcon}</li>
-            <li>{testiRatingIcon}</li>
+        <div className="flex-1">
+          <ul className="flex gap-[6px] items-center pb-6">
+            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
+              {testiRatingIcon}
+            </li>
+            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
+              {testiRatingIcon}
+            </li>
+            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
+              {testiRatingIcon}
+            </li>
+            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
+              {testiRatingIcon}
+            </li>
+            <li className="w-[18px] h-[18px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center transition-all duration-500 group-hover:bg-white group-hover:text-PrimaryColor-0">
+              {testiRatingIcon}
+            </li>
           </ul>
-          <h5 className="font-AlbertSans font-medium text-white text-xl mt-3 mb-2">
+          <p className="font-AlbertSans text-lg text-TextColor-0 transition-all duration-500 group-hover:text-white">
+            {testiDesc}
+          </p>
+          <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white text-2xl mt-7 mb-[6px]">
             {testiName}
           </h5>
-          <p className="font-AlbertSans text-[#788AC6] transition-all duration-500 group-hover:text-white text-[15px]">
+          <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white pb-12">
             {testiDesignation}
           </p>
         </div>
       </div>
-      <h6 className="font-AlbertSans font-medium text-PrimaryColor-0 text-lg mt-7 mb-5">
-        {testiTilte}
-      </h6>
-      <p className="font-AlbertSans text-white font-light pb-12">{testiDesc}</p>
-      <div className="absolute top-[60px] right-10">
-        <img src={testiIcon} />
+      <div className="absolute bottom-16 right-10 transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]">
+        <img src={testiShape} />
       </div>
     </div>
   );

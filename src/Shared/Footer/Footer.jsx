@@ -13,45 +13,34 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="bg-HeadingColor-0 relative z-10">
+    <footer className="bg-HeadingColor-0 relative z-10 pt-28">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:items-center bg-[url('/public/images/subscribe-bg.png')] bg-bottom sm:bg-right lg:bg-center md:gap-7 lg:gap-0 bg-cover bg-no-repeat py-[30px] px-5 sm:px-10 rounded-b-3xl mb-[120px]">
-          <div className="col-span-1">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-              <div className="flex-1">
-                <p className="text-HeadingColor-0 font-AlbertSans font-light text-[15px]">
-                  Call Us Now
-                </p>
-                <Link to={"/"}>
-                  <button className="font-AlbertSans text-left font-semibold text-HeadingColor-0 text-[22px] mt-1">
-                    +980 765 (546) 900
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-span-2 text-left lg:text-right flex flex-col lg:flex-row gap-7 lg:gap-4 xl:gap-[70px] justify-end lg:items-center">
-            <h4 className="font-AlbertSans font-semibold text-white text-[28px]">
-              Subscribe Now
-            </h4>
-            <form action="#" method="post" className="relative">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter E-Mail*"
-                required
-                className="w-full lg:w-[300px] 2xl:w-[394px] h-[56px] rounded-md bg-white text-TextColor-0 placeholder:text-TextColor-0 px-5 py-2"
-              />
-              <div className="absolute right-0 top-0">
-                <button
-                  type="submit"
-                  className="w-[122px] h-[56px] bg-HeadingColor-0 font-medium font-AlbertSans text-white border-none outline-0 rounded-r-md flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
-                >
-                  Subscribe
+        <div className="flex items-center justify-between bg-[url('/public/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center rounded-md p-10">
+          <div><h2>Stay With Us On Social</h2></div>
+          <div className="flex items-center gap-3">
+            <h5>Follow Us:</h5>
+            <ul className="flex gap-3">
+              <li>
+                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaFacebookF />
                 </button>
-              </div>
-            </form>
+              </li>
+              <li>
+                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaXTwitter />
+                </button>
+              </li>
+              <li>
+                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaLinkedinIn />
+                </button>
+              </li>
+              <li>
+                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                  <FaPinterestP />
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">

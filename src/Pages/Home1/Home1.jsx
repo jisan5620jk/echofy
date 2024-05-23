@@ -8,6 +8,7 @@ import Service from "../../Componant1/Service/Service";
 import Skill from "../../Componant1/Skill/Skill";
 import Process from "../../Componant1/Process/Process";
 import Testimonial from "../../Componant1/Testimonial/Testimonial";
+import Brand from "../../Componant1/Support/Brand";
 
 const Home1 = () => {
   return (
@@ -22,6 +23,7 @@ const Home1 = () => {
       <Project />
       <Process />
       <Testimonial />
+      <Brand />
     </>
   );
 };

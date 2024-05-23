@@ -1,8 +1,14 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-thumb-2.png";
-import testiImg2 from "/public/images/testi-thumb.png";
-import testiIcon from "/public/images/testi-icon.png";
+import testiImg from "/public/images/testi-profile.png";
+import testiImg2 from "/public/images/testi-profile2.png";
+import testiShape from "/public/images/envato.png";
+import testiShape2 from "/public/images/amazon.png";
+import testiMainShape1 from "/public/images/testi-shape-1.png";
+import testiMainShape2 from "/public/images/testi-shape-2.png";
+import testiMainShape3 from "/public/images/testi-shape-3.png";
+import testiMainShape4 from "/public/images/testi-shape-4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import subTitleShape from "/public/images/sub-title-shape.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -14,37 +20,37 @@ const testiData = [
     id: 1,
     testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D. Alexon",
+    testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
+    testiDesc: `Appropriately administrate proactive value with to
+                niche markets. Dramatically target market position
+                idea after high quality best practice. Dramatically 
+                synergize open source service`,
+    testiShape: testiShape,
   },
   {
     id: 2,
     testiImg: testiImg2,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
+    testiName: "Jhon D. Alexon",
     testiDesignation: "UI/UX Designer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
+    testiDesc: `Appropriately administrate proactive value with to
+                niche markets. Dramatically target market position
+                idea after high quality best practice. Dramatically 
+                synergize open source service`,
+    testiShape: testiShape2,
   },
   {
     id: 3,
     testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D. Alexon",
+    testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
+    testiDesc: `Appropriately administrate proactive value with to
+                niche markets. Dramatically target market position
+                idea after high quality best practice. Dramatically 
+                synergize open source service`,
+    testiShape: testiShape,
   },
 ];
 
@@ -76,17 +82,40 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="bg-[url('/public/images/testi-bg.png')] bg-cover bg-center bg-no-repeat py-28">
+    <section className="py-28 bg-[#f5f8ed] relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/public/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
+      <img
+        src={testiMainShape1}
+        draggable="false"
+        className="absolute top-44 right-[5%] animate-zoomInOut"
+      />
+      <img
+        src={testiMainShape2}
+        draggable="false"
+        className="absolute top-16 right-[20%] animate-zoomInOut"
+      />
+      <img
+        src={testiMainShape3}
+        draggable="false"
+        className="absolute top-44 left-[5%] animate-zoomInOut"
+      />
+      <img
+        src={testiMainShape4}
+        draggable="false"
+        className="absolute top-16 left-[20%] animate-zoomInOut"
+      />
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">
+          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
+            <img src={subTitleShape} draggable="false" />
             TESTIMONIALS
           </h5>
-          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
-            Our Customer’s Feedback
+          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+            Clients Best Feedback About
+            <br />
+            Echofy Provission
           </h1>
         </div>
-        <div className="mt-[40px]">
+        <div className="mt-[46px]">
           <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             <div>
               {testiData.map(
@@ -96,9 +125,8 @@ const Testimonial = () => {
                   testiRatingIcon,
                   testiName,
                   testiDesignation,
-                  testiTitle,
                   testiDesc,
-                  testiIcon,
+                  testiShape,
                 }) => {
                   return (
                     <SwiperSlide key={id}>
@@ -108,9 +136,8 @@ const Testimonial = () => {
                           testiRatingIcon={testiRatingIcon}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
-                          testiTilte={testiTitle}
                           testiDesc={testiDesc}
-                          testiIcon={testiIcon}
+                          testiShape={testiShape}
                         />
                       </div>
                     </SwiperSlide>
