@@ -1,54 +1,57 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRight, FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
-import ProjectThumb from "/public/images/project-img.png";
-import ProjectThumb2 from "/public/images/project-img2.png";
-import ProjectThumb3 from "/public/images/project-img3.png";
+import { FaArrowRightLong } from "react-icons/fa6";
+import projectThumb from "/public/images/project-img.png";
+import projectThumb2 from "/public/images/project-img2.png";
+import projectThumb3 from "/public/images/project-img3.png";
+import projectShape from "/public/images/project-shape.png";
+import projectContentShape from "/public/images/project-content-shape.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import subTitleShape from "/public/images/sub-title-shape.png";
 import "swiper/css";
-import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
+import ProjectNavigation from "./ProjectNavigation";
 
 const ProjectData = [
   {
     id: 1,
-    ProjectThumb: ProjectThumb,
-    thumbTitle: "Cleaning",
-    ProjectLocateIcon: <FaLocationDot />,
-    ProjectLocation: "Sandigo, USA",
-    ProjectTitle: "House Floor Cleaning",
-    ProjectUrl: "/projectDetails",
-    ProjectIcon: <FaArrowRight />,
-  },
-  {
+    projectThumb: projectThumb,
+    projectSubTitle: "Climate",
+    projectTitle: "Cleaning Forest",
+    projectUrl: "/projectDetails",
+    buttonTitle: "View Details",
+    buttonIcon: <FaArrowRightLong />,
+    projectContentShape: projectContentShape,
+    projectShape: projectShape,
+  },  {
     id: 2,
-    ProjectThumb: ProjectThumb2,
-    thumbTitle: "Cleaning",
-    ProjectLocateIcon: <FaLocationDot />,
-    ProjectLocation: "Sandigo, USA",
-    ProjectTitle: "House Floor Cleaning",
-    ProjectUrl: "/projectDetails",
-    ProjectIcon: <FaArrowRight />,
-  },
-  {
+    projectThumb: projectThumb2,
+    projectSubTitle: "Environment",
+    projectTitle: "Tree Plantation",
+    projectUrl: "/projectDetails",
+    buttonTitle: "View Details",
+    buttonIcon: <FaArrowRightLong />,
+    projectContentShape: projectContentShape,
+    projectShape: projectShape,
+  },  {
     id: 3,
-    ProjectThumb: ProjectThumb3,
-    thumbTitle: "Cleaning",
-    ProjectLocateIcon: <FaLocationDot />,
-    ProjectLocation: "Sandigo, USA",
-    ProjectTitle: "House Floor Cleaning",
-    ProjectUrl: "/projectDetails",
-    ProjectIcon: <FaArrowRight />,
-  },
-  {
+    projectThumb: projectThumb3,
+    projectSubTitle: "Recycling",
+    projectTitle: "Plastic Recycling",
+    projectUrl: "/projectDetails",
+    buttonTitle: "View Details",
+    buttonIcon: <FaArrowRightLong />,
+    projectContentShape: projectContentShape,
+    projectShape: projectShape,
+  },  {
     id: 4,
-    ProjectThumb: ProjectThumb,
-    thumbTitle: "Cleaning",
-    ProjectLocateIcon: <FaLocationDot />,
-    ProjectLocation: "Sandigo, USA",
-    ProjectTitle: "House Floor Cleaning",
-    ProjectUrl: "/projectDetails",
-    ProjectIcon: <FaArrowRight />,
+    projectThumb: projectThumb,
+    projectSubTitle: "Climate",
+    projectTitle: "Cleaning Forest",
+    projectUrl: "/projectDetails",
+    buttonTitle: "View Details",
+    buttonIcon: <FaArrowRightLong />,
+    projectContentShape: projectContentShape,
+    projectShape: projectShape,
   },
 ];
 
@@ -76,43 +79,45 @@ const Project = () => {
     },
   };
   return (
-    <section className="bg-[url('/public/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 Project">
+    <section className="bg-[url('/public/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
       <div className="Container">
-        <div className="md:-mb-[11.2rem]">
+        <div className="md:-mb-[6.2rem]">
           <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
             <img src={subTitleShape} draggable="false" />
-            OUR SERVICES
+            OUR PROJECTS
           </h5>
-          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3 border-b border-BorderColor2-0 pb-9">
-            Echofy Provide Environment <br />
-            Best Leading Services
+          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+            Finished the Latest Leading <br />
+            Environmental Works
           </h1>
         </div>
-        <div className="mt-[60px]">
+        <div className="">
           <Swiper {...settings}>
             <div>
               {ProjectData.map(
                 ({
                   id,
-                  ProjectThumb,
-                  thumbTitle,
-                  ProjectLocateIcon,
-                  ProjectLocation,
-                  ProjectUrl,
-                  ProjectTitle,
-                  ProjectIcon,
+                  projectThumb,
+                  projectShape,
+                  projectContentShape,
+                  projectSubTitle,
+                  projectTitle,
+                  projectUrl,
+                  buttonTitle,
+                  buttonIcon,
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pt-[180px]">
+                      <div className="pt-[144px]">
                         <ProjectCard
-                          ProjectThumb={ProjectThumb}
-                          thumbTitle={thumbTitle}
-                          ProjectLocateIcon={ProjectLocateIcon}
-                          ProjectLocation={ProjectLocation}
-                          ProjectUrl={ProjectUrl}
-                          ProjectTitle={ProjectTitle}
-                          ProjectIcon={ProjectIcon}
+                          projectThumb={projectThumb}
+                          projectContentShape={projectContentShape}
+                          projectShape={projectShape}
+                          projectSubTitle={projectSubTitle}
+                          projectTitle={projectTitle}
+                          projectUrl={projectUrl}
+                          buttonTitle={buttonTitle}
+                          buttonIcon={buttonIcon}
                         />
                       </div>
                     </SwiperSlide>
@@ -120,6 +125,7 @@ const Project = () => {
                 }
               )}
             </div>
+            <ProjectNavigation />
           </Swiper>
         </div>
       </div>

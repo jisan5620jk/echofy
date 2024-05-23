@@ -2,36 +2,44 @@
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({
-  ProjectThumb,
-  thumbTitle,
-  ProjectLocateIcon,
-  ProjectLocation,
-  ProjectTitle,
-  ProjectUrl,
-  ProjectIcon,
+  projectThumb,
+  projectSubTitle,
+  projectShape,
+  projectContentShape,
+  projectTitle,
+  projectUrl,
+  buttonTitle,
+  buttonIcon,
 }) => {
   return (
-    <div>
-      <div className="relative z-10 overflow-hidden">
-        <img src={ProjectThumb} />
-        <h6 className="font-AlbertSans font-medium text-[15px] text-HeadingColor-0 px-[22px] py-2 rounded-full bg-PrimaryColor-0 inline-block absolute top-6 -left-full transition-all duration-500 opacity-0 Project-thumb-title">
-          {thumbTitle}
+    <div className="relative z-10 group rounded-md overflow-hidden">
+      <div className="overflow-hidden relative z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:before:opacity-0">
+        <img src={projectThumb} draggable="false" />
+        <img
+          src={projectShape}
+          draggable="false"
+          className="absolute -top-80 -right-80 animate-rotational transition-all
+           duration-500 group-hover:-top-[180px] group-hover:-right-[190px]"
+        />
+      </div>
+      <div className="w-11/12 -mt-[42px] bg-[#f5f8ed] rounded-md overflow-hidden px-4 md:px-8 pb-8 transition-all duration-500 relative z-10 before:absolute before:left-0 before:w-[5px] before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:-mt-[86px]">
+        <img
+          src={projectContentShape}
+          draggable="false"
+          className="absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
+           duration-500 group-hover:opacity-100"
+        />
+        <h6 className="font-AlbertSans font-medium text-TextColor-0 transition-all duration-500 group-hover:text-white pt-[30px]">
+          {projectSubTitle}
         </h6>
-        <div className="project-content bg-SecondaryColor-0 rounded-s-md rounded-e-md border-b-4 border-PrimaryColor-0 absolute -bottom-full transition-all duration-500 left-0 flex justify-between items-center w-11/12 pt-7 px-4 lg:px-6 2xl:px-[30px] pb-8">
-          <div>
-            <p className="flex items-center gap-2 text-white font-AlbertSans text-sm">
-              <span className="text-base">{ProjectLocateIcon}</span>
-              {ProjectLocation}
-            </p>
-            <Link to={ProjectUrl}>
-              <button className="font-AlbertSans font-semibold text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-white mt-4 text-left">
-                {ProjectTitle}
-              </button>
-            </Link>
-          </div>
-          <Link to={ProjectUrl}>
-            <button className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-HeadingColor-0 bg-PrimaryColor-0 -rotate-45">
-              {ProjectIcon}
+        <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[26px] transition-all duration-500 group-hover:text-white pt-1">
+          {projectTitle}
+        </h5>
+        <div className="-mt-[42px] transition-all duration-500 opacity-0 group-hover:mt-0 group-hover:border-white group-hover:opacity-100">
+          <Link to={projectUrl}>
+            <button className="font-AlbertSans font-medium text-white text-[17px] flex gap-2 items-center pt-3">
+              {buttonTitle}
+              {buttonIcon}
             </button>
           </Link>
         </div>

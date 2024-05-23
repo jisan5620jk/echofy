@@ -1,24 +1,16 @@
 /* eslint-disable react/prop-types */
-const ProcessCard = ({
-  processShape,
-  processIcon,
-  processTitle,
-  boxNumber,
-  processDesc,
-}) => {
+const ProcessCard = ({ processIcon, processTitle, boxShape, processDesc }) => {
   return (
     <div className="text-center group relative">
-      <img src={processShape} className="absolute right-0" />
-      <div className="w-28 h-28 bg-white rounded-2xl flex items-center justify-center shadow-shadow m-auto relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:scale-0 before:h-full before:rounded-2xl before:bg-SecondaryColor-0 before:transition-all before:duration-500 group-hover:before:scale-100">
+      <div className="inline-block m-auto relative z-10 before:absolute before:top-4 before:-left-[10px] before:w-[200px] before:h-[200px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotational">
+        <img src={processIcon} draggable="false" />
         <img
-          src={processIcon}
-          className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
+          src={boxShape}
+          draggable="false"
+          className="absolute top-1/2 -translate-y-1/2 -right-[165px]"
         />
-        <h6 className="h-[26px] w-[26px] rounded-full bg-PrimaryColor-0 text-sm flex justify-center items-center text-HeadingColor-0 font-AlbertSans absolute top-1/2 -translate-y-1/2 -right-[13px]">
-          {boxNumber}
-        </h6>
       </div>
-      <h5 className="font-AlbertSans font-semibold inline-block text-HeadingColor-0 text-2xl relative z-10 before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-7 before:h-[2px] before:transition-all before:duration-500 before:bg-SecondaryColor-0 group-hover:before:w-full group-hover:left-0 mt-9 pb-3 mb-7">
+      <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-2xl mt-9 mb-4">
         {processTitle}
       </h5>
       <p className="font-AlbertSans text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
