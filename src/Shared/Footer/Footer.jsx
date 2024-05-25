@@ -1,77 +1,85 @@
 import { Link } from "react-router-dom";
 import footerLogo from "/public/images/logo.png";
+import footerShape from "/public/images/logo.png";
 import {
+  FaArrowRightLong,
   FaChevronRight,
   FaFacebookF,
   FaLinkedinIn,
+  FaPhone,
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
-import { IoLocationOutline } from "react-icons/io5";
-import { FiPhoneCall } from "react-icons/fi";
-import { HiOutlineMail } from "react-icons/hi";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-HeadingColor-0 relative z-10 pt-28">
+    <footer className="bg-[url('/public/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28">
       <div className="Container">
-        <div className="flex items-center justify-between bg-[url('/public/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center rounded-md p-10">
-          <div><h2>Stay With Us On Social</h2></div>
-          <div className="flex items-center gap-3">
-            <h5>Follow Us:</h5>
-            <ul className="flex gap-3">
-              <li>
-                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaFacebookF />
-                </button>
-              </li>
-              <li>
-                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaXTwitter />
-                </button>
-              </li>
-              <li>
-                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaLinkedinIn />
-                </button>
-              </li>
-              <li>
-                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaPinterestP />
-                </button>
-              </li>
-            </ul>
+        <div className="relative">
+          <div className="flex items-center justify-between bg-[url('/public/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center rounded-md p-10 mb-[90px]">
+            <div>
+              <h2 className="font-AlbertSans font-bold text-white text-[40px]">
+                Stay With Us On Social
+              </h2>
+            </div>
+            <div className="flex items-center gap-4">
+              <h5 className="font-AlbertSans font-semibold text-white text-lg uppercase">
+                Follow Us :
+              </h5>
+              <ul className="flex gap-3">
+                <li>
+                  <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                    <FaFacebookF />
+                  </button>
+                </li>
+                <li>
+                  <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                    <FaXTwitter />
+                  </button>
+                </li>
+                <li>
+                  <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                    <FaLinkedinIn />
+                  </button>
+                </li>
+                <li>
+                  <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                    <FaPinterestP />
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
+          <img
+            src={footerShape}
+            draggable="false"
+            className="absolute -z-10 -top-[50px] -right-[60px] animate-dance2"
+          />
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
           <div>
             <img src={footerLogo} />
-            <p className="font-AlbertSans text-white mt-7 mb-9">
-              Competently repurpose forward conveniently target e-business
-              multipurpose clean
+            <p className="font-AlbertSans text-white mt-7 mb-5">
+              Proactively restore timely alignments after client environmentals
             </p>
-            <ul className="flex gap-3">
-              <li>
-                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaFacebookF />
+            <div>
+              <h6 className="font-AlbertSans font-medium text-white text-lg pl-8 relative before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:w-[22px] before:h-[2px]">
+                Contact
+              </h6>
+              <Link to={"/"} className="mt-[18px] inline-block">
+                <button className="flex items-center gap-3 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0">
+                  <FaPhone className="text-PrimaryColor-0" />
+                  +123 (4567) 890
                 </button>
-              </li>
-              <li>
-                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaXTwitter />
+              </Link>
+              <Link to={"/"} className="mt-[18px] inline-block">
+                <button className="flex items-center gap-3 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0">
+                  <MdEmail size={"18"} className="text-PrimaryColor-0" />
+                  example@gmail.com
                 </button>
-              </li>
-              <li>
-                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaLinkedinIn />
-                </button>
-              </li>
-              <li>
-                <button className="w-10 h-10 rounded-full border-2 border-[#334899] flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:border-SecondaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  <FaPinterestP />
-                </button>
-              </li>
-            </ul>
+              </Link>
+            </div>
           </div>
           <div>
             <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-[30px]">
@@ -80,40 +88,40 @@ const Footer = () => {
             <ul>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-4">
-                    <FaChevronRight className="text-sm opacity-50" />
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px] opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
                     Home
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-4">
-                    <FaChevronRight className="text-sm opacity-50" />
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px] opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
                     About Us
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-4">
-                    <FaChevronRight className="text-sm opacity-50" />
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px] opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
                     Our Services
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-4">
-                    <FaChevronRight className="text-sm opacity-50" />
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px] opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
                     Meet Our Team
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
-                    <FaChevronRight className="text-sm opacity-50" />
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
                     Latest Blog
                   </button>
                 </Link>
@@ -121,82 +129,80 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-9">
-              Latest Blog
+            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-[30px]">
+              Quick Links
             </h4>
-            <div className="flex items-center gap-5 mb-8">
-              <div className="flex-1">
+            <ul>
+              <li>
                 <Link to={"/"}>
-                  <button className="font-AlbertSans font-medium text-white text-left xl:text-base 2xl:text-lg transition-all duration-500 hover:text-PrimaryColor-0">
-                    10 Most Popular Clean Tips for Housey
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px] opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
+                    Testimonials
                   </button>
                 </Link>
-                <p className="font-AlbertSans text-[#808CBF] text-sm pl-4 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-[#808CBF] mt-2">
-                  Nov 16, 2024
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-5">
-              <div className="flex-1">
+              </li>
+              <li>
                 <Link to={"/"}>
-                  <button className="font-AlbertSans font-medium text-white text-left xl:text-base 2xl:text-lg transition-all duration-500 hover:text-PrimaryColor-0">
-                    10 Most Popular Clean Tips for Housey
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px] opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
+                    Contact Us
                   </button>
                 </Link>
-                <p className="font-AlbertSans text-[#808CBF] text-sm pl-4 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-[#808CBF] mt-2">
-                  Nov 16, 2024
-                </p>
-              </div>
-            </div>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px] opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
+                    Donations
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px] opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
+                    Faq
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="flex items-center gap-2 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 opacity-60 hover:!opacity-100">
+                    <FaChevronRight className="text-xs opacity-60" />
+                    Careers
+                  </button>
+                </Link>
+              </li>
+            </ul>
           </div>
           <div>
-            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-10">
-              Latest Blog
+            <h4 className="font-AlbertSans text-2xl text-white font-semibold mb-8">
+              Newsletter
             </h4>
-            <div className="flex gap-5 mb-5">
-              <div className="h-[44px] w-[44px] rounded-full border border-dashed border-[#43559F] flex items-center justify-center text-white text-xl bg-[#183088]">
-                <IoLocationOutline />
-              </div>
-              <div className="flex-1 -mt-1">
-                <h6 className="font-AlbertSans font-medium text-[17px] text-white">
-                  Address
-                </h6>
-                <p className="font-AlbertSans text-[15px] text-[#B9BBD2] mt-[6px]">
-                  102/B Philosophy Market Road California, USA
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-5 mb-5">
-              <div className="h-[44px] w-[44px] rounded-full border border-dashed border-[#43559F] flex items-center justify-center text-white text-xl bg-[#183088]">
-                <FiPhoneCall />
-              </div>
-              <div className="flex-1 -mt-1">
-                <h6 className="font-AlbertSans font-medium text-[17px] text-white">
-                  Call Us
-                </h6>
-                <p className="font-AlbertSans text-[15px] text-[#B9BBD2] mt-[6px]">
-                  +880 123 (4567) 890
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-5">
-              <div className="h-[44px] w-[44px] rounded-full border border-dashed border-[#43559F] flex items-center justify-center text-white text-xl bg-[#183088]">
-                <HiOutlineMail />
-              </div>
-              <div className="flex-1 -mt-1">
-                <h6 className="font-AlbertSans font-medium text-[17px] text-white">
-                  Email
-                </h6>
-                <p className="font-AlbertSans text-[15px] text-[#B9BBD2] mt-[6px]">
-                  example@yahoo.com
-                </p>
-              </div>
-            </div>
+            <p className="font-AlbertSans text-TextColor-0 font-medium mb-[22px]">
+              Subscribe Our Newsletter
+            </p>
+            <form action="#" method="post">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your E-Mail*"
+                required
+                className="w-full h-[60px] rounded-full font-AlbertSans border border-PrimaryColor-0 border-opacity-50 bg-transparent px-6 py-2 text-white placeholder:text-white mb-4"
+              />
+              <button
+                type="submit"
+                className="w-full h-[58px] rounded-full border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-6 py-2 text-white font-AlbertSans uppercase flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-[#041e15] before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
+              >
+                Subscribe <FaArrowRightLong />
+              </button>
+            </form>
           </div>
         </div>
-        <div className="text-left sm:text-center py-6 border-t border-[#334899] mt-24">
+        <div className="text-left sm:text-center py-6 border-t border-BorderColor-0 mt-24">
           <p className="font-AlbertSans text-white">
-            © Copyrights 2024 echofy All rights reserved by
+            © Copyrights 2024 Echofy All rights reserved by
             <span className="text-PrimaryColor-0"> Dream IT</span>
           </p>
         </div>

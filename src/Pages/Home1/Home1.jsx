@@ -9,6 +9,8 @@ import Skill from "../../Componant1/Skill/Skill";
 import Process from "../../Componant1/Process/Process";
 import Testimonial from "../../Componant1/Testimonial/Testimonial";
 import Brand from "../../Componant1/Support/Brand";
+import TeamMember from "../../Componant1/TeamMember/TeamMember";
+import Blog from "../../Componant1/Blog/Blog";
 
 const Home1 = () => {
   return (
@@ -24,6 +26,8 @@ const Home1 = () => {
       <Process />
       <Testimonial />
       <Brand />
+      <TeamMember />
+      <Blog />
     </>
   );
 };

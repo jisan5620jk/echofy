@@ -12,7 +12,7 @@ const Skill = () => {
       <img
         src={skillMainShape}
         draggable="false"
-        className="absolute -z-10 top-0 left-0 animate-dance2 hidden xl:block"
+        className="absolute -z-10 top-10 left-10 animate-dance2 hidden xl:block"
       />
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
