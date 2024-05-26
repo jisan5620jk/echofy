@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import footerLogo from "/public/images/logo.png";
-import footerShape from "/public/images/logo.png";
+import footerShape from "/public/images/footer-social-shape.png";
+import footerShape2 from "/public/images/footer-shape2.png";
+import footerShape3 from "/public/images/footer-shape.png";
 import {
   FaArrowRightLong,
   FaChevronRight,
@@ -14,47 +16,61 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-[url('/public/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28">
+    <footer className="bg-[url('/public/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
+      <img
+        src={footerShape3}
+        draggable="false"
+        className="absolute -z-10 top-0 left-0 animate-dance2"
+      />
       <div className="Container">
         <div className="relative">
-          <div className="flex items-center justify-between bg-[url('/public/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center rounded-md p-10 mb-[90px]">
-            <div>
-              <h2 className="font-AlbertSans font-bold text-white text-[40px]">
-                Stay With Us On Social
-              </h2>
+          <div className="bg-[url('/public/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center relative rounded-md ">
+            <div className="flex items-center justify-between p-10 mb-[90px]">
+              <div>
+                <h2 className="font-AlbertSans font-bold text-white text-[40px]">
+                  Stay With Us On Social
+                </h2>
+              </div>
+              <div className="flex items-center gap-4">
+                <h5 className="font-AlbertSans font-semibold text-white text-lg uppercase">
+                  Follow Us :
+                </h5>
+                <ul className="flex gap-3">
+                  <li>
+                    <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                      <FaFacebookF />
+                    </button>
+                  </li>
+                  <li>
+                    <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                      <FaXTwitter />
+                    </button>
+                  </li>
+                  <li>
+                    <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                      <FaLinkedinIn />
+                    </button>
+                  </li>
+                  <li>
+                    <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                      <FaPinterestP />
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="flex items-center gap-4">
-              <h5 className="font-AlbertSans font-semibold text-white text-lg uppercase">
-                Follow Us :
-              </h5>
-              <ul className="flex gap-3">
-                <li>
-                  <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                    <FaFacebookF />
-                  </button>
-                </li>
-                <li>
-                  <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                    <FaXTwitter />
-                  </button>
-                </li>
-                <li>
-                  <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                    <FaLinkedinIn />
-                  </button>
-                </li>
-                <li>
-                  <button className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-white before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                    <FaPinterestP />
-                  </button>
-                </li>
-              </ul>
+            <div className="flex justify-center items-center w-full absolute top-1/4 left-16">
+              <img
+                src={footerShape2}
+                draggable="false"
+                className="animate-zoomInOut"
+              />
             </div>
           </div>
           <img
             src={footerShape}
             draggable="false"
-            className="absolute -z-10 -top-[50px] -right-[60px] animate-dance2"
+            className="absolute -z-10 -bottom-[70px] -right-[10px] animate-dance2"
           />
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">

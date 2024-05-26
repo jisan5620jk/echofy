@@ -163,7 +163,7 @@ const Navbar = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0  flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-white transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-white transition-all duration-500
                 `}
               >
                 <NavLink
@@ -173,7 +173,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative`}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative`}
                 >
                   <span className="flex items-center">
                     Home
@@ -215,7 +215,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
                   <span>About</span>
@@ -226,7 +226,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -235,14 +235,14 @@ const Navbar = () => {
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service" className="py-2 block">
                             Service
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/serviceDetails" className="py-2 block">
                             Service Details
@@ -259,7 +259,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -268,63 +268,63 @@ const Navbar = () => {
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/about" className="py-2 block">
                             About Us
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service" className="py-2 block">
                             Service
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/serviceDetails" className="py-2 block">
                             Service Details
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/teamInner" className="py-2 block">
                             Team Member
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/project" className="py-2 block">
                             Project
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/projectDetails" className="py-2 block">
                             Project Details
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/pricing" className="py-2 block">
                             Pricing Plan
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/testimonial" className="py-2 block">
                             Testimonial
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/appointment" className="py-2 block">
                             Appointment
@@ -341,7 +341,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -350,21 +350,21 @@ const Navbar = () => {
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HoverColor-0 ">
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blogGrid" className="py-2 block">
                             Blog Grid
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blogList" className="py-2 block">
                             Blog List
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blogDetails" className="py-2 block">
                             Blog Details
@@ -380,7 +380,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left lg:border-b-0 px-3 w-full block transition-all duration-300`}
+                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300`}
                   to="/contact"
                 >
                   Contact
