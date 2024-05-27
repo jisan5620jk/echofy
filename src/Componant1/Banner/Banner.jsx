@@ -32,25 +32,25 @@ const Banner = () => {
     <div className="relative">
       <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
         <SwiperSlide>
-          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[960px] flex items-center">
+          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
             <div className="Container">
-              <div className="grid lg:grid-cols-2 items-center pt-36">
+              <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
-                  <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium lg:mb-6 xl:mb-0">
+                  <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
                     NATURAL ENVIRONMENT
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white lg:text-5xl xl:text-[68px] 2xl:text-[76px]">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[36px] sm:text-[56px] md:text-[76px] lg:text-[58px] xl:text-[68px] 2xl:text-[76px]">
                     Be Safe Controls
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white lg:text-5xl xl:text-[68px] 2xl:text-[76px] lg:-mt-0 xl:-mt-7 2xl:-mt-8">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[36px] sm:text-[56px] md:text-[76px] lg:text-[60px] xl:text-[68px] 2xl:text-[76px] -mt-4 sm:-mt-4 md:-mt-6 lg:-mt-8">
                     Environment
                   </h1>
-                  <p className="font-AlbertSans text-lg text-white mb-10 lg:mt-6 xl:mt-0">
+                  <p className="font-AlbertSans text-lg text-white mb-10">
                     Professionally optimize interdependent intellectual
                     interoperable connect best practices. Progressively
                     fabricate done
                   </p>
-                  <div className="flex gap-5">
+                  <div className="flex flex-col sm:flex-row gap-5">
                     <Link to={"/about"}>
                       <button className="primary-btn">
                         {`Let's Talk`}
@@ -74,7 +74,7 @@ const Banner = () => {
                       ]}
                     />
                   </div>
-                  <div className="banner-share flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
+                  <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
                     <h5 className="font-AlbertSans text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
                       FOLLOW US
                     </h5>

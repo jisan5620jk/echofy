@@ -25,13 +25,13 @@ const Footer = () => {
       <div className="Container">
         <div className="relative">
           <div className="bg-[url('/public/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center relative rounded-md ">
-            <div className="flex items-center justify-between p-10 mb-[90px]">
+            <div className="flex flex-col gap-7 lg:gap-0 lg:flex-row lg:items-center lg:justify-between p-10 mb-[90px]">
               <div>
-                <h2 className="font-AlbertSans font-bold text-white text-[40px]">
+                <h2 className="font-AlbertSans font-bold text-white text-[30px] sm:text-[40px]">
                   Stay With Us On Social
                 </h2>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <h5 className="font-AlbertSans font-semibold text-white text-lg uppercase">
                   Follow Us :
                 </h5>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex justify-center items-center w-full absolute top-1/4 left-16">
+            <div className="md:flex justify-center items-center w-full absolute top-1/4 left-16 md:left-1/3 lg:left-16 hidden ">
               <img
                 src={footerShape2}
                 draggable="false"
@@ -83,13 +83,13 @@ const Footer = () => {
               <h6 className="font-AlbertSans font-medium text-white text-lg pl-8 relative before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:w-[22px] before:h-[2px]">
                 Contact
               </h6>
-              <Link to={"/"} className="mt-[18px] inline-block">
+              <Link to={"/"} className="mt-[18px] block">
                 <button className="flex items-center gap-3 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0">
                   <FaPhone className="text-PrimaryColor-0" />
                   +123 (4567) 890
                 </button>
               </Link>
-              <Link to={"/"} className="mt-[18px] inline-block">
+              <Link to={"/"} className="mt-[18px] block">
                 <button className="flex items-center gap-3 font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0">
                   <MdEmail size={"18"} className="text-PrimaryColor-0" />
                   example@gmail.com

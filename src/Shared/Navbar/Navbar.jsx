@@ -52,13 +52,13 @@ const Navbar = () => {
       <header className="bg-transparent overflow-hidden md:block">
         <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
-            <p className="font-AlbertSans text-[15px] text-white md:flex items-center gap-1">
+            <p className="font-AlbertSans text-[15px] text-white sm:flex hidden items-center gap-1">
               <CiLocationOn className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
               102/B New Market, Sandigo-USA
             </p>
             <Link
               to={"/"}
-              className="font-AlbertSans text-[15px] text-white sm:flex items-center gap-2 hidden"
+              className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
             >
               <HiOutlineMailOpen size={"16"} className="text-PrimaryColor-0" />
               example@gmail.com

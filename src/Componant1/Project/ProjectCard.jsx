@@ -14,7 +14,7 @@ const ProjectCard = ({
   return (
     <div className="relative z-10 group rounded-md overflow-hidden">
       <div className="overflow-hidden relative z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:before:opacity-0">
-        <img src={projectThumb} draggable="false" />
+        <img src={projectThumb} draggable="false" className="w-full" />
         <img
           src={projectShape}
           draggable="false"

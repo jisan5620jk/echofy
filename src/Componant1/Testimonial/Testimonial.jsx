@@ -86,22 +86,22 @@ const Testimonial = () => {
       <img
         src={testiMainShape1}
         draggable="false"
-        className="absolute top-44 right-[5%] animate-zoomInOut"
+        className="absolute -z-10 top-44 right-[5%] animate-zoomInOut"
       />
       <img
         src={testiMainShape2}
         draggable="false"
-        className="absolute top-16 right-[20%] animate-zoomInOut"
+        className="absolute -z-10 top-16 right-[20%] animate-zoomInOut"
       />
       <img
         src={testiMainShape3}
         draggable="false"
-        className="absolute top-44 left-[5%] animate-zoomInOut"
+        className="absolute -z-10 top-44 left-[5%] animate-zoomInOut"
       />
       <img
         src={testiMainShape4}
         draggable="false"
-        className="absolute top-16 left-[20%] animate-zoomInOut"
+        className="absolute -z-10 top-16 left-[20%] animate-zoomInOut"
       />
       <div className="Container">
         <div className="text-center">
@@ -109,7 +109,7 @@ const Testimonial = () => {
             <img src={subTitleShape} draggable="false" />
             TESTIMONIALS
           </h5>
-          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+          <h1 className="font-AlbertSans font-bold text-[20px] leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
             Clients Best Feedback About
             <br />
             Echofy Provission

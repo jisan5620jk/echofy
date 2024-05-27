@@ -15,7 +15,7 @@ const Skill = () => {
         className="absolute -z-10 top-10 left-10 animate-dance2 hidden xl:block"
       />
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
+        <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
@@ -31,7 +31,7 @@ const Skill = () => {
               deliverables without exceptional processes. Rapidiously network
               cost effective vortals
             </p>
-            <div className="grid grid-cols-2 items-center gap-8 pt-8 pb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8 pt-8 pb-8">
               <div className="group px-7 lg:px-4 2xl:px-7 py-5 relative z-10 bg-white rounded-md overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full flex items-center gap-[18px]">
                 <div className="w-10 h-10 rounded-full bg-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-white before:transition-all before:duration-500 before:-z-10 before:scale-0 group-hover:before:scale-100 flex justify-center items-center text-white transition-all duration-500 group-hover:text-PrimaryColor-0">
                   <GiCheckMark size={"20"} />
@@ -103,7 +103,7 @@ const Skill = () => {
             </div>
           </div>
           <div className="relative z-10">
-            <img src={skillThumb} draggable="false" className="ml-16" />
+            <img src={skillThumb} draggable="false" className="md:ml-16" />
             <img
               src={skillShape}
               draggable="false"
