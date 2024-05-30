@@ -1,14 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
 import {
-  FaArrowRightLong,
   FaBars,
   FaFacebookF,
-  FaHandsClapping,
   FaLinkedinIn,
   FaPhone,
   FaPinterestP,
-  FaRegClock,
   FaXTwitter,
 } from "react-icons/fa6";
 import { BiChevronDown } from "react-icons/bi";
@@ -18,6 +15,8 @@ import { IoMdCall, IoMdClose } from "react-icons/io";
 import { BsEnvelope } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
 import { TbGridDots } from "react-icons/tb";
+import { CiLocationOn } from "react-icons/ci";
+import { HiOutlineMailOpen } from "react-icons/hi";
 
 const Navbar = () => {
   //sticky
@@ -48,23 +47,41 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`w-full transition-all duration-300 bg-transparent relativee text-[#7d7f8c] z-[99999]`}
+      className={`w-full transition-all duration-300 bg-transparent relativee text-TextColor-0 z-[99999]`}
     >
       {/* top Navbar */}
-      <header className="bg-[#021233] overflow-hidden md:block relative z-10">
-        <div className="Container flex items-center justify-between">
+      <div className="bg-SecondaryColor-0">
+        <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
-            <p className="font-AlbertSans text-[15px] text-white sm:flex items-center gap-2 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
-              <FaHandsClapping className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
-              Welcome to echofy Cleaing Service
+            <p className="font-AlbertSans text-[15px] text-white sm:flex hidden items-center gap-1">
+              <CiLocationOn className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
+              102/B New Market, Sandigo-USA
             </p>
+            <Link
+              to={"/"}
+              className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
+            >
+              <HiOutlineMailOpen size={"16"} className="text-PrimaryColor-0" />
+              example@gmail.com
+            </Link>
           </div>
-          <div className="flex items-center gap-6">
-            <ul className="flex items-center">
+          <div className="flex items-center gap-10">
+            <div className="lg:flex items-center gap-2 hidden">
+              <span className="flex items-center gap-2 text-sm text-PrimaryColor-0">
+                <FaPhone />
+              </span>
+              <Link
+                to={"/"}
+                className="font-AlbertSans font-medium text-sm text-white"
+              >
+                +123 (4567) 890
+              </Link>
+            </div>
+            <ul className="flex gap-3 items-center">
               <li>
                 <Link
                   to={"/"}
-                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#1773ea] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
                 >
                   <FaFacebookF />
                 </Link>
@@ -72,7 +89,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#2ca5da] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
                 >
                   <FaXTwitter />
                 </Link>
@@ -80,7 +97,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#0073b1] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
                 >
                   <FaLinkedinIn />
                 </Link>
@@ -88,41 +105,27 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="text-sm flex justify-center items-center h-[50px] w-[35px] bg-[#e11a21] transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
                 >
                   <FaPinterestP />
                 </Link>
               </li>
             </ul>
-            <div className="lg:flex items-center gap-2 hidden">
-              <h6 className="flex items-center gap-2 text-sm text-white font-AlbertSans font-light">
-                <IoMdCall className="w-[14px] h-[14px] rounded-sm bg-white text-xs text-SecondaryColor-0" />
-                Call :
-              </h6>
-              <Link
-                to={"/"}
-                className="font-AlbertSans font-medium text-sm text-white"
-              >
-                {" "}
-                +980 234 4567
-              </Link>
-            </div>
           </div>
         </div>
-      </header>
+      </div>
       {/* top Navbar */}
       <header data-aos="zoom-in" data-aos-duration="1000">
         <div className="header-section">
           <div className="Container">
             {/* main Navbar */}
-            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[80px] bg-PrimaryColor-0 rounded-b-md -mb-[80px] relative z-50">
+            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[80px] bg-PrimaryColor-0 rounded-b-md -mb-[80px] relative z-50 px-7">
               {/* website Logo */}
               <div className="w-48 lg:w-52">
                 <Link to="/">
                   <img
                     src={Logo}
-                    className="hidden lg:block w-full"
-                    alt="website_logo"
+                    className="hidden lg:block w-full brightness-0 invert-[1]"
                   />
                 </Link>
               </div>
@@ -147,7 +150,7 @@ const Navbar = () => {
                 </button>
               </div>
               {/* All navLink are hear with active */}
-              <div className="flex items-center justify-between w-full px-10">
+              <div className="flex items-center justify-between w-full">
                 <div className="text-white">
                   <ul
                     className={`${
@@ -384,18 +387,19 @@ const Navbar = () => {
                     </NavLink>
                   </ul>
                 </div>
-                <div className="hidden lg:flex items-center gap-14">
-                  <div>
+                <div className="hidden lg:flex items-center gap-7">
+                  <Link to={"/"}>
+                    <IoSearch className="text-2xl text-white" />
+                  </Link>
+                  <Link
+                    to={"/appointment"}
+                    className="header-btn bg-transparent border !border-white before:bg-white hover:text-PrimaryColor-0"
+                  >
+                    Get A Quote
+                  </Link>
+                  <div className="text-white">
                     <TbGridDots size={"36"} className="hidden lg:block" />
                   </div>
-                  <Link to={"/"}>
-                    <IoSearch className="text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0" />
-                  </Link>
-                  <Link to={"/apiontment"}>
-                    <button className="font-AlbertSans font-medium text-white relative before:absolute before:top-[2px] before:-left-[30px] before:w-[2px] before:h-5 before:bg-white flex items-center gap-2">
-                      Free Appoinment <FaArrowRightLong />
-                    </button>
-                  </Link>
                 </div>
               </div>
             </div>
