@@ -109,7 +109,7 @@ const Testimonial = () => {
             <img src={subTitleShape} draggable="false" />
             TESTIMONIALS
           </h5>
-          <h1 className="font-AlbertSans font-bold text-[20px] leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+          <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
             Clients Best Feedback About
             <br />
             Echofy Provission

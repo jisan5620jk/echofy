@@ -31,7 +31,7 @@ const BlogCard = ({
             {blogDate}
           </p>
           <Link to={blogUrl}>
-            <button className="font-AlbertSans text-left font-semibold text-xl sm:text-2xl md:text-xl lg:text-lg xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-3 mb-3">
+            <button className="font-AlbertSans text-left font-semibold text-xl sm:text-2xl md:text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-3 mb-3">
               {blogTitle}
             </button>
           </Link>

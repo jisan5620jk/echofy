@@ -107,7 +107,7 @@ const Skill = () => {
             <img
               src={skillShape}
               draggable="false"
-              className="absolute top-0 left-10 animate-movebtn"
+              className="absolute top-0 left-10 animate-movebtn hidden sm:block"
             />
             <img
               src={skillShape2}

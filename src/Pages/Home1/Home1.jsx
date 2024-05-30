@@ -6,7 +6,7 @@ import Service from "../../Componant1/Service/Service";
 import Skill from "../../Componant1/Skill/Skill";
 import Process from "../../Componant1/Process/Process";
 import Testimonial from "../../Componant1/Testimonial/Testimonial";
-import Brand from "../../Componant1/Support/Brand";
+import Brand from "../../Componant1/Brand/Brand";
 import TeamMember from "../../Componant1/TeamMember/TeamMember";
 import Blog from "../../Componant1/Blog/Blog";
 

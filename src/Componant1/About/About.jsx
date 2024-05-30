@@ -17,7 +17,7 @@ const About = () => {
             <img
               src={aboutAward}
               draggable="false"
-              className="absolute bottom-10 left-0 animate-movebtn"
+              className="absolute bottom-10 left-0 animate-movebtn hidden sm:block"
             />
           </div>
           <div className="relative">
@@ -66,7 +66,7 @@ const About = () => {
             <img
               src={aboutShape}
               draggable="false"
-              className="absolute -bottom-0 left-1/2 animate-dance3"
+              className="absolute -bottom-0 left-1/2 animate-dance3 hidden sm:block"
             />
           </div>
         </div>

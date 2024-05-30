@@ -9,7 +9,7 @@ import Testimonial from "../../Componant3/Testimonial/Testimonial";
 import Feature from "../../Componant3/Feature/Feature";
 import Appointment from "../../Componant3/Appointment/Appointment";
 
-const Home1 = () => {
+const Home3 = () => {
   return (
     <>
       <Banner />
@@ -26,4 +26,4 @@ const Home1 = () => {
   );
 };
 
-export default Home1;
+export default Home3;

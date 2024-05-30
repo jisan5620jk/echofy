@@ -84,7 +84,7 @@ const Service = () => {
             <img src={subTitleShape} draggable="false" />
             OUR SERVICES
           </h5>
-          <h1 className="font-AlbertSans font-bold text-[20px] leading-6 sm:text-[38px] sm:leading-[48px] md:text-[42px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3 border-b border-BorderColor2-0 pb-9">
+          <h1 className="font-AlbertSans font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3 border-b border-BorderColor2-0 pb-9">
             Echofy Provide Environment <br />
             Best Leading Services
           </h1>

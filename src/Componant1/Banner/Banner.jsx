@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import buttonShape from "/public/images/button-shape-1.png";
 import bannerImg from "/public/images/banner-img.png";
+import bannerImg2 from "/public/images/banner-img2.png";
+import bannerImg3 from "/public/images/banner-img3.png";
 import { LiaPlayCircleSolid } from "react-icons/lia";
 import "./banner.css";
 import "swiper/css/pagination";
@@ -39,10 +41,10 @@ const Banner = () => {
                   <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
                     NATURAL ENVIRONMENT
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[36px] sm:text-[56px] md:text-[76px] lg:text-[58px] xl:text-[68px] 2xl:text-[76px]">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
                     Be Safe Controls
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[36px] sm:text-[56px] md:text-[76px] lg:text-[60px] xl:text-[68px] 2xl:text-[76px] -mt-4 sm:-mt-4 md:-mt-6 lg:-mt-8">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-4 sm:-mt-4 md:-mt-6 lg:-mt-7">
                     Environment
                   </h1>
                   <p className="font-AlbertSans text-lg text-white mb-10">
@@ -112,19 +114,18 @@ const Banner = () => {
               </div>
             </div>
           </section>
-        </SwiperSlide>
-        <SwiperSlide>
-          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[960px] flex items-center">
+        </SwiperSlide> <SwiperSlide>
+          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
             <div className="Container">
-              <div className="grid lg:grid-cols-2 items-center pt-36">
+              <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
                   <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
                     NATURAL ENVIRONMENT
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[68px] 2xl:text-[76px]">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
                     Be Safe Controls
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[68px] 2xl:text-[76px] -mt-7 2xl:-mt-8">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-4 sm:-mt-4 md:-mt-6 lg:-mt-7">
                     Environment
                   </h1>
                   <p className="font-AlbertSans text-lg text-white mb-10">
@@ -132,11 +133,11 @@ const Banner = () => {
                     interoperable connect best practices. Progressively
                     fabricate done
                   </p>
-                  <div className="flex gap-5">
+                  <div className="flex flex-col sm:flex-row gap-5">
                     <Link to={"/about"}>
                       <button className="primary-btn">
                         {`Let's Talk`}
-                        <img src={buttonShape} />
+                        <img src={buttonShape} draggable="false" />
                       </button>
                     </Link>
                     <div className="text-lg font-AlbertSans font-medium text-white flex items-center gap-4">
@@ -156,7 +157,7 @@ const Banner = () => {
                       ]}
                     />
                   </div>
-                  <div className="banner-share flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 -left-[40%]">
+                  <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
                     <h5 className="font-AlbertSans text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
                       FOLLOW US
                     </h5>
@@ -189,24 +190,23 @@ const Banner = () => {
                   </div>
                 </div>
                 <div className="banner-thumb">
-                  <img src={bannerImg} />
+                  <img src={bannerImg2} draggable="false" />
                 </div>
               </div>
             </div>
           </section>
-        </SwiperSlide>
-        <SwiperSlide>
-          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[960px] flex items-center">
+        </SwiperSlide> <SwiperSlide>
+          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
             <div className="Container">
-              <div className="grid lg:grid-cols-2 items-center pt-36">
+              <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
                   <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
                     NATURAL ENVIRONMENT
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[68px] 2xl:text-[76px]">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
                     Be Safe Controls
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[68px] 2xl:text-[76px] -mt-7 2xl:-mt-8">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-4 sm:-mt-4 md:-mt-6 lg:-mt-7">
                     Environment
                   </h1>
                   <p className="font-AlbertSans text-lg text-white mb-10">
@@ -214,11 +214,11 @@ const Banner = () => {
                     interoperable connect best practices. Progressively
                     fabricate done
                   </p>
-                  <div className="flex gap-5">
+                  <div className="flex flex-col sm:flex-row gap-5">
                     <Link to={"/about"}>
                       <button className="primary-btn">
                         {`Let's Talk`}
-                        <img src={buttonShape} />
+                        <img src={buttonShape} draggable="false" />
                       </button>
                     </Link>
                     <div className="text-lg font-AlbertSans font-medium text-white flex items-center gap-4">
@@ -238,7 +238,7 @@ const Banner = () => {
                       ]}
                     />
                   </div>
-                  <div className="banner-share flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 -left-[40%]">
+                  <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
                     <h5 className="font-AlbertSans text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
                       FOLLOW US
                     </h5>
@@ -271,7 +271,7 @@ const Banner = () => {
                   </div>
                 </div>
                 <div className="banner-thumb">
-                  <img src={bannerImg} />
+                  <img src={bannerImg3} draggable="false" />
                 </div>
               </div>
             </div>
