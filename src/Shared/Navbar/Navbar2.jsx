@@ -112,48 +112,12 @@ const Navbar = () => {
       </header>
       {/* top Navbar */}
       <header data-aos="zoom-in" data-aos-duration="1000">
-        <div className="bg-white relative z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-[30%] before:bg-[#f3f4f8] before:-z-10 hidden lg:block">
-          <div className="Container">
-            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[100px]">
-              {/* website Logo */}
-              <div className=" w-48 lg:w-52">
-                <Link to="/">
-                  <img
-                    src={Logo}
-                    className="hidden lg:block w-full"
-                    alt="website_logo"
-                  />
-                </Link>
-              </div>
-              <div className="flex items-center lg:gap-[18px] xl:gap-[60px]">
-                <Link
-                  to={"/"}
-                  className="font-AlbertSans text-lg text-HeadingColor-0 sm:flex items-center gap-2"
-                >
-                  <FaPhone size={"20"} className="text-SecondaryColor-0" />
-                  +123 (4567) 890
-                </Link>
-                <Link
-                  to={"/"}
-                  className="font-AlbertSans text-lg text-HeadingColor-0 sm:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0"
-                >
-                  <BsEnvelope size={"20"} className="text-SecondaryColor-0" />
-                  example@gmail.com
-                </Link>
-                <p className="font-AlbertSans text-lg text-HeadingColor-0 md:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0">
-                  <FaRegClock size={"20"} className="text-SecondaryColor-0" />
-                  Mon - Fri 9am to 5pm
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="header-section">
           <div className="Container">
             {/* main Navbar */}
-            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[80px] bg-SecondaryColor-0 rounded-b-md -mb-[80px] relative z-50">
+            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[80px] bg-PrimaryColor-0 rounded-b-md -mb-[80px] relative z-50">
               {/* website Logo */}
-              <div className="w-48 lg:w-52 hidden">
+              <div className="w-48 lg:w-52">
                 <Link to="/">
                   <img
                     src={Logo}
@@ -166,11 +130,7 @@ const Navbar = () => {
               <div className="px-3 w-full lg:hidden flex justify-between bg-khaki h-[70px] items-center p-3">
                 <div className="w-28">
                   <Link to={"/"}>
-                    <img
-                      src={Logo}
-                      className="block lg:hidden brightness-0 invert-[1]"
-                      alt="constre_website_logo"
-                    />
+                    <img src={Logo} className="block lg:hidden" />
                   </Link>
                 </div>
                 {/* toggle bar mode. */}
@@ -188,10 +148,7 @@ const Navbar = () => {
               </div>
               {/* All navLink are hear with active */}
               <div className="flex items-center justify-between w-full px-10">
-                <div className="text-white flex items-center gap-7">
-                  <div>
-                    <TbGridDots size={"36"} className="hidden lg:block" />
-                  </div>
+                <div className="text-white">
                   <ul
                     className={`${
                       isOpen ? "block" : "hidden"
@@ -428,6 +385,9 @@ const Navbar = () => {
                   </ul>
                 </div>
                 <div className="hidden lg:flex items-center gap-14">
+                  <div>
+                    <TbGridDots size={"36"} className="hidden lg:block" />
+                  </div>
                   <Link to={"/"}>
                     <IoSearch className="text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0" />
                   </Link>
