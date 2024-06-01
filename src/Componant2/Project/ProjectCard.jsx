@@ -7,9 +7,8 @@ const ProjectCard = ({
   projectShape,
   projectContentShape,
   projectTitle,
-  projectUrl,
-  buttonTitle,
-  buttonIcon,
+  buttonUrl,
+  projectButton,
 }) => {
   return (
     <div className="relative z-10 group rounded-md overflow-hidden">
@@ -18,27 +17,27 @@ const ProjectCard = ({
         <img
           src={projectShape}
           draggable="false"
-          className="absolute -top-80 -right-80 animate-rotate transition-all
-           duration-500 group-hover:-top-[180px] group-hover:-right-[190px]"
+          className="absolute -top-80 -right-80 animate-rotate group-hover:-top-[180px] group-hover:-right-[190px]"
         />
-        <div className="absolute bottom-0 left-0 2xl:left-7 w-11/12 -mt-[42px] bg-[#f5f8ed] rounded-md overflow-hidden px-4 md:px-8 pb-8 transition-all duration-500 z-10">
-          <img
-            src={projectContentShape}
-            draggable="false"
-            className="absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
+        <div className="project-content flex justify-between items-center absolute -bottom-full transition-all duration-500 left-0 2xl:left-7 w-11/12 -mt-[42px] bg-[#f5f8ed] rounded-t-md overflow-hidden px-4 md:px-8 z-10 border-b-[5px] border-PrimaryColor-0">
+          <div>
+            <img
+              src={projectContentShape}
+              draggable="false"
+              className="absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
            duration-500 group-hover:opacity-100"
-          />
-          <h6 className="font-AlbertSans font-medium text-TextColor-0 transition-all duration-500 group-hover:text-white pt-[30px]">
-            {projectSubTitle}
-          </h6>
-          <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[26px] lg:text-2xl xl:text-[26px] transition-all duration-500 group-hover:text-white pt-1">
-            {projectTitle}
-          </h5>
-          <div className="transition-all duration-500 opacity-0 group-hover:mt-0 group-hover:border-white group-hover:opacity-100">
-            <Link to={projectUrl}>
-              <button className="font-AlbertSans font-medium text-white text-[17px] flex gap-2 items-center pt-3">
-                {buttonTitle}
-                {buttonIcon}
+            />
+            <h6 className="font-AlbertSans font-medium text-TextColor-0 pt-[30px]">
+              {projectSubTitle}
+            </h6>
+            <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[26px] lg:text-2xl xl:text-[26px]pt-1 pb-6">
+              {projectTitle}
+            </h5>
+          </div>
+          <div>
+            <Link to={buttonUrl}>
+              <button className="w-[46px] h-[46px] rounded-full bg-PrimaryColor-0 text-white text-2xl flex justify-center items-center">
+                {projectButton}
               </button>
             </Link>
           </div>

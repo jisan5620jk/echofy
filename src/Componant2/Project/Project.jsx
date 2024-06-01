@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRightLong } from "react-icons/fa6";
 import projectThumb from "/public/images/project-img.png";
 import projectThumb2 from "/public/images/project-img2.png";
 import projectThumb3 from "/public/images/project-img3.png";
@@ -9,7 +8,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import subTitleShape from "/public/images/sub-title-shape.png";
 import "swiper/css";
 import ProjectCard from "./ProjectCard";
-import ProjectNavigation from "./ProjectNavigation";
+import { GoArrowUpRight } from "react-icons/go";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const ProjectData = [
   {
@@ -17,39 +18,28 @@ const ProjectData = [
     projectThumb: projectThumb,
     projectSubTitle: "Climate",
     projectTitle: "Cleaning Forest",
-    projectUrl: "/projectDetails",
-    buttonTitle: "View Details",
-    buttonIcon: <FaArrowRightLong />,
+    buttonUrl: "/projectDetails",
+    projectButton: <GoArrowUpRight />,
     projectContentShape: projectContentShape,
     projectShape: projectShape,
-  },  {
+  },
+  {
     id: 2,
     projectThumb: projectThumb2,
     projectSubTitle: "Environment",
     projectTitle: "Tree Plantation",
-    projectUrl: "/projectDetails",
-    buttonTitle: "View Details",
-    buttonIcon: <FaArrowRightLong />,
+    buttonUrl: "/projectDetails",
+    projectButton: <GoArrowUpRight />,
     projectContentShape: projectContentShape,
     projectShape: projectShape,
-  },  {
+  },
+  {
     id: 3,
     projectThumb: projectThumb3,
     projectSubTitle: "Recycling",
     projectTitle: "Plastic Recycling",
-    projectUrl: "/projectDetails",
-    buttonTitle: "View Details",
-    buttonIcon: <FaArrowRightLong />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
-  },  {
-    id: 4,
-    projectThumb: projectThumb,
-    projectSubTitle: "Climate",
-    projectTitle: "Cleaning Forest",
-    projectUrl: "/projectDetails",
-    buttonTitle: "View Details",
-    buttonIcon: <FaArrowRightLong />,
+    buttonUrl: "/projectDetails",
+    projectButton: <GoArrowUpRight />,
     projectContentShape: projectContentShape,
     projectShape: projectShape,
   },
@@ -77,11 +67,17 @@ const Project = () => {
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className="bg-[url('/public/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
+    <section className="project bg-[url('/public/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
       <div className="Container">
-        <div className="md:-mb-[6.2rem]">
-          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+        <div className="text-center">
+          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
             <img src={subTitleShape} draggable="false" />
             OUR PROJECTS
           </h5>
@@ -90,8 +86,8 @@ const Project = () => {
             Environmental Works
           </h1>
         </div>
-        <div className="">
-          <Swiper {...settings}>
+        <div className="mt-[46px]">
+          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             <div>
               {ProjectData.map(
                 ({
@@ -101,21 +97,21 @@ const Project = () => {
                   projectContentShape,
                   projectSubTitle,
                   projectTitle,
-                  projectUrl,
-                  buttonTitle,
+                  buttonUrl,
+                  projectButton,
                   buttonIcon,
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pt-[144px]">
+                      <div className="pb-[100px]">
                         <ProjectCard
                           projectThumb={projectThumb}
                           projectContentShape={projectContentShape}
                           projectShape={projectShape}
                           projectSubTitle={projectSubTitle}
                           projectTitle={projectTitle}
-                          projectUrl={projectUrl}
-                          buttonTitle={buttonTitle}
+                          buttonUrl={buttonUrl}
+                          projectButton={projectButton}
                           buttonIcon={buttonIcon}
                         />
                       </div>
@@ -124,7 +120,6 @@ const Project = () => {
                 }
               )}
             </div>
-            <ProjectNavigation />
           </Swiper>
         </div>
       </div>

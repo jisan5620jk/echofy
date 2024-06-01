@@ -69,10 +69,19 @@ body {
   opacity: 1;
 }
 
+/* Portfolio */
+
+.swiper-slide:hover .project-content,
+.swiper-slide.swiper-slide-active .project-content {
+  bottom: 0px;
+}
+
+
 /* Pagination */
 
 .service .swiper-pagination ,
-.testimonial .swiper-pagination {
+.testimonial .swiper-pagination ,
+.project .swiper-pagination {
   bottom: 6px !important;
   top: inherit !important;
   left: 50% !important;
