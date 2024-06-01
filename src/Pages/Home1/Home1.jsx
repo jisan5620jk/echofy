@@ -9,11 +9,13 @@ import Testimonial from "../../Componant1/Testimonial/Testimonial";
 import Brand from "../../Componant1/Brand/Brand";
 import TeamMember from "../../Componant1/TeamMember/TeamMember";
 import Blog from "../../Componant1/Blog/Blog";
+import ContentSlider from "../../Componant1/ContentSlider/ContentSlider";
 
 const Home1 = () => {
   return (
     <>
       <Banner />
+      <ContentSlider />
       <About />
       <Service />
       <Skill />

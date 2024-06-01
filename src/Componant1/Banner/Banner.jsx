@@ -114,7 +114,8 @@ const Banner = () => {
               </div>
             </div>
           </section>
-        </SwiperSlide> <SwiperSlide>
+        </SwiperSlide>
+        <SwiperSlide>
           <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
             <div className="Container">
               <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
@@ -195,7 +196,8 @@ const Banner = () => {
               </div>
             </div>
           </section>
-        </SwiperSlide> <SwiperSlide>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
           <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
             <div className="Container">
               <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">

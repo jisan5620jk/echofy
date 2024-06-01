@@ -71,6 +71,7 @@ body {
 
 /* Pagination */
 
+.service .swiper-pagination ,
 .testimonial .swiper-pagination {
   bottom: 6px !important;
   top: inherit !important;

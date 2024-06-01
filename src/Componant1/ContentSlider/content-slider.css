@@ -1,58 +1,80 @@
-
-.main__container {
-  max-width: 1000px;
-  margin-inline: auto;
-  background: rgb(124, 145, 175);
-  padding: 3rem;
-}
-
-/* Marquee styles */
-.marquee {
-  --gap: 1rem;
+.content-slider-section {
+  padding: 30px 0;
+  background: #79b900;
+  background-size: cover;
   position: relative;
+  z-index: 1;
+  --duration: 30s;
+  --gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
-  gap: var(--gap);
-  border: 2px dashed lightgray;
+  gap: 50px;
 }
 
-.marquee__content {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-around;
-  gap: var(--gap);
-  min-width: 100%;
-}
-
-.marquee__content img {
-  max-width: 2rem;
-  width: 100%;
-  object-fit: contain;
-}
-
-.marquee__content > * {
-  flex: 0 0 auto;
-  color: white;
-  background: #e8daef;
-  margin: 2px;
-  padding: 1rem 2rem;
-  border-radius: 0.25rem;
+.content-slider {
   text-align: center;
-}
-
-.marquee__item {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  gap: 50px;
+  min-width: 100%;
+  -webkit-animation: scroll 50s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
+.content-slider-content {
+  position: relative;
+  --duration: 50s;
+  --gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: 0px;
+}
+
+.content-slider-content h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Albert Sans", "sans-serif";
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
 @keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(calc(-100% - var(--gap))); }
-}
-
-
-.enable-animation .marquee__content {
-  animation: scroll 10s linear infinite;
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }

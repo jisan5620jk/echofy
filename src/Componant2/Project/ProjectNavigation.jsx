@@ -1,7 +1,7 @@
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { useSwiper } from "swiper/react";
 
-const TestimonialNavigation = () => {
+const ProjectNavigation = () => {
   const swiper = useSwiper();
 
   return (
@@ -22,4 +22,4 @@ const TestimonialNavigation = () => {
   );
 };
 
-export default TestimonialNavigation;
+export default ProjectNavigation;

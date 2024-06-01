@@ -8,9 +8,10 @@ import serviceIcon3 from "/public/images/service2-icon3.png";
 import serviceShape from "/public/images/service-shape.png";
 import subTitleShape from "/public/images/sub-title-shape.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ServiceNavigation from "./ServiceNavigation";
 import ServiceCard from "./ServiceCard";
 import { GoArrowUpRight } from "react-icons/go";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const ServiceData = [
   {
@@ -46,17 +47,6 @@ const ServiceData = [
       "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
   },
-  {
-    id: 4,
-    serviceImg: serviceImg,
-    serviceIcon: serviceIcon,
-    serviceButton: <GoArrowUpRight />,
-    serviceButton2: "Discover More",
-    serviceTitle: "Tree Plantation",
-    serviceDesc:
-      "Alternative innovation to ethical network environmental whiteboard",
-    serviceShape: serviceShape,
-  },
 ];
 
 const Service = () => {
@@ -80,11 +70,17 @@ const Service = () => {
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className="relative pt-28 pb-[120px] bg-[#f5f8ed] z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/public/images/service2-bg.jpg')] before:-z-10 before:bg-cover before:bg-center before:bg-no-repeat">
+    <section className="service relative pt-28 pb-[120px] bg-[#f5f8ed] z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/public/images/service2-bg.jpg')] before:-z-10 before:bg-cover before:bg-center before:bg-no-repeat">
       <div className="Container">
-        <div className="md:-mb-[11.2rem]">
-          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+        <div className="text-center">
+          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
             <img src={subTitleShape} draggable="false" />
             OUR SERVICES
           </h5>
@@ -94,7 +90,7 @@ const Service = () => {
           </h1>
         </div>
         <div className="mt-[40px]">
-          <Swiper {...settings}>
+          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             {ServiceData.map(
               ({
                 id,
@@ -109,7 +105,7 @@ const Service = () => {
                 return (
                   <>
                     <SwiperSlide key={id}>
-                      <div className="pt-[120px] sm:pt-[180px]">
+                      <div className="pb-[100px]">
                         <ServiceCard
                           serviceImg={serviceImg}
                           serviceIcon={serviceIcon}
@@ -125,7 +121,6 @@ const Service = () => {
                 );
               }
             )}
-            <ServiceNavigation />
           </Swiper>
         </div>
       </div>
