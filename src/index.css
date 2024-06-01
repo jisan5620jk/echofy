@@ -32,7 +32,6 @@ body {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-black backdrop-blur-md animate-headerSlideDown;
 }
 
-
 /* Progress Bar */
 
 .progress-bar-rect-wrap-container {
@@ -57,7 +56,6 @@ body {
   width: 20px !important;
 }
 
-
 /* Portfolio */
 
 .swiper-slide:hover .project-content,
@@ -74,9 +72,9 @@ body {
 /* Pagination */
 
 .testimonial .swiper-pagination {
-    bottom: 6px !important;
-    top: inherit !important;
-    left: 50% !important;
-    flex-direction: row !important;
-    justify-content: center;
+  bottom: 6px !important;
+  top: inherit !important;
+  left: 50% !important;
+  flex-direction: row !important;
+  justify-content: center;
 }

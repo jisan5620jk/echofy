@@ -1,75 +1,70 @@
-import { FaArrowRightLong, FaCircleCheck } from "react-icons/fa6";
-import aboutThumb from "/public/images/about-thumb2.png";
-import aboutShape from "/public/images/about-shape3.png";
-import aboutShape2 from "/public/images/about-shape4.png";
-import icon from "/public/images/counter-icon.png";
+import aboutThumb from "/public/images/about-1.png";
+import aboutThumb2 from "/public/images/about-2.png";
+import subTitleShape from "/public/images/sub-title-shape.png";
+import aboutIcon from "/public/images/about2-icon.png";
+import aboutIcon2 from "/public/images/about2-icon2.png";
 import { Link } from "react-router-dom";
-import CountUp from "react-countup";
+import buttonShape from "/public/images/button-shape-1.png";
+import aboutShape from "/public/images/about2-shape.png";
 
 const About = () => {
   return (
-    <section className="py-[120px] bg-[url('/public/images/about-bg.png')] bg-cover bg-center bg-no-repeat">
-      <div className="Container">
+    <section className="py-[120px] bg-[url('/public/images/about-bg.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
+      <img src={aboutShape} draggable="false" className="absolute -bottom-52 -right-20"/> <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 items-center">
           <div className="relative z-10">
             <img src={aboutThumb} />
-            <img
-              src={aboutShape}
-              className="absolute top-0 right-0 -z-10 animate-movebtn"
-            />
-            <img
-              src={aboutShape2}
-              className="absolute bottom-0 left-[10%] -z-10 animate-movebtn"
-            />
+            <img src={aboutThumb2} className="absolute bottom-0 right-0" />
           </div>
           <div>
-            <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
-              ABOUT US
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <img src={subTitleShape} draggable="false" />
+              ABOUT ECHOFY
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
-              Making Your House Clean <br /> For Looks As a New
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+              Protecting Environment <br />
+              For Green Future
             </h1>
             <p className="font-AlbertSans text-TextColor-0 font-light">
-              Competently repurpose go forward benefits without goal-oriented
-              ROI conveniently target e-business opportunities whereas parallel
-              task multimedia based web services
+              {`Assertively reinvent front-end deliverables via to sustainable
+              products. Credibly an expanded array of vortals for open-source
+              internal or "organic" sources main negotiate professional supply
+              chains via inexpensive`}
             </p>
-            <div className="flex flex-col md:flex-row gap-8 justify-between mt-7">
-              <div>
-                <ul>
-                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    echofy Your Home or Office
-                  </li>
-                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    24/7 Emmergency Quality Services
-                  </li>
-                  <li className="flex items-center gap-2 font-AlbertSans text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    Online Booking System available
-                  </li>
-                </ul>
-                <Link to={"/about"}>
-                  <button className="primary-btn2 mt-9">
-                    More About Us
-                    <FaArrowRightLong size={"20"} />
-                  </button>
-                </Link>
+            <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-1 2xl:grid-cols-2 gap-7 mt-7 border-t border-BorderColor2-0 pt-8 border-b pb-8 mb-10">
+              <div className="flex gap-6">
+                <div className="bg-[#ebf5da] w-[65px] h-[65px] rounded flex items-center justify-center">
+                  <img src={aboutIcon} draggable="false" />
+                </div>
+                <div className="flex-1">
+                  <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 -mt-2">
+                    Dust Recycling
+                  </h5>
+                  <p className="font-AlbertSans text-TextColor-0 text-[17px] pt-2">
+                    Alternative innovation the environmental
+                  </p>
+                </div>
               </div>
-              <div className="bg-PrimaryColor-0 rounded-lg w-[192px] h-[192px] flex justify-center items-center flex-col">
-                <img src={icon} />
-                <CountUp
-                  start={-11}
-                  end={12}
-                  suffix="+"
-                  className="text-[36px] font-AlbertSans font-bold text-HeadingColor-0"
-                />
-                <p className="font-AlbertSans text-TextColor-0 font-light">
-                  Years Experience
-                </p>
+              <div className="flex gap-6">
+                <div className="bg-[#ebf5da] w-[65px] h-[65px] rounded flex items-center justify-center">
+                  <img src={aboutIcon2} draggable="false" />
+                </div>
+                <div className="flex-1">
+                  <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 -mt-2">
+                    Safe Environment
+                  </h5>
+                  <p className="font-AlbertSans text-TextColor-0 text-[17px] pt-2">
+                    Alternative innovation the environmental
+                  </p>
+                </div>
               </div>
             </div>
+            <Link to={"/about"}>
+              <button className="primary-btn">
+                {`More About`}
+                <img src={buttonShape} draggable="false" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -119,7 +119,7 @@ const Navbar = () => {
         <div className="header-section">
           <div className="Container">
             {/* main Navbar */}
-            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[80px] bg-PrimaryColor-0 rounded-b-md -mb-[80px] relative z-50 px-7">
+            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[90px] bg-PrimaryColor-0 rounded-b-md -mb-[90px] relative z-50 px-7">
               {/* website Logo */}
               <div className="w-48 lg:w-52">
                 <Link to="/">

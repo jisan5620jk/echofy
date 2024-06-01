@@ -1,104 +1,132 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import serviceThumb from "/public/images/service-img.png";
-import serviceThumb2 from "/public/images/service-img2.png";
-import serviceThumb3 from "/public/images/service-img3.png";
+import serviceImg from "/public/images/service2-thumb.jpg";
+import serviceImg2 from "/public/images/service2-thumb2.jpg";
+import serviceImg3 from "/public/images/service2-thumb3.jpg";
+import serviceIcon from "/public/images/service2-icon.png";
+import serviceIcon2 from "/public/images/service2-icon2.png";
+import serviceIcon3 from "/public/images/service2-icon3.png";
 import serviceShape from "/public/images/service-shape.png";
-import serviceIcon from "/public/images/service-icon.png";
-import serviceIcon2 from "/public/images/service-icon2.png";
-import serviceIcon3 from "/public/images/service-icon3.png";
+import subTitleShape from "/public/images/sub-title-shape.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ServiceNavigation from "./ServiceNavigation";
 import ServiceCard from "./ServiceCard";
+import { GoArrowUpRight } from "react-icons/go";
 
-const serviceData = [
+const ServiceData = [
   {
     id: 1,
-    serviceThumb: serviceThumb,
+    serviceImg: serviceImg,
     serviceIcon: serviceIcon,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Tree Plantation",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `House Wash & Clean`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/serviceDetails",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
   },
   {
     id: 2,
-    serviceThumb: serviceThumb2,
+    serviceImg: serviceImg2,
     serviceIcon: serviceIcon2,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Dust Recycling",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `Office Floor Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/serviceDetails",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
   },
   {
     id: 3,
-    serviceThumb: serviceThumb3,
+    serviceImg: serviceImg3,
     serviceIcon: serviceIcon3,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Cleaning Ocean",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `Kitchen Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/serviceDetails",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
+  },
+  {
+    id: 4,
+    serviceImg: serviceImg,
+    serviceIcon: serviceIcon,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Tree Plantation",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
+    serviceShape: serviceShape,
   },
 ];
 
 const Service = () => {
+  const settings = {
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    autoplay: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  };
   return (
-    <section className="pt-28 relative z-10 before:absolute before:w-full before:h-[80%] before:-z-10 before:top-0 before:left-0 before:bg-[url('/public/images/service-bg2.png')] before:bg-cover before:bg-center before:bg-no-repeat">
+    <section className="relative pt-28 pb-[120px] bg-[#f5f8ed] z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/public/images/service2-bg.jpg')] before:-z-10 before:bg-cover before:bg-center before:bg-no-repeat">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">
+        <div className="md:-mb-[11.2rem]">
+          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+            <img src={subTitleShape} draggable="false" />
             OUR SERVICES
           </h5>
-          <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
-            Professional echofy Services <br />
-            What we Provide
+          <h1 className="font-AlbertSans font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-5 mb-3 pb-9">
+            Echofy Provide Environment <br />
+            Best Leading Services
           </h1>
         </div>
-        <div className="mt-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {serviceData.map(
+        <div className="mt-[40px]">
+          <Swiper {...settings}>
+            {ServiceData.map(
               ({
                 id,
-                serviceThumb,
+                serviceImg,
                 serviceIcon,
-                serviceShape,
+                serviceButton,
+                serviceButton2,
                 serviceTitle,
-                serviceListIcon,
-                serviceListContent,
-                serviceListContent2,
-                serviceUrl,
-                buttonContent,
-                buttonIcon,
+                serviceDesc,
+                serviceShape,
               }) => {
                 return (
-                  <div key={id}>
-                    <ServiceCard
-                      serviceThumb={serviceThumb}
-                      serviceIcon={serviceIcon}
-                      serviceShape={serviceShape}
-                      serviceTitle={serviceTitle}
-                      serviceListIcon={serviceListIcon}
-                      serviceListContent={serviceListContent}
-                      serviceListContent2={serviceListContent2}
-                      serviceUrl={serviceUrl}
-                      buttonContent={buttonContent}
-                      buttonIcon={buttonIcon}
-                    />
-                  </div>
+                  <>
+                    <SwiperSlide key={id}>
+                      <div className="pt-[120px] sm:pt-[180px]">
+                        <ServiceCard
+                          serviceImg={serviceImg}
+                          serviceIcon={serviceIcon}
+                          serviceButton={serviceButton}
+                          serviceButton2={serviceButton2}
+                          serviceTitle={serviceTitle}
+                          serviceDesc={serviceDesc}
+                          serviceShape={serviceShape}
+                        />
+                      </div>
+                    </SwiperSlide>
+                  </>
                 );
               }
             )}
-          </div>
+            <ServiceNavigation />
+          </Swiper>
         </div>
       </div>
     </section>
