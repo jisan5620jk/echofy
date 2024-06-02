@@ -58,11 +58,6 @@ body {
 
 /* Portfolio */
 
-.swiper-slide:hover .project-content,
-.swiper-slide.swiper-slide-active .project-content {
-  bottom: -40px;
-}
-
 .swiper-slide:hover .project-thumb-title,
 .swiper-slide.swiper-slide-active .project-thumb-title {
   left: 25px;
@@ -76,11 +71,10 @@ body {
   bottom: 0px;
 }
 
-
 /* Pagination */
 
-.service .swiper-pagination ,
-.testimonial .swiper-pagination ,
+.service .swiper-pagination,
+.testimonial .swiper-pagination,
 .project .swiper-pagination {
   bottom: 6px !important;
   top: inherit !important;

@@ -43,6 +43,16 @@ const ProjectData = [
     projectContentShape: projectContentShape,
     projectShape: projectShape,
   },
+  {
+    id: 1,
+    projectThumb: projectThumb,
+    projectSubTitle: "Climate",
+    projectTitle: "Cleaning Forest",
+    buttonUrl: "/projectDetails",
+    projectButton: <GoArrowUpRight />,
+    projectContentShape: projectContentShape,
+    projectShape: projectShape,
+  },
 ];
 
 const Project = () => {
