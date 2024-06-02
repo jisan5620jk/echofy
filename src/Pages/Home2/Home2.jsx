@@ -4,7 +4,7 @@ import Service from "../../Componant2/Service/Service";
 import Rating from "../../Componant2/Rating/Rating";
 import Project from "../../Componant2/Project/Project";
 import Faq from "../../Componant2/Faq/Accordion/Faq";
-
+import Brand from "../../Componant2/Brand/Brand";
 
 const Home2 = () => {
   return (
@@ -14,7 +14,8 @@ const Home2 = () => {
       <Service />
       <Rating />
       <Project />
-      <Faq/>
+      <Faq />
+      <Brand />
     </>
   );
 };

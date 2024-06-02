@@ -3,6 +3,7 @@ import FaqAccordion from "./FaqAccordion";
 import subTitleShape from "/public/images/sub-title-shape.png";
 import buttonShape from "/public/images/button-shape-1.png";
 import faqIcon from "/public/images/faq-icon.png";
+import faqMainShape from "/public/images/faqs-shape2.png";
 
 const Faq = () => {
   //  All Faqs and  answers.
@@ -34,10 +35,14 @@ const Faq = () => {
   ];
 
   return (
-    <main className="relative overflow-hidden py-28 bg-[#f3f4f8]">
+    <section className="relative overflow-hidden py-28 bg-[#f3f4f8]">
       <div className="Container">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
-          <div>
+          <div className="relative">
+            <img
+              src={faqMainShape}
+              className="absolute -top-28 right-10 animate-movebtn"
+            />
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
               FAQ
@@ -73,7 +78,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
