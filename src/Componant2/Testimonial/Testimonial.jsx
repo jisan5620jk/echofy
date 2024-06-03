@@ -1,10 +1,14 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-thumb-2.png";
-import testiImg2 from "/public/images/testi-thumb.png";
-import testiIcon from "/public/images/testi-icon2.png";
+import testiImg from "/public/images/testi-profile.png";
+import testiImg2 from "/public/images/testi-profile2.png";
+import testiShape from "/public/images/envato.png";
+import testiShape2 from "/public/images/amazon.png";
+import testiMainShape from "/public/images/testi2-shape.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import subTitleShape from "/public/images/sub-title-shape.png";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestimonialCard from "./TestimonialCard";
 
@@ -13,37 +17,37 @@ const testiData = [
     id: 1,
     testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D. Alexon",
+    testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
+    testiDesc: `Appropriately administrate proactive value with to
+                niche markets. Dramatically target market position
+                idea after high quality best practice. Dramatically 
+                synergize open source service`,
+    testiShape: testiShape,
   },
   {
     id: 2,
     testiImg: testiImg2,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
+    testiName: "Jhon D. Alexon",
     testiDesignation: "UI/UX Designer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
+    testiDesc: `Appropriately administrate proactive value with to
+                niche markets. Dramatically target market position
+                idea after high quality best practice. Dramatically 
+                synergize open source service`,
+    testiShape: testiShape2,
   },
   {
     id: 3,
     testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D. Alexon",
+    testiName: "Anjelina Watson",
     testiDesignation: "Web Developer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
+    testiDesc: `Appropriately administrate proactive value with to
+                niche markets. Dramatically target market position
+                idea after high quality best practice. Dramatically 
+                synergize open source service`,
+    testiShape: testiShape,
   },
 ];
 
@@ -58,60 +62,81 @@ const Testimonial = () => {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       1400: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className="bg-[url('/public/images/testi-bg2.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
+    <section className="py-28 bg-[url('/public/images/testimonial-bg2.jpg')] bg-no-repeat bg-cover bg-center relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/public/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
+      <img
+        src={testiMainShape}
+        draggable="false"
+        className="absolute -z-10 top-0 right-0 animate-dance2"
+      />
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">
-            TESTIMONIALS
-          </h5>
-          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
-            Our Customer’s Feedback
-          </h1>
-        </div>
-        <div className="mt-[40px]">
-          <Swiper {...settings}>
+        <div className="grid grid-cols-2">
+          <div></div>
+          <div>
             <div>
-              {testiData.map(
-                ({
-                  id,
-                  testiImg,
-                  testiRatingIcon,
-                  testiName,
-                  testiDesignation,
-                  testiTitle,
-                  testiDesc,
-                  testiIcon,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className="pt-3">
-                        <TestimonialCard
-                          testiImg={testiImg}
-                          testiRatingIcon={testiRatingIcon}
-                          testiName={testiName}
-                          testiDesignation={testiDesignation}
-                          testiTilte={testiTitle}
-                          testiDesc={testiDesc}
-                          testiIcon={testiIcon}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
+              <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+                <img src={subTitleShape} draggable="false" />
+                TESTIMONIALS
+              </h5>
+              <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+                Clients Best Feedback About
+                <br />
+                Echofy Provission
+              </h1>
             </div>
-          </Swiper>
+            <div className="mt-[46px]">
+              <Swiper
+                {...settings}
+                pagination={pagination}
+                modules={[Pagination]}
+              >
+                <div>
+                  {testiData.map(
+                    ({
+                      id,
+                      testiImg,
+                      testiRatingIcon,
+                      testiName,
+                      testiDesignation,
+                      testiDesc,
+                      testiShape,
+                    }) => {
+                      return (
+                        <SwiperSlide key={id}>
+                          <div className="pb-[80px] pt-3">
+                            <TestimonialCard
+                              testiImg={testiImg}
+                              testiRatingIcon={testiRatingIcon}
+                              testiName={testiName}
+                              testiDesignation={testiDesignation}
+                              testiDesc={testiDesc}
+                              testiShape={testiShape}
+                            />
+                          </div>
+                        </SwiperSlide>
+                      );
+                    }
+                  )}
+                </div>
+              </Swiper>
+            </div>
+          </div>
         </div>
       </div>
     </section>

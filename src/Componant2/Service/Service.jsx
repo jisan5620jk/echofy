@@ -47,6 +47,17 @@ const ServiceData = [
       "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
   },
+  {
+    id: 1,
+    serviceImg: serviceImg,
+    serviceIcon: serviceIcon,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Tree Plantation",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
+    serviceShape: serviceShape,
+  },
 ];
 
 const Service = () => {

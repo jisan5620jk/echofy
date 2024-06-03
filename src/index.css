@@ -87,6 +87,7 @@ body {
 
 .faq-button[aria-expanded="true"]{
 background: #79b900;
+border-radius: 6px 6px 0 0;
 }
 
 

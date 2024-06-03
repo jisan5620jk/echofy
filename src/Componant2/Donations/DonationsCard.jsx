@@ -1,69 +1,79 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
+import ProgressBar from "react-animated-progress-bar";
 
-const DonationsCard = () => {
-    return (
-      <div className="inline-block bg-white">
-        <div className="relative border-b-[5px] border-SecondaryColor-0 inline-block">
-          <img src={donateImg2} className="w-[600px]" />
-          <h6 className="font-Manrope font-medium text-white bg-SecondaryColor-0 px-5 py-2 rounded-se-2xl inline-block absolute -bottom-1 left-0">
-            Educations
-          </h6>
+const DonationsCard = ({
+  donateImg,
+  imgbutton,
+  donateTitle,
+  donateDesc,
+  donatePercent,
+  percentTitle,
+  percentNumber,
+  percentTitle2,
+  percentNumber2,
+}) => {
+  return (
+    <div className="inline-block group">
+      <div className="relative inline-block z-10 overflow-hidden rounded-t-md">
+        <img
+          src={donateImg}
+          className="w-full transition-all duration-500 group-hover:blur-[2px]"
+        />
+        <Link to={"/"}>
+          <button className="absolute top-full left-1/2 -translate-x-1/2 group-hover:top-1/2 group-hover:-translate-y-1/2 font-AlbertSans inline-block rounded-full bg-PrimaryColor-0 text-white transition-all duration-500 px-[30px] py-[14px]">
+            {imgbutton}
+          </button>
+        </Link>
+      </div>
+      <div className="px-[30px] pb-8 pt-6 bg-white">
+        <Link to={"/"}>
+          <button className="font-AlbertSans font-medium text-left text-2xl pb-4 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+            {donateTitle}
+          </button>
+        </Link>
+        <p className="font-AlbertSans text-TextColor-0">{donateDesc}</p>
+        <div className="mt-10">
+          <ProgressBar
+            rect
+            width="100%"
+            height="10px"
+            fontColor="#fff"
+            fontSize="17px"
+            leading="10px"
+            margin="0px"
+            rectBorderRadius="10px"
+            fontWeight="600"
+            percentage={donatePercent}
+            defColor={{
+              excellent: "#79b900",
+              good: "#79b900",
+              fair: "green",
+              poor: "red",
+            }}
+            trackPathColor="#e1efcb"
+            trackBorderColor="transparent"
+          />
         </div>
-        <div className="shadow-cases px-8 pb-9 pt-4">
-          <Link to={"/blogDetails"}>
-            <button className="text-left font-Manrope font-bold text-[19px] sm:text-[22px] lg:text-lg xl:text-[22px] text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0">
-              Give a good education orphan childreen
-            </button>
-          </Link>
-          <h6 className="flex gap-2 items-center mt-5 mb-7">
-            <span className="text-SecondaryColor-0 text-lg">
-              <BsAlarmFill />
+        <div className="flex justify-between mt-4">
+          <h6 className="font-AlbertSans text-TextColor-0">
+            {percentTitle}
+            <span className="text-HeadingColor-0">
+              {" "}
+              {percentNumber}
             </span>
-            150 Days Remaining
           </h6>
-          <div className="bg-[#fff2ed] rounded-md px-5 pt-9 pb-4">
-            <div className="px-[6px] py-1 rounded-2xl">
-              <ProgressBar
-                rect
-                width="100%"
-                height="6px"
-                fontColor="#fff"
-                fontSize="17px"
-                leading="10px"
-                margin="0px"
-                rectBorderRadius="10px"
-                fontWeight="600"
-                percentage="70.1"
-                defColor={{
-                  excellent: "#53c99f",
-                  good: "#53c99f",
-                  fair: "green",
-                  poor: "red",
-                }}
-                trackPathColor="#e8e9e9"
-                trackBorderColor="transparent"
-              />
-            </div>
-            <div className="flex justify-between mt-4">
-              <h6 className="font-Manrope text-TextColor-0 text-sm">
-                Achived :
-                <span className="text-HeadingColor-0 font-semibold text-[15px]">
-                  {" "}
-                  $50,000
-                </span>
-              </h6>
-              <h6 className="font-Manrope text-TextColor-0 text-sm">
-                Goal :
-                <span className="text-HeadingColor-0 font-semibold text-[15px]">
-                  {" "}
-                  $90,000
-                </span>
-              </h6>
-            </div>
-          </div>
+          <h6 className="font-AlbertSans text-TextColor-0">
+            {percentTitle2}
+            <span className="text-HeadingColor-0">
+              {" "}
+              {percentNumber2}
+            </span>
+          </h6>
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default DonationsCard;

@@ -30,42 +30,41 @@ const Brand = () => {
     },
   };
   return (
-    <div className="bg-[#f5f8ed]">
+    <div className="bg-white py-28">
       <div className="Container relative z-10">
-        
-          <Swiper {...settings}>
-            <SwiperSlide>
-              <div>
-                <img src={brandThumb} draggable="false" className="m-auto" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img src={brandThumb2} draggable="false" className="m-auto" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img src={brandThumb3} draggable="false" className="m-auto" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img src={brandThumb} draggable="false" className="m-auto" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img src={brandThumb5} draggable="false" className="m-auto" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img src={brandThumb} draggable="false" className="m-auto" />
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        <Swiper {...settings}>
+          <SwiperSlide>
+            <div>
+              <img src={brandThumb} draggable="false" className="m-auto" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <img src={brandThumb2} draggable="false" className="m-auto" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <img src={brandThumb3} draggable="false" className="m-auto" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <img src={brandThumb} draggable="false" className="m-auto" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <img src={brandThumb5} draggable="false" className="m-auto" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <img src={brandThumb} draggable="false" className="m-auto" />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 };
