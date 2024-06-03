@@ -25,7 +25,7 @@ const BlogCard = ({
           </h6>
         </div>
       </div>
-      <div className="border-r border-l border-b rounded-b-md border-BorderColor2-0 transition-all duration-500 group-hover:border-x">
+      <div className="border-x border-b rounded-b-md border-BorderColor2-0 transition-all duration-500 group-hover:border-transparent">
         <div className="px-5 sm:px-7 pt-6">
           <p className="font-AlbertSans text-TextColor-0 pl-[18px] relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:w-2 before:h-2 before:rounded-full">
             {blogDate}

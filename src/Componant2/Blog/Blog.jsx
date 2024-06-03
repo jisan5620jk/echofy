@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong } from "react-icons/fa6";
-import blogThumb from "/public/images/blog-thumb.png";
-import blogThumb2 from "/public/images/blog-thumb2.png";
-import blogThumb3 from "/public/images/blog-thumb3.png";
+import blogThumb from "/public/images/blog-thumb1.jpg";
+import blogThumb2 from "/public/images/blog-thumb2.jpg";
+import blogThumb3 from "/public/images/blog-thumb3.jpg";
+import subTitleShape from "/public/images/sub-title-shape.png";
+import buttonShape from "/public/images/button-shape-1.png";
 import BlogCard from "./BlogCard";
 import { Link } from "react-router-dom";
 
@@ -10,37 +12,40 @@ const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    thumbDate: "02",
-    thumbMonth: "MAY",
+    thumbContent: "Environment",
+    blogDate: "24 Mar, 2024",
     blogUrl: "/blogDetails",
-    blogTitle: "Newest Cleaning Tools for House 2024",
+    blogTitle: "Top 10 Recycling tips for Environment",
     blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
+      "Competently cultivate worldwide to e-tailers professionally engineer high",
+    blogProfileIcon: "J",
+    blogProfileTitle: "John D. Alexon",
     btnIcon: <FaArrowRightLong />,
   },
   {
     id: 2,
     blogThumb: blogThumb2,
-    thumbDate: "12",
-    thumbMonth: "MAY",
+    thumbContent: "Environment",
+    blogDate: "24 Mar, 2024",
     blogUrl: "/blogDetails",
-    blogTitle: "10 Most Popular Cleaning Tips for House",
+    blogTitle: "How Every Individual Can Make a Difference",
     blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
+      "Competently cultivate worldwide to e-tailers professionally engineer high",
+    blogProfileIcon: "A",
+    blogProfileTitle: "Anjelina Watson",
     btnIcon: <FaArrowRightLong />,
   },
   {
     id: 3,
     blogThumb: blogThumb3,
-    thumbDate: "25",
-    thumbMonth: "MAY",
+    thumbContent: "Environment",
+    blogDate: "24 Mar, 2024",
     blogUrl: "/blogDetails",
-    blogTitle: "Floor Cleaning Use New Equipment",
+    blogTitle: "Innovations in Renewable Energy Technology",
     blogDesc:
-      "Competently repurpose forward benefits conveniently target e-business",
-    btnContent: "Read More",
+      "Competently cultivate worldwide to e-tailers professionally engineer high",
+    blogProfileIcon: "D",
+    blogProfileTitle: "David Watson",
     btnIcon: <FaArrowRightLong />,
   },
 ];
@@ -51,20 +56,20 @@ const Blog = () => {
       <div className="Container">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:items-center">
           <div>
-            <div>
-              <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
-                LATEST BLOG
-              </h5>
-              <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
-                Learn about our Latest <br /> News from Blog
-              </h1>
-            </div>
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <img src={subTitleShape} draggable="false" />
+              LATEST BLOG
+            </h5>
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+              Building a Greener Future <br />
+              Together Forever
+            </h1>
           </div>
           <div className="flex lg:justify-end">
-            <Link to={"/blogDetails"}>
+            <Link to={"/blogGrid"}>
               <button className="primary-btn">
                 Veiw All Blog
-                <FaArrowRightLong size={"20"} />
+                <img src={buttonShape} draggable="false" />
               </button>
             </Link>
           </div>
@@ -75,22 +80,24 @@ const Blog = () => {
               ({
                 id,
                 blogThumb,
-                thumbDate,
-                thumbMonth,
+                thumbContent,
+                blogDate,
                 blogTitle,
                 blogDesc,
-                btnContent,
+                blogProfileIcon,
+                blogProfileTitle,
                 btnIcon,
               }) => {
                 return (
                   <div key={id}>
                     <BlogCard
                       blogThumb={blogThumb}
-                      thumbDate={thumbDate}
-                      thumbMonth={thumbMonth}
+                      thumbContent={thumbContent}
+                      blogDate={blogDate}
                       blogTitle={blogTitle}
                       blogDesc={blogDesc}
-                      btnContent={btnContent}
+                      blogProfileIcon={blogProfileIcon}
+                      blogProfileTitle={blogProfileTitle}
                       btnIcon={btnIcon}
                     />
                   </div>

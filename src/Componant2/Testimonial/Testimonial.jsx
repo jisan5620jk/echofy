@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import testiImg from "/public/images/testi-profile.png";
 import testiImg2 from "/public/images/testi-profile2.png";
+import thumbShape from "/public/images/testimonial-circle.png";
 import testiShape from "/public/images/envato.png";
 import testiShape2 from "/public/images/amazon.png";
 import testiMainShape from "/public/images/testi2-shape.png";
@@ -8,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import subTitleShape from "/public/images/sub-title-shape.png";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Thumbs } from "swiper/modules";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestimonialCard from "./TestimonialCard";
 
@@ -79,15 +80,17 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-28 bg-[url('/public/images/testimonial-bg2.jpg')] bg-no-repeat bg-cover bg-center relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/public/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
+    <section className="py-28 bg-[url('/public/images/testimonial-bg2.jpg')] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden testimonial">
       <img
         src={testiMainShape}
         draggable="false"
         className="absolute -z-10 top-0 right-0 animate-dance2"
       />
       <div className="Container">
-        <div className="grid grid-cols-2">
-          <div></div>
+        <div className="grid grid-cols-2 items-center">
+          <div>
+            <img src={thumbShape} className="-ml-[18rem] !w-[inherit] animate-rotational"/>
+          </div>
           <div>
             <div>
               <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">

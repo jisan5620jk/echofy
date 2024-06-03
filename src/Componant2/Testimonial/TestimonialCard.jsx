@@ -8,7 +8,7 @@ const TestimonialCard = ({
   testiShape,
 }) => {
   return (
-    <div className="px-5 sm:px-10 lg:px-4 xl:px-10 pt-12 bg-white relative bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
+    <div className="px-5 sm:px-10 lg:px-4 xl:px-10 pt-12 bg-[#f5f8ed] relative bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 xl:gap-8">
         <div>
           <img src={testiImg} />

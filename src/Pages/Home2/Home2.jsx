@@ -7,6 +7,8 @@ import Faq from "../../Componant2/Faq/Accordion/Faq";
 import Brand from "../../Componant2/Brand/Brand";
 import Donation from "../../Componant2/Donations/Donation";
 import Testimonial from "../../Componant2/Testimonial/Testimonial";
+import ContentSlider from "../../Componant2/ContentSlider/ContentSlider";
+import Blog from "../../Componant2/Blog/Blog";
 
 const Home2 = () => {
   return (
@@ -20,6 +22,8 @@ const Home2 = () => {
       <Brand />
       <Donation />
       <Testimonial />
+      <ContentSlider/>
+      <Blog />
     </>
   );
 };
