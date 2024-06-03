@@ -4,15 +4,15 @@ import teamIcon2 from "/public/images/team-1.png";
 
 const Rating = () => {
   return (
-    <div className="bg-[#f5f8ed]">
+    <div className="bg-[linear-gradient(180deg,_rgba(245,248,237,1)_50%,_rgba(255,255,255,1)_50%)]">
       <div className="Container relative z-10">
-        <div className="grid grid-cols-2 items-center bg-[url('/public/images/rating-bg.jpg')] bg-cover bg-no-repeat bg-cener rounded-md px-[60px] py-11">
-          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-5 mb-3">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center bg-[url('/public/images/rating-bg.jpg')] bg-cover bg-no-repeat bg-center rounded-md px-5 sm:px-[60px] py-11">
+          <h1 className="font-AlbertSans font-bold text-[20px] leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-5 mb-3">
             We Provide Environment <br />
             Leading Services
           </h1>
-          <div className="grid grid-cols-2">
-            <div className="flex items-center gap-7">
+          <div className="grid grid-cols-1 gap-6">
+            <div className="flex items-center gap-3 sm:gap-7">
               <div>
                 <img src={teamIcon} draggable="false" className="m-auto" />
               </div>
@@ -28,7 +28,7 @@ const Rating = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-7">
+            <div className="flex items-center gap-3 sm:gap-7">
               <div>
                 <img src={teamIcon2} draggable="false" className="m-auto" />
               </div>

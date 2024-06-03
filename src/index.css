@@ -85,13 +85,12 @@ body {
 
 /* Faq */
 
-.faq-button[aria-expanded="true"]{
-background: #79b900;
-border-radius: 6px 6px 0 0;
+.faq-button[aria-expanded="true"] {
+  background: #79b900;
+  border-radius: 6px 6px 0 0;
 }
 
-
 .faq-button:hover img,
-.faq-button[aria-expanded="true"] img{
+.faq-button[aria-expanded="true"] img {
   filter: brightness(0) invert(1);
 }

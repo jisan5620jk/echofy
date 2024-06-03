@@ -6,15 +6,30 @@ import aboutIcon2 from "/public/images/about2-icon2.png";
 import { Link } from "react-router-dom";
 import buttonShape from "/public/images/button-shape-1.png";
 import aboutShape from "/public/images/about2-shape.png";
+import aboutShape2 from "/public/images/testi-shape-3.png";
 
 const About = () => {
   return (
     <section className="py-[120px] bg-[url('/public/images/about-bg.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
-      <img src={aboutShape} draggable="false" className="absolute -bottom-52 -right-20"/> <div className="Container">
+      <img
+        src={aboutShape}
+        draggable="false"
+        className="absolute -bottom-52 -right-20"
+      />
+      <img
+        src={aboutShape2}
+        draggable="false"
+        className="absolute top-32 right-20 animate-zoomInOut"
+      />
+      <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 items-center">
           <div className="relative z-10">
-            <img src={aboutThumb} />
-            <img src={aboutThumb2} className="absolute bottom-0 right-0" />
+            <img src={aboutThumb} draggable="false" />
+            <img
+              src={aboutThumb2}
+              draggable="false"
+              className="absolute bottom-0 right-0 hidden sm:block"
+            />
           </div>
           <div>
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">

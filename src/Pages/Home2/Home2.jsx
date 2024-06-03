@@ -7,7 +7,7 @@ import Faq from "../../Componant2/Faq/Accordion/Faq";
 import Brand from "../../Componant2/Brand/Brand";
 import Donation from "../../Componant2/Donations/Donation";
 import Testimonial from "../../Componant2/Testimonial/Testimonial";
-import ContentSlider from "../../Componant2/ContentSlider/ContentSlider";
+import ContentSlider2 from "../../Componant2/ContentSlider2/ContentSlider2";
 import Blog from "../../Componant2/Blog/Blog";
 
 const Home2 = () => {
@@ -22,7 +22,7 @@ const Home2 = () => {
       <Brand />
       <Donation />
       <Testimonial />
-      <ContentSlider/>
+      <ContentSlider2/>
       <Blog />
     </>
   );

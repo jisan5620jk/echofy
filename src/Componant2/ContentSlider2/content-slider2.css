@@ -1,4 +1,4 @@
-.content-slider-section {
+.content-slider-section2 {
   padding: 70px 0;
   background: #79b900;
   background-size: cover;
@@ -17,7 +17,7 @@
   gap: 50px;
 }
 
-.content-slider {
+.content-slider2 {
   text-align: center;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -35,7 +35,7 @@
   animation: scroll 50s linear infinite;
 }
 
-.content-slider-content {
+.content-slider-content2 {
   position: relative;
   --duration: 50s;
   --gap: 0px;
@@ -50,7 +50,7 @@
   gap: 0px;
 }
 
-.content-slider-content h1 {
+.content-slider-content2 h1 {
   font-size: 100px;
   font-weight: 600;
   text-transform: uppercase;

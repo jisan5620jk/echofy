@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
-import projectThumb from "/public/images/project-img.png";
-import projectThumb2 from "/public/images/project-img2.png";
-import projectThumb3 from "/public/images/project-img3.png";
+import projectThumb from "/public/images/project-thumb.jpg";
+import projectThumb2 from "/public/images/project-thumb2.jpg";
+import projectThumb3 from "/public/images/project-thumb3.jpg";
+import projectThumb4 from "/public/images/project-thumb4.jpg";
 import projectShape from "/public/images/project-shape.png";
 import projectContentShape from "/public/images/project-content-shape.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -44,8 +45,8 @@ const ProjectData = [
     projectShape: projectShape,
   },
   {
-    id: 1,
-    projectThumb: projectThumb,
+    id: 4,
+    projectThumb: projectThumb4,
     projectSubTitle: "Climate",
     projectTitle: "Cleaning Forest",
     buttonUrl: "/projectDetails",
@@ -60,6 +61,7 @@ const Project = () => {
     loop: true,
     spaceBetween: 30,
     speed: 1000,
+    centeredSlides: true,
     initialSlide: 1,
     autoplay: true,
     breakpoints: {
@@ -85,53 +87,51 @@ const Project = () => {
   };
   return (
     <section className="project bg-[url('/public/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
-      <div className="Container">
-        <div className="text-center">
-          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-            <img src={subTitleShape} draggable="false" />
-            OUR PROJECTS
-          </h5>
-          <h1 className="font-AlbertSans font-bold text-xl leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-            Finished the Latest Leading <br />
-            Environmental Works
-          </h1>
-        </div>
-        <div className="mt-[46px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
-            <div>
-              {ProjectData.map(
-                ({
-                  id,
-                  projectThumb,
-                  projectShape,
-                  projectContentShape,
-                  projectSubTitle,
-                  projectTitle,
-                  buttonUrl,
-                  projectButton,
-                  buttonIcon,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className="pb-[100px]">
-                        <ProjectCard
-                          projectThumb={projectThumb}
-                          projectContentShape={projectContentShape}
-                          projectShape={projectShape}
-                          projectSubTitle={projectSubTitle}
-                          projectTitle={projectTitle}
-                          buttonUrl={buttonUrl}
-                          projectButton={projectButton}
-                          buttonIcon={buttonIcon}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
-            </div>
-          </Swiper>
-        </div>
+      <div className="text-center">
+        <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
+          <img src={subTitleShape} draggable="false" />
+          OUR PROJECTS
+        </h5>
+        <h1 className="font-AlbertSans font-bold text-xl leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+          Finished the Latest Leading <br />
+          Environmental Works
+        </h1>
+      </div>
+      <div className="mt-[46px]">
+        <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
+          <div>
+            {ProjectData.map(
+              ({
+                id,
+                projectThumb,
+                projectShape,
+                projectContentShape,
+                projectSubTitle,
+                projectTitle,
+                buttonUrl,
+                projectButton,
+                buttonIcon,
+              }) => {
+                return (
+                  <SwiperSlide key={id}>
+                    <div className="pb-[100px]">
+                      <ProjectCard
+                        projectThumb={projectThumb}
+                        projectContentShape={projectContentShape}
+                        projectShape={projectShape}
+                        projectSubTitle={projectSubTitle}
+                        projectTitle={projectTitle}
+                        buttonUrl={buttonUrl}
+                        projectButton={projectButton}
+                        buttonIcon={buttonIcon}
+                      />
+                    </div>
+                  </SwiperSlide>
+                );
+              }
+            )}
+          </div>
+        </Swiper>
       </div>
     </section>
   );

@@ -80,16 +80,16 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-28 bg-[url('/public/images/testimonial-bg2.jpg')] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden testimonial">
+    <section className="py-28 bg-[url('/public/images/testimonial-bg2.jpg')] bg-no-repeat bg-cover bg-right lg:bg-center relative z-10 overflow-hidden testimonial">
       <img
         src={testiMainShape}
         draggable="false"
-        className="absolute -z-10 top-0 right-0 animate-dance2"
+        className="absolute -z-10 top-0 right-0 animate-dance2 hidden md:block"
       />
       <div className="Container">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div>
-            <img src={thumbShape} className="-ml-[18rem] !w-[inherit] animate-rotational"/>
+            <img src={thumbShape} className="-ml-[18rem] !w-[inherit] animate-rotational hidden lg:block"/>
           </div>
           <div>
             <div>

@@ -3,18 +3,24 @@ import { FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
 import buttonShape from "/public/images/button-shape-1.png";
 import bannerImg from "/public/images/banner-thumb.png";
 import shape from "/public/images/sub-title-shape.png";
+import bannerShape from "/public/images/banner-shape.png";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/public/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[872px] flex items-center relative z-10">
+    <section className="bg-[url('/public/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[900px] sm:h-[1000px] md:h-[1350px] lg:h-[960px] xl:h-[872px] flex items-center relative z-10 overflow-hidden">
+      <img
+        src={bannerShape}
+        draggable="false"
+        className="absolute top-0 -left-5 animate-dance2 hidden lg:block"
+      />
       <div className="Container">
-        <div className="grid lg:grid-cols-2 items-center pt-[90px] gap-16 lg:gap-0">
+        <div className="grid lg:grid-cols-2 items-center sm:pt-[500px] lg:pt-[90px] gap-16 lg:gap-0">
           <div className="relative">
             <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium flex items-center gap-2 mb-5">
               <img src={shape} />
               PROTECTING ENVIRONMENT
             </h5>
-            <h1 className="font-AlbertSans font-extrabold text-HeadingColor-0 text-[30px] sm:text-[56px] md:text-[68x] lg:text-[50px] xl:text-[65px] 2xl:text-[76px] xl:leading-[72px]">
+            <h1 className="font-AlbertSans font-extrabold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[65px] 2xl:text-[76px] xl:leading-[72px] 2xl:leading-[82px]">
               Keep Your World <br />
               Green Ecology
             </h1>
@@ -43,7 +49,7 @@ const Banner = () => {
                     <FaLinkedinIn />
                   </Link>
                 </li>
-                <li> 
+                <li>
                   <Link
                     to={"/"}
                     className="rotate-45 transition-all duration-500 text-HeadingColor-0 hover:text-PrimaryColor-0"
@@ -62,8 +68,12 @@ const Banner = () => {
               </ul>
             </div>
           </div>
-          <div className="absolute -z-10 top-0 -right-[160px]">
-            <img src={bannerImg} draggable="false" className="w-10/12" />
+          <div className="absolute -z-10 top-0 xl:-right-[160px] 2xl:right-0">
+            <img
+              src={bannerImg}
+              draggable="false"
+              className="xl:w-10/12 2xl:w-[inherit]"
+            />
           </div>
         </div>
       </div>

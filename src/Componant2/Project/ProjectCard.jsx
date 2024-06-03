@@ -19,7 +19,7 @@ const ProjectCard = ({
           draggable="false"
           className="absolute -top-80 -right-80 animate-rotate transition-all duration-500 group-hover:-top-[180px] group-hover:-right-[190px]"
         />
-        <div className="project-content flex justify-between items-center absolute -bottom-full transition-all duration-500 left-0 2xl:left-7 w-11/12 -mt-[42px] bg-[#f5f8ed] rounded-t-md overflow-hidden px-4 md:px-8 z-10 border-b-[5px] border-PrimaryColor-0">
+        <div className="project-content flex justify-between items-center absolute -bottom-full transition-all duration-500 left-0 2xl:left-7 2xl:w-8/12 -mt-[42px] bg-[#f5f8ed] rounded-t-md overflow-hidden px-4 md:px-8 z-10 border-b-[5px] border-PrimaryColor-0">
           <div>
             <img
               src={projectContentShape}
