@@ -1,52 +1,77 @@
 import { Link } from "react-router-dom";
-import bannerShape1 from "/public/images/hero-shape2.png";
-import bannerShape2 from "/public/images/hero-shape4.png";
-import bannerThumb from "/public/images/hero-thumb2.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "./banner.css";
+import "swiper/css/pagination";
 import { FaArrowRightLong } from "react-icons/fa6";
+import BannerNavigation from "./BannerNavigation";
 
 const Banner = () => {
+  const settings = {
+    loop: true,
+    speed: 2000,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    duration: 3000,
+  };
   return (
-    <section className="bg-[url('/public/images/hero-bg-2.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[88rem] lg:h-[800px] flex items-center overflow-hidden">
-      <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
-          <div className="relative">
-            <h5 className="font-AlbertSans text-lg text-PrimaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
-              BEST CLEANING SERVICES
-            </h5>
-            <h1 className="font-AlbertSans font-extrabold text-white text-[26px] leading-[44px] sm:text-5xl sm:leading-[68px] lg:text-[42px] lg:leading-[56px] xl:leading-[68px] 2xl:text-[60px] 2xl:leading-[70px] mt-6 mb-5">
-              Bringing <span className="text-PrimaryColor-0">Professional</span>
-              <br />
-              Cleanliness To You.
-            </h1>
-            <p className="font-AlbertSans text-white opacity-65 border-b border-SecondaryColor-0 inline-block pb-[46px] relative before:absolute before:-bottom-[1px] before:left-0 before:bg-PrimaryColor-0 before:h-[1px] before:w-24 before:animate-dance7 mb-12">
-              Need Clean of your home or office Just Feel Free contact us based{" "}
-              <br className="lg:hidden xl:block" />
-              web services We try to Help you as soon as possible clean.
-            </p>
-            <Link to={"/about"}>
-              <button className="primary-btn2 mt-1">
-                Get Started Now
-                <FaArrowRightLong size={"20"} />
-              </button>
-            </Link>
-            <img
-              src={bannerShape1}
-              className="absolute right-0 -top-24 animate-zoomInOut"
-            />
-            <img
-              src={bannerShape2}
-              className="absolute right-0 bottom-0 animate-rotational"
-            />
-          </div>
-          <div>
-            <img
-              src={bannerThumb}
-              className="relative top-[5rem] sm:top-[7rem] md:top-[7.5rem] lg:top-[4rem] 2xl:top-5"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="relative">
+      <Swiper {...settings}>
+        <SwiperSlide>
+          <section className="bg-[url('/public/images/hero2-bg.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[952px] flex items-center">
+            <div className="Container">
+              <div className="relative banner-content text-center pt-[47px]">
+                <h5 className="font-AlbertSans text-white font-medium mb-8">
+                  SOLUTIONS FOR ENVIROMENTAL PROTECTION
+                </h5>
+                <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] sm:leading-[56px] md:text-[66px] md:leading-[80px] xl:text-[76px] xl:leading-[90px]">
+                  YOUR JOURNEY TO SOLAR
+                </h1>
+                <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] sm:leading-[56px] md:text-[66px] md:leading-[80px] xl:text-[76px] xl:leading-[90px] -mt-4 sm:-mt-4 md:-mt-6 lg:mt-2">
+                  EMPOWERMENT
+                </h1>
+                <div className="flex justify-center m-auto mt-6">
+                  <Link to={"/about"}>
+                    <button className="primary-btn2">
+                      {`Find Out More`}
+                      <FaArrowRightLong />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className="bg-[url('/public/images/hero2-bg.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[952px] flex items-center">
+            <div className="Container">
+              <div className="relative banner-content text-center pt-[47px]">
+                <h5 className="font-AlbertSans text-white font-medium mb-8">
+                  SOLUTIONS FOR ENVIROMENTAL PROTECTION
+                </h5>
+                <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] sm:leading-[56px] md:text-[66px] md:leading-[80px] xl:text-[76px] xl:leading-[90px]">
+                  YOUR JOURNEY TO SOLAR
+                </h1>
+                <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] sm:leading-[56px] md:text-[66px] md:leading-[80px] xl:text-[76px] xl:leading-[90px] -mt-4 sm:-mt-4 md:-mt-6 lg:mt-2">
+                  EMPOWERMENT
+                </h1>
+                <div className="flex justify-center m-auto mt-6">
+                  <Link to={"/about"}>
+                    <button className="primary-btn2">
+                      {`Let's Talk`}
+                      <FaArrowRightLong />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        </SwiperSlide>
+        <BannerNavigation />
+      </Swiper>
+    </div>
   );
 };
 

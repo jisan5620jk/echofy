@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import featureIcon from "/public/images/feature-icon-4.png";
+import featureShape from "/public/images/feature-shape.png";
 import featureIcon2 from "/public/images/feature-icon-5.png";
 import featureIcon3 from "/public/images/feature-icon-6.png";
 import FeatureCard from "./FeatureCard";
@@ -7,21 +8,24 @@ import FeatureCard from "./FeatureCard";
 const processData = [
   {
     id: 1,
+    featureShape: featureShape,
     featureIcon: featureIcon,
-    featureTitle: "House Cleaning",
-    featureDesc: "Competently repurpose clean conveniently target",
+    featureTitle: "Certified Engineers",
+    featureDesc: "Eagle ray ray snoek rough person brown trout ropefish lake",
   },
   {
-    id: 1,
+    id: 2,
+    featureShape: featureShape,
     featureIcon: featureIcon2,
-    featureTitle: "Office Cleaning",
-    featureDesc: "Competently repurpose clean conveniently target",
+    featureTitle: "Solar System Design",
+    featureDesc: "Eagle ray ray snoek rough person brown trout ropefish lake",
   },
   {
-    id: 1,
+    id: 3,
+    featureShape: featureShape,
     featureIcon: featureIcon3,
-    featureTitle: "Door Cleaning",
-    featureDesc: "Competently repurpose clean conveniently target",
+    featureTitle: "Solar eco-power",
+    featureDesc: "Eagle ray ray snoek rough person brown trout ropefish lake",
   },
 ];
 

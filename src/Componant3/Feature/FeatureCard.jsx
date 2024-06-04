@@ -1,18 +1,17 @@
 /* eslint-disable react/prop-types */
 
-const FeatureCard = ({ featureIcon, featureTitle, featureDesc }) => {
+const FeatureCard = ({featureShape, featureIcon, featureTitle, featureDesc }) => {
   return (
-    <div className="sm:ml-14 lg:ml-0 group relative bg-white rounded-md pt-[72px] sm:pt-6 lg:pt-[72px] xl:pt-6 pb-7 z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:rounded-md before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-      <div className="absolute left-1/2 -top-[45px] -translate-x-1/2 sm:-left-0 sm:top-1/2 sm:-translate-y-1/2 lg:left-1/2 lg:-top-0 lg:-translate-x-1/2 xl:-left-0 xl:top-1/2 xl:-translate-y-1/2 w-[90px] h-[90px] bg-[#f3f4f8] border-[5px] border-white flex items-center justify-center transition-all duration-500 rounded-full group-hover:border-SecondaryColor-0">
+    <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row lg:items-start xl:items-center sm:items-center gap-7 overflow-hidden bg-[#f7f7f7] px-9 py-8 rounded relative z-10 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-1 before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full">
+      <img src={featureShape} draggable className="absolute bottom-0 right-0 -z-10"/>
+      <div>
         <img src={featureIcon} />
       </div>
-      <div className="px-10 sm:px-0 lg:px-10 xl:px-0 sm:pl-[72px] md:pl-16 xl:pl-16 2xl:pl-[72px]">
-        <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+      <div className="flex-1">
+        <h5 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0">
           {featureTitle}
         </h5>
-        <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white mt-2">
-          {featureDesc}
-        </p>
+        <p className="font-AlbertSans text-TextColor-0">{featureDesc}</p>
       </div>
     </div>
   );

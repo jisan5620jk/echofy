@@ -1,67 +1,49 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import aboutThumb from "/public/images/about-thumb3.png";
-import aboutShape from "/public/images/about-shape5.png";
-import aboutIcon from "/public/images/about-icon.png";
-import aboutIcon2 from "/public/images/about-icon2.png";
+import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
+import aboutThumb from "/public/images/about-thumb.png";
+import aboutItem from "/public/images/about-item.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="pb-[120px] bg-[#f3f4f8] bg-cover bg-center bg-no-repeat">
+    <section className="py-28 bg-white bg-cover bg-center bg-no-repeat">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 2xl:gap-28 items-center">
           <div className="relative z-10">
-            <img src={aboutThumb} />
-            <div className="absolute bottom-0 left-0">
-              <div className="relative before:w-full before:h-full before:border before:rounded-full before:border-dashed before:absolute before:top-0 before:left-0 before:border-PrimaryColor-0 before:animate-rotational">
-                <img src={aboutShape} />
-              </div>
-            </div>
+            <img src={aboutThumb} draggable="false" />
           </div>
           <div>
-            <h5 className="font-AlbertSans text-lg text-SecondaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
-              ABOUT echofy
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <FaStarOfLife />
+              GET TO KNOW US
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[46px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
-              Your Trusted <span className="text-PrimaryColor-0">Cleaning</span>{" "}
-              <br /> Service Partner
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
+              Innovative Renewable
+              <br /> Energy Solutions.
             </h1>
             <p className="font-AlbertSans text-TextColor-0 font-light">
-              Need Clean of your home or office Just Feel Free contact us based
-              web services we try to Help you as soon as possible your home or
-              office Just Feel Free contact us based web develop.
+              Sometimes goods can arrive early when they being brought into the
+              solution other times items need a place to be stored for short
+              goods can arrive desig headquarters have enough space your needs.
             </p>
-            <div className="flex flex-col gap-7 sm:flex-row sm:items-center mt-8">
-              <div className="w-[75px] h-[75px] rounded-full border-[5px] border-white">
-                <img src={aboutIcon} />
+            <div className="flex gap-8 items-center mt-12 mb-[60px]">
+              <div>
+                <img src={aboutItem} />
               </div>
-              <div className="flex-1">
-                <h6 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0">
-                  Customer Focused Reviews
-                </h6>
-                <p className="font-AlbertSans text-TextColor-0 font-light mt-3">
-                  Need Clean of your home or Feel Free contact us based web
-                  services we to you as soon as possible trusted.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-7 sm:flex-row sm:items-center mt-8">
-              <div className="w-[75px] h-[75px] rounded-full border-[5px] border-white">
-                <img src={aboutIcon2} />
-              </div>
-              <div className="flex-1">
-                <h6 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0">
-                  Regular & Monthly cleaning
-                </h6>
-                <p className="font-AlbertSans text-TextColor-0 font-light mt-3">
-                  Need Clean of your home or Feel Free contact us based web
-                  services we to you as soon as possible trusted.
-                </p>
-              </div>
+              <ul>
+                <li className="font-AlbertSans font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
+                  Solar energy also has some limitations
+                </li>
+                <li className="font-AlbertSans font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0 my-5 lg:my-2 2xl:my-5">
+                  Reliability and performance
+                </li>
+                <li className="font-AlbertSans font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
+                  Every day fresh and quality products
+                </li>
+              </ul>
             </div>
             <Link to={"/about"}>
-              <button className="primary-btn2 mt-9">
-                More About Us
+              <button className="primary-btn2">
+                About Echofy
                 <FaArrowRightLong size={"20"} />
               </button>
             </Link>
