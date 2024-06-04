@@ -7,7 +7,7 @@ import bannerShape from "/public/images/banner-shape.png";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/public/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[900px] sm:h-[1000px] md:h-[1350px] lg:h-[960px] xl:h-[872px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/public/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[900px] sm:h-[1000px] md:h-[1350px] lg:h-[660px] xl:h-[872px] flex items-center relative z-10 overflow-hidden">
       <img
         src={bannerShape}
         draggable="false"
@@ -36,7 +36,7 @@ const Banner = () => {
                 </button>
               </Link>
             </div>
-            <div className="hidden md:flex gap-[100px] items-center -rotate-90 absolute top-1/2 -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
+            <div className="hidden xl:flex gap-[100px] items-center -rotate-90 absolute top-1/2 -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
               <h5 className="font-AlbertSans text-HeadingColor-0 relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-HeadingColor-0">
                 FOLLOW US
               </h5>
@@ -68,11 +68,11 @@ const Banner = () => {
               </ul>
             </div>
           </div>
-          <div className="absolute -z-10 top-0 xl:-right-[160px] 2xl:right-0">
+          <div className="absolute -z-10 top-0 lg:-right-[27rem] xl:-right-[18rem] 2xl:right-0">
             <img
               src={bannerImg}
               draggable="false"
-              className="xl:w-10/12 2xl:w-[inherit]"
+              className="lg:w-8/12 xl:w-9/12 2xl:w-[inherit]"
             />
           </div>
         </div>

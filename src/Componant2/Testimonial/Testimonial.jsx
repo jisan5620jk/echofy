@@ -89,7 +89,7 @@ const Testimonial = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div>
-            <img src={thumbShape} className="-ml-[18rem] !w-[inherit] animate-rotational hidden lg:block"/>
+            <img src={thumbShape} className="-ml-[18rem] 2xl:-ml-[16rem] !w-[inherit] animate-rotational hidden lg:block"/>
           </div>
           <div>
             <div>

@@ -387,7 +387,7 @@ const Navbar = () => {
                     </NavLink>
                   </ul>
                 </div>
-                <div className="hidden lg:flex items-center gap-7">
+                <div className="hidden lg:flex items-center gap-7 lg:gap-0 xl:gap-5 2xl:gap-7">
                   <Link to={"/"}>
                     <IoSearch className="text-2xl text-white" />
                   </Link>
@@ -398,7 +398,7 @@ const Navbar = () => {
                     Get A Quote
                   </Link>
                   <div className="text-white">
-                    <TbGridDots size={"36"} className="hidden lg:block" />
+                    <TbGridDots size={"36"} className="hidden xl:block" />
                   </div>
                 </div>
               </div>

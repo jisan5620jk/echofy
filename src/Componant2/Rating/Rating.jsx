@@ -11,8 +11,8 @@ const Rating = () => {
             We Provide Environment <br />
             Leading Services
           </h1>
-          <div className="grid grid-cols-1 gap-6">
-            <div className="flex items-center gap-3 sm:gap-7">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-0">
+            <div className="flex items-center gap-3 sm:gap-7 lg:gap-4 xl:gap-7">
               <div>
                 <img src={teamIcon} draggable="false" className="m-auto" />
               </div>
@@ -28,7 +28,7 @@ const Rating = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-3 sm:gap-7">
+            <div className="flex items-center gap-3 sm:gap-7 lg:gap-4 xl:gap-7">
               <div>
                 <img src={teamIcon2} draggable="false" className="m-auto" />
               </div>

@@ -19,7 +19,7 @@ const About = () => {
       <img
         src={aboutShape2}
         draggable="false"
-        className="absolute top-32 right-20 animate-zoomInOut"
+        className="absolute top-32 right-20 animate-zoomInOut hidden 2xl:block"
       />
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 items-center">

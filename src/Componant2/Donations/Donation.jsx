@@ -97,12 +97,12 @@ const Donation = () => {
       <img
         src={serviceMainShape1}
         draggable="false"
-        className="absolute top-32 left-20 animate-dance2 hidden md:block"
+        className="absolute top-32 left-20 animate-dance2 hidden lg:block"
       />
       <img
         src={serviceMainShape2}
         draggable="false"
-        className="absolute top-32 right-20 animate-movebtn hidden md:block"
+        className="absolute top-32 right-20 animate-movebtn hidden lg:block"
       />
       <div className="Container">
         <div className="text-center">
