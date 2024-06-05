@@ -10,6 +10,7 @@ const Banner = () => {
   const settings = {
     loop: true,
     speed: 2000,
+    effect: 'fade',
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,

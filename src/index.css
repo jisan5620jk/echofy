@@ -98,3 +98,10 @@ body {
 .faq-button[aria-expanded="true"] img {
   filter: brightness(0) invert(1);
 }
+
+/* Benefits */
+
+.benefits .rect-progress-bar-percent {
+    color: #fff !important;
+    font-weight: 400;
+}

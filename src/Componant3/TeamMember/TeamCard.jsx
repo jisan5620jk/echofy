@@ -12,7 +12,7 @@ const TeamCard = ({
   return (
     <div className="group overflow-hidden rounded-md">
       <div className="relative z-10 overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0 after:transition-all after:duration-500 after:bg-gradient-to-t after:from-PrimaryColor-0 after:to-transparent group-hover:after:h-5/6">
-        <img src={teamThumb} className="w-full" />
+        <img src={teamThumb} draggable="false" className="w-full" />
         <ul className="flex gap-3 absolute z-10 -bottom-1/4 left-1/2 -translate-x-1/2 transition-all duration-500 group-hover:bottom-6">
           <li>
             <Link to={"/"}>

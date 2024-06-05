@@ -11,6 +11,7 @@ const WhyChoose = () => {
           <div className="bg-SecondaryColor-0 rounded-t-md">
             <img
               src={WhyChooseImg}
+              draggable="false"
               className="max-w-[inherit] rounded-r-md -ml-[25rem]"
             />
           </div>
@@ -30,7 +31,7 @@ const WhyChoose = () => {
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-7 mt-12">
               <div>
-                <img src={boxImg} />
+                <img src={boxImg} draggable="false" />
               </div>
               <div className="flex-1">
                 <h5 className="font-AlbertSans font-semibold text-xl text-white">
@@ -45,7 +46,7 @@ const WhyChoose = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-7 mt-12">
               <div>
-                <img src={boxImg2} />
+                <img src={boxImg2} draggable="false" />
               </div>
               <div className="flex-1">
                 <h5 className="font-AlbertSans font-semibold text-xl text-white">

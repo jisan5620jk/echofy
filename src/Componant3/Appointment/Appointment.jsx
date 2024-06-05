@@ -1,34 +1,27 @@
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
-import { IoPlayOutline } from "react-icons/io5";
-import appointmentThumb from "/public/images/appointment-thumb.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FiPhoneCall } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Appointment = () => {
-  const [toggler, setToggler] = useState(false);
   return (
-    <section className="relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-2 before:bg-SecondaryColor-0 before:-z-10 after:absolute after:right-0 after:top-0 after:h-full after:w-2 after:bg-SecondaryColor-0 after:-z-10">
+    <section className="py-28 relative bg-[linear-gradient(to_right,_rgba(121,185,0,1)_50%,_rgba(255,255,255,1)_50%)] before:absolute before:bottom-0 before:left-0 before:w-full before:h-2 before:bg-PrimaryColor-0 before:-z-10 after:absolute after:right-0 after:top-0 after:h-full after:w-2 after:bg-PrimaryColor-0 after:-z-10">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div className="relative">
-            <img
-              src={appointmentThumb}
-              className="w-full lg:w-[inherit] lg:max-w-[inherit] lg:-ml-[28.8rem] xl:-ml-[24rem] 2xl:-ml-[19.5rem]"
-            />
-            <div className="absolute top-0 right-0 2xl:right-7 bg-SecondaryColor-0 w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-es-xl flex justify-center items-center">
-              <button
-                className="w-[70px] h-[70px] md:h-[92px] md:w-[92px] text-white rounded-2xl bg-transparent flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:border-dashed before:border-white before:-z-10 before:rounded-full before:animate-rotational"
-                onClick={() => setToggler(!toggler)}
-              >
-                <IoPlayOutline size={"50"} />
-              </button>
-              <FsLightbox
-                toggler={toggler}
-                sources={[
-                  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-                ]}
-              />
+          <div className="relative text-center">
+            <div className="w-[110px] h-[110px] border text-white border-dashed border-white rounded-full flex justify-center items-center m-auto">
+              <FiPhoneCall size={"50"} />
             </div>
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-9 mb-11">
+              Dial for a Consultation
+              <br />
+              on the House!
+            </h1>
+            <Link to={"/about"} className="flex justify-center">
+              <button className="primary-btn2 !border-white !border">
+                Contact Now
+                <FaArrowRightLong size={"20"} />
+              </button>
+            </Link>
           </div>
           <div className="mr-2">
             <h2 className="font-AlbertSans font-bold text-3xl md:text-[40px] mb-11">
@@ -42,14 +35,14 @@ const Appointment = () => {
                   id="name"
                   placeholder="Your Name*"
                   required
-                  className="border border-[#E3E3E3] rounded py-2 px-6 outline-none h-[56px] w-full"
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
                 />
                 <input
                   type="text"
                   name="number"
                   id="number"
                   placeholder="Your Number"
-                  className="border border-[#E3E3E3] rounded py-2 px-6 outline-none h-[56px] w-full"
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
                 />
               </div>
               <div className="flex flex-col md:flex-row gap-7">
@@ -59,21 +52,21 @@ const Appointment = () => {
                   id="email"
                   placeholder="Your E-Mail*"
                   required
-                  className="border border-[#E3E3E3] rounded py-2 px-6 outline-none h-[56px] w-full"
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
                 />
                 <input
                   type="text"
                   name="address"
                   id="address"
                   placeholder="Your Address"
-                  className="border border-[#E3E3E3] rounded py-2 px-6 outline-none h-[56px] w-full"
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
                 />
               </div>
               <textarea
                 name="message"
                 id="message"
                 placeholder="Write A Message..."
-                className="border border-[#E3E3E3] rounded py-2 px-6 outline-none resize-none h-[140px] w-full"
+                className="border border-BorderColor2-0 rounded py-2 px-6 outline-none resize-none h-[140px] w-full"
               ></textarea>
               <div className="inline-block">
                 <button type="submit" className="primary-btn2">

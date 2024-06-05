@@ -27,7 +27,7 @@ const About = () => {
             </p>
             <div className="flex gap-8 items-center mt-12 mb-[60px]">
               <div>
-                <img src={aboutItem} />
+                <img src={aboutItem} draggable="false" />
               </div>
               <ul>
                 <li className="font-AlbertSans font-medium text-HeadingColor-0 pl-5 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[10px] before:h-[10px] before:bg-PrimaryColor-0">
