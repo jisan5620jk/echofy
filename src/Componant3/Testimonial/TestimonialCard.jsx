@@ -3,46 +3,46 @@ const TestimonialCard = ({
   testiImg,
   testiRatingIcon,
   testiName,
+  testIcon,
   testiDesignation,
   testiDesc,
-  testiIcon,
-  testiShape,
 }) => {
   return (
-    <div className="px-5 sm:px-10 lg:px-7 xl:px-10 pt-5 pb-8 relative shadow-lg bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-      <div className="flex justify-between items-center">
-        <div className="transition-all duration-500 group-hover:text-white">
-          <h1 className="text-PrimaryColor-0 text-5xl rotate-180">
-            {testiIcon}
-          </h1>
-        </div>
-        <ul className="flex gap-1 items-center text-xl text-PrimaryColor-0">
-          <li>{testiRatingIcon}</li>
-          <li>{testiRatingIcon}</li>
-          <li>{testiRatingIcon}</li>
-          <li>{testiRatingIcon}</li>
-          <li>{testiRatingIcon}</li>
-        </ul>
-      </div>
-      <p className="font-AlbertSans text-white font-light transition-all duration-500 group-hover:text-white mt-5">
+    <div className="px-5 sm:px-[30px] lg:px-4 xl:px-[30px] pt-12 bg-[#f5f8ed] relative bg-HoverColor-0 group rounded-md z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 transition-all duration-500 hover:shadow-cases">
+      <p className="font-AlbertSans text-lg text-TextColor-0 transition-all duration-500 group-hover:text-white">
         {testiDesc}
       </p>
-      <div className="flex flex-col lg:flex-row lg:items-center gap-5 pt-6">
+      <div className="flex flex-col lg:items-center lg:flex-row gap-[18px] lg:gap-4 xl:gap-[18px]">
         <div>
           <img src={testiImg} />
         </div>
-        <div>
-          <h5 className="font-AlbertSans font-medium text-white text-xl lg:text-lg xl:text-xl">
+        <div className="flex-1">
+          <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white text-2xl mt-7 mb-[6px]">
             {testiName}
           </h5>
-          <p className="font-AlbertSans text-white font-light transition-all duration-500 text-[15px] relative z-10 pl-4 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-PrimaryColor-0">
+          <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white pb-12">
+            <span className="text-[10px] text-PrimaryColor-0">{testIcon}</span>
             {testiDesignation}
           </p>
         </div>
       </div>
-      <div className="absolute bottom-7 right-7 animate-rotational -z-10">
-        <img src={testiShape} />
-      </div>
+      <ul className="absolute bottom-0 right-0 rounded-ss-full flex gap-2 py-[14px] bg-transparent transition-all duration-500 group-hover:bg-PrimaryColor-0 px-[30px] justify-center items-center">
+        <li className="text-amber-400 flex transition-all duration-500 group-hover:text-white">
+          {testiRatingIcon}
+        </li>
+        <li className="text-amber-400 flex transition-all duration-500 group-hover:text-white">
+          {testiRatingIcon}
+        </li>
+        <li className="text-amber-400 flex transition-all duration-500 group-hover:text-white">
+          {testiRatingIcon}
+        </li>
+        <li className="text-amber-400 flex transition-all duration-500 group-hover:text-white">
+          {testiRatingIcon}
+        </li>
+        <li className="text-amber-400 flex transition-all duration-500 group-hover:text-white">
+          {testiRatingIcon}
+        </li>
+      </ul>
     </div>
   );
 };

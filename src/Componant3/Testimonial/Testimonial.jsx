@@ -1,94 +1,63 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-thumb-3.png";
-import testiImg2 from "/public/images/testi-thumb-4.png";
-import testiImg3 from "/public/images/testi-thumb-5.png";
-import testiShape from "/public/images/testi-shape4.png";
-import counterIcon from "/public/images/counter-icon2.png";
-import counterIcon2 from "/public/images/counter-icon3.png";
-import counterIcon3 from "/public/images/counter-icon4.png";
-import counterIcon4 from "/public/images/counter-icon5.png";
+import testiImg from "/public/images/testi-author-1.png";
+import testiImg2 from "/public/images/testi-author-2.png";
+import testiImg3 from "/public/images/testi-author-3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { MdOutlineStarPurple500 } from "react-icons/md";
-import { BiSolidQuoteRight } from "react-icons/bi";
-import TestimonialNavigation from "./TestimonialNavigation";
-import TestiCounter from "./TestiCounter";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 import TestimonialCard from "./TestimonialCard";
+import { FaCircle, FaStarOfLife } from "react-icons/fa6";
+import { IoStar } from "react-icons/io5";
 
 const testiData = [
   {
     id: 1,
     testiImg: testiImg,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D. Alexon",
-    testiDesignation: "Home Cleaner",
-    testiDesc: `Sometimes goods can arrive early when to
-								being brought into the solution creative for
-								desig have space needs.`,
-    testiIcon: <BiSolidQuoteRight />,
-    testiShape: testiShape,
+    testiRatingIcon: <IoStar />,
+    testiName: "David Miller",
+    testIcon: <FaCircle />,
+    testiDesignation: "Web Developer",
+    testiDesc: `Sometimes goods can arrive early when clients
+                being brought into the solution creative design
+                need place to stored for short goods can arrive
+                desig have space your needs.`,
   },
   {
     id: 2,
     testiImg: testiImg2,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Mario Tina",
-    testiDesignation: "Home Cleaner",
-    testiDesc: `Sometimes goods can arrive early when to
-								being brought into the solution creative for
-								desig have space needs.`,
-    testiIcon: <BiSolidQuoteRight />,
-    testiShape: testiShape,
+    testiRatingIcon: <IoStar />,
+    testiName: "Jhon D. Alexon",
+    testIcon: <FaCircle />,
+    testiDesignation: "UI/UX Designer",
+    testiDesc: `Sometimes goods can arrive early when clients
+                being brought into the solution creative design
+                need place to stored for short goods can arrive
+                desig have space your needs.`,
   },
   {
     id: 3,
     testiImg: testiImg3,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon Sina",
-    testiDesignation: "Home Cleaner",
-    testiDesc: `Sometimes goods can arrive early when to
-								being brought into the solution creative for
-								desig have space needs.`,
-    testiIcon: <BiSolidQuoteRight />,
-    testiShape: testiShape,
+    testIcon: <FaCircle />,
+    testiRatingIcon: <IoStar />,
+    testiName: "Al-Amin Islam",
+    testiDesignation: "Web Developer",
+    testiDesc: `Sometimes goods can arrive early when clients
+                being brought into the solution creative design
+                need place to stored for short goods can arrive
+                desig have space your needs.`,
   },
   {
     id: 4,
     testiImg: testiImg,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D Alexon",
-    testiDesignation: "Home Cleaner",
-    testiDesc: `Sometimes goods can arrive early when to
-								being brought into the solution creative for
-								desig have space needs.`,
-    testiIcon: <BiSolidQuoteRight />,
-    testiShape: testiShape,
-  },
-];
-
-const testiCounterData = [
-  {
-    id: 1,
-    counterIcon: counterIcon,
-    counterPrice: "520",
-    counterDesc: "Happy Clients",
-  },
-  {
-    id: 2,
-    counterIcon: counterIcon2,
-    counterPrice: "22",
-    counterDesc: "EXPERT TEAM",
-  },
-  {
-    id: 3,
-    counterIcon: counterIcon3,
-    counterPrice: "218",
-    counterDesc: "ROJECT DONE",
-  },
-  {
-    id: 4,
-    counterIcon: counterIcon4,
-    counterPrice: "14",
-    counterDesc: "WORK EXPERIENCE",
+    testIcon: <FaCircle />,
+    testiRatingIcon: <IoStar />,
+    testiName: "David Miller",
+    testiDesignation: "Web Developer",
+    testiDesc: `Sometimes goods can arrive early when clients
+                being brought into the solution creative design
+                need place to stored for short goods can arrive
+                desig have space your needs.`,
   },
 ];
 
@@ -108,24 +77,32 @@ const Testimonial = () => {
       992: {
         slidesPerView: 3,
       },
-      1200: {
+      1400: {
         slidesPerView: 3,
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className="relative bg-[url('/public/images/service-bg3.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
+    <section className="py-28 bg-white relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/public/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
       <div className="Container">
-        <div className="md:-mb-[7.6rem]">
-          <h5 className="font-AlbertSans inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
-            TESTIMONIAL
+        <div className="text-center">
+          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
+            <FaStarOfLife />
+            TESTIMONIALS
+            <FaStarOfLife />
           </h5>
-          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-white mt-3 mb-4">
-            Our Clients <span className="text-PrimaryColor-0"> Reviews</span>
+          <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+            What Our Clinets Says
           </h1>
         </div>
-        <div className="mt-[40px]">
-          <Swiper {...settings}>
+        <div className="mt-[46px]">
+          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             <div>
               {testiData.map(
                 ({
@@ -135,50 +112,24 @@ const Testimonial = () => {
                   testiName,
                   testiDesignation,
                   testiDesc,
-                  testiIcon,
-                  testiShape,
                 }) => {
                   return (
-                    <>
-                      <SwiperSlide key={id}>
-                        <div className="pt-[136px]">
-                          <TestimonialCard
-                            testiImg={testiImg}
-                            testiRatingIcon={testiRatingIcon}
-                            testiName={testiName}
-                            testiDesignation={testiDesignation}
-                            testiDesc={testiDesc}
-                            testiIcon={testiIcon}
-                            testiShape={testiShape}
-                          />
-                        </div>
-                      </SwiperSlide>
-                    </>
+                    <SwiperSlide key={id}>
+                      <div className="pb-[80px] pt-3">
+                        <TestimonialCard
+                          testiImg={testiImg}
+                          testiRatingIcon={testiRatingIcon}
+                          testiName={testiName}
+                          testiDesignation={testiDesignation}
+                          testiDesc={testiDesc}
+                        />
+                      </div>
+                    </SwiperSlide>
                   );
                 }
               )}
             </div>
-            <TestimonialNavigation />
           </Swiper>
-        </div>
-      </div>
-      <div className="Container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[108px]">
-          {testiCounterData.map(
-            ({ id, counterIcon, counterPrice, counterDesc }) => {
-              return (
-                <>
-                  <div className="pt-3" key={id}>
-                    <TestiCounter
-                      counterIcon={counterIcon}
-                      counterPrice={counterPrice}
-                      counterDesc={counterDesc}
-                    />
-                  </div>
-                </>
-              );
-            }
-          )}
         </div>
       </div>
     </section>

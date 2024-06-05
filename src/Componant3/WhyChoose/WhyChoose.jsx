@@ -1,112 +1,63 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import boxImg from "/public/images/feature-icon.png";
-import boxImg3 from "/public/images/feature-icon3.png";
-import WhyChooseShape from "/public/images/contact-shape.png";
-import { Link } from "react-router-dom";
+import { FaStarOfLife } from "react-icons/fa6";
+import WhyChooseImg from "/public/images/why-choose-thumb.jpg";
+import boxImg from "/public/images/why-choose-icon.png";
+import boxImg2 from "/public/images/why-choose-icon2.png";
 
 const WhyChoose = () => {
   return (
-    <section className="pt-[120px] bg-[url('/public/images/contact-bg.png')] bg-cover bg-center bg-no-repeat relative">
-      <img
-        src={WhyChooseShape}
-        className="absolute left-20 -bottom-[88px] hidden 2xl:block"
-      />
+    <section className="pt-[320px] pb-[120px] bg-[url('/public/images/why-choose-us-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 2xl:gap-[142px]">
-          <div className="bg-SecondaryColor-0 rounded-t-md pt-10 pb-[60px]">
-            <div className="text-center">
-              <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
-                Get Appoinment
-              </h1>
-            </div>
-            <form
-              action="#"
-              method="post"
-              className="grid grid-cols-1 gap-[22px] items-center mt-9 px-5 sm:px-[60px]"
-            >
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter Name*"
-                required
-                className="w-full bg-transparent text-white placeholder:text-white border border-white outline-0 h-[57px] rounded py-3 px-6"
-              />
-              <input
-                type="text"
-                name="phone"
-                id="phone"
-                placeholder="Phone No."
-                required
-                className="w-full bg-transparent text-white placeholder:text-white border border-white outline-0 h-[57px] rounded py-3 px-6"
-              />
-              <select
-                name="select"
-                id="select"
-                className="w-full bg-transparent text-white border border-white outline-0 h-[57px] rounded py-3 px-6"
-              >
-                <option value="service1">Select Service</option>
-                <option value="service2">Service1</option>
-                <option value="service3">Service2</option>
-                <option value="service4">Service3</option>
-              </select>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Write Message"
-                className="w-full bg-transparent text-white resize-none placeholder:text-white border border-white outline-0 h-[120px] rounded py-3 px-6"
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full bg-PrimaryColor-0 font-medium font-AlbertSans transition-all duration-500 hover:text-white text-TextColor-0 border-white outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
-              >
-                Book Appionment <FaArrowRightLong />
-              </button>
-            </form>
+        <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2">
+          <div className="bg-SecondaryColor-0 rounded-t-md">
+            <img
+              src={WhyChooseImg}
+              className="max-w-[inherit] rounded-r-md -ml-[25rem]"
+            />
           </div>
-          <div className="mb-28">
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">
-              WHY CHOOSE US?
+          <div className="">
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <FaStarOfLife />
+              WHY CHOOSE US
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-3">
-              Dramatically negotiate high <br /> payoff services cleaning
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-2 mb-6">
+              Building a Foundation
+              <br /> Energy Solutions.
             </h1>
-            <div className="flex flex-col sm:flex-row gap-7 mt-12">
+            <p className="font-AlbertSans text-TextColor-0 font-light">
+              Sometimes goods can arrive early when they being brought into the
+              solution other times items need a place to be stored for short
+              goods can arrive desig headquarters have enough space your needs.
+            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-7 mt-12">
               <div>
                 <img src={boxImg} />
               </div>
               <div className="flex-1">
-                <h5 className="font-AlbertSans font-semibold text-[22px] text-white">
-                  House echofy
+                <h5 className="font-AlbertSans font-semibold text-xl text-white">
+                  Solar Panel Solutions
                 </h5>
-                <p className="font-AlbertSans text-white opacity-70 text-[15px] mt-3">
-                  Competently repurpose go forward benefits
-                  <br className="hidden sm:block 2xl:block" /> conveniently
-                  target e-business
+                <p className="font-AlbertSans text-TextColor-0 mt-3">
+                  Sometimes goods can arrive being brought into the solution so
+                  <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
+                  headquarters have enough space your needs.target e-business
                 </p>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-7 mt-7">
+            <div className="flex flex-col sm:flex-row gap-7 mt-12">
               <div>
-                <img src={boxImg3} />
+                <img src={boxImg2} />
               </div>
               <div className="flex-1">
-                <h5 className="font-AlbertSans font-semibold text-[22px] text-white">
-                  instrument
+                <h5 className="font-AlbertSans font-semibold text-xl text-white">
+                  Solar Panel Solutions
                 </h5>
-                <p className="font-AlbertSans text-white opacity-70 text-[15px] mt-3">
-                  Competently repurpose go forward benefits
-                  <br className="hidden sm:block 2xl:block" /> conveniently
-                  target e-business
+                <p className="font-AlbertSans text-TextColor-0 mt-3">
+                  Sometimes goods can arrive being brought into the solution so
+                  <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
+                  headquarters have enough space your needs.target e-business
                 </p>
               </div>
             </div>
-            <Link to={"/about"}>
-              <button className="primary-btn mt-12">
-                More About Us
-                <FaArrowRightLong size={"20"} />
-              </button>
-            </Link>
           </div>
         </div>
       </div>

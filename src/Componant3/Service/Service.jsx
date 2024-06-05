@@ -3,6 +3,7 @@ import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
 import serviceThumb from "/public/images/services-1.jpg";
 import serviceThumb2 from "/public/images/services-2.jpg";
 import serviceThumb3 from "/public/images/services-3.jpg";
+import serviceThumb4 from "/public/images/services-4.jpg";
 import serviceIcon from "/public/images/service-icon4.png";
 import serviceIcon2 from "/public/images/service-icon5.png";
 import serviceIcon3 from "/public/images/service-icon6.png";
@@ -46,7 +47,7 @@ const serviceData = [
   {
     id: 4,
     serviceIcon: serviceIcon4,
-    serviceThumb: serviceThumb,
+    serviceThumb: serviceThumb4,
     serviceTitle: `Garden Cleaning`,
     serviceDesc:
       "Sometims goods can arrive early when ses need a place  short goods can arrive solarihave space your needs.",
@@ -58,7 +59,7 @@ const serviceData = [
 
 const Service = () => {
   return (
-    <section className="pt-28 pb-[90px] relative bg-[#f5f8ed]">
+    <section className="pt-28 -mb-[204px] relative bg-[#f5f8ed]">
       <div className="Container">
         <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 gap-1 mb-9">
           <div>
