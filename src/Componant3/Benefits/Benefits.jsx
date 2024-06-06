@@ -5,7 +5,7 @@ const Benefits = () => {
   return (
     <section className="benefits pt-[120px] lg:pt-[160px] 2xl:pt-[230px] pb-[120px] bg-[url('public/images/benefits-bg.png')] bg-cover bg-no-repeat bg-left 2xl:bg-center">
       <div className="Container">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div>
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
               <FaStarOfLife />

@@ -25,7 +25,7 @@ const About = () => {
               solution other times items need a place to be stored for short
               goods can arrive desig headquarters have enough space your needs.
             </p>
-            <div className="flex gap-8 items-center mt-12 mb-[60px]">
+            <div className="flex flex-col sm:flex-row gap-8 sm:items-center mt-12 mb-[60px]">
               <div>
                 <img src={aboutItem} draggable="false" />
               </div>

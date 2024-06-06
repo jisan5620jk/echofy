@@ -12,7 +12,7 @@ const WhyChoose = () => {
             <img
               src={WhyChooseImg}
               draggable="false"
-              className="max-w-[inherit] rounded-r-md xl:-ml-[25rem] 2xl:-ml-[20rem]"
+              className="w-full lg:w-[inherit] max-w-[inherit] rounded-r-md lg:-ml-[30em] xl:-ml-[25rem] 2xl:-ml-[20rem] mb-10 lg:mb-0"
             />
           </div>
           <div>

@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="header-section absolute w-full">
           <div className="Container">
             {/* main Navbar */}
-            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[100px] lg:-mb-[100px] -mb-[70px] px-[5%] bg-white border-l-[8px] border-PrimaryColor-0 rounded-b-md">
+            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[100px] lg:-mb-[100px] -mb-[70px] lg:px-[2%] 2xl:px-[5%] bg-white border-l-[8px] border-PrimaryColor-0 rounded-b-md">
               {/* website Logo */}
               <div>
                 <Link to="/">
