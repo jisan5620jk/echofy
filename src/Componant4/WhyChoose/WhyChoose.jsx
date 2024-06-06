@@ -7,15 +7,15 @@ const WhyChoose = () => {
   return (
     <section className="pt-[320px] pb-[120px] bg-[url('/public/images/why-choose-us-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 2xl:gap-20">
+        <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2">
           <div className="bg-SecondaryColor-0 rounded-t-md">
             <img
               src={WhyChooseImg}
               draggable="false"
-              className="max-w-[inherit] rounded-r-md xl:-ml-[25rem] 2xl:-ml-[20rem]"
+              className="max-w-[inherit] rounded-r-md -ml-[25rem]"
             />
           </div>
-          <div>
+          <div className="">
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
               <FaStarOfLife />
               WHY CHOOSE US

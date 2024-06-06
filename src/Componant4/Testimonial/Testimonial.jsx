@@ -89,7 +89,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-28 bg-white relative z-10 overflow-hidden testimonial">
+    <section className="py-28 bg-white relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/public/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">

@@ -6,7 +6,7 @@ const Appointment = () => {
   return (
     <section className="py-28 relative bg-[linear-gradient(to_right,_rgba(121,185,0,1)_50%,_rgba(255,255,255,1)_50%)] before:absolute before:bottom-0 before:left-0 before:w-full before:h-2 before:bg-PrimaryColor-0 before:-z-10 after:absolute after:right-0 after:top-0 after:h-full after:w-2 after:bg-PrimaryColor-0 after:-z-10">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-28 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative text-center">
             <div className="w-[110px] h-[110px] border text-white border-dashed border-white rounded-full flex justify-center items-center m-auto">
               <FiPhoneCall size={"50"} />

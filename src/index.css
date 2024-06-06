@@ -36,6 +36,10 @@ body {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-black backdrop-blur-md animate-headerSlideDown;
 }
 
+.header-section4.is-sticky {
+  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
+}
+
 /* Progress Bar */
 
 .progress-bar-rect-wrap-container {

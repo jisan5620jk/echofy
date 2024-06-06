@@ -81,7 +81,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:items-center lg:grid-cols-4 gap-7 lg:ml-[124px] 2xl:ml-[19.5rem]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:items-center lg:grid-cols-4 gap-7 ml-[124px]">
         {serviceData.map(
           ({
             id,

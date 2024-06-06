@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
 import {
+  FaArrowRightLong,
   FaBars,
   FaFacebookF,
   FaLinkedinIn,
@@ -9,7 +10,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { BiChevronDown } from "react-icons/bi";
-import Logo from "/public/images/logo.png";
+import Logo from "/public/images/logo-black.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
@@ -29,7 +30,7 @@ const Navbar = () => {
   /* Method that will fix header after a specific scrollable */
 
   const isSticky = (e) => {
-    const header = document.querySelector(".header-section");
+    const header = document.querySelector(".header-section4");
     const scrollTop = window.scrollY;
     scrollTop >= 250
       ? header.classList.add("is-sticky")
@@ -46,27 +47,25 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full transition-all duration-300 bg-transparent absolute z-[99999]`}
+      className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
       {/* top Navbar */}
-      <header className="bg-transparent overflow-hidden md:block">
+      <header className="overflow-hidden md:block bg-PrimaryColor-0">
         <div className="Container flex items-center justify-between h-[50px]">
           <div className="flex items-center gap-10">
             <p className="font-AlbertSans text-[15px] text-white sm:flex hidden items-center gap-1">
-              <CiLocationOn className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
+              <CiLocationOn className="text-xl relative bottom-[2px] text-white" />
               102/B New Market, Sandigo-USA
             </p>
             <Link
               to={"/"}
               className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
             >
-              <HiOutlineMailOpen size={"16"} className="text-PrimaryColor-0" />
+              <HiOutlineMailOpen size={"16"} className="text-white" />
               example@gmail.com
             </Link>
-          </div>
-          <div className="flex items-center gap-16">
             <div className="lg:flex items-center gap-2 hidden">
-              <span className="flex items-center gap-2 text-sm text-PrimaryColor-0">
+              <span className="flex items-center gap-2 text-sm text-white">
                 <FaPhone />
               </span>
               <Link
@@ -76,46 +75,46 @@ const Navbar = () => {
                 +123 (4567) 890
               </Link>
             </div>
-            <ul className="flex gap-3 items-center">
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaFacebookF />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaXTwitter />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaLinkedinIn />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaPinterestP />
-                </Link>
-              </li>
-            </ul>
           </div>
+          <ul className="flex gap-3 items-center">
+            <li>
+              <Link
+                to={"/"}
+                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+              >
+                <FaFacebookF />
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/"}
+                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+              >
+                <FaXTwitter />
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/"}
+                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+              >
+                <FaLinkedinIn />
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/"}
+                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+              >
+                <FaPinterestP />
+              </Link>
+            </li>
+          </ul>
         </div>
       </header>
       {/* top Navbar */}
       <header
-        className="header-section bg-transparent border-t border-b border-BorderColor-0"
+        className="header-section4 bg-white border-b border-BorderColor2-0"
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
@@ -173,7 +172,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative`}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative`}
                 >
                   <span className="flex items-center">
                     Home
@@ -222,7 +221,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
                   <span>About</span>
@@ -233,7 +232,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -259,14 +258,13 @@ const Navbar = () => {
                     </ul>
                   </div>
                 </NavLink>
-
                 <NavLink
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -348,7 +346,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -387,7 +385,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300`}
+                      : ""} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300`}
                   to="/contact"
                 >
                   Contact
@@ -397,8 +395,8 @@ const Navbar = () => {
                 <Link to={"/"}>
                   <IoSearch className="text-2xl ml-2 mr-10 text-PrimaryColor-0" />
                 </Link>
-                <Link to={"/appointment"} className="header-btn">
-                  Get A Quote
+                <Link to={"/appointment"} className="primary-btn2">
+                  Get Solution <FaArrowRightLong />
                 </Link>
               </div>
             </div>

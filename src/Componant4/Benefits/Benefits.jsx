@@ -3,7 +3,7 @@ import ProgressBar from "react-animated-progress-bar";
 
 const Benefits = () => {
   return (
-    <section className="benefits pt-[120px] lg:pt-[160px] 2xl:pt-[230px] pb-[120px] bg-[url('public/images/benefits-bg.png')] bg-cover bg-no-repeat bg-left 2xl:bg-center">
+    <section className="benefits pt-[120px] lg:pt-[160px] 2xl:pt-[240px] pb-[120px] bg-[url('public/images/benefits-bg.png')] bg-cover bg-no-repeat bg-left 2xl:bg-center">
       <div className="Container">
         <div className="grid grid-cols-2">
           <div>
