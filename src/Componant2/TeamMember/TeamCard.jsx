@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import teamShape from "/public/images/team-shape.png";
+import teamShape from "/images/team-shape.png";
 
 const TeamCard = ({
   teamThumb,

@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-import processIcon from "/public/images/process-icon.png";
-import processIcon2 from "/public/images/process-icon2.png";
-import processIcon3 from "/public/images/process-icon3.png";
-import boxShape from "/public/images/process-arrow.png";
-import boxShape2 from "/public/images/process-arrow2.png";
-import subTitleShape from "/public/images/sub-title-shape.png";
+import processIcon from "/images/process-icon.png";
+import processIcon2 from "/images/process-icon2.png";
+import processIcon3 from "/images/process-icon3.png";
+import boxShape from "/images/process-arrow.png";
+import boxShape2 from "/images/process-arrow2.png";
+import subTitleShape from "/images/sub-title-shape.png";
 import ProcessCard from "./ProcessCard";
 
 const processData = [

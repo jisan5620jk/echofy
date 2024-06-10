@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
-import serviceImg from "/public/images/service2-thumb.jpg";
-import serviceImg2 from "/public/images/service2-thumb2.jpg";
-import serviceImg3 from "/public/images/service2-thumb3.jpg";
-import serviceIcon from "/public/images/service2-icon.png";
-import serviceIcon2 from "/public/images/service2-icon2.png";
-import serviceIcon3 from "/public/images/service2-icon3.png";
-import serviceShape from "/public/images/service-shape.png";
-import subTitleShape from "/public/images/sub-title-shape.png";
-import serviceMainShape1 from "/public/images/testi-shape-1.png";
-import serviceMainShape2 from "/public/images/testi-shape-2.png";
+import serviceImg from "/images/service2-thumb.jpg";
+import serviceImg2 from "/images/service2-thumb2.jpg";
+import serviceImg3 from "/images/service2-thumb3.jpg";
+import serviceIcon from "/images/service2-icon.png";
+import serviceIcon2 from "/images/service2-icon2.png";
+import serviceIcon3 from "/images/service2-icon3.png";
+import serviceShape from "/images/service-shape.png";
+import subTitleShape from "/images/sub-title-shape.png";
+import serviceMainShape1 from "/images/testi-shape-1.png";
+import serviceMainShape2 from "/images/testi-shape-2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from "./ServiceCard";
 import { GoArrowUpRight } from "react-icons/go";
@@ -90,9 +90,17 @@ const Service = () => {
     },
   };
   return (
-    <section className="service relative pt-28 pb-[120px] bg-[#f5f8ed] z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/public/images/service2-bg.jpg')] before:-z-10 before:bg-cover before:bg-center before:bg-no-repeat">
-      <img src={serviceMainShape1} draggable="false" className="absolute top-32 left-20 animate-dance2 hidden lg:block"/>
-      <img src={serviceMainShape2} draggable="false" className="absolute top-32 right-20 animate-movebtn hidden lg:block"/>
+    <section className="service relative pt-28 pb-[120px] bg-[#f5f8ed] z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/images/service2-bg.jpg')] before:-z-10 before:bg-cover before:bg-center before:bg-no-repeat">
+      <img
+        src={serviceMainShape1}
+        draggable="false"
+        className="absolute top-32 left-20 animate-dance2 hidden lg:block"
+      />
+      <img
+        src={serviceMainShape2}
+        draggable="false"
+        className="absolute top-32 right-20 animate-movebtn hidden lg:block"
+      />
       <div className="Container">
         <div className="text-center">
           <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">

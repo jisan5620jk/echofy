@@ -2,7 +2,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaArrowRightLong, FaBars } from "react-icons/fa6";
 import { BiChevronDown } from "react-icons/bi";
-import Logo from "/public/images/logo-black.png";
+import Logo from "/images/logo-black.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";

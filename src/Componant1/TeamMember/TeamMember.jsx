@@ -1,10 +1,15 @@
-import teamThumb from "/public/images/team-thumb.png";
-import teamThumb2 from "/public/images/team-thumb2.png";
-import teamThumb3 from "/public/images/team-thumb3.png";
-import subTitleShape from "/public/images/sub-title-shape.png";
-import skillMainShape from "/public/images/skill-main-shape.png";
+import teamThumb from "/images/team-thumb.png";
+import teamThumb2 from "/images/team-thumb2.png";
+import teamThumb3 from "/images/team-thumb3.png";
+import subTitleShape from "/images/sub-title-shape.png";
+import skillMainShape from "/images/skill-main-shape.png";
 import TeamCard from "./TeamCard";
-import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 const teamData = [
   {
@@ -41,7 +46,7 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className="bg-[url('/public/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center pt-[200px] pb-28 relative -mt-[130px]">
+    <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center pt-[200px] pb-28 relative -mt-[130px]">
       <img
         src={skillMainShape}
         draggable="false"

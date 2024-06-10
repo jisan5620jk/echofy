@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import brandThumb from "/public/images/brand2-logo.png";
-import brandThumb2 from "/public/images/brand2-logo2.png";
-import brandThumb3 from "/public/images/brand2-logo3.png";
-import brandThumb5 from "/public/images/brand2-logo5.png";
+import brandThumb from "/images/brand2-logo.png";
+import brandThumb2 from "/images/brand2-logo2.png";
+import brandThumb3 from "/images/brand2-logo3.png";
+import brandThumb5 from "/images/brand2-logo5.png";
 
 const Brand = () => {
   const settings = {

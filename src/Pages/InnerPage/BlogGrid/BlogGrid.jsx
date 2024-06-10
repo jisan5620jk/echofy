@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
-import blogThumb from "/public/images/blog-thumb.png";
-import blogThumb2 from "/public/images/blog-thumb2.png";
-import blogThumb3 from "/public/images/blog-thumb3.png";
-import blogThumb4 from "/public/images/blog-thumb3.png";
-import blogThumb5 from "/public/images/blog-thumb7.png";
-import blogThumb6 from "/public/images/blog-thumb8.png";
-import blogThumb7 from "/public/images/blog-thumb9.png";
-import blogThumb8 from "/public/images/blog-thumb10.png";
-import blogThumb9 from "/public/images/blog-thumb11.png";
+import blogThumb from "/images/blog-thumb.png";
+import blogThumb2 from "/images/blog-thumb2.png";
+import blogThumb3 from "/images/blog-thumb3.png";
+import blogThumb4 from "/images/blog-thumb3.png";
+import blogThumb5 from "/images/blog-thumb7.png";
+import blogThumb6 from "/images/blog-thumb8.png";
+import blogThumb7 from "/images/blog-thumb9.png";
+import blogThumb8 from "/images/blog-thumb10.png";
+import blogThumb9 from "/images/blog-thumb11.png";
 import BlogCard from "./BlogCard";
 import { Link } from "react-router-dom";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";

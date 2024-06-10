@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-author-1.png";
-import testiImg2 from "/public/images/testi-author-2.png";
-import testiImg3 from "/public/images/testi-author-3.png";
+import testiImg from "/images/testi-author-1.png";
+import testiImg2 from "/images/testi-author-2.png";
+import testiImg3 from "/images/testi-author-3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";

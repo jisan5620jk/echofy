@@ -1,8 +1,8 @@
-import subTitleShape from "/public/images/sub-title-shape.png";
-import skillThumb from "/public/images/skill-thumb.png";
-import skillMainShape from "/public/images/skill-main-shape.png";
-import skillShape from "/public/images/skill-shape.png";
-import skillShape2 from "/public/images/skill-shape2.png";
+import subTitleShape from "/images/sub-title-shape.png";
+import skillThumb from "/images/skill-thumb.png";
+import skillMainShape from "/images/skill-main-shape.png";
+import skillShape from "/images/skill-shape.png";
+import skillShape2 from "/images/skill-shape2.png";
 import { GiCheckMark } from "react-icons/gi";
 import ProgressBar from "react-animated-progress-bar";
 

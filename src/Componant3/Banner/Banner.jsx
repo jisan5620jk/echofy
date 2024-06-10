@@ -10,7 +10,7 @@ const Banner = () => {
   const settings = {
     loop: true,
     speed: 2000,
-    effect: 'fade',
+    effect: "fade",
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -21,7 +21,7 @@ const Banner = () => {
     <div className="relative">
       <Swiper {...settings}>
         <SwiperSlide>
-          <section className="bg-[url('/public/images/hero2-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[800px] lg:h-[960px] xl:h-[952px] flex items-center">
+          <section className="bg-[url('/images/hero2-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[800px] lg:h-[960px] xl:h-[952px] flex items-center">
             <div className="Container">
               <div className="relative banner-content text-center pt-[47px]">
                 <h5 className="font-AlbertSans text-white font-medium mb-8">

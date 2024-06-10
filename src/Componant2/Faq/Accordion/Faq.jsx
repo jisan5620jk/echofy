@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import FaqAccordion from "./FaqAccordion";
-import subTitleShape from "/public/images/sub-title-shape.png";
-import buttonShape from "/public/images/button-shape-1.png";
-import faqIcon from "/public/images/faq-icon.png";
-import faqMainShape from "/public/images/faqs-shape2.png";
+import subTitleShape from "/images/sub-title-shape.png";
+import buttonShape from "/images/button-shape-1.png";
+import faqIcon from "/images/faq-icon.png";
+import faqMainShape from "/images/faqs-shape2.png";
 
 const Faq = () => {
   //  All Faqs and  answers.
@@ -35,8 +35,10 @@ const Faq = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden py-28 bg-[url('public/images/faq-bg.jpg')] bg-cover bg-no-repeat
-     bg-center">
+    <section
+      className="relative overflow-hidden py-28 bg-[url('public/images/faq-bg.jpg')] bg-cover bg-no-repeat
+     bg-center"
+    >
       <div className="Container">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
           <div className="relative">

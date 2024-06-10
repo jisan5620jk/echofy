@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Appointment = () => {
   return (
-    <section className="py-28 relative bg-[linear-gradient(to_bottom,_rgba(121,185,0,1)_40%,_rgba(255,255,255,1)_32%)] lg:bg-[linear-gradient(to_right,_rgba(121,185,0,1)_50%,_rgba(255,255,255,1)_50%)] before:absolute before:bottom-0 before:left-0 before:w-full before:h-2 before:bg-PrimaryColor-0 before:-z-10 after:absolute after:right-0 after:top-0 after:h-full after:w-2 after:bg-PrimaryColor-0 after:-z-10">
+    <section className="py-28 relative bg-[linear-gradient(to_bottom,_rgba(121,185,0,1)_40%,_rgba(255,255,255,1)_32%)] lg:bg-[linear-gradient(to_right,_rgba(121,185,0,1)_50%,_rgba(255,255,255,1)_50%)] border-l-8 border-r-8 border-b-8 border-PrimaryColor-0">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-28 items-center">
           <div className="relative text-center">

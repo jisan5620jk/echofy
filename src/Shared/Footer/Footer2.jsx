@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import footerLogo from "/public/images/logo.png";
-import footerShape from "/public/images/footer-social-shape.png";
-import footerShape2 from "/public/images/footer-shape2.png";
-import footerShape3 from "/public/images/footer-shape.png";
-import footerLine from "/public/images/footer-line.png";
-import buttonShape from "/public/images/button-shape-1.png";
+import footerLogo from "/images/logo.png";
+import footerShape from "/images/footer-social-shape.png";
+import footerShape2 from "/images/footer-shape2.png";
+import footerShape3 from "/images/footer-shape.png";
+import footerLine from "/images/footer-line.png";
+import buttonShape from "/images/button-shape-1.png";
 import { FaArrowRightLong, FaChevronRight, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer2 = () => {
   return (
-    <footer className="bg-[url('/public/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
+    <footer className="bg-[url('/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
       <img
         src={footerLine}
         draggable="false"
@@ -23,7 +23,7 @@ const Footer2 = () => {
       />
       <div className="Container">
         <div className="relative">
-          <div className="bg-[url('/public/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center relative rounded-md ">
+          <div className="bg-[url('/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center relative rounded-md ">
             <div className="flex flex-col gap-7 lg:gap-0 lg:flex-row lg:items-center lg:justify-between p-10 mb-[90px]">
               <div>
                 <h2 className="font-AlbertSans font-bold text-white text-[30px] sm:text-[40px]">
@@ -31,9 +31,7 @@ const Footer2 = () => {
                 </h2>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <Link
-                  to={"/appointment"}
-                >
+                <Link to={"/appointment"}>
                   <button className="primary-btn bg-transparent border !border-white before:bg-HeadingColor-0 hover:!border-SecondaryColor-0">
                     {`Join Us Now`}
                     <img src={buttonShape} draggable="false" />

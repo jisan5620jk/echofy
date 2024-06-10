@@ -1,7 +1,7 @@
-import teamThumb from "/public/images/team2-1.png";
-import teamThumb2 from "/public/images/team2-2.png";
-import teamThumb3 from "/public/images/team2-3.png";
-import teamThumb4 from "/public/images/team2-4.png";
+import teamThumb from "/images/team2-1.png";
+import teamThumb2 from "/images/team2-2.png";
+import teamThumb3 from "/images/team2-3.png";
+import teamThumb4 from "/images/team2-4.png";
 import TeamCard from "./TeamCard";
 import {
   FaLinkedinIn,

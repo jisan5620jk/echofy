@@ -1,16 +1,16 @@
-import aboutThumb from "/public/images/about-1.png";
-import aboutThumb2 from "/public/images/about-2.png";
-import subTitleShape from "/public/images/sub-title-shape.png";
-import aboutIcon from "/public/images/about2-icon.png";
-import aboutIcon2 from "/public/images/about2-icon2.png";
+import aboutThumb from "/images/about-1.png";
+import aboutThumb2 from "/images/about-2.png";
+import subTitleShape from "/images/sub-title-shape.png";
+import aboutIcon from "/images/about2-icon.png";
+import aboutIcon2 from "/images/about2-icon2.png";
 import { Link } from "react-router-dom";
-import buttonShape from "/public/images/button-shape-1.png";
-import aboutShape from "/public/images/about2-shape.png";
-import aboutShape2 from "/public/images/testi-shape-3.png";
+import buttonShape from "/images/button-shape-1.png";
+import aboutShape from "/images/about2-shape.png";
+import aboutShape2 from "/images/testi-shape-3.png";
 
 const About = () => {
   return (
-    <section className="py-[120px] bg-[url('/public/images/about-bg.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
+    <section className="py-[120px] bg-[url('/images/about-bg.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
       <img
         src={aboutShape}
         draggable="false"

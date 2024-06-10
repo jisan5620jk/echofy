@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
-import buttonShape from "/public/images/button-shape-1.png";
-import bannerImg from "/public/images/banner-thumb.png";
-import shape from "/public/images/sub-title-shape.png";
-import bannerShape from "/public/images/banner-shape.png";
+import buttonShape from "/images/button-shape-1.png";
+import bannerImg from "/images/banner-thumb.png";
+import shape from "/images/sub-title-shape.png";
+import bannerShape from "/images/banner-shape.png";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/public/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[900px] sm:h-[1000px] md:h-[1350px] lg:h-[660px] xl:h-[872px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[900px] sm:h-[1000px] md:h-[1350px] lg:h-[660px] xl:h-[872px] flex items-center relative z-10 overflow-hidden">
       <img
         src={bannerShape}
         draggable="false"

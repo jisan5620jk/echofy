@@ -1,62 +1,55 @@
 import { FaStarOfLife } from "react-icons/fa6";
-import WhyChooseImg from "/public/images/why-choose-thumb.jpg";
-import boxImg from "/public/images/why-choose-icon.png";
-import boxImg2 from "/public/images/why-choose-icon2.png";
+import icon from "/images/choose-us-icon.png";
+import icon2 from "/images/choose-us-icon2.png";
+import icon3 from "/images/choose-us-icon3.png";
+import mainShape from "/images/hero4-shape.png";
 
 const WhyChoose = () => {
   return (
-    <section className="pt-[320px] pb-[120px] bg-[url('/public/images/why-choose-us-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
+    <section className="py-[120px] bg-[url('/images/why-choose-bg.png')] bg-cover bg-center bg-no-repeat relative">
+      <img
+        src={mainShape}
+        draggable="false"
+        className="absolute top-24 left-1/3 animate-rotational"
+      />
       <div className="Container">
         <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2">
-          <div className="bg-SecondaryColor-0 rounded-t-md">
-            <img
-              src={WhyChooseImg}
-              draggable="false"
-              className="max-w-[inherit] rounded-r-md -ml-[25rem]"
-            />
-          </div>
-          <div className="">
+          <div></div>
+          <div>
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
               <FaStarOfLife />
               WHY CHOOSE US
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-2 mb-6">
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
               Building a Foundation
-              <br /> Energy Solutions.
+              <br />
+              of Reliability.
             </h1>
             <p className="font-AlbertSans text-TextColor-0 font-light">
               Sometimes goods can arrive early when they being brought into the
               solution other times items need a place to be stored for short
-              goods can arrive desig headquarters have enough space your needs.
+              goods arrive desig our vision has emerged as a promising source of
+              renewable clean and echof headquarters have enough space your
+              needs.
             </p>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-7 mt-12">
-              <div>
-                <img src={boxImg} draggable="false" />
-              </div>
-              <div className="flex-1">
-                <h5 className="font-AlbertSans font-semibold text-xl text-white">
-                  Solar Panel Solutions
+            <div className="bg-white flex justify-around pt-[48px] pb-10 rounded-md mt-12">
+              <div className="text-center">
+                <img src={icon} draggable="false" className="m-auto" />
+                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium text-lg mt-[14px]">
+                  Our Mission
                 </h5>
-                <p className="font-AlbertSans text-TextColor-0 mt-3">
-                  Sometimes goods can arrive being brought into the solution so
-                  <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
-                  headquarters have enough space your needs.target e-business
-                </p>
               </div>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-7 mt-12">
-              <div>
-                <img src={boxImg2} draggable="false" />
-              </div>
-              <div className="flex-1">
-                <h5 className="font-AlbertSans font-semibold text-xl text-white">
-                  Solar Panel Solutions
+              <div className="text-center">
+                <img src={icon2} draggable="false" className="m-auto" />
+                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium text-lg mt-[14px]">
+                  Our Vission
                 </h5>
-                <p className="font-AlbertSans text-TextColor-0 mt-3">
-                  Sometimes goods can arrive being brought into the solution so
-                  <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
-                  headquarters have enough space your needs.target e-business
-                </p>
+              </div>
+              <div className="text-center">
+                <img src={icon3} draggable="false" className="m-auto" />
+                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium text-lg mt-[14px]">
+                  Philosophy
+                </h5>
               </div>
             </div>
           </div>

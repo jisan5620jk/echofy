@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
-import projectThumb from "/public/images/project-thumb.jpg";
-import projectThumb2 from "/public/images/project-thumb2.jpg";
-import projectThumb3 from "/public/images/project-thumb3.jpg";
-import projectThumb4 from "/public/images/project-thumb4.jpg";
-import projectShape from "/public/images/project-shape.png";
-import projectContentShape from "/public/images/project-content-shape.png";
+import projectThumb from "/images/project-thumb.jpg";
+import projectThumb2 from "/images/project-thumb2.jpg";
+import projectThumb3 from "/images/project-thumb3.jpg";
+import projectThumb4 from "/images/project-thumb4.jpg";
+import projectShape from "/images/project-shape.png";
+import projectContentShape from "/images/project-content-shape.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import subTitleShape from "/public/images/sub-title-shape.png";
+import subTitleShape from "/images/sub-title-shape.png";
 import "swiper/css";
 import ProjectCard from "./ProjectCard";
 import { GoArrowUpRight } from "react-icons/go";
@@ -86,7 +86,7 @@ const Project = () => {
     },
   };
   return (
-    <section className="project bg-[url('/public/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
+    <section className="project bg-[url('/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
       <div className="text-center">
         <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
           <img src={subTitleShape} draggable="false" />

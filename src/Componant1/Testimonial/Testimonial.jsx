@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-profile.png";
-import testiImg2 from "/public/images/testi-profile2.png";
-import testiShape from "/public/images/envato.png";
-import testiShape2 from "/public/images/amazon.png";
-import testiMainShape1 from "/public/images/testi-shape-1.png";
-import testiMainShape2 from "/public/images/testi-shape-2.png";
-import testiMainShape3 from "/public/images/testi-shape-3.png";
-import testiMainShape4 from "/public/images/testi-shape-4.png";
+import testiImg from "/images/testi-profile.png";
+import testiImg2 from "/images/testi-profile2.png";
+import testiShape from "/images/envato.png";
+import testiShape2 from "/images/amazon.png";
+import testiMainShape1 from "/images/testi-shape-1.png";
+import testiMainShape2 from "/images/testi-shape-2.png";
+import testiMainShape3 from "/images/testi-shape-3.png";
+import testiMainShape4 from "/images/testi-shape-4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import subTitleShape from "/public/images/sub-title-shape.png";
+import subTitleShape from "/images/sub-title-shape.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -82,7 +82,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-28 bg-[#f5f8ed] relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/public/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
+    <section className="py-28 bg-[#f5f8ed] relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
       <img
         src={testiMainShape1}
         draggable="false"

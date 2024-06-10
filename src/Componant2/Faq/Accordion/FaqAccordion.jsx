@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { FaAngleDown } from "react-icons/fa6";
 
 /* eslint-disable react/prop-types */
 const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
@@ -33,33 +34,11 @@ const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
               {title}
             </span>
           </span>
-          <svg
-            className={`fill-HeadingColor-0 bg-transparent transition duration-400 p-2 group-hover:fill-white shrink-0 ${
-              accordionOpen && " !fill-white"
+          <FaAngleDown
+            className={`text-HeadingColor-0 bg-transparent transition duration-400 group-hover:text-white ${
+              accordionOpen && " !text-white rotate-180"
             }`}
-            width="26"
-            height="26"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              y="4"
-              width="14"
-              height="2"
-              rx="1"
-              className={`transform origin-center transition duration-200 ease-out ${
-                accordionOpen && "!rotate-180"
-              }`}
-            />
-            <rect
-              y="4"
-              width="14"
-              height="2"
-              rx="1"
-              className={`transform origin-center rotate-90 transition duration-200 ease-out ${
-                accordionOpen && "!rotate-180"
-              }`}
-            />
-          </svg>
+          />
         </button>
       </h2>
       <div
@@ -73,7 +52,7 @@ const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="pb-6 pt-6 text-sm sm:text-base font-Archivo">
+          <p className="pb-6 pt-6 text-sm sm:text-base font-AlbertSans">
             {children}
           </p>
         </div>

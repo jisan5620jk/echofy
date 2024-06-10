@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import pricingShape1 from "/public/images/pricing-shape-1.png";
-import pricingShape2 from "/public/images/pricing-shape-2.png";
+import pricingShape1 from "/images/pricing-shape-1.png";
+import pricingShape2 from "/images/pricing-shape-2.png";
 import { FaCheck, FaCircle, FaStarOfLife } from "react-icons/fa6";
 import PricingCard from "./PricingCard";
 

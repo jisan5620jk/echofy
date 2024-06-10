@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import footerLogo from "/public/images/logo.png";
-import footerShape3 from "/public/images/footer-shape.png";
-import footerLine from "/public/images/footer-line.png";
+import footerLogo from "/images/logo.png";
+import footerShape3 from "/images/footer-shape.png";
+import footerLine from "/images/footer-line.png";
 import { FaArrowRightLong, FaChevronRight, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer2 = () => {
   return (
-    <footer className="bg-[url('/public/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
+    <footer className="bg-[url('/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
       <img
         src={footerLine}
         draggable="false"

@@ -1,5 +1,5 @@
 import { FaStarOfLife } from "react-icons/fa6";
-import aboutThumb from "/public/images/about4-thumb.png";
+import aboutThumb from "/images/about4-thumb.png";
 import ProgressBar from "react-animated-progress-bar";
 
 const About = () => {

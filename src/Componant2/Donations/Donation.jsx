@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-import donateImg from "/public/images/donate-img.jpg";
-import donateImg2 from "/public/images/donate-img2.jpg";
-import donateImg3 from "/public/images/donate-img3.jpg";
-import subTitleShape from "/public/images/sub-title-shape.png";
-import serviceMainShape1 from "/public/images/testi-shape-1.png";
-import serviceMainShape2 from "/public/images/testi-shape-2.png";
+import donateImg from "/images/donate-img.jpg";
+import donateImg2 from "/images/donate-img2.jpg";
+import donateImg3 from "/images/donate-img3.jpg";
+import subTitleShape from "/images/sub-title-shape.png";
+import serviceMainShape1 from "/images/testi-shape-1.png";
+import serviceMainShape2 from "/images/testi-shape-2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -93,7 +93,7 @@ const Donation = () => {
     },
   };
   return (
-    <section className="service relative pt-28 pb-[120px] bg-[#f5f8ed] z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/public/images/service2-bg.jpg')] before:-z-10 before:bg-cover before:bg-center before:bg-no-repeat">
+    <section className="service relative pt-28 pb-[120px] bg-[#f5f8ed] z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/images/service2-bg.jpg')] before:-z-10 before:bg-cover before:bg-center before:bg-no-repeat">
       <img
         src={serviceMainShape1}
         draggable="false"

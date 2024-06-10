@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import blogThumb from "/public/images/blog-1.png";
-import blogThumb2 from "/public/images/blog-2.png";
-import blogThumb3 from "/public/images/blog-3.png";
+import blogThumb from "/images/blog-1.png";
+import blogThumb2 from "/images/blog-2.png";
+import blogThumb3 from "/images/blog-3.png";
 import BlogCard from "./BlogCard";
 
 const blogData = [

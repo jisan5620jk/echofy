@@ -1,11 +1,11 @@
 import { FaStarOfLife } from "react-icons/fa6";
-import WhyChooseImg from "/public/images/why-choose-thumb.jpg";
-import boxImg from "/public/images/why-choose-icon.png";
-import boxImg2 from "/public/images/why-choose-icon2.png";
+import WhyChooseImg from "/images/why-choose-thumb.jpg";
+import boxImg from "/images/why-choose-icon.png";
+import boxImg2 from "/images/why-choose-icon2.png";
 
 const WhyChoose = () => {
   return (
-    <section className="pt-[320px] pb-[120px] bg-[url('/public/images/why-choose-us-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
+    <section className="pt-[320px] pb-[120px] bg-[url('/images/why-choose-us-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
       <div className="Container">
         <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 2xl:gap-20">
           <div className="bg-SecondaryColor-0 rounded-t-md">

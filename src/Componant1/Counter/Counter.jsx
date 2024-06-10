@@ -1,8 +1,8 @@
 import CounterCard from "./CounterCard";
-import counterIcon from "/public/images/counter-icon.png";
-import counterIcon2 from "/public/images/counter-icon2.png";
-import counterIcon3 from "/public/images/counter-icon3.png";
-import counterIcon4 from "/public/images/counter-icon4.png";
+import counterIcon from "/images/counter-icon.png";
+import counterIcon2 from "/images/counter-icon2.png";
+import counterIcon3 from "/images/counter-icon3.png";
+import counterIcon4 from "/images/counter-icon4.png";
 
 const counterData = [
   {
@@ -37,7 +37,7 @@ const counterData = [
 
 const Counter = () => {
   return (
-    <section className="py-28 bg-[url('/public/images/counter-bg.png')] bg-no-repeat bg-cover bg-center">
+    <section className="py-28 bg-[url('/images/counter-bg.png')] bg-no-repeat bg-cover bg-center">
       <div className="Container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-4 items-center justify-center">
           {counterData.map(

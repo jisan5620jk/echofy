@@ -64,7 +64,7 @@ body {
   width: 20px !important;
 }
 
-/* Portfolio */
+/* Project */
 
 .swiper-slide:hover .project-thumb-title,
 .swiper-slide.swiper-slide-active .project-thumb-title {
@@ -72,11 +72,16 @@ body {
   opacity: 1;
 }
 
-/* Portfolio */
+/* Project */
 
 .swiper-slide:hover .project-content,
 .swiper-slide.swiper-slide-active .project-content {
   bottom: 0px;
+}
+
+.swiper-slide:hover .project-content3,
+.swiper-slide.swiper-slide-active .project-content3 {
+  bottom: 0;
 }
 
 /* Pagination */
@@ -103,9 +108,19 @@ body {
   filter: brightness(0) invert(1);
 }
 
+.faq2-button[aria-expanded="true"] {
+  border-color: transparent !important;
+}
+
 /* Benefits */
 
 .benefits .rect-progress-bar-percent {
-    color: #fff !important;
-    font-weight: 400;
+  color: #fff !important;
+  font-weight: 400;
+}
+
+/* Counter */
+
+.counter-stroke {
+  -webkit-text-stroke: 1px #000000;
 }

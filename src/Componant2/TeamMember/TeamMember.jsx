@@ -1,7 +1,7 @@
-import teamThumb from "/public/images/team-thumb.png";
-import teamThumb2 from "/public/images/team-thumb2.png";
-import teamThumb3 from "/public/images/team-thumb3.png";
-import teamThumb4 from "/public/images/team-thumb4.png";
+import teamThumb from "/images/team-thumb.png";
+import teamThumb2 from "/images/team-thumb2.png";
+import teamThumb3 from "/images/team-thumb3.png";
+import teamThumb4 from "/images/team-thumb4.png";
 import TeamCard from "./TeamCard";
 import {
   FaFacebookF,
@@ -55,7 +55,7 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className="bg-[url('/public/images/team-bg.png')] bg-center bg-cover bg-no-repeat py-28">
+    <section className="bg-[url('/images/team-bg.png')] bg-center bg-cover bg-no-repeat py-28">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-AlbertSans font-medium text-PrimaryColor-0">

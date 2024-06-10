@@ -9,7 +9,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { BiChevronDown } from "react-icons/bi";
-import Logo from "/public/images/logo.png";
+import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdCall, IoMdClose } from "react-icons/io";
 import { BsEnvelope } from "react-icons/bs";

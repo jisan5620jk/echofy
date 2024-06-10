@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong } from "react-icons/fa6";
-import projectThumb from "/public/images/project-img.png";
-import projectThumb2 from "/public/images/project-img2.png";
-import projectThumb3 from "/public/images/project-img3.png";
-import projectShape from "/public/images/project-shape.png";
-import projectContentShape from "/public/images/project-content-shape.png";
+import projectThumb from "/images/project-img.png";
+import projectThumb2 from "/images/project-img2.png";
+import projectThumb3 from "/images/project-img3.png";
+import projectShape from "/images/project-shape.png";
+import projectContentShape from "/images/project-content-shape.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import subTitleShape from "/public/images/sub-title-shape.png";
+import subTitleShape from "/images/sub-title-shape.png";
 import "swiper/css";
 import ProjectCard from "./ProjectCard";
 import ProjectNavigation from "./ProjectNavigation";
@@ -22,7 +22,8 @@ const ProjectData = [
     buttonIcon: <FaArrowRightLong />,
     projectContentShape: projectContentShape,
     projectShape: projectShape,
-  },  {
+  },
+  {
     id: 2,
     projectThumb: projectThumb2,
     projectSubTitle: "Environment",
@@ -32,7 +33,8 @@ const ProjectData = [
     buttonIcon: <FaArrowRightLong />,
     projectContentShape: projectContentShape,
     projectShape: projectShape,
-  },  {
+  },
+  {
     id: 3,
     projectThumb: projectThumb3,
     projectSubTitle: "Recycling",
@@ -42,7 +44,8 @@ const ProjectData = [
     buttonIcon: <FaArrowRightLong />,
     projectContentShape: projectContentShape,
     projectShape: projectShape,
-  },  {
+  },
+  {
     id: 4,
     projectThumb: projectThumb,
     projectSubTitle: "Climate",
@@ -78,7 +81,7 @@ const Project = () => {
     },
   };
   return (
-    <section className="bg-[url('/public/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
+    <section className="bg-[url('/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
       <div className="Container">
         <div className="md:-mb-[6.2rem]">
           <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">

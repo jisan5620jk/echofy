@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import serviceThumb from "/public/images/services-1.jpg";
-import serviceThumb2 from "/public/images/services-2.jpg";
-import serviceThumb3 from "/public/images/services-3.jpg";
-import serviceThumb4 from "/public/images/services-4.jpg";
-import serviceIcon from "/public/images/service-icon4.png";
-import serviceIcon2 from "/public/images/service-icon5.png";
-import serviceIcon3 from "/public/images/service-icon6.png";
-import serviceIcon4 from "/public/images/service-icon7.png";
+import serviceThumb from "/images/services-1.jpg";
+import serviceThumb2 from "/images/services-2.jpg";
+import serviceThumb3 from "/images/services-3.jpg";
+import serviceThumb4 from "/images/services-4.jpg";
+import serviceIcon from "/images/service-icon4.png";
+import serviceIcon2 from "/images/service-icon5.png";
+import serviceIcon3 from "/images/service-icon6.png";
+import serviceIcon4 from "/images/service-icon7.png";
 import ServiceCard from "./ServiceCard";
 
 const serviceData = [

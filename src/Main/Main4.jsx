@@ -3,7 +3,7 @@ import Footer4 from "../Shared/Footer/Footer4";
 import Navbar4 from "../Shared/Navbar/Navbar4";
 import ScrollToTop from "../Shared/ScrollToTop/ScrollToTop";
 
-const Main3 = () => {
+const Main4 = () => {
   return (
     <>
       <Navbar4 />
@@ -15,4 +15,4 @@ const Main3 = () => {
     </>
   );
 };
-export default Main3;
+export default Main4;

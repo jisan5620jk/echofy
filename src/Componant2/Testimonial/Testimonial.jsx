@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-profile.png";
-import testiImg2 from "/public/images/testi-profile2.png";
-import thumbShape from "/public/images/testimonial-circle.png";
-import testiShape from "/public/images/envato.png";
-import testiShape2 from "/public/images/amazon.png";
-import testiMainShape from "/public/images/testi2-shape.png";
+import testiImg from "/images/testi-profile.png";
+import testiImg2 from "/images/testi-profile2.png";
+import thumbShape from "/images/testimonial-circle.png";
+import testiShape from "/images/envato.png";
+import testiShape2 from "/images/amazon.png";
+import testiMainShape from "/images/testi2-shape.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import subTitleShape from "/public/images/sub-title-shape.png";
+import subTitleShape from "/images/sub-title-shape.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Thumbs } from "swiper/modules";
@@ -80,7 +80,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-28 bg-[url('/public/images/testimonial-bg2.jpg')] bg-no-repeat bg-cover bg-right lg:bg-center relative z-10 overflow-hidden testimonial">
+    <section className="py-28 bg-[url('/images/testimonial-bg2.jpg')] bg-no-repeat bg-cover bg-right lg:bg-center relative z-10 overflow-hidden testimonial">
       <img
         src={testiMainShape}
         draggable="false"
@@ -89,7 +89,10 @@ const Testimonial = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div>
-            <img src={thumbShape} className="-ml-[18rem] 2xl:-ml-[16rem] !w-[inherit] animate-rotational hidden lg:block"/>
+            <img
+              src={thumbShape}
+              className="-ml-[18rem] 2xl:-ml-[16rem] !w-[inherit] animate-rotational hidden lg:block"
+            />
           </div>
           <div>
             <div>

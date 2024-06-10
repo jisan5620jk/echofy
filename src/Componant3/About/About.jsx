@@ -1,6 +1,6 @@
 import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import aboutThumb from "/public/images/about-thumb.png";
-import aboutItem from "/public/images/about-item.png";
+import aboutThumb from "/images/about-thumb.png";
+import aboutItem from "/images/about-item.png";
 import { Link } from "react-router-dom";
 
 const About = () => {

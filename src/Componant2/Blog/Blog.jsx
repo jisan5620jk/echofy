@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong } from "react-icons/fa6";
-import blogThumb from "/public/images/blog-thumb1.jpg";
-import blogThumb2 from "/public/images/blog-thumb2.jpg";
-import blogThumb3 from "/public/images/blog-thumb3.jpg";
-import subTitleShape from "/public/images/sub-title-shape.png";
-import buttonShape from "/public/images/button-shape-1.png";
+import blogThumb from "/images/blog-thumb1.jpg";
+import blogThumb2 from "/images/blog-thumb2.jpg";
+import blogThumb3 from "/images/blog-thumb3.jpg";
+import subTitleShape from "/images/sub-title-shape.png";
+import buttonShape from "/images/button-shape-1.png";
 import BlogCard from "./BlogCard";
 import { Link } from "react-router-dom";
 

@@ -1,15 +1,15 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
 import TestimonialInnerCard from "./TestimonialInnerCard";
-import testiImg from "/public/images/testi-thumb.png";
-import testiImg2 from "/public/images/testi-thumb-2.png";
-import testiImg3 from "/public/images/testi-thumb-6.png";
-import testiImg4 from "/public/images/testi-thumb-7.png";
-import testiImg5 from "/public/images/testi-thumb-8.png";
-import testiImg6 from "/public/images/testi-thumb-9.png";
-import testiImg7 from "/public/images/testi-thumb-10.png";
-import testiImg8 from "/public/images/testi-thumb-11.png";
-import testiImg9 from "/public/images/testi-thumb-12.png";
+import testiImg from "/images/testi-thumb.png";
+import testiImg2 from "/images/testi-thumb-2.png";
+import testiImg3 from "/images/testi-thumb-6.png";
+import testiImg4 from "/images/testi-thumb-7.png";
+import testiImg5 from "/images/testi-thumb-8.png";
+import testiImg6 from "/images/testi-thumb-9.png";
+import testiImg7 from "/images/testi-thumb-10.png";
+import testiImg8 from "/images/testi-thumb-11.png";
+import testiImg9 from "/images/testi-thumb-12.png";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 
 const TestimonialInner = () => {
@@ -20,7 +20,7 @@ const TestimonialInner = () => {
         breadcampIcon={<FaArrowRightLong />}
         breadCampContent={"Testimonial"}
       />
-      <section className="py-[120px] bg-[url('/public/images/testimonial-bg-four.png')] bg-cover bg-no-repeat bg-center">
+      <section className="py-[120px] bg-[url('/images/testimonial-bg-four.png')] bg-cover bg-no-repeat bg-center">
         <div className="Container">
           <div className="text-center mb-[60px]">
             <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">

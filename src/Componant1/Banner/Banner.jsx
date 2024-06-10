@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import buttonShape from "/public/images/button-shape-1.png";
-import bannerImg from "/public/images/banner-img.png";
-import bannerImg2 from "/public/images/banner-img2.png";
-import bannerImg3 from "/public/images/banner-img3.png";
+import buttonShape from "/images/button-shape-1.png";
+import bannerImg from "/images/banner-img.png";
+import bannerImg2 from "/images/banner-img2.png";
+import bannerImg3 from "/images/banner-img3.png";
 import { LiaPlayCircleSolid } from "react-icons/lia";
 import "./banner.css";
 import "swiper/css/pagination";
@@ -34,7 +34,7 @@ const Banner = () => {
     <div className="relative">
       <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
         <SwiperSlide>
-          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
+          <section className="bg-[url('/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
             <div className="Container">
               <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
@@ -116,7 +116,7 @@ const Banner = () => {
           </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
+          <section className="bg-[url('/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
             <div className="Container">
               <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
@@ -198,7 +198,7 @@ const Banner = () => {
           </section>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <section className="bg-[url('/public/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
+          <section className="bg-[url('/images/banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1200px] md:h-[1350px] lg:h-[960px] xl:h-[960px] flex items-center">
             <div className="Container">
               <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">

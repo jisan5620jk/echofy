@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { IoHome } from "react-icons/io5";
-import breadCampShape from "/public/images/breatcome-shape.png";
+import breadCampShape from "/images/breatcome-shape.png";
 
 const Breadcamp = ({
   breadCampTitle,
@@ -12,7 +12,7 @@ const Breadcamp = ({
   breadCampContent,
 }) => {
   return (
-    <div className="bg-[url('/public/images/breatcome-bg.png')] bg-no-repeat bg-cover bg-center flex items-center h-[400px] sm:h-[450px] text-center pt-20">
+    <div className="bg-[url('/images/breatcome-bg.png')] bg-no-repeat bg-cover bg-center flex items-center h-[400px] sm:h-[450px] text-center pt-20">
       <div className="Container relative">
         <img
           src={breadCampShape}
