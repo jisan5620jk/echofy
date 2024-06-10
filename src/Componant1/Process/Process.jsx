@@ -36,7 +36,7 @@ const processData = [
 
 const Process = () => {
   return (
-    <section className="pb-10 relative">
+    <section className="pb-10 relative z-10 pt-28">
       <div className="processShape"></div>
       <div className="Container">
         <div className="text-center">

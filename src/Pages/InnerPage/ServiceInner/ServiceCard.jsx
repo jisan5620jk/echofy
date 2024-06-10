@@ -18,7 +18,7 @@ const ServiceCard = ({
       <div>
         <img src={serviceThumb} className="w-full" />
       </div>
-      <div className="bg-HoverColor-0 pb-5">
+      <div className="bg-SecondaryColor-0 pb-5">
         <div className="w-10/12 mb-5 -mt-[30px] bg-white rounded-e-md px-4 md:px-8 pb-6 transition-all duration-500 relative z-10 before:absolute before:right-0 before:w-0 before:h-full before:rounded-e-md before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:-mt-[120px]">
           <img
             src={serviceShape}

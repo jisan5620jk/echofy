@@ -222,7 +222,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="text-left sm:text-center py-6 border-t border-BorderColor-0 mt-24">
+        <div className="text-left sm:text-center pb-6 mt-[108px]">
           <p className="font-AlbertSans text-white">
             © Copyrights 2024 Echofy All rights reserved by
             <span className="text-PrimaryColor-0"> Dream IT</span>

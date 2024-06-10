@@ -7,7 +7,7 @@ const Contentslider3 = () => {
       <div className="content-slider-section3">
         <div className="content-slider3">
           <div className="content-slider-content3">
-            <h1>System</h1> 
+            <h1>System</h1>
           </div>
           <div className="content-slider-content3">
             <h1>Design</h1>
@@ -17,6 +17,12 @@ const Contentslider3 = () => {
           </div>
           <div className="content-slider-content3">
             <h1>Power</h1>
+          </div>
+          <div className="content-slider-content3">
+            <h1>Design</h1>
+          </div>
+          <div className="content-slider-content3">
+            <h1>Solor</h1>
           </div>
           <div className="content-slider-content3">
             <h1>Energy</h1>
@@ -24,7 +30,7 @@ const Contentslider3 = () => {
         </div>
         <div className="content-slider3">
           <div className="content-slider-content3">
-            <h1>System</h1> 
+            <h1>System</h1>
           </div>
           <div className="content-slider-content3">
             <h1>Design</h1>
@@ -34,6 +40,12 @@ const Contentslider3 = () => {
           </div>
           <div className="content-slider-content3">
             <h1>Power</h1>
+          </div>
+          <div className="content-slider-content3">
+            <h1>Design</h1>
+          </div>
+          <div className="content-slider-content3">
+            <h1>Solor</h1>
           </div>
           <div className="content-slider-content3">
             <h1>Energy</h1>

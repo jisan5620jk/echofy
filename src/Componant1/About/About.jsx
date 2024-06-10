@@ -3,13 +3,19 @@ import aboutAward from "/images/about-award.png";
 import aboutIcon from "/images/about-icon.png";
 import aboutIcon2 from "/images/about-icon2.png";
 import aboutShape from "/images/about-shape.png";
+import aboutShape2 from "/images/about-shape-1.png";
 import buttonShape from "/images/button-shape-1.png";
 import subTitleShape from "/images/sub-title-shape.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="py-[120px] bg-[url('/images/about-bg.jpg')] bg-no-repeat bg-center bg-cover">
+    <section className="py-[120px] bg-[url('/images/about-bg.jpg')] bg-no-repeat bg-center bg-cover relative">
+      <img
+        src={aboutShape2}
+        draggable="false"
+        className="absolute top-32 right-20 animate-zoomInOut hidden 2xl:block"
+      />
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-24 items-center">
           <div className="relative">

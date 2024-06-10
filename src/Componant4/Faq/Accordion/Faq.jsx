@@ -32,7 +32,7 @@ const Faq = () => {
   return (
     <section
       className="relative overflow-hidden py-28 bg-[url('public/images/faqs-bg.jpg')] bg-cover bg-no-repeat
-     bg-center"
+     bg-left lg:bg-center"
     >
       <div className="Container">
         <div className="grid grid-cols-1 gap-20 lg:grid-cols-2 items-center">

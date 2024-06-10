@@ -11,7 +11,7 @@ const ServiceCard = ({
   serviceBtnIcon,
 }) => {
   return (
-    <div className="shadow-shade rounded-md bg-white text-center p-6 group relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:rounded-md hover:before:w-full hover:before:left-0 pr-7 mb-12 lg:mb-12 sm:mr-8 md:mr-0">
+    <div className="shadow-shade rounded-md bg-white text-center p-6 group relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:rounded-md hover:before:w-full hover:before:left-0 pr-7 mb-7 lg:mb-0 sm:mr-8 md:mr-0">
       <div className="relative">
         <img src={serviceThumb} draggable="false" className="w-full" />
         <div className="absolute right-0 bottom-0">

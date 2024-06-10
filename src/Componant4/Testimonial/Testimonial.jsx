@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import testiImg from "/images/testi4-author-1.png";
-import testiImg2 from "/images/testi4-author-1.png";
-import testiImg3 from "/images/testi4-author-1.png";
+import testiImg2 from "/images/testi4-author-2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -37,7 +36,7 @@ const testiData = [
   },
   {
     id: 3,
-    testiImg: testiImg3,
+    testiImg: testiImg,
     testIcon: <FaCircle />,
     testiRatingIcon: <IoStar />,
     testiName: "Al-Amin Islam",

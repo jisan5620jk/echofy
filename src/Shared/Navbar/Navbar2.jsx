@@ -81,7 +81,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white"
                 >
                   <FaFacebookF />
                 </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white"
                 >
                   <FaXTwitter />
                 </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white"
                 >
                   <FaLinkedinIn />
                 </Link>
@@ -105,7 +105,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                  className="transition-all duration-500 text-white"
                 >
                   <FaPinterestP />
                 </Link>
@@ -165,7 +165,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative`}
+                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative`}
                     >
                       <span className="flex items-center">
                         Home
@@ -177,28 +177,28 @@ const Navbar = () => {
                         data-aos-duration="1000"
                       >
                         <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/"} className="py-2 block">
                                 Home One
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/home2"} className="py-2 block">
                                 Home Two
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/home3"} className="py-2 block">
                                 Home Three
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/home4"} className="py-2 block">
                                 Home Four
@@ -225,7 +225,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""}text-white text-left font-AlbertSans font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""}text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -234,14 +234,14 @@ const Navbar = () => {
                       </span>
                       <div className="absolute pt-5 lg:pt-8 z-20">
                         <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/service"} className="py-2 block">
                                 Service
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link
                                 to={"/serviceDetails"}
@@ -260,7 +260,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -269,21 +269,21 @@ const Navbar = () => {
                       </span>
                       <div className="absolute pt-5 lg:pt-8 z-20">
                         <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/about"} className="py-2 block">
                                 About Us
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/service"} className="py-2 block">
                                 Service
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link
                                 to={"/serviceDetails"}
@@ -293,21 +293,21 @@ const Navbar = () => {
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/teamInner"} className="py-2 block">
                                 Team Member
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/project"} className="py-2 block">
                                 Project
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link
                                 to={"/projectDetails"}
@@ -317,21 +317,21 @@ const Navbar = () => {
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/pricing"} className="py-2 block">
                                 Pricing Plan
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/testimonial"} className="py-2 block">
                                 Testimonial
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/appointment"} className="py-2 block">
                                 Appointment
@@ -348,7 +348,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-AlbertSans font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -356,22 +356,22 @@ const Navbar = () => {
                         <BiChevronDown className="ml-1" />
                       </span>
                       <div className="absolute pt-5 lg:pt-8 z-20">
-                        <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HoverColor-0 ">
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/blogGrid"} className="py-2 block">
                                 Blog Grid
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/blogList"} className="py-2 block">
                                 Blog List
                               </Link>
                             </li>
                           </div>
-                          <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/blogDetails"} className="py-2 block">
                                 Blog Details
@@ -400,7 +400,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to={"/appointment"}
-                    className="header-btn bg-transparent border !border-white before:bg-white hover:text-PrimaryColor-0"
+                    className="header-btn bg-transparent border !border-white before:bg-white"
                   >
                     Get A Quote
                   </Link>

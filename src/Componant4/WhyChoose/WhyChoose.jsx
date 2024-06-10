@@ -6,11 +6,11 @@ import mainShape from "/images/hero4-shape.png";
 
 const WhyChoose = () => {
   return (
-    <section className="py-[120px] bg-[url('/images/why-choose-bg.png')] bg-cover bg-center bg-no-repeat relative">
+    <section className="py-[120px] bg-[url('/images/why-choose-bg.png')] bg-cover bg-right lg:bg-center bg-no-repeat relative">
       <img
         src={mainShape}
         draggable="false"
-        className="absolute top-24 left-1/3 animate-rotational"
+        className="absolute top-24 left-1/3 animate-rotational hidden lg:block"
       />
       <div className="Container">
         <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2">
@@ -35,19 +35,19 @@ const WhyChoose = () => {
             <div className="bg-white flex justify-around pt-[48px] pb-10 rounded-md mt-12">
               <div className="text-center">
                 <img src={icon} draggable="false" className="m-auto" />
-                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium text-lg mt-[14px]">
+                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium sm:text-lg mt-[14px]">
                   Our Mission
                 </h5>
               </div>
               <div className="text-center">
                 <img src={icon2} draggable="false" className="m-auto" />
-                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium text-lg mt-[14px]">
+                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium sm:text-lg mt-[14px]">
                   Our Vission
                 </h5>
               </div>
               <div className="text-center">
                 <img src={icon3} draggable="false" className="m-auto" />
-                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium text-lg mt-[14px]">
+                <h5 className="font-AlbertSans text-HeadingColor-0 font-medium sm:text-lg mt-[14px]">
                   Philosophy
                 </h5>
               </div>

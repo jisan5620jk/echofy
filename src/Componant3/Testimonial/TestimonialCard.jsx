@@ -8,7 +8,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className="px-5 sm:px-[30px] lg:px-4 xl:px-[30px] pt-10 bg-[#f5f8ed] relative bg-HoverColor-0 group rounded-md z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 transition-all duration-500 hover:shadow-cases mb-7 lg:mb-0">
+    <div className="px-5 sm:px-[30px] lg:px-4 xl:px-[30px] pt-10 bg-[#f5f8ed] relative group rounded-md z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 transition-all duration-500 hover:shadow-cases mb-7 lg:mb-0">
       <p className="font-AlbertSans text-lg text-TextColor-0 transition-all duration-500 group-hover:text-white">
         {testiDesc}
       </p>

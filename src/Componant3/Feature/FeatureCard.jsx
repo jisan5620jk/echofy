@@ -15,7 +15,7 @@ const FeatureCard = ({featureShape, featureIcon, featureTitle, featureDesc }) =>
         />
       </div>
       <div className="flex-1">
-        <h5 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+        <h5 className="font-AlbertSans font-semibold text-xl md:text-lg lg:text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
           {featureTitle}
         </h5>
         <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white mt-[6px]">

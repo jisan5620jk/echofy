@@ -77,7 +77,7 @@ const Service = () => {
     },
   };
   return (
-    <section className="relative pt-28 pb-[120px]">
+    <section className="relative pt-28 pb-[120px] bg-[url('/images/service-bg.jpg')] bg-cover bg-no-repeat bg-center">
       <div className="Container">
         <div className="md:-mb-[11.2rem]">
           <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">

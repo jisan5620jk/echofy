@@ -8,11 +8,11 @@ import ProgressBar from "react-animated-progress-bar";
 
 const Skill = () => {
   return (
-    <section className="py-[120px] bg-[#f5f8ed] relative overflow-hidden">
+    <section className="py-[120px] bg-[#f5f8ed] relative overflow-hidden z-10">
       <img
         src={skillMainShape}
         draggable="false"
-        className="absolute -z-10 top-10 left-10 animate-dance2 hidden xl:block"
+        className="absolute -z-10 top-0 left-0 animate-dance2 hidden xl:block"
       />
       <div className="Container">
         <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 lg:items-center">

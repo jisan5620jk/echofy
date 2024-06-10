@@ -2,7 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Appointment = () => {
   return (
-    <section className="relative border-l-8 border-r-8 border-b-8 border-PrimaryColor-0">
+    <section className="relative border-l-8 border-r-8 border-b-8 border-PrimaryColor-0 pl-7 lg:pl-0 pb-8 lg:pb-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className="relative">
           <iframe

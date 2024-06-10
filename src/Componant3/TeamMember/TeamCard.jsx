@@ -16,21 +16,21 @@ const TeamCard = ({
         <ul className="flex gap-3 absolute z-10 -bottom-1/4 left-1/2 -translate-x-1/2 transition-all duration-500 group-hover:bottom-6">
           <li>
             <Link to={"/"}>
-              <button className="w-[40px] h-[40px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              <button className="w-[40px] h-[40px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                 {socialIcon}
               </button>
             </Link>
           </li>
           <li>
             <Link to={"/"}>
-              <button className="w-[40px] h-[40px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              <button className="w-[40px] h-[40px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                 {socialIcon2}
               </button>
             </Link>
           </li>
           <li>
             <Link to={"/"}>
-              <button className="w-[40px] h-[40px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              <button className="w-[40px] h-[40px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                 {socialIcon3}
               </button>
             </Link>

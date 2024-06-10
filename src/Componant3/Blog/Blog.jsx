@@ -54,11 +54,11 @@ const Blog = () => {
         <div className="text-center">
           <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
             <FaStarOfLife />
-            TESTIMONIALS
+            LATEST BLOG
             <FaStarOfLife />
           </h5>
           <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-            What Our Clinets Says
+            Read The Latest News
           </h1>
         </div>
         <div className="mt-[60px]">

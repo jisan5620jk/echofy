@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import footerLogo from "/images/logo.png";
-import footerShape from "/images/footer-social-shape.png";
-import footerShape2 from "/images/footer-shape2.png";
 import footerShape3 from "/images/footer-shape.png";
 import footerLine from "/images/footer-line.png";
-import buttonShape from "/images/button-shape-1.png";
 import { FaArrowRightLong, FaChevronRight, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
@@ -22,37 +19,6 @@ const Footer2 = () => {
         className="absolute -z-10 top-0 left-0 animate-dance2"
       />
       <div className="Container">
-        <div className="relative">
-          <div className="bg-[url('/images/footer-social.jpg')] bg-no-repeat bg-cover bg-center relative rounded-md ">
-            <div className="flex flex-col gap-7 lg:gap-0 lg:flex-row lg:items-center lg:justify-between p-10 mb-[90px]">
-              <div>
-                <h2 className="font-AlbertSans font-bold text-white text-[30px] sm:text-[40px]">
-                  Stay With Us On Social
-                </h2>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <Link to={"/appointment"}>
-                  <button className="primary-btn bg-transparent border !border-white before:bg-HeadingColor-0 hover:!border-SecondaryColor-0">
-                    {`Join Us Now`}
-                    <img src={buttonShape} draggable="false" />
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <div className="md:flex justify-center items-center w-full absolute top-1/4 left-16 md:left-1/3 lg:left-16 hidden ">
-              <img
-                src={footerShape2}
-                draggable="false"
-                className="animate-zoomInOut"
-              />
-            </div>
-          </div>
-          <img
-            src={footerShape}
-            draggable="false"
-            className="absolute -z-10 -bottom-[70px] -right-[10px] animate-dance2"
-          />
-        </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
           <div>
             <img src={footerLogo} />

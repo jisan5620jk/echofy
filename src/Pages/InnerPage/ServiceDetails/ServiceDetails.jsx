@@ -111,7 +111,7 @@ const ServiceDetails = () => {
                 <ul className="mt-8">
                   <li>
                     <Link to={"/"}>
-                      <button className="w-full font-AlbertSans text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-HoverColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-AlbertSans text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-SecondaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <BsFileEarmarkPdf
                             size={"20"}
@@ -125,7 +125,7 @@ const ServiceDetails = () => {
                   </li>
                   <li>
                     <Link to={"/"}>
-                      <button className="w-full font-AlbertSans text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-HoverColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-AlbertSans text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-SecondaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <BsFileEarmarkPdf
                             size={"20"}

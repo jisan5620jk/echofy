@@ -19,32 +19,34 @@ const TeamCard = ({
         <h5 className="font-AlbertSans font-semibold text-[26px] text-HeadingColor-0 pb-2">
           {teamTitle}
         </h5>
-        <p className="font-AlbertSans text-PrimaryColor-0 font-medium">{teamDesc}</p>
+        <p className="font-AlbertSans text-PrimaryColor-0 font-medium">
+          {teamDesc}
+        </p>
         <ul className="flex gap-3 justify-center mt-7">
           <li>
             <Link to={"/"}>
-              <button className="w-[35px] h-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-BorderColor2-0 text-TextColor-0 text-sm transition-all duration-500 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              <button className="w-[35px] h-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-BorderColor2-0 text-TextColor-0 text-sm transition-all duration-500 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                 {socialIcon}
               </button>
             </Link>
           </li>
           <li>
             <Link to={"/"}>
-              <button className="w-[35px] h-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-BorderColor2-0 text-TextColor-0 text-sm transition-all duration-500 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              <button className="w-[35px] h-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-BorderColor2-0 text-TextColor-0 text-sm transition-all duration-500 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                 {socialIcon2}
               </button>
             </Link>
           </li>
           <li>
             <Link to={"/"}>
-              <button className="w-[35px] h-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-BorderColor2-0 text-TextColor-0 text-sm transition-all duration-500 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              <button className="w-[35px] h-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-BorderColor2-0 text-TextColor-0 text-sm transition-all duration-500 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                 {socialIcon3}
               </button>
             </Link>
           </li>
           <li>
             <Link to={"/"}>
-              <button className="w-[35px] h-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-BorderColor2-0 text-TextColor-0 text-sm transition-all duration-500 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              <button className="w-[35px] h-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-BorderColor2-0 text-TextColor-0 text-sm transition-all duration-500 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                 {socialIcon4}
               </button>
             </Link>

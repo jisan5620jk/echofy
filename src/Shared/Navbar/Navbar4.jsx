@@ -80,7 +80,7 @@ const Navbar = () => {
             <li>
               <Link
                 to={"/"}
-                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
               >
                 <FaFacebookF />
               </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <li>
               <Link
                 to={"/"}
-                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
               >
                 <FaXTwitter />
               </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
             <li>
               <Link
                 to={"/"}
-                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
               >
                 <FaLinkedinIn />
               </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
             <li>
               <Link
                 to={"/"}
-                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-HoverColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+                className="w-[36px] h-[36px] flex justify-center items-center rounded-full overflow-hidden relative bg-SecondaryColor-0 border border-white border-dashed hover:border-solid text-white transition-all duration-500 hover:text-PrimaryColor-0 text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
               >
                 <FaPinterestP />
               </Link>
@@ -151,9 +151,9 @@ const Navbar = () => {
               >
                 {/* modal open and close */}
                 {isOpen ? (
-                  <IoMdClose className="w-6 h-6 text-white" />
+                  <IoMdClose className="w-6 h-6 text-HeadingColor-0" />
                 ) : (
-                  <FaBars className="w-5 h-5 text-white" />
+                  <FaBars className="w-5 h-5 text-HeadingColor-0" />
                 )}
               </button>
             </div>
@@ -184,28 +184,28 @@ const Navbar = () => {
                     data-aos-duration="1000"
                   >
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/" className="py-2 block">
                             Home One
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/home2" className="py-2 block">
                             Home Two
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/home3" className="py-2 block">
                             Home Three
                           </Link>
                         </li>
                       </div>
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                      <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/home4" className="py-2 block">
                             Home Four
@@ -354,7 +354,7 @@ const Navbar = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HoverColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
                       <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blogGrid" className="py-2 block">
