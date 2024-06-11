@@ -7,8 +7,13 @@ import { Link } from "react-router-dom";
 import buttonShape from "/images/button-shape-1.png";
 import aboutShape from "/images/about2-shape.png";
 import aboutShape2 from "/images/testi-shape-3.png";
+import { useState } from "react";
+import FsLightbox from "fslightbox-react";
+import { CiPlay1 } from "react-icons/ci";
 
 const About = () => {
+    const [toggler, setToggler] = useState(false);
+
   return (
     <section className="py-[120px] bg-[url('/images/about-bg.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
       <img
@@ -21,6 +26,13 @@ const About = () => {
         draggable="false"
         className="absolute top-32 right-20 animate-zoomInOut hidden 2xl:block"
       />
+      
+      <FsLightbox
+        toggler={toggler}
+        sources={[
+          "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        ]}
+      />
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 items-center">
           <div className="relative z-10">
@@ -30,6 +42,14 @@ const About = () => {
               draggable="false"
               className="absolute bottom-0 right-0 hidden sm:block"
             />
+            <div className="absolute top-20 right-[60px] lg:right-[30px] xl:-right-[30px] 2xl:right-[60px] hidden sm:block">
+        <button
+          className="h-[88px] w-[88px] rounded-full border-4 border-white text-2xl text-white bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-HeadingColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping after:absolute after:-top-[20px] after:-left-[20px] after:w-[120px] after:h-[120px] after:bg-transparent after:border-2 after:border-dashed after:border-PrimaryColor-0 after:opacity-50 after:-z-10 after:rounded-full after:animate-rotational"
+          onClick={() => setToggler(!toggler)}
+        >
+          <CiPlay1 />
+        </button>
+      </div>
           </div>
           <div>
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
