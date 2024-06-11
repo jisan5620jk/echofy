@@ -6,7 +6,8 @@ const BreadCrumb = ({
   breadCrumbTitle,
   breadCrumbIcon,
   url,
-  breadcampIcon2,
+  breadCrumbLink,
+  breadCrumbIcon2,
   breadCrumbContent,
 }) => {
   return (
@@ -28,7 +29,14 @@ const BreadCrumb = ({
             <div className="text-white hidden sm:block">{breadCrumbIcon}</div>
           </li>
           <li>
-            <div className="text-white hidden sm:block">{breadcampIcon2}</div>
+            <Link to={url}>
+              <button className="font-AlbertSans capitalize text-white opacity-70">
+                {breadCrumbLink}
+              </button>
+            </Link>
+          </li>
+          <li>
+            <div className="text-white hidden sm:block">{breadCrumbIcon2}</div>
           </li>
           <li>
             <Link to={url}>
