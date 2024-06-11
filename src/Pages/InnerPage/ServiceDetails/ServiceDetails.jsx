@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import wedgetIcon from "/images/widget-icon.png";
 import projectDetailsIcon from "/images/sidber-icon.png";
 import projectDetailsIcon2 from "/images/sidber-icon2.png";
@@ -20,12 +20,12 @@ import ServiceFaq from "./Accordion/ServiceFaq";
 const ServiceDetails = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Office cleaning"}
-        breadCampLink={"Serivces"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadcampIcon2={<FaArrowRightLong />}
-        breadCampContent={"Office cleaning"}
+      <BreadCrumb
+        breadCrumbTitle={"Office cleaning"}
+        breadCrumbLink={"Serivces"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon2={<FaArrowRightLong />}
+        breadCrumbContent={"Office cleaning"}
       />
       <section className="py-[120px] bg-white">
         <div className="Container">

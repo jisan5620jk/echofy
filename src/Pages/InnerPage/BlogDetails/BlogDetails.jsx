@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import blogListImg from "/images/sidber-thumb.png";
 import blogDetailsImg from "/images/blog-thumb8.png";
 import blogDetailsImg2 from "/images/blog-thumb9.png";
@@ -12,7 +12,6 @@ import { FaUserCircle } from "react-icons/fa";
 import {
   FaAnglesLeft,
   FaAnglesRight,
-  FaArrowRightLong,
   FaCircleCheck,
   FaCommentsDollar,
   FaFacebookF,
@@ -27,13 +26,10 @@ import { BiSolidQuoteAltRight, BiSolidShare } from "react-icons/bi";
 const BlogDetails = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Blog Details"}
+      <BreadCrumb
+        breadCrumbTitle={"Blog Details"}
         url={"/blog"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadcampIcon2={<FaArrowRightLong />}
-        breadCampLink={"Blog"}
-        breadCampContent={"Floor Cleaning Using New Equipment"}
+        breadCrumbContent={"Floor Cleaning Using New Equipment"}
       />
       <section className="py-28">
         <div className="Container">

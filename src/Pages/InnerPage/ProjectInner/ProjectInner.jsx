@@ -1,5 +1,5 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import projectThumb from "/images/project-img.png";
 import projectThumb2 from "/images/project-img2.png";
 import projectThumb3 from "/images/project-img3.png";
@@ -13,10 +13,10 @@ import { GoArrowUpRight } from "react-icons/go";
 const ProjectInner = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Projects"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadCampContent={"Projects"}
+      <BreadCrumb
+        breadCrumbTitle={"Projects"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbContent={"Projects"}
       />
       <section className="py-28 bg-[#f3f4f8]">
         <div className="Container">

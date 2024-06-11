@@ -1,5 +1,5 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import TestimonialInnerCard from "./TestimonialInnerCard";
 import testiImg from "/images/testi-thumb.png";
 import testiImg2 from "/images/testi-thumb-2.png";
@@ -15,10 +15,10 @@ import { MdOutlineStarPurple500 } from "react-icons/md";
 const TestimonialInner = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Testimonial"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadCampContent={"Testimonial"}
+      <BreadCrumb
+        breadCrumbTitle={"Testimonial"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbContent={"Testimonial"}
       />
       <section className="py-[120px] bg-[url('/images/testimonial-bg-four.png')] bg-cover bg-no-repeat bg-center">
         <div className="Container">

@@ -11,7 +11,7 @@ import blogThumb8 from "/images/blog-thumb10.png";
 import blogThumb9 from "/images/blog-thumb11.png";
 import BlogCard from "./BlogCard";
 import { Link } from "react-router-dom";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 
 const blogData = [
   {
@@ -127,10 +127,10 @@ const blogData = [
 const BlogGrid = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Blog Grid"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadCampContent={"Blog Grid"}
+      <BreadCrumb
+        breadCrumbTitle={"Blog Grid"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbContent={"Blog Grid"}
       />
       <section className="pt-28">
         <div className="Container">

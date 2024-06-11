@@ -1,5 +1,5 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import teamInnerThumb from "/images/team-thumb9.png";
 import teamInnerThumb2 from "/images/team-thumb10.png";
 import teamInnerThumb3 from "/images/team-thumb11.png";
@@ -50,10 +50,10 @@ const TeamInnerData = [
 const TeamInner = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Team Member"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadCampContent={"Team Member"}
+      <BreadCrumb
+        breadCrumbTitle={"Team Member"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbContent={"Team Member"}
       />
       <section className="bg-[#f4f4f8] py-[120px]">
         <div className="Container">

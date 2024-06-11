@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import blogListImg from "/images/blog-thumb13.png";
 import blogListImg2 from "/images/blog-thumb14.png";
 import blogListImg3 from "/images/blog-thumb15.png";
@@ -109,13 +109,13 @@ const blogListData = [
 const BlogList = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Blog With Sidebar"}
+      <BreadCrumb
+        breadCrumbTitle={"Blog With Sidebar"}
         url={"/blog"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadcampIcon2={<FaArrowRightLong />}
-        breadCampLink={"Blog"}
-        breadCampContent={"Blog With Sidebar"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon2={<FaArrowRightLong />}
+        breadCrumbLink={"Blog"}
+        breadCrumbContent={"Blog With Sidebar"}
       />
       <section className="pt-[120px]">
         <div className="Container">

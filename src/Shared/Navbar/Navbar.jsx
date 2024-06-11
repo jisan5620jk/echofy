@@ -115,7 +115,7 @@ const Navbar = () => {
       </header>
       {/* top Navbar */}
       <header
-        className="header-section bg-transparent border-t border-b border-BorderColor-0"
+        className="header-section bg-transparent border-t border-b border-BorderColor4-0"
         data-aos="zoom-in"
         data-aos-duration="1000"
       >

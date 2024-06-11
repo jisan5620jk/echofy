@@ -1,19 +1,19 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
-import Appointment from "../../../Componant3/Appointment/Appointment";
-import ContactLocation from "./ContactLocation";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
+import Appointment from "./Appointment/Appointment";
+import ContactBox from "./ContactBox";
 
 const ContactInner = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Contact Us"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadCampContent={"Contact Us"}
+      <BreadCrumb
+        breadCrumbTitle={"Contact Us"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbContent={"Contact Us"}
         url={"/contact"}
       />
+      <ContactBox />
       <Appointment />
-      <ContactLocation/>
     </>
   );
 };

@@ -14,7 +14,7 @@ import serviceIcon4 from "/images/service-icon14.png";
 import serviceIcon5 from "/images/service-icon15.png";
 import serviceIcon6 from "/images/service-icon16.png";
 import ServiceCard from "./ServiceCard";
-import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
+import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import Support from "../../../Componant1/Support/Support";
 import Pricing from "../../../Componant1/Pricing/Pricing";
 
@@ -102,10 +102,10 @@ const serviceData = [
 const ServiceInner = () => {
   return (
     <>
-      <Breadcamp
-        breadCampTitle={"Our Services"}
-        breadcampIcon={<FaArrowRightLong />}
-        breadCampContent={"Our Services"}
+      <BreadCrumb
+        breadCrumbTitle={"Our Services"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbContent={"Our Services"}
       />
       <section className="pt-28 pb-40 p relative z-10 bg-[#f3f3f7]">
         <div className="Container">
