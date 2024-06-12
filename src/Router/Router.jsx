@@ -16,6 +16,7 @@ import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
 import BlogGrid from "../Pages/InnerPage/BlogGrid/BlogGrid";
 import ProjectInner from "../Pages/InnerPage/ProjectInner/ProjectInner";
 import TeamInner from "../Pages/InnerPage/TeamInner/TeamInner";
+import DonationInner from "../Pages/InnerPage/DonationInner/DonationInner";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/project",
         element: <ProjectInner />,
+      },
+      {
+        path: "/donation",
+        element: <DonationInner />,
       },
       {
         path: "/teamInner",

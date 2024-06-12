@@ -14,7 +14,7 @@ const testiData = [
     id: 1,
     testiImg: testiImg,
     testiRatingIcon: <IoStar />,
-    testiName: "David Miller",
+    testiName: "Jhon D. Alexon",
     testIcon: <FaCircle />,
     testiDesignation: "Web Developer",
     testiDesc: `Sometimes goods can arrive early when clients
@@ -26,7 +26,7 @@ const testiData = [
     id: 2,
     testiImg: testiImg2,
     testiRatingIcon: <IoStar />,
-    testiName: "Jhon D. Alexon",
+    testiName: "Anjelina Watson",
     testIcon: <FaCircle />,
     testiDesignation: "UI/UX Designer",
     testiDesc: `Sometimes goods can arrive early when clients

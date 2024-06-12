@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import ProgressBar from "react-animated-progress-bar";
 
-const DonationsCard = ({
+const DonationInnerCard = ({
   donateImg,
   imgbutton,
   donateTitle,
@@ -28,7 +28,7 @@ const DonationsCard = ({
       </div>
       <div className="px-[30px] pb-8 pt-6 bg-white">
         <Link to={"/"}>
-          <button className="font-AlbertSans font-semibold text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+          <button className="font-AlbertSans font-semibold text-left text-xl sm:text-2xl lg:text-xl 2xl:text-2xl pb-4 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
             {donateTitle}
           </button>
         </Link>
@@ -76,4 +76,4 @@ const DonationsCard = ({
   );
 };
 
-export default DonationsCard;
+export default DonationInnerCard;
