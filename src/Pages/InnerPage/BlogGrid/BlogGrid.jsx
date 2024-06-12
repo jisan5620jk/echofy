@@ -1,24 +1,24 @@
 /* eslint-disable no-unused-vars */
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
-import blogThumb from "/images/blog-thumb.png";
-import blogThumb2 from "/images/blog-thumb2.png";
-import blogThumb3 from "/images/blog-thumb3.png";
-import blogThumb4 from "/images/blog-thumb3.png";
-import blogThumb5 from "/images/blog-thumb7.png";
-import blogThumb6 from "/images/blog-thumb8.png";
-import blogThumb7 from "/images/blog-thumb9.png";
-import blogThumb8 from "/images/blog-thumb10.png";
-import blogThumb9 from "/images/blog-thumb11.png";
+import blogThumb from "/images/blog-list.png";
+import blogThumb2 from "/images/blog-list2.png";
+import blogThumb3 from "/images/blog-list3.png";
+import blogThumb4 from "/images/blog-list4.jpg";
+import blogThumb5 from "/images/blog-list5.jpg";
+import blogThumb6 from "/images/blog-list6.jpg";
+import blogThumb7 from "/images/blog-thumb1.jpg";
+import blogThumb8 from "/images/blog-thumb2.jpg";
+import blogThumb9 from "/images/blog-thumb3.jpg";
 import BlogCard from "./BlogCard";
 import { Link } from "react-router-dom";
+import subTitleShape from "/images/sub-title-shape.png";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 
 const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    thumbDate: "02",
-    thumbMonth: "MAY",
+    thumbContent: "Energy",
     blogUrl: "/blogDetails",
     blogTitle: "Newest Cleaning Tools for House 2024",
     blogDesc:
@@ -137,10 +137,11 @@ const BlogGrid = () => {
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:items-center">
             <div>
               <div>
-                <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
+                <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+                  <img src={subTitleShape} draggable="false" />
                   LATEST BLOG
                 </h5>
-                <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
+                <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
                   Learn about our Latest <br /> News from Blog
                 </h1>
               </div>
@@ -160,8 +161,7 @@ const BlogGrid = () => {
                 ({
                   id,
                   blogThumb,
-                  thumbDate,
-                  thumbMonth,
+                  thumbContent,
                   blogTitle,
                   blogDesc,
                   btnContent,
@@ -171,8 +171,7 @@ const BlogGrid = () => {
                     <div key={id}>
                       <BlogCard
                         blogThumb={blogThumb}
-                        thumbDate={thumbDate}
-                        thumbMonth={thumbMonth}
+                        thumbContent={thumbContent}
                         blogTitle={blogTitle}
                         blogDesc={blogDesc}
                         btnContent={btnContent}
@@ -189,22 +188,22 @@ const BlogGrid = () => {
       <div>
         <ul className="flex items-center gap-2 justify-center pb-[120px] pt-[80px]">
           <li>
-            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
               01
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
               02
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
               03
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
               <FaAngleRight />
             </button>
           </li>

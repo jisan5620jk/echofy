@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 const BlogCard = ({
   blogThumb,
-  thumbDate,
-  thumbMonth,
+  thumbContent,
   blogUrl,
   blogTitle,
   blogDesc,
@@ -18,10 +17,9 @@ const BlogCard = ({
           src={blogThumb}
           className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
         />
-        <div className="absolute left-5 bottom-4">
-          <h6 className="font-AlbertSans font-semibold text-2xl text-center inline-block overflow-hidden rounded px-5 py-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white bg-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 group-hover:before:scale-100">
-            {thumbDate}
-            <div className="font-normal text-sm">{thumbMonth}</div>
+        <div className="absolute left-4 top-5">
+          <h6 className="font-AlbertSans text-sm uppercase text-center inline-block overflow-hidden rounded px-4 py-[8px] text-white transition-all duration-500 group-hover:text-white bg-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 group-hover:before:scale-100">
+            {thumbContent}
           </h6>
         </div>
       </div>
@@ -31,11 +29,11 @@ const BlogCard = ({
             {blogTitle}
           </button>
         </Link>
-        <p className="font-AlbertSans font-light text-TextColor-0">
+        <p className="font-AlbertSans font-light text-TextColor-0 pb-8">
           {blogDesc}
         </p>
         <Link to={blogUrl}>
-          <button className="flex gap-2 items-center font-AlbertSans font-medium text-HeadingColor-0 transition-all duration-500 border-b border-transparent group-hover:text-SecondaryColor-0 group-hover:border-SecondaryColor-0 mt-5">
+          <button className="primary-btn2 !rounded !px-7 !py-3">
             {btnContent}
             {btnIcon}
           </button>

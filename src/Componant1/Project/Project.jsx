@@ -93,7 +93,7 @@ const Project = () => {
             Environmental Works
           </h1>
         </div>
-        <div className="">
+        <div>
           <Swiper {...settings}>
             <div>
               {ProjectData.map(

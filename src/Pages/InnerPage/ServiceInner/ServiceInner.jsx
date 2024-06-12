@@ -1,101 +1,89 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import serviceThumb from "/images/service-img4.png";
-import serviceThumb2 from "/images/service-img5.png";
-import serviceThumb3 from "/images/service-img6.png";
-import serviceThumb4 from "/images/service-img7.png";
-import serviceThumb5 from "/images/service-img8.png";
-import serviceThumb6 from "/images/service-img9.png";
+import serviceImg from "/images/services-thumb.png";
+import serviceImg2 from "/images/services-thumb2.png";
+import serviceImg3 from "/images/services-thumb3.png";
+import serviceImg4 from "/images/services-thumb4.png";
+import serviceImg5 from "/images/services-thumb5.png";
+import serviceImg6 from "/images/services-thumb6.png";
 import serviceShape from "/images/service-shape.png";
-import serviceIcon from "/images/service-icon.png";
-import serviceIcon2 from "/images/service-icon2.png";
-import serviceIcon3 from "/images/service-icon3.png";
-import serviceIcon4 from "/images/service-icon14.png";
-import serviceIcon5 from "/images/service-icon15.png";
-import serviceIcon6 from "/images/service-icon16.png";
+import serviceIcon from "/images/service2-icon.png";
+import serviceIcon2 from "/images/service2-icon2.png";
+import serviceIcon3 from "/images/service2-icon3.png";
+import serviceIcon4 from "/images/service2-icon4.png";
+import serviceIcon5 from "/images/service2-icon5.png";
+import serviceIcon6 from "/images/service2-icon6.png";
 import ServiceCard from "./ServiceCard";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Support from "../../../Componant1/Support/Support";
-import Pricing from "../../../Componant1/Pricing/Pricing";
+import subTitleShape from "/images/sub-title-shape.png";
+import { GoArrowUpRight } from "react-icons/go";
 
 const serviceData = [
   {
     id: 1,
-    serviceThumb: serviceThumb,
+    serviceImg: serviceImg,
     serviceIcon: serviceIcon,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Ocean Clean",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `House Wash & Clean`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
   },
   {
     id: 2,
-    serviceThumb: serviceThumb2,
+    serviceImg: serviceImg2,
     serviceIcon: serviceIcon2,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Dust Recycling",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `Office Floor Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
   },
   {
     id: 3,
-    serviceThumb: serviceThumb3,
-    serviceIcon: serviceIcon3,
+    serviceImg: serviceImg3,
+    serviceIcon: serviceIcon4,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Corbon Emissions",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `Kitchen Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
   },
   {
     id: 4,
-    serviceThumb: serviceThumb4,
-    serviceIcon: serviceIcon4,
+    serviceImg: serviceImg4,
+    serviceIcon: serviceIcon3,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Tree Plantation",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `Glass Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
   },
   {
     id: 5,
-    serviceThumb: serviceThumb5,
+    serviceImg: serviceImg5,
     serviceIcon: serviceIcon5,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Sustainble Energy",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `Carpet Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
   },
   {
     id: 6,
-    serviceThumb: serviceThumb6,
+    serviceImg: serviceImg6,
     serviceIcon: serviceIcon6,
+    serviceButton: <GoArrowUpRight />,
+    serviceButton2: "Discover More",
+    serviceTitle: "Plantary Warming",
+    serviceDesc:
+      "Alternative innovation to ethical network environmental whiteboard",
     serviceShape: serviceShape,
-    serviceTitle: `Door Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
   },
 ];
 
@@ -109,55 +97,43 @@ const ServiceInner = () => {
       />
       <section className="pt-28 pb-40 p relative z-10 bg-[#f3f3f7]">
         <div className="Container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-            <div>
-              <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
-                OUR SERVICES
-              </h5>
-              <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
-                Professional echofy Services <br />
-                What we Provide
-              </h1>
-            </div>
-            <div>
-              <p className="font-AlbertSans font-light text-TextColor-0">
-                Competently repurpose go forward benefits without goal-orien
-                conveniently target e-business opportunities whereas parallel
-                multimedia based web services
-              </p>
-            </div>
+          <div className="text-center">
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
+              <img src={subTitleShape} draggable="false" />
+              OUR SERVICES
+            </h5>
+            <h1 className="font-AlbertSans font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5">
+              Echofy Provide Environment <br />
+              Best Leading Services
+            </h1>
           </div>
           <div className="mt-[60px]">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
               {serviceData.map(
                 ({
                   id,
-                  serviceThumb,
+                  serviceImg,
                   serviceIcon,
-                  serviceShape,
+                  serviceButton,
+                  serviceButton2,
                   serviceTitle,
-                  serviceListIcon,
-                  serviceListContent,
-                  serviceListContent2,
-                  serviceUrl,
-                  buttonContent,
-                  buttonIcon,
+                  serviceDesc,
+                  serviceShape,
                 }) => {
                   return (
-                    <div key={id}>
-                      <ServiceCard
-                        serviceThumb={serviceThumb}
-                        serviceIcon={serviceIcon}
-                        serviceShape={serviceShape}
-                        serviceTitle={serviceTitle}
-                        serviceListIcon={serviceListIcon}
-                        serviceListContent={serviceListContent}
-                        serviceListContent2={serviceListContent2}
-                        serviceUrl={serviceUrl}
-                        buttonContent={buttonContent}
-                        buttonIcon={buttonIcon}
-                      />
-                    </div>
+                    <>
+                      <div key={id}>
+                        <ServiceCard
+                          serviceImg={serviceImg}
+                          serviceIcon={serviceIcon}
+                          serviceButton={serviceButton}
+                          serviceButton2={serviceButton2}
+                          serviceTitle={serviceTitle}
+                          serviceDesc={serviceDesc}
+                          serviceShape={serviceShape}
+                        />
+                      </div>
+                    </>
                   );
                 }
               )}
@@ -165,8 +141,6 @@ const ServiceInner = () => {
           </div>
         </div>
       </section>
-      <Support />
-      <Pricing />
     </>
   );
 };

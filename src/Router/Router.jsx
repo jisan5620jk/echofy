@@ -9,8 +9,13 @@ import Home3 from "../Pages/Home3/Home3";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import Home4 from "../Pages/Home4/Home4";
 import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
+import ServiceInner from "../Pages/InnerPage/ServiceInner/ServiceInner";
 import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
+import BlogList from "../Pages/InnerPage/BlogList/BlogList";
 import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
+import BlogGrid from "../Pages/InnerPage/BlogGrid/BlogGrid";
+import ProjectInner from "../Pages/InnerPage/ProjectInner/ProjectInner";
+import TeamInner from "../Pages/InnerPage/TeamInner/TeamInner";
 
 const router = createBrowserRouter([
   {
@@ -27,12 +32,32 @@ const router = createBrowserRouter([
         element: <AboutInner />,
       },
       {
-        path: "/contact",
-        element: <ContactInner />,
+        path: "/service",
+        element: <ServiceInner />,
+      },
+      {
+        path: "/project",
+        element: <ProjectInner />,
+      },
+      {
+        path: "/teamInner",
+        element: <TeamInner />,
+      },
+      {
+        path: "/blogGrid",
+        element: <BlogGrid />,
+      },
+      {
+        path: "/blogList",
+        element: <BlogList />,
       },
       {
         path: "/blogDetails",
         element: <BlogDetails />,
+      },
+      {
+        path: "/contact",
+        element: <ContactInner />,
       },
     ],
   },
