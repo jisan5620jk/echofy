@@ -82,6 +82,7 @@ const Blog = () => {
                 blogThumb,
                 thumbContent,
                 blogDate,
+                blogUrl,
                 blogTitle,
                 blogDesc,
                 blogProfileIcon,
@@ -94,6 +95,7 @@ const Blog = () => {
                       blogThumb={blogThumb}
                       thumbContent={thumbContent}
                       blogDate={blogDate}
+                      blogUrl={blogUrl}
                       blogTitle={blogTitle}
                       blogDesc={blogDesc}
                       blogProfileIcon={blogProfileIcon}

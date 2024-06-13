@@ -62,7 +62,7 @@ const ServiceAccordion = ({ children, title, id, active = false }) => {
         id={`accordion-text-${id}`}
         role="region"
         aria-labelledby={`accordion-title-${id}`}
-        className={`grid font-AlbertSans font-light leading-[26px] text-TextColor-0 bg-white px-4 md:px-10 lg:px-6 xl:px-10 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack ${
+        className={`grid font-Poppins font-light leading-[26px] text-TextColor-0 bg-white px-4 md:px-10 lg:px-6 xl:px-10 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"

@@ -10,6 +10,7 @@ import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import Home4 from "../Pages/Home4/Home4";
 import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
 import ServiceInner from "../Pages/InnerPage/ServiceInner/ServiceInner";
+import ServiceDetails from "../Pages/InnerPage/ServiceDetails/ServiceDetails";
 import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
 import BlogList from "../Pages/InnerPage/BlogList/BlogList";
 import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <ServiceInner />,
+      },
+      {
+        path: "/service_details",
+        element: <ServiceDetails />,
       },
       {
         path: "/project",
