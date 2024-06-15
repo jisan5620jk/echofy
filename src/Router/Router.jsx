@@ -18,6 +18,12 @@ import BlogGrid from "../Pages/InnerPage/BlogGrid/BlogGrid";
 import ProjectInner from "../Pages/InnerPage/ProjectInner/ProjectInner";
 import TeamInner from "../Pages/InnerPage/TeamInner/TeamInner";
 import DonationInner from "../Pages/InnerPage/DonationInner/DonationInner";
+import ServiceDetails2 from "../Pages/InnerPage/ServiceDetails/ServiceDetails2";
+import ServiceDetails3 from "../Pages/InnerPage/ServiceDetails/ServiceDetails3";
+import ServiceDetails4 from "../Pages/InnerPage/ServiceDetails/ServiceDetails4";
+import ServiceDetails5 from "../Pages/InnerPage/ServiceDetails/ServiceDetails5";
+import ServiceDetails6 from "../Pages/InnerPage/ServiceDetails/ServiceDetails6";
+import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -42,8 +48,32 @@ const router = createBrowserRouter([
         element: <ServiceDetails />,
       },
       {
+        path: "/service_details2",
+        element: <ServiceDetails2 />,
+      },
+      {
+        path: "/service_details3",
+        element: <ServiceDetails3 />,
+      },
+      {
+        path: "/service_details4",
+        element: <ServiceDetails4 />,
+      },
+      {
+        path: "/service_details5",
+        element: <ServiceDetails5 />,
+      },
+      {
+        path: "/service_details6",
+        element: <ServiceDetails6 />,
+      },
+      {
         path: "/project",
         element: <ProjectInner />,
+      },
+      {
+        path: "/project_details",
+        element: <ProjectDetails />,
       },
       {
         path: "/donation",

@@ -37,7 +37,7 @@ const serviceData = [
     id: 3,
     serviceIcon: serviceIcon3,
     serviceThumb: serviceThumb3,
-    serviceTitle: `Kitchen Cleaning`,
+    serviceTitle: `Forest Cleaning`,
     serviceDesc:
       "Sometims goods can arrive early when ses need a place  short goods can arrive solarihave space your needs.",
     serviceUrl: "/serviceDetails",

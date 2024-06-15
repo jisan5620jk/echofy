@@ -44,7 +44,7 @@ const blogData = [
     thumbDate: "25",
     thumbMonth: "MAY",
     blogUrl: "/blogDetails",
-    blogTitle: "Floor Cleaning Use New Equipment",
+    blogTitle: "Ocean Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
     btnContent: "Read More",
@@ -104,7 +104,7 @@ const blogData = [
     thumbDate: "20",
     thumbMonth: "JUNE",
     blogUrl: "/blogDetails",
-    blogTitle: "Floor Cleaning Use New Equipment",
+    blogTitle: "Ocean Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
     btnContent: "Read More",

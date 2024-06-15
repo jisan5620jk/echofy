@@ -67,7 +67,9 @@ const PricingAccordion = ({ children, title, id, active = false }) => {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="pb-6 text-sm sm:text-base font-Archivo">{children}</p>
+          <p className="pb-6 text-sm sm:text-base font-AlbertSans">
+            {children}
+          </p>
         </div>
       </div>
     </div>
