@@ -27,7 +27,7 @@ const Banner = () => {
             solution other times <br className="hidden md:block"/> need a place for can a headquarters have
             enough space your needs.
           </p>
-          <div className="mt-11">
+          <div className="mt-11 inline-block">
             <Link to={"/about"}>
               <button className="primary-btn2">
                 {`Find Out More`}

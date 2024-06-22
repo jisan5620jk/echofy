@@ -14,7 +14,7 @@ const blogData = [
     blogThumb: blogThumb,
     thumbContent: "Environment",
     blogDate: "24 Mar, 2024",
-    blogUrl: "/blogDetails",
+    blogUrl: "/blog_details",
     blogTitle: "Top 10 Recycling tips for Environment",
     blogDesc:
       "Competently cultivate worldwide to e-tailers professionally engineer high",
@@ -27,7 +27,7 @@ const blogData = [
     blogThumb: blogThumb2,
     thumbContent: "Environment",
     blogDate: "24 Mar, 2024",
-    blogUrl: "/blogDetails",
+    blogUrl: "/blog_details",
     blogTitle: "How Every Individual Can Make a Difference",
     blogDesc:
       "Competently cultivate worldwide to e-tailers professionally engineer high",
@@ -40,7 +40,7 @@ const blogData = [
     blogThumb: blogThumb3,
     thumbContent: "Environment",
     blogDate: "24 Mar, 2024",
-    blogUrl: "/blogDetails",
+    blogUrl: "/blog_details",
     blogTitle: "Innovations in Renewable Energy Technology",
     blogDesc:
       "Competently cultivate worldwide to e-tailers professionally engineer high",
@@ -66,7 +66,7 @@ const Blog = () => {
             </h1>
           </div>
           <div className="flex lg:justify-end">
-            <Link to={"/blogGrid"}>
+            <Link to={"/blog_grid"}>
               <button className="primary-btn">
                 Veiw All Blog
                 <img src={buttonShape} draggable="false" />

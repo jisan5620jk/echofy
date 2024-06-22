@@ -24,6 +24,7 @@ import ServiceDetails4 from "../Pages/InnerPage/ServiceDetails/ServiceDetails4";
 import ServiceDetails5 from "../Pages/InnerPage/ServiceDetails/ServiceDetails5";
 import ServiceDetails6 from "../Pages/InnerPage/ServiceDetails/ServiceDetails6";
 import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
+import FaqInner from "../Pages/InnerPage/Faq/Accordion/FaqInner";
 
 const router = createBrowserRouter([
   {
@@ -76,23 +77,27 @@ const router = createBrowserRouter([
         element: <ProjectDetails />,
       },
       {
-        path: "/donation",
+        path: "/donation_inner",
         element: <DonationInner />,
       },
       {
-        path: "/teamInner",
+        path: "/team_inner",
         element: <TeamInner />,
       },
       {
-        path: "/blogGrid",
+        path: "/faq_inner",
+        element: <FaqInner />,
+      },
+      {
+        path: "/blog_grid",
         element: <BlogGrid />,
       },
       {
-        path: "/blogList",
+        path: "/blog_list",
         element: <BlogList />,
       },
       {
-        path: "/blogDetails",
+        path: "/blog_details",
         element: <BlogDetails />,
       },
       {
