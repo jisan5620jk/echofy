@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({
   serviceImg,
   serviceIcon,
+  serviceUrl,
   serviceButton,
   serviceTitle,
   serviceDesc,
@@ -18,13 +19,13 @@ const ServiceCard = ({
         <div>
           <img src={serviceIcon} draggable="false" />
         </div>
-        <Link to={"/"}>
+        <Link to={serviceUrl}>
           <button className="w-[50px] h-[50px] rounded-full bg-white text-PrimaryColor-0 text-2xl flex justify-center items-center transition-all duration-500 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 group-hover:text-white group-hover:before:scale-100">
             {serviceButton}
           </button>
         </Link>
       </div>
-      <Link to={"/"}>
+      <Link to={serviceUrl}>
         <button className="font-AlbertSans font-semibold text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white relative before:absolute before:bottom-0 before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">{serviceTitle}</button>
       </Link>
       <p className="font-AlbertSans text-TextColor-0 pt-6 pb-[10px">{serviceDesc}</p>

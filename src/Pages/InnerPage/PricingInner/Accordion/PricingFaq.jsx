@@ -1,59 +1,88 @@
-import PricingAccordion from "./PricingAccordion";
-import pricingFaqImg from "/images/faq-thumb.png";
+import { Link } from "react-router-dom";
+import FaqAccordion from "./FaqAccordion";
+import subTitleShape from "/images/sub-title-shape.png";
+import buttonShape from "/images/button-shape-1.png";
+import faqIcon from "/images/faq-icon.png";
+import faqMainShape from "/images/faqs-shape2.png";
 
-const PricingFaq = () => {
+const Faq = () => {
   //  All Faqs and  answers.
   const faqs = [
     {
-      title: "How to use modern equipment for cleaning?",
-      text: "Foster visionary vortals without dynamic convergence. Interactively matrix multimedia based total linkage rather than leading-edges create technically sound",
+      faqIcon: faqIcon,
+      title: "How to Cleaning Sea Beach Properly?",
+      text: "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high",
       active: true,
     },
     {
-      title: "What kinds of modern technology?",
-      text: "Foster visionary vortals without dynamic convergence. Interactively matrix multimedia based total linkage rather than leading-edges create technically sound",
+      faqIcon: faqIcon,
+      title: "How to save earth using trees?",
+      text: "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high",
       active: false,
     },
     {
-      title: "Do you have any custom cleaning services?",
-      text: "Foster visionary vortals without dynamic convergence. Interactively matrix multimedia based total linkage rather than leading-edges create technically sound",
+      faqIcon: faqIcon,
+      title: "When Seedlings a Plants?",
+      text: "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high",
+      active: false,
+    },
+    {
+      faqIcon: faqIcon,
+      title: "Can I Donate money using Website?",
+      text: "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high",
       active: false,
     },
   ];
 
   return (
-    <main className="relative overflow-hidden py-28 bg-[#f3f4f8]">
+    <section
+      className="relative overflow-hidden py-28 bg-[url('public/images/faq-bg.jpg')] bg-cover bg-no-repeat
+     bg-center"
+    >
       <div className="Container">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
-          <div>
-            <img src={pricingFaqImg} />
+          <div className="relative">
+            <img
+              src={faqMainShape}
+              className="absolute -top-28 right-10 animate-movebtn"
+            />
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <img src={subTitleShape} draggable="false" />
+              FAQ
+            </h5>
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-6">
+              Freequently Asked <br />
+              Questions
+            </h1>
+            <p className="font-AlbertSans text-TextColor-0 font-light mb-9">
+              {`Competently cultivate worldwide e-tailers through principle-centered professionally engineer high-payoff deliverables without exceptional processes. Rapidiously network cost effective vortals`}
+            </p>
+            <Link to={"/about"}>
+              <button className="primary-btn">
+                {`Learn More`}
+                <img src={buttonShape} draggable="false" />
+              </button>
+            </Link>
           </div>
           <div className="w-full mx-auto">
-            <div className="mb-11">
-              <h5 className="font-AlbertSans font-medium text-SecondaryColor-0">
-                FAQ
-              </h5>
-              <h1 className="font-AlbertSans font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
-                Ask Questions
-              </h1>
-            </div>
             <div>
               {faqs.map((faq, index) => (
-                <PricingAccordion
+                <FaqAccordion
                   key={index}
+                  faqIcon={faq.faqIcon}
                   title={faq.title}
                   id={`faqs-${index}`}
                   active={faq.active}
                 >
                   {faq.text}
-                </PricingAccordion>
+                </FaqAccordion>
               ))}
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
-export default PricingFaq;
+export default Faq;

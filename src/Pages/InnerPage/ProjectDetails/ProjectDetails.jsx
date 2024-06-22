@@ -162,7 +162,7 @@ const ProjectDetails = () => {
                     example@gmail.com
                   </button>
                 </Link>
-                <Link to={"/"}>
+                <Link to={"/contact"}>
                   <button className="font-AlbertSans text-white flex gap-2 items-center bg-PrimaryColor-0 w-full h-[58px] rounded-md justify-center z-10 relative before:absolute before:top-0 before:right-0 before:scale-0 before:-z-10 before:w-full before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
                     Contact Us
                     <FaArrowRight />

@@ -232,7 +232,7 @@ const Navbar = () => {
                         <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/project" className="py-2 block">
-                              Project
+                              Projects
                             </Link>
                           </li>
                         </div>
@@ -245,7 +245,7 @@ const Navbar = () => {
                         </div>
                         <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/pricing" className="py-2 block">
+                            <Link to="/pricing_inner" className="py-2 block">
                               Pricing Plan
                             </Link>
                           </li>

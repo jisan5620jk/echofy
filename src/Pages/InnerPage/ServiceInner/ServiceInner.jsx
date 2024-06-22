@@ -23,6 +23,7 @@ const serviceData = [
     id: 1,
     serviceImg: serviceImg,
     serviceIcon: serviceIcon,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceButton2: "Discover More",
     serviceTitle: "Ocean Clean",
@@ -34,6 +35,7 @@ const serviceData = [
     id: 2,
     serviceImg: serviceImg2,
     serviceIcon: serviceIcon2,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceButton2: "Discover More",
     serviceTitle: "Dust Recycling",
@@ -45,6 +47,7 @@ const serviceData = [
     id: 3,
     serviceImg: serviceImg3,
     serviceIcon: serviceIcon4,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceButton2: "Discover More",
     serviceTitle: "Corbon Emissions",
@@ -56,6 +59,7 @@ const serviceData = [
     id: 4,
     serviceImg: serviceImg4,
     serviceIcon: serviceIcon3,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceButton2: "Discover More",
     serviceTitle: "Tree Plantation",
@@ -67,6 +71,7 @@ const serviceData = [
     id: 5,
     serviceImg: serviceImg5,
     serviceIcon: serviceIcon5,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceButton2: "Discover More",
     serviceTitle: "Sustainble Energy",
@@ -78,6 +83,7 @@ const serviceData = [
     id: 6,
     serviceImg: serviceImg6,
     serviceIcon: serviceIcon6,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceButton2: "Discover More",
     serviceTitle: "Plantary Warming",
@@ -114,6 +120,7 @@ const ServiceInner = () => {
                   id,
                   serviceImg,
                   serviceIcon,
+                  serviceUrl,
                   serviceButton,
                   serviceButton2,
                   serviceTitle,
@@ -126,6 +133,7 @@ const ServiceInner = () => {
                         <ServiceCard
                           serviceImg={serviceImg}
                           serviceIcon={serviceIcon}
+                          serviceUrl={serviceUrl}
                           serviceButton={serviceButton}
                           serviceButton2={serviceButton2}
                           serviceTitle={serviceTitle}

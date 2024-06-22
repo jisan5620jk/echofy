@@ -20,7 +20,7 @@ const projectData = [
     shape: shape,
     projectSubTitle: "RENEWABLE POWER",
     projectTitle: "Solar Power Project",
-    projectUrl: "/projectDetails",
+    projectUrl: "/project_details",
     projectIcon: <FaArrowRight />,
   },
   {
@@ -29,7 +29,7 @@ const projectData = [
     shape: shape,
     projectSubTitle: "RENEWABLE POWER",
     projectTitle: "Solar Power Project",
-    projectUrl: "/projectDetails",
+    projectUrl: "/project_details",
     projectIcon: <FaArrowRight />,
   },
   {
@@ -38,7 +38,7 @@ const projectData = [
     shape: shape,
     projectSubTitle: "RENEWABLE POWER",
     projectTitle: "Solar Power Project",
-    projectUrl: "/projectDetails",
+    projectUrl: "/project_details",
     projectIcon: <FaArrowRight />,
   },
   {
@@ -47,7 +47,7 @@ const projectData = [
     shape: shape,
     projectSubTitle: "RENEWABLE POWER",
     projectTitle: "Solar Power Project",
-    projectUrl: "/projectDetails",
+    projectUrl: "/project_details",
     projectIcon: <FaArrowRight />,
   },
 ];

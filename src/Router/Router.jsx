@@ -17,6 +17,7 @@ import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
 import BlogGrid from "../Pages/InnerPage/BlogGrid/BlogGrid";
 import ProjectInner from "../Pages/InnerPage/ProjectInner/ProjectInner";
 import TeamInner from "../Pages/InnerPage/TeamInner/TeamInner";
+import PricingInner from "../Pages/InnerPage/PricingInner/PricingInner";
 import DonationInner from "../Pages/InnerPage/DonationInner/DonationInner";
 import ServiceDetails2 from "../Pages/InnerPage/ServiceDetails/ServiceDetails2";
 import ServiceDetails3 from "../Pages/InnerPage/ServiceDetails/ServiceDetails3";
@@ -83,6 +84,10 @@ const router = createBrowserRouter([
       {
         path: "/team_inner",
         element: <TeamInner />,
+      },
+      {
+        path: "/pricing_inner",
+        element: <PricingInner />,
       },
       {
         path: "/faq_inner",

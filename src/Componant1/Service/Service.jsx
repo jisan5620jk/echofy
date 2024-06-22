@@ -17,6 +17,7 @@ const ServiceData = [
     id: 1,
     serviceImg: serviceImg,
     serviceIcon: serviceIcon,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceTitle: "Tree Plantation",
     serviceDesc:
@@ -27,6 +28,7 @@ const ServiceData = [
     id: 2,
     serviceImg: serviceImg2,
     serviceIcon: serviceIcon2,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceTitle: "Dust Recycling",
     serviceDesc:
@@ -37,6 +39,7 @@ const ServiceData = [
     id: 3,
     serviceImg: serviceImg3,
     serviceIcon: serviceIcon3,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceTitle: "Cleaning Ocean",
     serviceDesc:
@@ -47,6 +50,7 @@ const ServiceData = [
     id: 4,
     serviceImg: serviceImg,
     serviceIcon: serviceIcon,
+    serviceUrl: "/service_details",
     serviceButton: <GoArrowUpRight />,
     serviceTitle: "Tree Plantation",
     serviceDesc:
@@ -96,6 +100,7 @@ const Service = () => {
                 id,
                 serviceImg,
                 serviceIcon,
+                serviceUrl,
                 serviceButton,
                 serviceTitle,
                 serviceDesc,
@@ -108,6 +113,7 @@ const Service = () => {
                         <ServiceCard
                           serviceImg={serviceImg}
                           serviceIcon={serviceIcon}
+                          serviceUrl={serviceUrl}
                           serviceButton={serviceButton}
                           serviceTitle={serviceTitle}
                           serviceDesc={serviceDesc}

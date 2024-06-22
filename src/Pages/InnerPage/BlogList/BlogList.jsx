@@ -32,7 +32,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -49,7 +49,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -66,7 +66,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -83,7 +83,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -100,7 +100,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -243,7 +243,7 @@ const BlogList = () => {
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img draggable="false" src={itemthumb2} />
@@ -258,7 +258,7 @@ const BlogList = () => {
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img draggable="false" src={itemthumb3} />

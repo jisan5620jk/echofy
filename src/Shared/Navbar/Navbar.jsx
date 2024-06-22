@@ -15,7 +15,7 @@ import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
-import Search from "../Search/Search";
+import HeaderSearch from "../Search/HeaderSearch";
 
 const Navbar = () => {
   //sticky
@@ -314,7 +314,7 @@ const Navbar = () => {
                       <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/project" className="py-2 block">
-                            Project
+                            Projects
                           </Link>
                         </li>
                       </div>
@@ -327,7 +327,7 @@ const Navbar = () => {
                       </div>
                       <div className=" px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/pricing" className="py-2 block">
+                          <Link to="/pricing_inner" className="py-2 block">
                             Pricing Plan
                           </Link>
                         </li>
@@ -409,9 +409,9 @@ const Navbar = () => {
                 </NavLink>
               </ul>
               <div className="hidden lg:flex items-center">
-                <Link to={"/"} className="header-src-btn">
+                <button className="header-src-btn">
                   <IoSearch className="search-box-outer text-2xl ml-2 mr-10 text-PrimaryColor-0" />
-                </Link>
+                </button>
                 <Link to={"/appointment"} className="header-btn">
                   Get A Quote
                 </Link>
@@ -419,7 +419,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </header> <Search />
+      </header>
+      <HeaderSearch />
     </nav>
   );
 };

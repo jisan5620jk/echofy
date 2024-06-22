@@ -17,6 +17,7 @@ import { IoSearch } from "react-icons/io5";
 import { TbGridDots } from "react-icons/tb";
 import { CiLocationOn } from "react-icons/ci";
 import { HiOutlineMailOpen } from "react-icons/hi";
+import HeaderSidebar from "../Sidebar/HeaderSidebar";
 
 const Navbar = () => {
   //sticky
@@ -326,7 +327,10 @@ const Navbar = () => {
                           </div>
                           <div className=" px-5 group hover:bg-PrimaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
-                              <Link to={"/pricing"} className="py-2 block">
+                              <Link
+                                to={"/pricing_inner"}
+                                className="py-2 block"
+                              >
                                 Pricing Plan
                               </Link>
                             </li>
@@ -418,15 +422,19 @@ const Navbar = () => {
                   >
                     Get A Quote
                   </Link>
-                  <div className="text-white">
-                    <TbGridDots size={"36"} className="hidden xl:block" />
-                  </div>
+                  <button className="text-white nav-btn nav-sidebar-button">
+                    <TbGridDots
+                      size={"36"}
+                      className="hidden xl:block"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </header>
+      <HeaderSidebar />
     </nav>
   );
 };

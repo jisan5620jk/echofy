@@ -12,7 +12,7 @@ const blogData = [
     thumbContent: "home 2024 march",
     blogDate: "Mar 15, 2024",
     blogRelated: "RENEWABOLE / SCIENCE",
-    blogUrl: "/blogDetails",
+    blogUrl: "/blog_details",
     blogTitle: "Solar-Powered Transportation",
     blogDesc:
       "Need place to stored for short goods can arive desig have space your needs brand.",
@@ -25,7 +25,7 @@ const blogData = [
     thumbContent: "home 2024 march",
     blogDate: "Mar 15, 2024",
     blogRelated: "RENEWABOLE / SCIENCE",
-    blogUrl: "/blogDetails",
+    blogUrl: "/blog_details",
     blogTitle: "Pioneering the Future of Power",
     blogDesc:
       "Need place to stored for short goods can arive desig have space your needs brand.",
@@ -38,7 +38,7 @@ const blogData = [
     thumbContent: "home 2024 march",
     blogDate: "Mar 15, 2024",
     blogRelated: "RENEWABOLE / SCIENCE",
-    blogUrl: "/blogDetails",
+    blogUrl: "/blog_details",
     blogTitle: "Solar-Powered Innovations",
     blogDesc:
       "Need place to stored for short goods can arive desig have space your needs brand.",

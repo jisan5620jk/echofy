@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import blogDetailsThumb from "/images/blog-details-thumb.jpg";
-import blogDetailsImg from "/images/services-details-benifis-thumb-1.png";
-import blogDetailsImg2 from "/images/services-details-benifis-thumb-2.png";
+import blog_detailsThumb from "/images/blog-details-thumb.jpg";
+import blog_detailsImg from "/images/services-details-benifis-thumb-1.png";
+import blog_detailsImg2 from "/images/services-details-benifis-thumb-2.png";
 import itemthumb from "/images/post-1.png";
 import itemthumb2 from "/images/post-2.png";
 import itemthumb3 from "/images/post-3.png";
@@ -26,14 +26,14 @@ import {
 } from "react-icons/fa6";
 import { BiSolidQuoteAltRight, BiSolidShare } from "react-icons/bi";
 
-const BlogDetails = () => {
+const blog_details = () => {
   return (
     <>
       <BreadCrumb
         breadCrumbTitle={"Blog Details"}
         breadCrumbIcon={<FaArrowRightLong />}
-        url={"/blog"}
-        breadCrumbLink={"Blog Details"}
+        url={"/blog_grid"}
+        breadCrumbLink={"Blog"}
         breadCrumbIcon2={<FaArrowRightLong />}
         breadCrumbContent={"How Every Individual Can Make a Difference"}
       />
@@ -45,7 +45,7 @@ const BlogDetails = () => {
                 <div className="relative">
                   <img
                     draggable="false"
-                    src={blogDetailsThumb}
+                    src={blog_detailsThumb}
                     className="w-full"
                   />
                   <h6 className="font-AlbertSans text-white px-5 py-2 rounded absolute top-5 left-5 bg-PrimaryColor-0">
@@ -53,7 +53,7 @@ const BlogDetails = () => {
                   </h6>
                 </div>
                 <div className="px-4 sm:px-8">
-                  <Link to={"/"}>
+                  <Link to={"/blog_details"}>
                     <button className="font-AlbertSans font-bold text-left text-lg sm:text-2xl 2xl:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-9 mb-6">
                       How Every Individual Can Make a Difference
                     </button>
@@ -102,8 +102,8 @@ const BlogDetails = () => {
                       </h6>
                     </div>
                   </div>
-                  <Link to={"/"}>
-                    <button className="font-AlbertSans font-bold text-left text-xl sm:text-2xl md:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-14 mb-4">
+                  <Link to={"/blog_details"}>
+                    <button className="font-AlbertSans font-semibold text-left text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-14 mb-4">
                       Clean Enviromnent Policy
                     </button>
                   </Link>
@@ -152,14 +152,14 @@ const BlogDetails = () => {
                   </ul>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-16">
                     <div>
-                      <img draggable="false" src={blogDetailsImg} />
+                      <img draggable="false" src={blog_detailsImg} />
                     </div>
                     <div>
-                      <img draggable="false" src={blogDetailsImg2} />
+                      <img draggable="false" src={blog_detailsImg2} />
                     </div>
                   </div>
-                  <Link to={"/"}>
-                    <button className="font-AlbertSans font-bold text-left text-xl sm:text-2xl md:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4">
+                  <Link to={"/blog_details"}>
+                    <button className="font-AlbertSans font-semibold text-left text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4">
                       Tree Plantation for Human
                     </button>
                   </Link>
@@ -221,13 +221,11 @@ const BlogDetails = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-[60px]">
                 <div className="rounded-md bg-[#f3f4f8] pt-8 pb-10 px-9">
-                  <Link to={"/"}>
-                    <button className="font-AlbertSans font-medium text-lg text-HeadingColor-0 flex items-center gap-2">
-                      <FaAnglesLeft size={"14"} />
-                      Previous Post
-                    </button>
-                  </Link>
-                  <Link
+                  <button className="font-AlbertSans font-medium text-lg text-HeadingColor-0 flex items-center gap-2">
+                    <FaAnglesLeft size={"14"} />
+                    Previous Post
+                  </button>
+                  <button
                     to={"/"}
                     className="flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:items-center gap-5 sm:items-center lg:items-start mt-5"
                   >
@@ -242,16 +240,14 @@ const BlogDetails = () => {
                         01 Jan, 2024
                       </p>
                     </div>
-                  </Link>
+                  </button>
                 </div>
                 <div className="rounded-md bg-[#f3f4f8] pt-8 pb-10 px-9 flex flex-col items-end">
-                  <Link to={"/"}>
                     <button className="font-AlbertSans font-medium text-lg text-HeadingColor-0 flex items-center gap-2">
                       Next Post
                       <FaAnglesRight size={"14"} />
                     </button>
-                  </Link>
-                  <Link
+                  <button
                     to={"/"}
                     className="flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:items-center gap-5 sm:items-center lg:items-start mt-5 text-right"
                   >
@@ -266,7 +262,7 @@ const BlogDetails = () => {
                     <div>
                       <img draggable="false" src={itemthumb3} />
                     </div>
-                  </Link>
+                  </button>
                 </div>
               </div>
               <div className="bg-[#f3f4f8] px-4 sm:px-[62px] py-14 rounded-md mt-[60px]">
@@ -477,7 +473,7 @@ const BlogDetails = () => {
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img draggable="false" src={itemthumb2} />
@@ -492,7 +488,7 @@ const BlogDetails = () => {
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img draggable="false" src={itemthumb3} />
@@ -565,4 +561,4 @@ const BlogDetails = () => {
   );
 };
 
-export default BlogDetails;
+export default blog_details;

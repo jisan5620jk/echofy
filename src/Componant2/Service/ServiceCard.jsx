@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({
   serviceImg,
   serviceIcon,
+  serviceUrl,
   serviceButton,
   serviceButton2,
   serviceTitle,
@@ -19,7 +20,7 @@ const ServiceCard = ({
         <div className="-mt-10 relative z-10 mb-5">
           <img src={serviceIcon} draggable="false" />
         </div>
-        <Link to={"/"}>
+        <Link to={serviceUrl}>
           <button className="font-AlbertSans font-semibold text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white relative before:absolute before:bottom-0 before:left-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">
             {serviceTitle}
           </button>
@@ -28,12 +29,12 @@ const ServiceCard = ({
           {serviceDesc}
         </p>
         <div className="flex justify-between items-center border-t border-BorderColor2-0 py-4">
-          <Link to={"/"}>
+          <Link to={serviceUrl}>
             <button className="font-AlbertSans text-HeadingColor-0 font-medium border-b border-BorderColor2-0 transition-all duration-500 group-hover:border-BorderColor-0 group-hover:text-white">
               {serviceButton2}
             </button>
           </Link>
-          <Link to={"/"}>
+          <Link to={serviceUrl}>
             <button className="w-[46px] h-[46px] rounded-full bg-white border border-BorderColor2-0 text-PrimaryColor-0 text-2xl flex justify-center items-center transition-all duration-500 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 group-hover:text-white group-hover:before:scale-100">
               {serviceButton}
             </button>

@@ -1,7 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Pricing from "../../../Componant1/Pricing/Pricing";
 import PricingFaq from "./Accordion/PricingFaq";
+import Pricing from "../../../Componant3/Pricing/Pricing";
 
 const PricingInner = () => {
   return (

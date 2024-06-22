@@ -18,7 +18,7 @@ const serviceData = [
     serviceTitle: `Resort Cleaning`,
     serviceDesc:
       "Sometims goods can arrive early when ses need a place  short goods can arrive solarihave space your needs.",
-    serviceUrl: "/serviceDetails",
+    serviceUrl: "/service_details",
     serviceBtn: `Read More`,
     serviceBtnIcon: <FaArrowRightLong />,
   },
@@ -29,7 +29,7 @@ const serviceData = [
     serviceTitle: `Window Cleaning`,
     serviceDesc:
       "Sometims goods can arrive early when ses need a place  short goods can arrive solarihave space your needs.",
-    serviceUrl: "/serviceDetails",
+    serviceUrl: "/service_details",
     serviceBtn: `Read More`,
     serviceBtnIcon: <FaArrowRightLong />,
   },
@@ -40,7 +40,7 @@ const serviceData = [
     serviceTitle: `Forest Cleaning`,
     serviceDesc:
       "Sometims goods can arrive early when ses need a place  short goods can arrive solarihave space your needs.",
-    serviceUrl: "/serviceDetails",
+    serviceUrl: "/service_details",
     serviceBtn: `Read More`,
     serviceBtnIcon: <FaArrowRightLong />,
   },
@@ -51,7 +51,7 @@ const serviceData = [
     serviceTitle: `Garden Cleaning`,
     serviceDesc:
       "Sometims goods can arrive early when ses need a place  short goods can arrive solarihave space your needs.",
-    serviceUrl: "/serviceDetails",
+    serviceUrl: "/service_details",
     serviceBtn: `Read More`,
     serviceBtnIcon: <FaArrowRightLong />,
   },
