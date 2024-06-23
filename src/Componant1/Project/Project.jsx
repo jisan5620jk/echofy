@@ -81,7 +81,7 @@ const Project = () => {
     },
   };
   return (
-    <section className="pt-28 project relative before:absolute before:top-0 before:left-0 before:w-full before:h-[85%] before:bg-[url('/images/project-bg.jpg')] before:bg-no-repeat before:bg-center before:bg-cover">
+    <section className="pt-28 project relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-[85%] before:bg-[url('/images/project-bg.jpg')] before:bg-no-repeat before:bg-center before:bg-cover before:-z-10">
       <div className="Container">
         <div className="md:-mb-[6.2rem]">
           <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
@@ -109,7 +109,7 @@ const Project = () => {
                   buttonIcon,
                 }) => {
                   return (
-                    <SwiperSlide key={id}>
+                    <SwiperSlide key={id} >
                       <div className="pt-[144px]">
                         <ProjectCard
                           projectThumb={projectThumb}
