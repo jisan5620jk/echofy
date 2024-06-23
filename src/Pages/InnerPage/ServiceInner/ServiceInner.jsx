@@ -129,7 +129,7 @@ const ServiceInner = () => {
                 }) => {
                   return (
                     <>
-                      <div key={id}>
+                      <div key={id} >
                         <ServiceCard
                           serviceImg={serviceImg}
                           serviceIcon={serviceIcon}

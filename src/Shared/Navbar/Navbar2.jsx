@@ -11,13 +11,11 @@ import {
 import { BiChevronDown } from "react-icons/bi";
 import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
-import { IoMdCall, IoMdClose } from "react-icons/io";
-import { BsEnvelope } from "react-icons/bs";
+import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { TbGridDots } from "react-icons/tb";
 import { CiLocationOn } from "react-icons/ci";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import HeaderSidebar from "../Sidebar/HeaderSidebar";
 
 const Navbar = () => {
   //sticky
@@ -418,11 +416,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to={"/appointment"}
-                    className="header-btn bg-transparent border !border-white before:bg-white"
+                    className="header-btn bg-transparent border !border-white before:bg-white hover:text-PrimaryColor-0"
                   >
                     Get A Quote
                   </Link>
-                  <button className="text-white nav-btn nav-sidebar-button">
+                  <button className="text-white">
                     <TbGridDots
                       size={"36"}
                       className="hidden xl:block"
@@ -434,7 +432,6 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-      <HeaderSidebar />
     </nav>
   );
 };

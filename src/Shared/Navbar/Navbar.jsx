@@ -15,7 +15,6 @@ import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
-import HeaderSearch from "../Search/HeaderSearch";
 
 const Navbar = () => {
   //sticky
@@ -409,8 +408,8 @@ const Navbar = () => {
                 </NavLink>
               </ul>
               <div className="hidden lg:flex items-center">
-                <button className="header-src-btn">
-                  <IoSearch className="search-box-outer text-2xl ml-2 mr-10 text-PrimaryColor-0" />
+                <button>
+                  <IoSearch className="text-2xl ml-2 mr-10 text-PrimaryColor-0" />
                 </button>
                 <Link to={"/appointment"} className="header-btn">
                   Get A Quote
@@ -420,7 +419,6 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-      <HeaderSearch />
     </nav>
   );
 };

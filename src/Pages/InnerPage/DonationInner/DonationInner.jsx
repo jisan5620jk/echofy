@@ -128,7 +128,7 @@ const DonationInner = () => {
               }) => {
                 return (
                   <>
-                    <div key={id}>
+                    <div key={id} >
                       <DonationInnerCard
                         donateImg={donateImg}
                         imgbutton={imgButton}

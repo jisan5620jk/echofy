@@ -108,7 +108,7 @@ const Service = () => {
               }) => {
                 return (
                   <>
-                    <SwiperSlide key={id}>
+                    <SwiperSlide key={id} >
                       <div className="pt-[120px] sm:pt-[180px]">
                         <ServiceCard
                           serviceImg={serviceImg}

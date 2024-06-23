@@ -132,7 +132,7 @@ const Donation = () => {
               }) => {
                 return (
                   <>
-                    <SwiperSlide key={id}>
+                    <SwiperSlide key={id} >
                       <div className="pb-[100px]">
                         <DonationsCard
                           donateImg={donateImg}
