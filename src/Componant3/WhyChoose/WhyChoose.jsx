@@ -5,7 +5,7 @@ import boxImg2 from "/images/why-choose-icon2.png";
 
 const WhyChoose = () => {
   return (
-    <section className="pt-[320px] pb-[120px] bg-[url('/images/why-choose-us-bg.png')] bg-cover bg-center bg-no-repeat relative">
+    <section className="pt-[320px] pb-[120px] bg-[url('/images/why-choose-us-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
       <div className="Container">
         <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 2xl:gap-20">
           <div className="bg-SecondaryColor-0 rounded-t-md">
