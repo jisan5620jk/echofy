@@ -1,4 +1,3 @@
-
 .search-popup {
   position: fixed;
   left: 0;
@@ -57,6 +56,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .search-popup .close-search svg {
@@ -117,7 +117,7 @@
   color: #000000;
   height: 70px;
   width: 100%;
-  padding: 10px 30px;
+  padding: 10px 50px 10px 30px;
   background-color: #ffffff;
   -webkit-transition: all 1000ms ease;
   -moz-transition: all 1000ms ease;
@@ -133,7 +133,7 @@
 .search-popup .form-group input[type="submit"],
 .search-popup .form-group button {
   position: absolute;
-  right: 30px;
+  right: 24px;
   top: 0px;
   height: 70px;
   line-height: 70px;
@@ -161,7 +161,7 @@
   color: #79b900;
 }
 
-.search-popup .close-search.style-two {
+.search-popup .close-search.style2 {
   position: absolute;
   right: 25px;
   left: auto;
@@ -180,20 +180,7 @@
   transition: all 500ms ease;
 }
 
-.search-popup .close-search.style-two svg {
+.search-popup .close-search.style2 svg {
   font-size: 30px;
   color: #f00;
-}
-
-.search-box-btn.search-box-outer svg {
-  font-size: 18px;
-  display: svgnline-block;
-  color: #093c78;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.search-box-btn.search-box-outer svg:hover {
-  color: #79b900;
-  filter: hue-rotate(360deg);
 }
