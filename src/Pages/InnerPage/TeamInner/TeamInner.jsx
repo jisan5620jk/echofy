@@ -87,8 +87,7 @@ const TeamInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbContent={"Team Member"}
       />
-      ;
-      <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center pt-[200px] pb-28 relative -mt-[130px]">
+      <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
         <img
           src={skillMainShape}
           draggable="false"
