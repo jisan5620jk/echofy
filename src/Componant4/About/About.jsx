@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className="py-28 bg-white bg-cover bg-center bg-no-repeat">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 2xl:gap-28 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 2xl:gap-12 items-center">
           <div className="relative z-10">
             <img src={aboutThumb} draggable="false" />
           </div>

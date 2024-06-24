@@ -14,6 +14,7 @@ const DonationData = [
   {
     id: 1,
     donateImg: donateImg,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Fund Raising For Tree Plantation - 2024",
     donateDesc:
@@ -27,6 +28,7 @@ const DonationData = [
   {
     id: 2,
     donateImg: donateImg2,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Fund Raising For Forest Recycling & Repair",
     donateDesc:
@@ -40,6 +42,7 @@ const DonationData = [
   {
     id: 3,
     donateImg: donateImg3,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Environmental Dust Cleaning & Recycling",
     donateDesc:
@@ -53,6 +56,7 @@ const DonationData = [
   {
     id: 4,
     donateImg: donateImg4,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Fund Raising For Renewable Energy Poor Peaples",
     donateDesc:
@@ -66,6 +70,7 @@ const DonationData = [
   {
     id: 5,
     donateImg: donateImg5,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Donations for Plant Seedlings Orphan Peoples",
     donateDesc:
@@ -79,6 +84,7 @@ const DonationData = [
   {
     id: 6,
     donateImg: donateImg6,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Fund Raising For Tree Plantation - 2024",
     donateDesc:
@@ -118,6 +124,7 @@ const DonationInner = () => {
                 id,
                 donateImg,
                 imgButton,
+                donateUrl,
                 donateDesc,
                 donateTitle,
                 donatePercent,
@@ -128,10 +135,11 @@ const DonationInner = () => {
               }) => {
                 return (
                   <>
-                    <div key={id} >
+                    <div key={id}>
                       <DonationInnerCard
                         donateImg={donateImg}
                         imgbutton={imgButton}
+                        donateUrl={donateUrl}
                         donateTitle={donateTitle}
                         donateDesc={donateDesc}
                         donatePercent={donatePercent}

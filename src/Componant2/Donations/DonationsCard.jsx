@@ -5,6 +5,7 @@ import ProgressBar from "react-animated-progress-bar";
 const DonationsCard = ({
   donateImg,
   imgbutton,
+  donateUrl,
   donateTitle,
   donateDesc,
   donatePercent,
@@ -20,14 +21,14 @@ const DonationsCard = ({
           src={donateImg}
           className="w-full transition-all duration-500 group-hover:blur-[2px]"
         />
-        <Link to={"/"}>
+        <Link to={donateUrl}>
           <button className="absolute inline-block text-left top-full left-1/2 -translate-x-1/2 group-hover:top-1/2 group-hover:-translate-y-1/2 font-AlbertSans rounded-full bg-PrimaryColor-0 text-white transition-all duration-500 px-6 sm:px-[30px] lg:px-[15px] xl:px-[30px] py-[14px]">
             {imgbutton}
           </button>
         </Link>
       </div>
       <div className="px-[30px] pb-8 pt-6 bg-white">
-        <Link to={"/"}>
+        <Link to={donateUrl}>
           <button className="font-AlbertSans font-semibold text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
             {donateTitle}
           </button>

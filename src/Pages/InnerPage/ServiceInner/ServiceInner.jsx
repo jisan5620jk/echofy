@@ -101,7 +101,7 @@ const ServiceInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbContent={"Our Services"}
       />
-      <section className="pt-28 pb-40 p relative z-10 bg-[#f3f3f7]">
+      <section className="pt-28 pb-[120px] p relative z-10 bg-[#f3f3f7]">
         <div className="Container">
           <div className="text-center">
             <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">

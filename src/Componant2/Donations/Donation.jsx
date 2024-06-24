@@ -14,6 +14,7 @@ const DonationData = [
   {
     id: 1,
     donateImg: donateImg,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Fund Raising For Tree Plantation - 2024",
     donateDesc:
@@ -27,6 +28,7 @@ const DonationData = [
   {
     id: 2,
     donateImg: donateImg2,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Fund Raising For Forest Recycling & Repair",
     donateDesc:
@@ -40,6 +42,7 @@ const DonationData = [
   {
     id: 3,
     donateImg: donateImg3,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Environmental Dust Cleaning & Recycling",
     donateDesc:
@@ -53,6 +56,7 @@ const DonationData = [
   {
     id: 4,
     donateImg: donateImg,
+    donateUrl: "/donation_inner",
     imgButton: "Donate Now",
     donateTitle: "Fund Raising For Tree Plantation - 2024",
     donateDesc:
@@ -123,6 +127,7 @@ const Donation = () => {
                 donateImg,
                 imgButton,
                 donateDesc,
+                donateUrl,
                 donateTitle,
                 donatePercent,
                 percentTitle,
@@ -132,11 +137,12 @@ const Donation = () => {
               }) => {
                 return (
                   <>
-                    <SwiperSlide key={id} >
+                    <SwiperSlide key={id}>
                       <div className="pb-[100px]">
                         <DonationsCard
                           donateImg={donateImg}
                           imgbutton={imgButton}
+                          donateUrl={donateUrl}
                           donateTitle={donateTitle}
                           donateDesc={donateDesc}
                           donatePercent={donatePercent}

@@ -31,7 +31,7 @@ const Faq = () => {
 
   return (
     <section
-      className="relative overflow-hidden py-28 bg-[url('public/images/faqs-bg.jpg')] bg-cover bg-no-repeat
+      className="relative overflow-hidden py-28 bg-[url('/images/faqs-bg.jpg')] bg-cover bg-no-repeat
      bg-left lg:bg-center"
     >
       <div className="Container">

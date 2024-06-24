@@ -46,7 +46,7 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center pt-[200px] pb-28 relative -mt-[130px]">
+    <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center pt-[244px] pb-28 relative -mt-[130px]">
       <img
         src={skillMainShape}
         draggable="false"

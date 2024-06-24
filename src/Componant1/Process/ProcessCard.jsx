@@ -7,7 +7,7 @@ const ProcessCard = ({ processIcon, processTitle, boxShape, processDesc }) => {
         <img
           src={boxShape}
           draggable="false"
-          className="absolute top-1/2 -translate-y-1/2 -right-[165px] 2xl:-right-[-195px] hidden xl:block"
+          className="absolute top-1/2 -translate-y-1/2 -right-[165px] 2xl:-right-[195px] hidden xl:block"
         />
       </div>
       <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-2xl mt-9 mb-4">

@@ -243,10 +243,10 @@ const blog_details = () => {
                   </button>
                 </div>
                 <div className="rounded-md bg-[#f3f4f8] pt-8 pb-10 px-9 flex flex-col items-end">
-                    <button className="font-AlbertSans font-medium text-lg text-HeadingColor-0 flex items-center gap-2">
-                      Next Post
-                      <FaAnglesRight size={"14"} />
-                    </button>
+                  <button className="font-AlbertSans font-medium text-lg text-HeadingColor-0 flex items-center gap-2">
+                    Next Post
+                    <FaAnglesRight size={"14"} />
+                  </button>
                   <button
                     to={"/"}
                     className="flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:items-center gap-5 sm:items-center lg:items-start mt-5 text-right"
@@ -393,7 +393,7 @@ const blog_details = () => {
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                           Ocean Cleaning
                         </span>
-                        <FaArrowRightLong className="text-white" />
+                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
                     </Link>
                   </li>
@@ -404,7 +404,7 @@ const blog_details = () => {
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                           Dust Recycling
                         </span>
-                        <FaArrowRightLong className="text-white" />
+                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
                     </Link>
                   </li>
@@ -415,7 +415,7 @@ const blog_details = () => {
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                           Plant Seedlings
                         </span>
-                        <FaArrowRightLong className="text-white" />
+                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
                     </Link>
                   </li>
@@ -426,7 +426,7 @@ const blog_details = () => {
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                           Renewable Energy
                         </span>
-                        <FaArrowRightLong className="text-white" />
+                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
                     </Link>
                   </li>
@@ -437,7 +437,7 @@ const blog_details = () => {
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                           Environmental
                         </span>
-                        <FaArrowRightLong className="text-white" />
+                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
                     </Link>
                   </li>
@@ -448,7 +448,7 @@ const blog_details = () => {
                           <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                           Forest Cleaning
                         </span>
-                        <FaArrowRightLong className="text-white" />
+                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
                       </button>
                     </Link>
                   </li>

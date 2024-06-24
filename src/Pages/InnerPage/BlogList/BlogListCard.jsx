@@ -28,7 +28,7 @@ const BlogListCard = ({
         </h6>
       </div>
       <div className="px-4 sm:px-8">
-        <Link to={"/"}>
+        <Link to={blogListUrl}>
           <button className="font-AlbertSans font-bold text-left text-lg sm:text-2xl 2xl:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-9 mb-6">
             {blogListTitle}
           </button>

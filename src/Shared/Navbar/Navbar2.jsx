@@ -118,9 +118,9 @@ const Navbar = () => {
         <div className="header-section">
           <div className="Container">
             {/* main Navbar */}
-            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[90px] bg-PrimaryColor-0 rounded-b-md lg:-mb-[90px] -mb-[70px] relative z-50 px-7">
+            <div className="flex items-center justify-between lg:h-[90px] bg-PrimaryColor-0 rounded-b-md lg:-mb-[90px] -mb-[70px] relative z-50 px-7 w-full">
               {/* website Logo */}
-              <div className="w-48 lg:w-52">
+              <div>
                 <Link to="/">
                   <img
                     src={Logo}
@@ -129,7 +129,7 @@ const Navbar = () => {
                 </Link>
               </div>
               {/* small screen size */}
-              <div className="px-3 w-full lg:hidden flex justify-between bg-khaki h-[70px] items-center p-3">
+              <div className="px-3 lg:hidden flex justify-between h-[70px] items-center p-3">
                 <div className="w-28">
                   <Link to={"/"}>
                     <img src={Logo} className="block lg:hidden" />
@@ -149,7 +149,7 @@ const Navbar = () => {
                 </button>
               </div>
               {/* All navLink are hear with active */}
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center 2xl:gap-7">
                 <div className="text-white">
                   <ul
                     className={`${

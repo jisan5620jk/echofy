@@ -48,7 +48,7 @@ const FaqInner = () => {
         breadCrumbContent={"FAQ"}
       />
       <section
-        className="relative overflow-hidden py-28 bg-[url('public/images/faq-bg.jpg')] bg-cover bg-no-repeat
+        className="relative overflow-hidden py-28 bg-[url('/images/faq-bg.jpg')] bg-cover bg-no-repeat
      bg-center"
       >
         <div className="Container">

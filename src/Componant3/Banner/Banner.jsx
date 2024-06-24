@@ -33,7 +33,7 @@ const Banner = () => {
                 <h1 className="font-AlbertSans font-extrabold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[52px] md:leading-[60px] xl:text-[76px] xl:leading-[90px] -mt-0 sm:-mt-3 md:mt-2 lg:mt-2">
                   EMPOWERMENT
                 </h1>
-                <div className="flex justify-center m-auto mt-6">
+                <div className="flex justify-center m-auto mt-9">
                   <Link to={"/about"}>
                     <button className="primary-btn2">
                       {`Find Out More`}
@@ -58,7 +58,7 @@ const Banner = () => {
                 <h1 className="font-AlbertSans font-extrabold text-white text-xl sm:text-[38px] sm:leading-[56px] md:text-[52px] md:leading-[60px] xl:text-[76px] xl:leading-[90px] -mt-0 sm:-mt-3 md:mt-2 lg:mt-2">
                   EMPOWERMENT
                 </h1>
-                <div className="flex justify-center m-auto mt-6">
+                <div className="flex justify-center m-auto mt-9">
                   <Link to={"/about"}>
                     <button className="primary-btn2">
                       {`Find Out More`}

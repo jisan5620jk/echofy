@@ -29,8 +29,7 @@ const blogData = [
   {
     id: 2,
     blogThumb: blogThumb2,
-    thumbDate: "12",
-    thumbMonth: "MAY",
+    thumbContent: "Ecology",
     blogUrl: "/blog_details",
     blogTitle: "10 Most Popular Cleaning Tips for House",
     blogDesc:
@@ -41,8 +40,7 @@ const blogData = [
   {
     id: 3,
     blogThumb: blogThumb3,
-    thumbDate: "25",
-    thumbMonth: "MAY",
+    thumbContent: "Environment",
     blogUrl: "/blog_details",
     blogTitle: "Ocean Cleaning Use New Equipment",
     blogDesc:
@@ -53,8 +51,7 @@ const blogData = [
   {
     id: 4,
     blogThumb: blogThumb4,
-    thumbDate: "05",
-    thumbMonth: "JUNE",
+    thumbContent: "Energy",
     blogUrl: "/blog_details",
     blogTitle: "Regular cleaning your dream House",
     blogDesc:
@@ -65,8 +62,7 @@ const blogData = [
   {
     id: 5,
     blogThumb: blogThumb5,
-    thumbDate: "10",
-    thumbMonth: "JUNE",
+    thumbContent: "Ecology",
     blogUrl: "/blog_details",
     blogTitle: "Carpet Cleaning Use New Equipment",
     blogDesc:
@@ -77,8 +73,7 @@ const blogData = [
   {
     id: 6,
     blogThumb: blogThumb6,
-    thumbDate: "15",
-    thumbMonth: "JUNE",
+    thumbContent: "Environment",
     blogUrl: "/blog_details",
     blogTitle: "Proper Cleaning Use New Equipment",
     blogDesc:
@@ -89,8 +84,7 @@ const blogData = [
   {
     id: 7,
     blogThumb: blogThumb7,
-    thumbDate: "18",
-    thumbMonth: "JUNE",
+    thumbContent: "Energy",
     blogUrl: "/blog_details",
     blogTitle: "Window Cleaning Use New Equipment",
     blogDesc:
@@ -101,8 +95,7 @@ const blogData = [
   {
     id: 8,
     blogThumb: blogThumb8,
-    thumbDate: "20",
-    thumbMonth: "JUNE",
+    thumbContent: "Ecology",
     blogUrl: "/blog_details",
     blogTitle: "Ocean Cleaning Use New Equipment",
     blogDesc:
@@ -113,8 +106,7 @@ const blogData = [
   {
     id: 9,
     blogThumb: blogThumb9,
-    thumbDate: "25",
-    thumbMonth: "JUNE",
+    thumbContent: "Environment",
     blogUrl: "/blog_details",
     blogTitle: "Door Cleaning Use New Equipment",
     blogDesc:
@@ -162,6 +154,7 @@ const BlogGrid = () => {
                   id,
                   blogThumb,
                   thumbContent,
+                  blogUrl,
                   blogTitle,
                   blogDesc,
                   btnContent,
@@ -172,6 +165,7 @@ const BlogGrid = () => {
                       <BlogCard
                         blogThumb={blogThumb}
                         thumbContent={thumbContent}
+                        blogUrl={blogUrl}
                         blogTitle={blogTitle}
                         blogDesc={blogDesc}
                         btnContent={btnContent}
