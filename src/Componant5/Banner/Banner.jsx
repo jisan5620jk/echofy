@@ -1,14 +1,16 @@
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { Link } from "react-router-dom";
-import { FaAnglesRight, FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
+import {
+  FaAnglesRight,
+  FaLocationDot,
+} from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import buttonShape from "/images/button-shape-1.png";
-import { LiaPlayCircleSolid } from "react-icons/lia";
 import "./banner.css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { IoIosSend, IoMdPlay } from "react-icons/io";
 
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
@@ -28,10 +30,10 @@ const Banner = () => {
     },
   };
   return (
-    <div className="relative">
+    <div className="relative z-10">
       <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
         <SwiperSlide>
-          <section className="bg-[url('/images/hero-bg-1.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[730px] md:h-[750px] lg:h-[960px] xl:h-[960px] flex items-center">
+          <section className="bg-[url('/images/hero-bg-1.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[730px] md:h-[750px] lg:h-[950px] xl:h-[950px] flex items-center relative">
             <div className="Container">
               <div className="flex items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
@@ -44,7 +46,7 @@ const Banner = () => {
                   <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-5">
                     Big Change
                   </h1>
-                  <p className="font-AlbertSans text-lg text-white mt-3 mb-11">
+                  <p className="font-AlbertSans text-lg text-TextColor2-0 mt-3 mb-11">
                     Animals World accreditation standards. Members are proactive
                     in <br className="hidden md:block" /> both undertaking and
                     applying animal
@@ -57,94 +59,129 @@ const Banner = () => {
                       </button>
                     </Link>
                   </div>
-                  <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
-                    <ul>
-                      <li></li>
-                      <li></li>
+                  <div className="banner-contact hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[55%] 2xl:-left-[50%]">
+                    <ul className="flex items-center gap-[34px]">
+                      <li>
+                        <Link
+                          to={"/"}
+                          className="flex gap-2 font-AlbertSans text-TextColor2-0 text-[17px] items-center"
+                        >
+                          <IoIosSend
+                            size={"22"}
+                            className="text-PrimaryColor-0"
+                          />
+                          info@example.com
+                        </Link>
+                      </li>
+                      <li>
+                        <p className="flex gap-2 font-AlbertSans text-TextColor2-0 text-[17px] items-center pl-8 border-l border-BorderColor-0">
+                          <FaLocationDot
+                            size={"18"}
+                            className="text-PrimaryColor-0"
+                          />
+                          27 Division St, Sans fransisco , USA
+                        </p>
+                      </li>
                     </ul>
                   </div>
                 </div>
+              </div>
+              <div className="relative -bottom-[9.1rem] bg-[url('/images/video-bg.png')] bg-no-repeat bg-cover bg-center rounded-md 2xl:inline-block hidden">
+                <div className="flex items-center justify-center gap-[80px] py-[85px] px-[130px]">
+                  <h4 className="text-lg font-AlbertSans font-medium text-white">
+                    Live Cam
+                  </h4>
+                  <button className="h-[50px] w-[50px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
+                    <IoMdPlay
+                      size={"22"}
+                      className="text-white"
+                      onClick={() => setToggler(!toggler)}
+                    />
+                  </button>
+                </div>
+                <FsLightbox
+                  toggler={toggler}
+                  sources={[
+                    "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                  ]}
+                />
               </div>
             </div>
           </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section className="bg-[url('/images/hero-bg-2.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[730px] md:h-[750px] lg:h-[960px] xl:h-[960px] flex items-center">
+          <section className="bg-[url('/images/hero-bg-2.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[730px] md:h-[750px] lg:h-[950px] xl:h-[950px] flex items-center relative">
             <div className="Container">
-              <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
+              <div className="flex items-center pt-36 gap-16 lg:gap-0">
                 <div className="relative banner-content">
-                  <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
-                    NATURAL ENVIRONMENT
+                  <h5 className="font-AlbertSans text-PrimaryColor-0 text-[22px] font-medium bg-[#030804] inline-block px-[22px] py-1 border border-BorderColor4-0 rounded-md mb-1">
+                    Project Our Animal
                   </h5>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
-                    Be Safe Controls
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px]">
+                    Small Effort Make
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-7">
-                    Environment
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-5">
+                    Big Change
                   </h1>
-                  <p className="font-AlbertSans text-lg text-white mb-10">
-                    Professionally optimize interdependent intellectual
-                    interoperable <br className="hidden md:block" /> connect
-                    best practices. Progressively
-                    <br className="hidden sm:block md:hidden" /> fabricate done
+                  <p className="font-AlbertSans text-lg text-TextColor2-0 mt-3 mb-11">
+                    Animals World accreditation standards. Members are proactive
+                    in <br className="hidden md:block" /> both undertaking and
+                    applying animal
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-5">
+                  <div>
                     <Link to={"/about"}>
-                      <button className="primary-btn">
-                        {`Let's Talk`}
-                        <img src={buttonShape} draggable="false" />
+                      <button className="primary-btn3">
+                        {`Discover With Us`}
+                        <FaAnglesRight />
                       </button>
                     </Link>
-                    <div className="text-lg font-AlbertSans font-medium text-white flex items-center gap-4">
-                      <button className="h-[58px] w-[58px] rounded-full bg-[#355250] flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#355250] before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
-                        <LiaPlayCircleSolid
-                          size={"34"}
-                          className="text-PrimaryColor-0"
-                          onClick={() => setToggler(!toggler)}
-                        />
-                      </button>
-                      Watch Video
-                    </div>
-                    <FsLightbox
-                      toggler={toggler}
-                      sources={[
-                        "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-                      ]}
-                    />
                   </div>
-                  <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
-                    <h5 className="font-AlbertSans text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
-                      FOLLOW US
-                    </h5>
-                    <ul className="flex gap-7 items-center">
+                  <div className="banner-contact hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[55%] 2xl:-left-[50%]">
+                    <ul className="flex items-center gap-[34px]">
                       <li>
                         <Link
                           to={"/"}
-                          className="rotate-45 transition-all duration-500 text-white hover:text-PrimaryColor-0"
+                          className="flex gap-2 font-AlbertSans text-TextColor2-0 text-[17px] items-center"
                         >
-                          <FaLinkedinIn />
+                          <IoIosSend
+                            size={"22"}
+                            className="text-PrimaryColor-0"
+                          />
+                          info@example.com
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to={"/"}
-                          className="rotate-45 transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                        >
-                          <FaXTwitter />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to={"/"}
-                          className="rotate-45 transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                        >
-                          <FaPinterestP />
-                        </Link>
+                        <p className="flex gap-2 font-AlbertSans text-TextColor2-0 text-[17px] items-center pl-8 border-l border-BorderColor-0">
+                          <FaLocationDot
+                            size={"18"}
+                            className="text-PrimaryColor-0"
+                          />
+                          27 Division St, Sans fransisco , USA
+                        </p>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div></div>
+              </div>
+              <div className="relative -bottom-[9.1rem] bg-[url('/images/video-bg.png')] bg-no-repeat bg-cover bg-center rounded-md 2xl:inline-block hidden">
+                <div className="flex items-center justify-center gap-[80px] py-[85px] px-[130px]">
+                  <h4 className="text-lg font-AlbertSans font-medium text-white">
+                    Live Cam
+                  </h4>
+                  <button className="h-[50px] w-[50px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
+                    <IoMdPlay
+                      size={"22"}
+                      className="text-white"
+                      onClick={() => setToggler(!toggler)}
+                    />
+                  </button>
+                </div>
+                <FsLightbox
+                  toggler={toggler}
+                  sources={[
+                    "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                  ]}
+                />
               </div>
             </div>
           </section>

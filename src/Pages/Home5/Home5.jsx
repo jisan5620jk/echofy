@@ -9,13 +9,13 @@ import Testimonial from "../../Componant5/Testimonial/Testimonial";
 import Brand from "../../Componant5/Brand/Brand";
 import TeamMember from "../../Componant5/TeamMember/TeamMember";
 import Blog from "../../Componant5/Blog/Blog";
-import ContentSlider from "../../Componant5/ContentSlider/ContentSlider";
+import Animal from "../../Componant5/Animal/Animal";
 
 const Home5 = () => {
   return (
     <>
       <Banner />
-      <ContentSlider />
+      <Animal />
       <About />
       <Service />
       <Skill />

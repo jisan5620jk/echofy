@@ -1,3 +1,7 @@
+.swiper {
+  overflow: visible !important;
+}
+
 .banner-content > *:nth-child(n + 1):nth-child(-n + 5) {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
@@ -39,7 +43,7 @@
   transition-delay: 2s;
 }
 
-.banner-share {
+.banner-contact {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-duration: 1s;
@@ -56,7 +60,7 @@
   opacity: 1;
 }
 
-.swiper-slide-active .banner-content > .banner-share {
+.swiper-slide-active .banner-content > .banner-contact {
   opacity: 1;
   top: 50%;
 }
@@ -64,38 +68,41 @@
 /* Pagination */
 
 .swiper-pagination {
-  bottom: inherit !important;
-  top: 50% !important;
-  left: 94% !important;
-  transform: translatex(-50%) !important;
-  width: 100% !important;
+  bottom: -40px !important;
+  top: inherit !important;
+  left: 50% !important;
+  padding: 54px;
+  width: 268px !important;
   display: flex !important;
   align-items: center !important;
   gap: 16px !important;
-  flex-direction: column !important;
+  flex-direction: row !important;
+  justify-content: center;
+  border-radius: 5px;
+  background: #00181a;
 }
 
 span.swiper-pagination-bullet {
-  background: transparent !important;
-  opacity: 0.7 !important;
-  border: 2px solid #86ad42;
+  background: #86ad42 !important;
   border-radius: 50%;
-  height: 14px !important;
-  width: 14px !important;
+  height: 10px !important;
+  width: 10px !important;
   position: relative;
+  opacity: 1 !important;
 }
 
 span.swiper-pagination-bullet::before {
   position: absolute;
   content: "";
-  top: -10px;
-  left: -10px;
-  width: 26px;
-  height: 26px;
+  top: -9px;
+  left: -9px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  border: 2px solid #86ad42;
+  border: 1px solid #86ad42;
   transition: 0.5s;
   transform: scale(0);
+  opacity: 1 !important;
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
@@ -104,7 +111,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1 !important;
-  height: 10px !important;
-  width: 10px !important;
+  height: 6px !important;
+  width: 6px !important;
   background: #86ad42 !important;
 }

@@ -11,6 +11,7 @@ export default {
         SecondaryColor: ["#001819"],
         HeadingColor: ["#001819"],
         TextColor: ["#868681"],
+        TextColor2: ["#bababa"],
         BodyBg: ["#f3f4f8"],
         BorderColor: ["#243f38"],
         BorderColor2: ["#dee4da"],
