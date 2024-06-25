@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
 import {
+  FaAnglesRight,
   FaBars,
   FaFacebookF,
   FaLinkedinIn,
@@ -417,6 +418,7 @@ const Navbar5 = () => {
               <div className="hidden lg:flex items-center">
                 <Link to={"/appointment"} className="primary-btn3">
                   Get A Quote
+                  <FaAnglesRight />
                 </Link>
               </div>
             </div>
