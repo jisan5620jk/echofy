@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar3 = () => {
   //sticky
 
   useEffect(() => {
@@ -105,31 +105,38 @@ const Navbar = () => {
                       data-aos-duration="1000"
                     >
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/" className="py-2 block">
                               Home One
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/home2" className="py-2 block">
                               Home Two
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/home3" className="py-2 block">
                               Home Three
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/home4" className="py-2 block">
                               Home Four
+                            </Link>
+                          </li>
+                        </div>
+                        <div className="px-5 group hover:bg-SecondaryColor-0 ">
+                          <li className="hover:ml-3 duration-300">
+                            <Link to="/home5" className="py-2 block">
+                              Home Five
                             </Link>
                           </li>
                         </div>
@@ -162,14 +169,14 @@ const Navbar = () => {
                     </span>
                     <div className="absolute pt-5 lg:pt-8 z-20">
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/service" className="py-2 block">
                               Our Service
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/service_details" className="py-2 block">
                               Service Details
@@ -194,77 +201,77 @@ const Navbar = () => {
                     </span>
                     <div className="absolute pt-5 lg:pt-8 z-20">
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/about" className="py-2 block">
                               About Us
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/service" className="py-2 block">
                               Service
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/service_details" className="py-2 block">
                               Service Details
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0">
+                        <div className="px-5 group hover:bg-PrimaryColor-0">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/donation_inner" className="py-2 block">
                               Donations
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/team_inner" className="py-2 block">
                               Team Member
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/project" className="py-2 block">
                               Projects
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/project_details" className="py-2 block">
                               Project Detials
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/pricing_inner" className="py-2 block">
                               Pricing Plan
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/testimonial" className="py-2 block">
                               Testimonial
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/appointment" className="py-2 block">
                               Appointment
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0">
+                        <div className="px-5 group hover:bg-PrimaryColor-0">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/faq_inner" className="py-2 block">
                               Faq
@@ -290,21 +297,21 @@ const Navbar = () => {
                     </span>
                     <div className="absolute pt-5 lg:pt-8 z-20">
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 ">
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/blog_grid" className="py-2 block">
                               Blog Grid
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/blog_list" className="py-2 block">
                               Blog List
                             </Link>
                           </li>
                         </div>
-                        <div className=" px-5 group hover:bg-PrimaryColor-0 ">
+                        <div className="px-5 group hover:bg-PrimaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/blog_details" className="py-2 block">
                               Blog Details
@@ -347,4 +354,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar3;

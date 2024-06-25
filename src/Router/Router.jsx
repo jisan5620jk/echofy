@@ -8,6 +8,7 @@ import Home2 from "../Pages/Home2/Home2";
 import Home3 from "../Pages/Home3/Home3";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import Home4 from "../Pages/Home4/Home4";
+import Home5 from "../Pages/Home5/Home5";
 import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
 import ServiceInner from "../Pages/InnerPage/ServiceInner/ServiceInner";
 import ServiceDetails from "../Pages/InnerPage/ServiceDetails/ServiceDetails";
@@ -141,6 +142,17 @@ const router = createBrowserRouter([
       {
         path: "/home4",
         element: <Home4 />,
+      },
+    ],
+  },
+  {
+    path: "/",
+    errorElement: <ErrorPage />,
+    element: <Main4 />,
+    children: [
+      {
+        path: "/home5",
+        element: <Home5 />,
       },
     ],
   },

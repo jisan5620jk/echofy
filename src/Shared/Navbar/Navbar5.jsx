@@ -16,7 +16,7 @@ import { IoSearch } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
 
-const Navbar = () => {
+const Navbar5 = () => {
   //sticky
 
   useEffect(() => {
@@ -415,10 +415,7 @@ const Navbar = () => {
                 </NavLink>
               </ul>
               <div className="hidden lg:flex items-center">
-                <button>
-                  <IoSearch className="text-2xl ml-2 mr-10 text-PrimaryColor-0" />
-                </button>
-                <Link to={"/appointment"} className="header-btn">
+                <Link to={"/appointment"} className="primary-btn3">
                   Get A Quote
                 </Link>
               </div>
@@ -430,4 +427,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar5;
