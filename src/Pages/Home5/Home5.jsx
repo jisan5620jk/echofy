@@ -12,6 +12,8 @@ import Blog from "../../Componant5/Blog/Blog";
 import Animal from "../../Componant5/Animal/Animal";
 import Gallary from "../../Componant5/Gallary/Gallary";
 import Events from "../../Componant5/Events/Events";
+import Donate from "../../Componant5/Donate/Donate";
+import Contact from "../../Componant5/Contact/Contact";
 
 const Home5 = () => {
   return (
@@ -21,12 +23,14 @@ const Home5 = () => {
       <About />
       <Gallary />
       <Events />
+      <Donate />
+      <Testimonial />
+      <Contact />
       <Service />
       <Skill />
       <Counter />
       <Project />
       <Process />
-      <Testimonial />
       <Brand />
       <TeamMember />
       <Blog />

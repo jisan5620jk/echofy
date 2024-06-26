@@ -75,7 +75,7 @@ const Gallary = () => {
     },
   };
   return (
-    <section className="relative pb-[120px]">
+    <section className="relative">
       <div className="Container">
         <div className="grid grid-cols-2 items-center">
           <div>
