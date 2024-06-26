@@ -30,7 +30,7 @@ const Banner = () => {
     },
   };
   return (
-    <div className="relative z-10">
+    <div className="relative z-10 banner5">
       <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
         <SwiperSlide>
           <section className="bg-[url('/images/hero-bg-1.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[730px] md:h-[750px] lg:h-[950px] xl:h-[950px] flex items-center relative">

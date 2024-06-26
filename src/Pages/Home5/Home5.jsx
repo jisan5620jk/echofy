@@ -10,6 +10,8 @@ import Brand from "../../Componant5/Brand/Brand";
 import TeamMember from "../../Componant5/TeamMember/TeamMember";
 import Blog from "../../Componant5/Blog/Blog";
 import Animal from "../../Componant5/Animal/Animal";
+import Gallary from "../../Componant5/Gallary/Gallary";
+import Events from "../../Componant5/Events/Events";
 
 const Home5 = () => {
   return (
@@ -17,6 +19,8 @@ const Home5 = () => {
       <Banner />
       <Animal />
       <About />
+      <Gallary />
+      <Events />
       <Service />
       <Skill />
       <Counter />
