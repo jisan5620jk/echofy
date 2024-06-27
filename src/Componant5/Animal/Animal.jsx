@@ -5,7 +5,7 @@ import animalIcon2 from "/images/animal-icon-2.png";
 import animalIcon3 from "/images/animal-icon-3.png";
 import animalIcon4 from "/images/animal-icon-4.png";
 import animalIcon5 from "/images/animal-icon-5.png";
-import animalIcon6 from "/images/animal-icon-5.png";
+import animalIcon6 from "/images/animal-icon-6.png";
 
 const ServiceData = [
   {
@@ -35,13 +35,13 @@ const ServiceData = [
   {
     id: 5,
     animalIcon: animalIcon5,
-    animalTitle: "Giraffes",
+    animalTitle: "Orangutans",
     buttonIcon: <FaPlus />,
   },
   {
     id: 6,
     animalIcon: animalIcon6,
-    animalTitle: "Orangutans",
+    animalTitle: "Donkey",
     buttonIcon: <FaPlus />,
   },
 ];
