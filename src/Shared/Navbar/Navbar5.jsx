@@ -51,65 +51,80 @@ const Navbar5 = () => {
       {/* top Navbar */}
       <header className="bg-transparent overflow-hidden md:block">
         <div className="Container flex items-center justify-between h-[50px]">
-          <div className="flex items-center gap-10">
-            <p className="font-AlbertSans text-[15px] text-white sm:flex hidden items-center gap-1">
-              <CiLocationOn className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
-              102/B New Market, Sandigo-USA
+          <div className="flex items-center gap-5">
+            <p className="font-AlbertSans text-[15px] text-white -mr-3">
+              Phone :
             </p>
             <Link
               to={"/"}
               className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
             >
-              <HiOutlineMailOpen size={"16"} className="text-PrimaryColor-0" />
-              example@gmail.com
+              +980 123 (4567) 000
+            </Link>
+            <Link
+              to={"/"}
+              className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
+            >
+              +980 123 (4567) 000
             </Link>
           </div>
-          <div className="flex items-center gap-16">
-            <div className="lg:flex items-center gap-2 hidden">
-              <span className="flex items-center gap-2 text-sm text-PrimaryColor-0">
-                <FaPhone />
-              </span>
-              <Link
-                to={"/"}
-                className="font-AlbertSans font-medium text-sm text-white"
-              >
-                +123 (4567) 890
-              </Link>
-            </div>
-            <ul className="flex gap-3 items-center">
+          <div className="flex gap-[52px] items-center">
+            <ul className="flex gap-[26px]">
               <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaFacebookF />
+                <Link to={"/"}>
+                  <button className="font-AlbertSans text-[15px] text-white">
+                    Membership
+                  </button>
                 </Link>
               </li>
               <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaXTwitter />
+                <Link to={"/"}>
+                  <button className="font-AlbertSans text-[15px] text-white">
+                    Education
+                  </button>
                 </Link>
               </li>
               <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaLinkedinIn />
+                <Link to={"/"}>
+                  <button className="font-AlbertSans text-[15px] text-white">
+                    Zoo Map
+                  </button>
                 </Link>
               </li>
               <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaPinterestP />
+                <Link to={"/"}>
+                  <button className="font-AlbertSans text-[15px] text-white">
+                    Events
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="font-AlbertSans text-[15px] text-white">
+                    Donate
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/"}>
+                  <button className="font-AlbertSans text-[15px] text-white">
+                    Foundation
+                  </button>
                 </Link>
               </li>
             </ul>
+            <form action="#" method="get">
+              <select
+                name="select"
+                id="select"
+                className="bg-transparent cursor-pointer text-white border-none outline-0"
+              >
+                <option value="english" className="text-HeadingColor-0">English</option>
+                <option value="bangla" className="text-HeadingColor-0">Bangla</option>
+                <option value="arabic" className="text-HeadingColor-0">Arabic</option>
+                <option value="china" className="text-HeadingColor-0">China</option>
+              </select>
+            </form>
           </div>
         </div>
       </header>

@@ -27,6 +27,7 @@ import ServiceDetails5 from "../Pages/InnerPage/ServiceDetails/ServiceDetails5";
 import ServiceDetails6 from "../Pages/InnerPage/ServiceDetails/ServiceDetails6";
 import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 import FaqInner from "../Pages/InnerPage/Faq/Accordion/FaqInner";
+import Main5 from "../Main/Main5";
 
 const router = createBrowserRouter([
   {
@@ -148,7 +149,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     errorElement: <ErrorPage />,
-    element: <Main4 />,
+    element: <Main5 />,
     children: [
       {
         path: "/home5",
