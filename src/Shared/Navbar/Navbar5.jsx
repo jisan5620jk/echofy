@@ -13,7 +13,6 @@ import { BiChevronDown } from "react-icons/bi";
 import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
 

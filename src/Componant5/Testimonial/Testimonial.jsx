@@ -14,7 +14,7 @@ const testiData = [
     testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Jhon D. Alexon",
-    testiDesignation: "Web Developer",
+    testiDesignation: "Zoo Visitors",
     testiDesc: `Appropriately administrate proactive value with to
                 niche markets. Dramatically target market position
                 idea after high quality best practice. Dramatically 
@@ -26,7 +26,7 @@ const testiData = [
     testiImg: testiImg2,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Anjelina Watson",
-    testiDesignation: "UI/UX Designer",
+    testiDesignation: "Tourist",
     testiDesc: `Appropriately administrate proactive value with to
                 niche markets. Dramatically target market position
                 idea after high quality best practice. Dramatically 
@@ -38,7 +38,7 @@ const testiData = [
     testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Jhon D. Alexon",
-    testiDesignation: "Web Developer",
+    testiDesignation: "Zoo Visitors",
     testiDesc: `Appropriately administrate proactive value with to
                 niche markets. Dramatically target market position
                 idea after high quality best practice. Dramatically 
@@ -69,7 +69,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-28 overflow-hidden">
+    <section className="py-28 overflow-hidden bg-[#fbfbfb]">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-AlbertSans font-semibold text-PrimaryColor-0 flex items-center justify-center gap-2">
@@ -95,7 +95,7 @@ const Testimonial = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pb-[80px] pt-3">
+                      <div className="pt-5 pb-2">
                         <TestimonialCard
                           testiImg={testiImg}
                           testiRatingIcon={testiRatingIcon}

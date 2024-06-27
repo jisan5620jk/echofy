@@ -81,7 +81,9 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
           <div>
-            <img src={footerLogo} />
+            <Link to={"/"}>
+              <img src={footerLogo} draggable={false} />
+            </Link>
             <p className="font-AlbertSans text-white mt-7 mb-5">
               Proactively restore timely alignments after client environmentals
             </p>

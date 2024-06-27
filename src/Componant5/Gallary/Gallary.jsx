@@ -43,7 +43,7 @@ const GallaryData = [
     subTitle: "Amphibians",
   },
   {
-    id: 5,
+    id: 6,
     thumb: thumb3,
     title: "Animal",
     subTitle: "Amphibians",

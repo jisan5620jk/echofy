@@ -22,7 +22,9 @@ const Footer3 = () => {
       <div className="Container">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
           <div>
-            <img src={footerLogo} />
+            <Link to={"/"}>
+              <img src={footerLogo} draggable={false} />
+            </Link>
             <p className="font-AlbertSans text-white opacity-60 mt-10 mb-9">
               Sometimes goods can arrive early when creative designneed place to
               stored for desig space your needs.
@@ -194,21 +196,30 @@ const Footer3 = () => {
       <div className="text-left py-6 bg-[#78b9003b] mt-24">
         <div className="Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between">
           <p className="font-AlbertSans text-white opacity-60">
-           Echofy © 2024  All rights reserved.
+            Echofy © 2024 All rights reserved.
           </p>
           <div>
             <ul className="flex gap-7">
               <li>
                 <Link to={"/"}>
-                <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">Privacy & Terms</button></Link>
+                  <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">
+                    Privacy & Terms
+                  </button>
+                </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">FAQ</button></Link>
+                  <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">
+                    FAQ
+                  </button>
+                </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">Contact Us</button></Link>
+                  <button className="font-AlbertSans text-white opacity-60 transition-all duration-500 hover:opacity-100">
+                    Contact Us
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>

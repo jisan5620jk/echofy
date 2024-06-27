@@ -4,17 +4,18 @@ import { Link } from "react-router-dom";
 const BlogCard = ({
   blogThumb,
   thumbContent,
+  blogDateIcon,
   blogDate,
+  blogTagIcon,
+  blogTag,
   blogUrl,
   blogTitle,
-  blogDesc,
-  blogProfileIcon,
-  blogProfileTitle,
-  btnIcon,
+  blogBtn,
+  blogBtnIcon,
 }) => {
   return (
-    <div className="group transition-all duration-500 bg-white hover:shadow-cases rounded-md overflow-hidden">
-      <div className="relative overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
+    <div className="group transition-all duration-500 bg-white rounded-md">
+      <div className="relative rounded-md overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
         <img
           src={blogThumb}
           className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
@@ -25,30 +26,27 @@ const BlogCard = ({
           </h6>
         </div>
       </div>
-      <div className="border-x border-b rounded-b-md border-BorderColor2-0 transition-all duration-500 group-hover:border-transparent">
-        <div className="px-5 sm:px-7 pt-6">
-          <p className="font-AlbertSans text-TextColor-0 pl-[18px] relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:w-2 before:h-2 before:rounded-full">
-            {blogDate}
-          </p>
+      <div className="rounded-md mx-5 relative z-20 -mt-[50px] flex justify-center bg-white transition-all duration-500 px-5 sm:px-8 lg:px-5 2xl:px-8 pt-7 pb-10 shadow-cases">
+        <div>
+          <div className="flex justify-between mb-2">
+            <p className="font-AlbertSans text-TextColor-0 flex gap-2 items-center leading-[15px]">
+              <span className="text-PrimaryColor-0">{blogDateIcon}</span>
+              {blogDate}
+            </p>
+            <p className="font-AlbertSans text-TextColor-0 flex gap-2 items-center leading-[15px]">
+              <span className="text-PrimaryColor-0">{blogTagIcon}</span>
+              {blogTag}
+            </p>
+          </div>
           <Link to={blogUrl}>
-            <button className="font-AlbertSans text-left font-semibold text-xl sm:text-2xl md:text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-3 mb-3">
+            <button className="font-AlbertSans text-left font-semibold text-xl sm:text-[22px] md:text-xl lg:text-lg xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-3 mb-8">
               {blogTitle}
             </button>
           </Link>
-          <p className="font-AlbertSans text-TextColor-0 pb-7">{blogDesc}</p>
-        </div>
-        <div className="flex justify-between items-center border-t border-BorderColor2-0 px-5 sm:px-7 py-4">
           <Link to={blogUrl}>
-            <button className=" flex items-center gap-3 font-AlbertSans font-medium text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0">
-              <span className="w-9 h-9 rounded-full bg-PrimaryColor-0 text-white flex items-center justify-center">
-                {blogProfileIcon}
-              </span>
-              {blogProfileTitle}
-            </button>
-          </Link>
-          <Link to={blogUrl}>
-            <button className="font-AlbertSans font-medium text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0">
-              {btnIcon}
+            <button className="header-btn !rounded-md !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
+              {blogBtn}
+              {blogBtnIcon}
             </button>
           </Link>
         </div>
