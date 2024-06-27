@@ -50,7 +50,7 @@ const Animal = () => {
   return (
     <section className="relative pt-[160px] pb-[120px] bg-[#f5f5f5] bg-cover bg-no-repeat bg-center">
       <div className="Container">
-        <div className="grid grid-cols-6 gap-7 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-7 items-center">
           {ServiceData.map(({ id, animalIcon, animalTitle, buttonIcon }) => {
             return (
               <div key={id}>

@@ -28,7 +28,7 @@ const BlogCard = ({
       </div>
       <div className="rounded-md mx-5 relative z-20 -mt-[50px] flex justify-center bg-white transition-all duration-500 px-5 sm:px-8 lg:px-5 2xl:px-8 pt-7 pb-10 shadow-cases">
         <div>
-          <div className="flex justify-between mb-2">
+          <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row md:gap-4 xl:gap-0 gap-4 sm:gap-0 justify-between mb-2">
             <p className="font-AlbertSans text-TextColor-0 flex gap-2 items-center leading-[15px]">
               <span className="text-PrimaryColor-0">{blogDateIcon}</span>
               {blogDate}
@@ -39,7 +39,7 @@ const BlogCard = ({
             </p>
           </div>
           <Link to={blogUrl}>
-            <button className="font-AlbertSans text-left font-semibold text-xl sm:text-[22px] md:text-xl lg:text-lg xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-3 mb-8">
+            <button className="font-AlbertSans text-left font-semibold text-lg sm:text-[22px] md:text-lg lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-3 mb-8">
               {blogTitle}
             </button>
           </Link>

@@ -57,7 +57,7 @@ const Navbar5 = () => {
             </p>
             <Link
               to={"/"}
-              className="font-AlbertSans text-[15px] text-white md:flex items-center gap-2 hidden"
+              className="font-AlbertSans text-[15px] text-white flex items-center gap-2"
             >
               +980 123 (4567) 000
             </Link>
@@ -68,8 +68,8 @@ const Navbar5 = () => {
               +980 123 (4567) 000
             </Link>
           </div>
-          <div className="flex gap-[52px] items-center">
-            <ul className="flex gap-[26px]">
+          <div className="flex gap-3 xl:gap-[52px] items-center">
+            <ul className="lg:flex gap-2 xl:gap-[26px] hidden">
               <li>
                 <Link to={"/"}>
                   <button className="font-AlbertSans text-[15px] text-white">
@@ -117,12 +117,20 @@ const Navbar5 = () => {
               <select
                 name="select"
                 id="select"
-                className="bg-transparent cursor-pointer text-white border-none outline-0"
+                className="bg-transparent cursor-pointer text-white border-none outline-0 hidden sm:block"
               >
-                <option value="english" className="text-HeadingColor-0">English</option>
-                <option value="bangla" className="text-HeadingColor-0">Bangla</option>
-                <option value="arabic" className="text-HeadingColor-0">Arabic</option>
-                <option value="china" className="text-HeadingColor-0">China</option>
+                <option value="english" className="text-HeadingColor-0">
+                  English
+                </option>
+                <option value="bangla" className="text-HeadingColor-0">
+                  Bangla
+                </option>
+                <option value="arabic" className="text-HeadingColor-0">
+                  Arabic
+                </option>
+                <option value="china" className="text-HeadingColor-0">
+                  China
+                </option>
               </select>
             </form>
           </div>

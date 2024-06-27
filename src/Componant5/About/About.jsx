@@ -15,10 +15,10 @@ const About = () => {
         className="absolute top-1/2 left-0 -translate-y-1/2 hidden 2xl:block"
       />
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] lg:gap-8 xl:gap-[60px] items-center">
-          <div className="relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] lg:gap-8 xl:gap-[60px] 2xl:gap-0 items-center">
+          <div className="relative inline-block">
             <img src={aboutThumb} draggable="false" />
-            <div className="text-center border-[8px] border-PrimaryColor-0 rounded-md bg-white w-[218px] h-[228px] flex justify-center items-center flex-col absolute bottom-0 right-0">
+            <div className="text-center border-[8px] border-PrimaryColor-0 rounded-md bg-white w-[218px] h-[228px] flex justify-center items-center flex-col absolute bottom-0 right-0 md:right-[132px] lg:right-0 2xl:right-[76px]">
               <div>
                 <img src={icon} draggable="false" className="m-auto"/>
               </div>
@@ -50,7 +50,8 @@ const About = () => {
             <h4 className="font-AlbertSans font-bold text-[22px] text-HeadingColor-0 mt-6 mb-7">
               Important Tree Planting Considerations
             </h4>
-            <ul className="grid grid-cols-3 gap-y-7">
+            <ul className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-2
+             xl:grid-cols-2 gap-y-7">
               <li className="relative pl-7 font-semibold text-[17px] before:absolute before:w-2 before:h-2 before:rounded-full before:bg-PrimaryColor-0 before:top-1/2 before:-translate-y-1/2 before:left-[5px] after:absolute after:w-[18px] after:h-[18px] after:rounded-full after:bg-transparent after:border after:border-PrimaryColor-0 after:top-1/2 after:-translate-y-1/2 after:left-0">
                 Education
               </li>
@@ -74,7 +75,7 @@ const About = () => {
               Corporate strategy frameworks to provide a robust synopsis high
               level overviews. Welcome the corporate strategy.
             </p>
-            <div className="flex gap-5 items-center">
+            <div className="flex flex-col sm:flex-row gap-5 sm:items-center">
               <Link to={"/about"}>
                 <button className="primary-btn3 !bg-transparent !text-PrimaryColor-0 hover:!text-white before:bg-PrimaryColor-0">
                   {`Learn More`}

@@ -77,18 +77,18 @@ const Gallary = () => {
   return (
     <section className="relative">
       <div className="Container">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center">
           <div>
             <h5 className="font-AlbertSans font-semibold text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
               ZOO PHOTO GALLERY!
             </h5>
-            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[38px] xl:leading-[48px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-[14px] mb-3">
+            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[36px] sm:leading-[46px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[38px] xl:leading-[48px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-[14px] mb-3">
               Discover the Animal Kingdom <br />
               Here at Our Zoo
             </h1>
           </div>
-          <div className="flex justify-end">
+          <div className="flex lg:justify-end">
             <Link to={"/contact"}>
               <button className="primary-btn3">
                 {`Contact Us`}
@@ -119,14 +119,14 @@ const Gallary = () => {
       </div>
       <div className="bg-SecondaryColor-0 py-[60px]">
         <div className="Container">
-          <div className="grid grid-cols-3 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-0 md:items-center">
             <div className="border-r border-BorderColor-0">
               <h4 className="font-AlbertSans font-medium xl:text-lg 2xl:text-xl text-white">{`Don't Procrastinate in the Workplace`}</h4>
               <h2 className="font-AlbertSans font-semibold lg:text-[22px] 2xl:text-[26px] text-white mt-3">
                 Organize Your Workspace Now
               </h2>
             </div>
-            <div className="border-r border-BorderColor-0 text-center flex justify-center gap-2 items-center">
+            <div className="border-r border-BorderColor-0 text-center flex md:justify-center gap-2 items-center">
               <div className="flex justify-center text-white">
                 <CiMobile3 size={"60"} />
               </div>
@@ -137,7 +137,7 @@ const Gallary = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex md:justify-center">
               <Link to={"/contact"}>
                 <button className="primary-btn3">
                   {`Contact Us`}

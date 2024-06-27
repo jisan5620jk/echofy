@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <section className="bg-[url('/images/animal-video-bg.jpg')] bg-no-repeat bg-cover bg-center py-28">
       <div className="Container">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid grid-cols-1 gap-12 lg:gap-0 lg:grid-cols-2 items-center">
           <div>
             <h5 className="font-AlbertSans font-semibold text-PrimaryColor-0 flex items-center gap-2">
               <img src={subTitleShape} draggable="false" />
@@ -27,7 +27,7 @@ const Contact = () => {
               </button>
             </Link>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <button className="h-[66px] w-[66px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
               <IoMdPlay
                 size={"30"}

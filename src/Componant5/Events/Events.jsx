@@ -4,7 +4,8 @@ import eventsThumb from "/images/event-1.png";
 import eventsThumb2 from "/images/event-2.png";
 import eventsThumb3 from "/images/event-3.png";
 import eventsThumb4 from "/images/event-4.png";
-import { FaRegClock } from "react-icons/fa6";
+import { FaAnglesRight, FaRegClock } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   return (
@@ -34,30 +35,30 @@ const Events = () => {
             <Tab className="cursor-pointer outline-none bg-SecondaryColor-0 py-7 w-full">
               <div>
                 <h5 className="font-AlbertSans font-semibold text-xl text-white uppercase">
-                  First Day
+                  Second Day
                 </h5>
                 <p className="font-AlbertSans text-white opacity-60">
-                  13 Mar, 2024
+                  14 Mar, 2024
                 </p>
               </div>
             </Tab>
             <Tab className="cursor-pointer outline-none bg-PrimaryColor-0 py-7 w-full">
               <div>
                 <h5 className="font-AlbertSans font-semibold text-xl text-white uppercase">
-                  First Day
+                  Third Day
                 </h5>
                 <p className="font-AlbertSans text-white opacity-60">
-                  13 Mar, 2024
+                  15 Mar, 2024
                 </p>
               </div>
             </Tab>
             <Tab className="cursor-pointer outline-none bg-SecondaryColor-0 py-7 w-full">
               <div>
                 <h5 className="font-AlbertSans font-semibold text-xl text-white uppercase">
-                  First Day
+                  Fourth Day
                 </h5>
                 <p className="font-AlbertSans text-white opacity-60">
-                  13 Mar, 2024
+                  16 Mar, 2024
                 </p>
               </div>
             </Tab>
@@ -791,6 +792,20 @@ const Events = () => {
             </div>
           </TabPanel>
         </Tabs>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-[50px]">
+          <Link to={"/about"}>
+            <button className="primary-btn3 !bg-HeadingColor-0 !border-none before:bg-PrimaryColor-0">
+              {`Download schedule (pdf)`}
+              <FaAnglesRight />
+            </button>
+          </Link>
+          <Link to={"/about"}>
+            <button className="primary-btn3 !bg-PrimaryColor-0 !border-none before:bg-SecondaryColor-0">
+              {`Contact via facebook`}
+              <FaAnglesRight />
+            </button>
+          </Link>
+        </div>
       </div>
     </section>
   );

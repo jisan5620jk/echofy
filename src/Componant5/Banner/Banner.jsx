@@ -59,7 +59,7 @@ const Banner = () => {
                       </button>
                     </Link>
                   </div>
-                  <div className="banner-contact hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[55%] 2xl:-left-[50%]">
+                  <div className="banner-contact hidden xl:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[55%] 2xl:-left-[80%]">
                     <ul className="flex items-center gap-[34px]">
                       <li>
                         <Link
