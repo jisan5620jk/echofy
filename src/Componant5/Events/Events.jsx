@@ -793,13 +793,13 @@ const Events = () => {
           </TabPanel>
         </Tabs>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-[50px]">
-          <Link to={"/about"}>
+          <Link to={"/home5"}>
             <button className="primary-btn3 !bg-HeadingColor-0 !border-none before:bg-PrimaryColor-0">
               {`Download schedule (pdf)`}
               <FaAnglesRight />
             </button>
           </Link>
-          <Link to={"/about"}>
+          <Link to={"/home5"}>
             <button className="primary-btn3 !bg-PrimaryColor-0 !border-none before:bg-SecondaryColor-0">
               {`Contact via facebook`}
               <FaAnglesRight />

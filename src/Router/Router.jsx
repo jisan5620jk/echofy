@@ -25,9 +25,11 @@ import ServiceDetails3 from "../Pages/InnerPage/ServiceDetails/ServiceDetails3";
 import ServiceDetails4 from "../Pages/InnerPage/ServiceDetails/ServiceDetails4";
 import ServiceDetails5 from "../Pages/InnerPage/ServiceDetails/ServiceDetails5";
 import ServiceDetails6 from "../Pages/InnerPage/ServiceDetails/ServiceDetails6";
+import AppointmentInner from "../Pages/InnerPage/Appointment/AppointmentInner";
 import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 import FaqInner from "../Pages/InnerPage/Faq/Accordion/FaqInner";
 import Main5 from "../Main/Main5";
+import TestimonialInner from "../Pages/InnerPage/TestimonialInner/TestimonialInner";
 
 const router = createBrowserRouter([
   {
@@ -106,6 +108,14 @@ const router = createBrowserRouter([
       {
         path: "/blog_details",
         element: <BlogDetails />,
+      },
+      {
+        path: "/appointment",
+        element: <AppointmentInner />,
+      },
+      {
+        path: "/testimonial",
+        element: <TestimonialInner />,
       },
       {
         path: "/contact",

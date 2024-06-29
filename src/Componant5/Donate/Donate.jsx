@@ -19,8 +19,8 @@ const Donate = () => {
             </h1>
             <p className="font-AlbertSans text-TextColor2-0">
               Meh synth Schlitz, tempor duis single-origin coffee ea next level
-              in the ethnic <br className="hidden" /> PBR 3 wolf moon beard Helvetica.
-              Salvia esse
+              in the ethnic <br className="hidden" /> PBR 3 wolf moon beard
+              Helvetica. Salvia esse
             </p>
             <ul className="grid grid-cols-2 sm:flex gap-3 my-11">
               <li>
@@ -49,7 +49,7 @@ const Donate = () => {
                 </button>
               </li>
             </ul>
-            <Link to={"/donate_inner"}>
+            <Link to={"/donation_inner"}>
               <button className="primary-btn3">
                 {`Donate Now`}
                 <FaAnglesRight />
@@ -64,7 +64,7 @@ const Donate = () => {
               <h2 className="font-AlbertSans font-bold text-3xl sm:text-4xl lg:text-3xl xl:text-4xl text-white mt-2 mb-9">
                 Donate <br /> Manifesto 2024
               </h2>
-              <Link to={"/donate_inner"}>
+              <Link to={"/donation_inner"}>
                 <button className="primary-btn3">
                   {`Donate Now`}
                   <FaAnglesRight />
