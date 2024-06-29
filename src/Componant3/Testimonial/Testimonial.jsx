@@ -115,7 +115,7 @@ const Testimonial = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pb-[80px] pt-3">
+                      <div className="pb-12 md:pb-[80px] pt-3">
                         <TestimonialCard
                           testiImg={testiImg}
                           testiRatingIcon={testiRatingIcon}

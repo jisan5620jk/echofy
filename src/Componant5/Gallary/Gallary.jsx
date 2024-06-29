@@ -98,7 +98,7 @@ const Gallary = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[46px]">
+      <div className="mt-[70px] lg:mt-[50px]">
         <Swiper {...settings}>
           {GallaryData.map(({ id, thumb, title, subTitle }) => {
             return (

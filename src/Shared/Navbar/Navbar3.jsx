@@ -333,7 +333,7 @@ const Navbar3 = () => {
                     Contact
                   </NavLink>
                 </ul>
-                <div className="hidden lg:flex items-center gap-10">
+                <div className="hidden lg:flex items-center lg:gap-4 xl:gap-10">
                   <Link
                     to={"/"}
                     className="w-[40px] h-[40px] bg-[#f4f5f9] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white flex items-center justify-center rounded-full text-PrimaryColor-0"

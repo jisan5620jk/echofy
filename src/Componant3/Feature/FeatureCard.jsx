@@ -2,7 +2,7 @@
 
 const FeatureCard = ({featureShape, featureIcon, featureTitle, featureDesc }) => {
   return (
-    <div className="group flex flex-col sm:flex-row lg:flex-col xl:flex-row lg:items-start xl:items-center sm:items-center gap-5 overflow-hidden bg-[#f7f7f7] px-[30px] py-8 rounded relative z-10 before:absolute before:bottom-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 hover:before:left-0 hover:before:w-full">
+    <div className="group flex flex-col sm:flex-row lg:flex-col xl:flex-row lg:items-start xl:items-center sm:items-center gap-5 overflow-hidden bg-[#f7f7f7] px-[30px] lg:px-6 xl:px-[30px] py-8 rounded relative z-10 before:absolute before:bottom-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 hover:before:left-0 hover:before:w-full">
       <img
         src={featureShape}
         draggable="false"

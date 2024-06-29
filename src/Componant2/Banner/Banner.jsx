@@ -7,14 +7,14 @@ import bannerShape from "/images/banner-shape.png";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[900px] sm:h-[1000px] md:h-[1350px] lg:h-[660px] xl:h-[872px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[650px] sm:h-[680px] lg:h-[660px] xl:h-[872px] flex items-center relative z-10 overflow-hidden">
       <img
         src={bannerShape}
         draggable="false"
         className="absolute top-0 -left-5 animate-dance2 hidden lg:block"
       />
       <div className="Container">
-        <div className="grid lg:grid-cols-2 items-center sm:pt-[500px] lg:pt-[90px] gap-16 lg:gap-0">
+        <div className="grid lg:grid-cols-2 items-center pt-[70px] lg:pt-[90px] gap-16 lg:gap-0">
           <div className="relative">
             <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium flex items-center gap-2 mb-5">
               <img src={shape} />
@@ -68,7 +68,7 @@ const Banner = () => {
               </ul>
             </div>
           </div>
-          <div className="absolute -z-10 top-0 lg:-right-[27rem] xl:-right-[18rem] 2xl:right-0">
+          <div className="absolute -z-10 top-0 lg:-right-[27rem] xl:-right-[18rem] 2xl:right-0 hidden lg:block">
             <img
               src={bannerImg}
               draggable="false"

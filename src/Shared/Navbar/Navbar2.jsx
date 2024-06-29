@@ -118,7 +118,7 @@ const Navbar2 = () => {
         <div className="header-section">
           <div className="Container">
             {/* main Navbar */}
-            <div className="flex items-center justify-between lg:h-[90px] bg-PrimaryColor-0 rounded-b-md lg:-mb-[90px] -mb-[70px] relative z-50 px-7 w-full">
+            <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[90px] bg-PrimaryColor-0 rounded-b-md lg:-mb-[90px] -mb-[70px] relative z-50 px-7 w-full">
               {/* website Logo */}
               <div>
                 <Link to="/">
@@ -129,10 +129,15 @@ const Navbar2 = () => {
                 </Link>
               </div>
               {/* small screen size */}
-              <div className="px-3 lg:hidden flex justify-between h-[70px] items-center p-3">
+              <div className="w-full lg:hidden flex justify-between h-[70px] items-center py-3">
                 <div className="w-28">
-                  <Link to={"/"}>
-                    <img src={Logo} className="block lg:hidden" />
+                  <Link to="/">
+                    <img
+                      draggable="false"
+                      src={Logo}
+                      className="block lg:hidden brightness-0 invert-[1]"
+                      alt="constre_website_logo"
+                    />
                   </Link>
                 </div>
                 {/* toggle bar mode. */}

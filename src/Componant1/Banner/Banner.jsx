@@ -31,9 +31,9 @@ const Banner = () => {
     <div className="relative">
       <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
         <SwiperSlide>
-          <section className="bg-[url('/images/banner-bg.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[730px] md:h-[750px] lg:h-[960px] xl:h-[960px] flex items-center">
+          <section className="bg-[url('/images/banner-bg.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[700px] md:h-[750px] lg:h-[760px] xl:h-[960px] flex items-center">
             <div className="Container">
-              <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
+              <div className="pt-36">
                 <div className="relative banner-content">
                   <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
                     NATURAL ENVIRONMENT
@@ -41,7 +41,7 @@ const Banner = () => {
                   <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
                     Be Safe Controls
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-7">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-5 md:-mt-7 lg:-mt-5">
                     Environment
                   </h1>
                   <p className="font-AlbertSans text-lg text-white mb-10">
@@ -112,9 +112,9 @@ const Banner = () => {
           </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section className="bg-[url('/images/banner-bg2.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[730px] md:h-[750px] lg:h-[960px] xl:h-[960px] flex items-center">
+          <section className="bg-[url('/images/banner-bg2.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[750px] sm:h-[700px] md:h-[750px] lg:h-[760px] xl:h-[960px] flex items-center">
             <div className="Container">
-              <div className="grid lg:grid-cols-2 items-center pt-36 gap-16 lg:gap-0">
+              <div className="pt-36">
                 <div className="relative banner-content">
                   <h5 className="font-AlbertSans text-PrimaryColor-0 font-medium">
                     NATURAL ENVIRONMENT
@@ -122,7 +122,7 @@ const Banner = () => {
                   <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px]">
                     Be Safe Controls
                   </h1>
-                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-4 md:-mt-6 lg:-mt-7">
+                  <h1 className="font-AlbertSans font-extrabold text-white text-[30px] sm:text-[56px] md:text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[68px] -mt-3 sm:-mt-5 md:-mt-7 lg:-mt-5">
                     Environment
                   </h1>
                   <p className="font-AlbertSans text-lg text-white mb-10">

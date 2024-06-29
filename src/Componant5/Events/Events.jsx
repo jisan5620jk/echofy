@@ -24,7 +24,7 @@ const Events = () => {
           <TabList className="text-center grid grid-cols-2 gap-y-3 sm:gap-y-0 sm:grid-cols-4 items-center mt-[44px] rounded-md overflow-hidden">
             <Tab className="cursor-pointer outline-none bg-PrimaryColor-0 py-7 w-full">
               <div>
-                <h5 className="font-AlbertSans font-semibold text-xl text-white uppercase">
+                <h5 className="font-AlbertSans font-semibold text-lg sm:text-base md:text-xl text-white uppercase">
                   First Day
                 </h5>
                 <p className="font-AlbertSans text-white opacity-60">
@@ -34,7 +34,7 @@ const Events = () => {
             </Tab>
             <Tab className="cursor-pointer outline-none bg-SecondaryColor-0 py-7 w-full">
               <div>
-                <h5 className="font-AlbertSans font-semibold text-xl text-white uppercase">
+                <h5 className="font-AlbertSans font-semibold text-lg sm:text-base md:text-xl text-white uppercase">
                   Second Day
                 </h5>
                 <p className="font-AlbertSans text-white opacity-60">
@@ -44,7 +44,7 @@ const Events = () => {
             </Tab>
             <Tab className="cursor-pointer outline-none bg-PrimaryColor-0 py-7 w-full">
               <div>
-                <h5 className="font-AlbertSans font-semibold text-xl text-white uppercase">
+                <h5 className="font-AlbertSans font-semibold text-lg sm:text-base md:text-xl text-white uppercase">
                   Third Day
                 </h5>
                 <p className="font-AlbertSans text-white opacity-60">
@@ -54,7 +54,7 @@ const Events = () => {
             </Tab>
             <Tab className="cursor-pointer outline-none bg-SecondaryColor-0 py-7 w-full">
               <div>
-                <h5 className="font-AlbertSans font-semibold text-xl text-white uppercase">
+                <h5 className="font-AlbertSans font-semibold text-lg sm:text-base md:text-xl text-white uppercase">
                   Fourth Day
                 </h5>
                 <p className="font-AlbertSans text-white opacity-60">
@@ -794,13 +794,13 @@ const Events = () => {
         </Tabs>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-[50px]">
           <Link to={"/home5"}>
-            <button className="primary-btn3 !bg-HeadingColor-0 !border-none before:bg-PrimaryColor-0">
+            <button className="primary-btn3 !px-5 sm:!px-[36px] !bg-HeadingColor-0 !border-none before:bg-PrimaryColor-0">
               {`Download schedule (pdf)`}
               <FaAnglesRight />
             </button>
           </Link>
           <Link to={"/home5"}>
-            <button className="primary-btn3 !bg-PrimaryColor-0 !border-none before:bg-SecondaryColor-0">
+            <button className="primary-btn3 !px-5 sm:!px-[36px] !bg-PrimaryColor-0 !border-none before:bg-SecondaryColor-0">
               {`Contact via facebook`}
               <FaAnglesRight />
             </button>

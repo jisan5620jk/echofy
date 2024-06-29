@@ -169,7 +169,7 @@ const Footer3 = () => {
                 <img src={footerImg} className="w-[80px] h-[80px] rounded" />
               </div>
               <div className="flex-1">
-                <h6 className="font-AlbertSans text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100">
+                <h6 className="font-AlbertSans text-sm sm:text-base lg:text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100">
                   How to add battery backup...
                 </h6>
                 <p className="font-AlbertSans text-sm text-PrimaryColor-0 mt-1">
@@ -182,7 +182,7 @@ const Footer3 = () => {
                 <img src={footerImg2} className="w-[80px] h-[80px] rounded" />
               </div>
               <div className="flex-1">
-                <h6 className="font-AlbertSans text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100">
+                <h6 className="font-AlbertSans text-sm sm:text-base lg:text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100">
                   How to clean forest properly...
                 </h6>
                 <p className="font-AlbertSans text-sm text-PrimaryColor-0 mt-1">

@@ -134,7 +134,7 @@ const Navbar = () => {
               </Link>
             </div>
             {/* small screen size */}
-            <div className="px-3 w-full lg:hidden flex justify-between bg-khaki h-[70px] items-center p-3">
+            <div className="w-full lg:hidden flex justify-between h-[70px] items-center p-3">
               <div className="w-28">
                 <Link to="/">
                   <img
