@@ -99,7 +99,7 @@ const TestimonialInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Testimonial"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"Testimonial"}
+        breadCrumbLink={"Testimonial"}
       />
       <section className="py-28 bg-[#f5f8ed] relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
         <div className="Container">

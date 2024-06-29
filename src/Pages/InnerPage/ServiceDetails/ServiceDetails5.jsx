@@ -22,8 +22,8 @@ const ServiceDetails5 = () => {
     <>
       <BreadCrumb
         breadCrumbTitle={"Environmental"}
-        breadCrumbLink={"Serivces"}
         breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbLink={"Serivces"}
         breadCrumbIcon2={<FaArrowRightLong />}
         breadCrumbContent={"Environmental"}
       />

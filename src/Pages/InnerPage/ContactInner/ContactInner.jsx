@@ -9,8 +9,7 @@ const ContactInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Contact Us"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"Contact Us"}
-        url={"/contact"}
+        breadCrumbLink={"Contact Us"}
       />
       <ContactBox />
       <Appointment />

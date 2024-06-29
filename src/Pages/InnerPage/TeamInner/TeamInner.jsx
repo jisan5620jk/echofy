@@ -85,7 +85,7 @@ const TeamInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Team Member"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"Team Member"}
+        breadCrumbLink={"Team Member"}
       />
       <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
         <img

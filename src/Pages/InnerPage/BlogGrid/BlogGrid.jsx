@@ -122,6 +122,8 @@ const BlogGrid = () => {
       <BreadCrumb
         breadCrumbTitle={"Blog Grid"}
         breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbLink={"Blog"}
+        breadCrumbIcon2={<FaArrowRightLong />}
         breadCrumbContent={"Blog Grid"}
       />
       <section className="pt-28">

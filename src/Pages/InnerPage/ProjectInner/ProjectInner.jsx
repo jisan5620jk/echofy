@@ -86,7 +86,7 @@ const ProjectInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Projects"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"Projects"}
+        breadCrumbLink={"Projects"}
       />
       <section className="py-28 bg-[#f3f4f8]">
         <div className="Container">

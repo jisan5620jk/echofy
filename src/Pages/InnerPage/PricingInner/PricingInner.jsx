@@ -9,7 +9,7 @@ const PricingInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Affordable Price"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"Pricing"}
+        breadCrumbLink={"Pricing"}
       />
       <Pricing />
       <div>

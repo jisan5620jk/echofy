@@ -99,7 +99,7 @@ const ServiceInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Our Services"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"Our Services"}
+        breadCrumbLink={"Our Services"}
       />
       <section className="pt-28 pb-[120px] p relative z-10 bg-[#f3f3f7]">
         <div className="Container">
@@ -129,7 +129,7 @@ const ServiceInner = () => {
                 }) => {
                   return (
                     <>
-                      <div key={id} >
+                      <div key={id}>
                         <ServiceCard
                           serviceImg={serviceImg}
                           serviceIcon={serviceIcon}

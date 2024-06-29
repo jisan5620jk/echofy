@@ -103,8 +103,7 @@ const DonationInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Contact Us"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"Contact Us"}
-        url={"/contact"}
+        breadCrumbLink={"Contact Us"}
       />
       <section className="service relative pt-28 pb-[120px] bg-[#f5f8ed] z-10">
         <div className="Container">

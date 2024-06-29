@@ -9,7 +9,7 @@ const AppointmentInner = () => {
       <BreadCrumb
         breadCrumbTitle={"Book Appointment"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"Book Appiontment"}
+        breadCrumbLink={"Book Appiontment"}
       />
       <Appointment />
       <Process />

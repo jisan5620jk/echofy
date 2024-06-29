@@ -45,7 +45,7 @@ const FaqInner = () => {
       <BreadCrumb
         breadCrumbTitle={"FAQ"}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbContent={"FAQ"}
+        breadCrumbLink={"FAQ"}
       />
       <section
         className="relative overflow-hidden py-28 bg-[url('/images/faq-bg.jpg')] bg-cover bg-no-repeat

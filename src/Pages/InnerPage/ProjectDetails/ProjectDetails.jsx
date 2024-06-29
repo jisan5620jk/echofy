@@ -11,8 +11,8 @@ const ProjectDetails = () => {
     <>
       <BreadCrumb
         breadCrumbTitle={"Project Details"}
-        breadCrumbLink={"Project Details"}
         breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbLink={"Project"}
         breadCrumbIcon2={<FaArrowRightLong />}
         breadCrumbContent={"Echology Energy"}
       />

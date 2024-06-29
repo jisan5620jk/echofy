@@ -173,7 +173,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative`}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative`}
                 >
                   <span className="flex items-center">
                     Home
@@ -229,7 +229,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="/about"
                 >
                   <span>About</span>
@@ -240,7 +240,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -273,7 +273,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -369,7 +369,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300 group relative `}
+                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                   to="#"
                 >
                   <span className="flex items-center">
@@ -408,7 +408,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-1 xl:px-3 w-full block transition-all duration-300`}
+                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300`}
                   to="/contact"
                 >
                   Contact

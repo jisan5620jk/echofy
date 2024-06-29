@@ -16,26 +16,28 @@ const BreadCrumb = ({
         <h1 className="font-AlbertSans font-extrabold text-4xl sm:text-[46px] text-white capitalize">
           {breadCrumbTitle}
         </h1>
-        <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center justify-center mt-8 sm:mt-5">
-          <li>
-            <Link to={"/"}>
-              <button className="font-AlbertSans text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
-                <IoHome className="text-PrimaryColor-0" />
-                Echofy
-              </button>
-            </Link>
-          </li>
-          <li>
-            <div className="text-white hidden sm:block">{breadCrumbIcon}</div>
-          </li>
-          <li>
-            <Link to={url}>
-              <button className="font-AlbertSans capitalize text-white opacity-70">
-                {breadCrumbLink}
-              </button>
-            </Link>
-          </li>
-          <li>
+        <ul className="flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-center mt-8 sm:mt-5">
+          <div className="flex gap-2 sm:gap-4 items-center justify-center">
+            <li>
+              <Link to={"/"}>
+                <button className="font-AlbertSans text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
+                  <IoHome className="text-PrimaryColor-0" />
+                  Echofy
+                </button>
+              </Link>
+            </li>
+            <li>
+              <div className="text-white hidden sm:block">{breadCrumbIcon}</div>
+            </li>
+            <li>
+              <Link to={url}>
+                <button className="font-AlbertSans capitalize text-white opacity-70">
+                  {breadCrumbLink}
+                </button>
+              </Link>
+            </li>
+          </div>
+          <li className="hidden md:block">
             <div className="text-white hidden sm:block">{breadCrumbIcon2}</div>
           </li>
           <li>
