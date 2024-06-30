@@ -80,3 +80,16 @@
     transform: translateX(calc(-100% - var(--gap)));
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content-slider2 {
+    gap: 20px;
+  }
+
+  .content-slider-content2 h1 {
+    font-size: 30px;
+    font-weight: 500;
+    -webkit-text-stroke: 0.5px #fff;
+    -webkit-text-stroke-width: 1px;
+  }
+}
