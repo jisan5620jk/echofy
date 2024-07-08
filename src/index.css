@@ -128,3 +128,13 @@ body {
 .counter-stroke {
   -webkit-text-stroke: 1px #000000;
 }
+
+/* Animal */
+
+.animal-box.active::before {
+  height: 100%;
+}
+
+.animal-box.active .animal-btn {
+  transform: translateY(-50%) translateX(-50%) scale(1);
+}

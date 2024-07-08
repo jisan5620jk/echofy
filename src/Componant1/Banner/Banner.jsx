@@ -74,7 +74,7 @@ const Banner = () => {
                       ]}
                     />
                   </div>
-                  <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
+                  <div className="banner-share hidden xl:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 xl:-left-[16%] 2xl:-left-[23%]">
                     <h5 className="font-AlbertSans text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
                       FOLLOW US
                     </h5>
@@ -155,7 +155,7 @@ const Banner = () => {
                       ]}
                     />
                   </div>
-                  <div className="banner-share hidden md:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 md:-left-[23%] lg:-left-[35%] xl:-left-[32%] 2xl:-left-[50%]">
+                  <div className="banner-share hidden xl:flex gap-[100px] items-center -rotate-90 absolute top-full -translate-y-1/2 xl:-left-[16%] 2xl:-left-[23%]">
                     <h5 className="font-AlbertSans text-white relative before:absolute before:top-1/2 before:-right-[82px] before:w-16 before:h-[1px] before:bg-[#657977]">
                       FOLLOW US
                     </h5>
