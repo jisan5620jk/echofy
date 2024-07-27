@@ -66,9 +66,9 @@ const Blog = () => {
             </h1>
           </div>
           <div className="flex lg:justify-end">
-            <Link to={"/blogGrid"}>
+            <Link to={"/blog_grid"}>
               <button className="primary-btn">
-                Veiw All Blog
+                View All Blog
                 <img src={buttonShape} draggable="false" />
               </button>
             </Link>

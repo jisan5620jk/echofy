@@ -207,7 +207,7 @@ const Navbar5 = () => {
                     data-aos="zoom-in-left"
                     data-aos-duration="1000"
                   >
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[230px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
                       <div className="px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/" className="py-2 block">
@@ -271,7 +271,7 @@ const Navbar5 = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[230px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
                       <div className="px-5 group hover:bg-PrimaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service" className="py-2 block">
@@ -304,7 +304,7 @@ const Navbar5 = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[230px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/about" className="py-2 block">
@@ -400,7 +400,7 @@ const Navbar5 = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[230px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
                       <div className="px-5 group hover:bg-PrimaryColor-0">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blog_grid" className="py-2 block">

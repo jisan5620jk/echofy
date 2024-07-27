@@ -97,7 +97,7 @@ const Portfolio = () => {
           <div>
             <Link to={"/project"}>
               <button className="primary-btn">
-                Veiw All Work
+                View All Work
                 <FaArrowRightLong size={"20"} />
               </button>
             </Link>

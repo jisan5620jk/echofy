@@ -201,32 +201,56 @@ const Footer4 = () => {
             <ul className="grid grid-cols-3 gap-2">
               <li>
                 <Link to={"/"}>
-                  <img src={post1} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post1}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post2} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post2}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post3} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post3}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post4} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post4}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post5} draggable={false} className="w-full h-full rounded" />
+                  <img
+                    src={post5}
+                    draggable={false}
+                    className="w-full h-full rounded"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to={"/"}>
-                  <img src={post6} draggable={false} className="w-full rounded" />
+                  <img
+                    src={post6}
+                    draggable={false}
+                    className="w-full rounded"
+                  />
                 </Link>
               </li>
             </ul>
@@ -238,7 +262,7 @@ const Footer4 = () => {
           <p className="font-AlbertSans text-TextColor2-0">
             © Copyright 2024 By{" "}
             <Link to={"/"} className="text-PrimaryColor-0 !opacity-100">
-              Dream It
+              Dream-Master
             </Link>{" "}
             Solution.
           </p>

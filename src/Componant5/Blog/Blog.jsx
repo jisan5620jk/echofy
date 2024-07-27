@@ -1,5 +1,9 @@
 /* eslint-disable no-unused-vars */
-import { FaAnglesRight, FaArrowRightLong, FaRegCalendarCheck } from "react-icons/fa6";
+import {
+  FaAnglesRight,
+  FaArrowRightLong,
+  FaRegCalendarCheck,
+} from "react-icons/fa6";
 import blogThumb from "/images/blog5-thumb1.png";
 import blogThumb2 from "/images/blog5-thumb2.png";
 import blogThumb3 from "/images/blog5-thumb3.png";
@@ -69,7 +73,7 @@ const Blog = () => {
           <div className="flex lg:justify-end">
             <Link to={"/blog_grid"}>
               <button className="primary-btn3 !bg-transparent !text-PrimaryColor-0 hover:!text-white before:bg-PrimaryColor-0">
-                Veiw All Blog
+                View All Blog
                 <FaAnglesRight />
               </button>
             </Link>
