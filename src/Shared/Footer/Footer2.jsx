@@ -167,7 +167,7 @@ const Footer2 = () => {
         <div className="text-left sm:text-center py-6 border-t border-BorderColor-0 mt-24">
           <p className="font-AlbertSans text-white">
             © Copyrights 2024 Echofy All rights reserved by
-            <span className="text-PrimaryColor-0"> Dream-Master</span>
+            <span className="text-PrimaryColor-0"> Dream-IT Solution</span>
           </p>
         </div>
       </div>

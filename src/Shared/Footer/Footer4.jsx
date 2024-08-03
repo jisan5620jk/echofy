@@ -262,9 +262,8 @@ const Footer4 = () => {
           <p className="font-AlbertSans text-TextColor2-0">
             © Copyright 2024 By{" "}
             <Link to={"/"} className="text-PrimaryColor-0 !opacity-100">
-              Dream-Master
-            </Link>{" "}
-            Solution.
+              Dream-IT Solution
+            </Link>
           </p>
           <div>
             <ul className="flex gap-7">
