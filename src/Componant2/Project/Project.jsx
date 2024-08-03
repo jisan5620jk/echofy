@@ -86,7 +86,7 @@ const Project = () => {
     },
   };
   return (
-    <section className="project bg-[url('/images/Project-bg.png')] bg-cover bg-center bg-no-repeat py-28 project">
+    <section className="project bg-[url('/images/project-bg.jpg')] bg-cover bg-center bg-no-repeat py-28 project">
       <div className="text-center">
         <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
           <img src={subTitleShape} draggable="false" />

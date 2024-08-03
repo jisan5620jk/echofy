@@ -15,7 +15,7 @@ const About = () => {
     const [toggler, setToggler] = useState(false);
 
   return (
-    <section className="py-[120px] bg-[url('/images/about-bg.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
+    <section className="py-[120px] bg-[url('/images/about-bg.jpg')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
       <img
         src={aboutShape}
         draggable="false"
